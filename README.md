@@ -1,5 +1,72 @@
 # Spider-Man Bevy swing sandbox
 
+## For agents: build it, then get the user playing
+
+This repository is complete. The models, animations and configs are already in `assets/`, so building and playing
+need neither the original game nor any extraction step. Windows 10/11 x64 is the tested platform.
+
+### 1. Prerequisites
+
+- **Rust through rustup** (https://rustup.rs). `rust-toolchain.toml` pins Rust 1.99.0; rustup installs it on first use.
+- **Visual Studio Build Tools** with the *Desktop development with C++* workload (the MSVC linker and Windows SDK).
+  Without it the build fails at linking (`link.exe` not found).
+- A GPU and driver with DirectX 12 (`Play.bat` selects it).
+- Internet access for the first build (cargo downloads the crates) and several GB free for `target/` (about 10 GB with
+  the tests).
+
+### 2. Build
+
+From the repository root, in PowerShell:
+
+```powershell
+./Build.ps1
+```
+
+It runs `cargo build --locked` and copies `target/debug/spiderman_bevy.exe` to the root, next to `assets/`. The first
+build compiles Bevy and takes a long time and a lot of CPU and memory. On a machine that struggles under load, build at
+below-normal priority with two jobs instead, then copy the executable yourself:
+
+```powershell
+./tools/native_oracle/cargo_low.ps1 build --locked
+Copy-Item target/debug/spiderman_bevy.exe spiderman_bevy.exe -Force
+```
+
+### 3. Check
+
+- `cargo test --workspace` runs 55 tests with no window or GPU. Six of them run the swing, swing jump and fall and
+  compare his path with the original game's own runs of the same inputs.
+- `./Verify.ps1 -Rebuild` also runs the rendered smoke tests (hidden windows, using the GPU) and the asset checks (they
+  need Python with Pillow). Ask the user before running it on a machine that is sensitive to GPU load. Always pass
+  `-Rebuild`: the bundled test executable it otherwise uses is not in the repository.
+- After changing anything under `crates/sm_traversal`, `cargo test -p sm_traversal` must still pass: it is the check
+  against the original game.
+- Don't run the other tools in `tools/native_oracle`. They need the original Spider-Man.exe and ArkWeb's research
+  harness, which only exist on the author's machine.
+
+### 4. Get the user playing
+
+Tell the user to:
+
+1. Double-click **Play.bat**, or run `spiderman_bevy.exe`. It has to stay next to the `assets` folder.
+2. Wait a few seconds until "LOADING SUIT AND CITY ASSETS..." disappears.
+3. Hold **W** and **Shift** (or the left mouse button; RT on a controller) to swing down the street, and steer with
+   **A** and **D**.
+4. Press **Space** (A) during a swing to let go with a jump, or release Shift to let go without one. A fresh press of
+   Shift in the air catches the next web at once; holding it catches one as he starts to fall.
+5. Click the **right mouse button** to look around with the mouse (**Esc** frees the cursor). **R** resets, **F1**
+   shows the controls, **F3** shows diagnostics, **F12** saves a screenshot.
+
+The full controls are in the table under [Play](#play).
+
+### Troubleshooting
+
+- **`link.exe` not found:** install the C++ build tools (above), then build again.
+- **Git reports "dubious ownership"** (common on Steam or external drives):
+  `git config --global --add safe.directory "<path to the clone>"`.
+- **The window stays black or closes at once:** update the GPU driver; the game needs DirectX 12.
+- **"LOADING..." never goes away:** the executable can't find `assets/`. It looks next to itself, so keep
+  `spiderman_bevy.exe` in the repository root.
+
 A playable Rust / Bevy 0.19.1 recreation in a world containing a floor, seven towers assembled from the game’s original Midtown glass and stone facade kits, and 56 original parked cars at meter scale. It uses the Advanced Suit mesh and animation clips extracted from this local installation of Marvel's Spider-Man Remastered.
 
 **The swing, the swing jump and the fall are the game's own code.** They are ported to Rust in `crates/sm_traversal` from the installed Spider-Man.exe and checked against the executable running offline: the port stays within a few centimetres of the game's path, with every state change on the same frame (see [research/NATIVE_TRAVERSAL.md](research/NATIVE_TRAVERSAL.md)). The swing points, ground movement, wall runs, zips, charged jumps, the dive, collisions, animation blending and materials remain this sandbox's; the game's swing hint volumes, camera code, animation graph, IK and material systems have not been ported. The collapsed-limb conversion bug has been fixed and all clips rebuilt.
