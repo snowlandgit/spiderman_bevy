@@ -1,0 +1,11 @@
+LookGroups:
+0 2
+
+Materials used:
+1	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_industrial01.material
+0	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_residential04.material
+
+Slots:
+===============================================================
+0	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_residential04.material
+1	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_industrial01.material

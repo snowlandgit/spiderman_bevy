@@ -1,0 +1,483 @@
+BenchmarkSwingKick
+BenchmarkHighSwingSpeedTime
+BenchmarkSwingNearGround
+ShowAutoswingIcon
+HideAutoswingIcon
+Do swing attach override to 1.0
+Swing attach override time
+Swing attach delay before start
+Swing
+Exert_Swinging
+MeleeSwingPointHunter
+void __cdecl MeleeSwingPointHunter::UpdateAsync(float)
+SwingPointHunter
+void __cdecl SwingPointHunter::IssuePotentialValidationTests(void)
+HeroAirFireDataOverride
+Swing_Rumble
+Dive To Swing
+SwingAttachClue
+SwingAttachCluePrius
+SwingHintVolume
+SwingHintVolumePrius
+HeroAirCombatTracker
+HeroRopeManager
+bool __cdecl Hero::HeroTransitionManager::ValidateWallRunPositionForSwing(const class Vec3 &,const class Vec3 &,const class Vec3 &)
+HeroStatePoleSwing
+HeroStatePoleSwingLocal
+LedgePerch_Stealth_Kill_SwingGrab
+React_LedgePerch_Stealth_Kill_SwingGrab
+HeroStateSwing
+HeroStateSwingUpdate
+HeroStateSwingAction
+--Swing Selection--
+Player_Swing_Time
+HeroStateSwingLocal
+HeroStateSwingRemote
+HeroStateSwingIntroJump
+HeroStateSwingIntroJumpLocal
+HeroStateSwingIntroJumpRemote
+HeroStateSwingJump
+HeroStateSwingJumpLocal
+HeroStateSwingJumpRemote
+SwingMotionTracker
+HeroSwingSetupVolume
+SwingPushVolume
+SwingPushVolumePrius
+void __cdecl Hero::SwingCollider::IssueWallPlantTests(void)
+void __cdecl Hero::SwingCollider::IssueSwingLineTest(void)
+void __cdecl Hero::SwingCollider::IssueLookAheadTests(void)
+configs/previewbinkvideos/moveslist/swingpreviewvideo.config
+ChallengeCounterSwingKick
+ChallengeCounterSwingKickPrius
+SwingKickIncoming
+kSwing
+OnSwingFailed
+OnSwingFailedHigh
+OnSwinging
+SwingTime
+SwingDistance
+TotalSwingStickStrength
+EndSwingJumps
+SwingFails
+SwingCount
+WebSwing
+kWebSwing
+kSwingIntro
+kPoleSwing
+kSwingReleaseHighJump
+WAMSetTypeSwing
+BenchmarkSwingKickPrius
+BenchmarkSwingNearGroundPrius
+BenchmarkHighSwingSpeedTimePrius
+MinSwingSpeed
+Number of air moves(weighted so stuff like yanking and swing kick count as 2 moves), before air aggression can be triggered
+SwingSelfie
+HeroJumpPullVolumePrius
+HeroRopeManagerPrius
+HeroSwingSetupVolumePrius
+SwingSetupConfig
+Option to turn off down-zip on fail-to-swing
+Swing Setup Config
+Hero Swing Setup
+SwingFloorDropMax
+SwingFloorOverMin
+SwingFloorOverMax
+ApplyToSwing
+Attach height below which to use SwingFloorDropMax to lower floor
+SwingKickRange
+WebSwingJump
+When the hero jumps at the end of a web swing.
+SwingUseToggle
+SwingCameraAccessibilityBlend
+TwitterSwingData
+SwingTweets
+SwingTweetPercentage
+The percent chance a tweet will fire after a valid swing set.  ranging from 0-1
+HeroAirCombatConfig
+HeroSwingFailZipData
+HeroJumpDragProfile
+SwingJumpConfig
+SwingIntroJumpConfig
+SwingJumpSpeed
+HeroJumpDragOverrideConfig
+HeroJumpMotionDataOverride
+HeroJumpMotionDataSet
+Web Swing Jump
+Web Swing Intro Jump
+Swing Jump Speed
+SwingConfig
+SwingConfigTest
+FollowCameraUserSwing
+StickConfigSwing
+AimContextSwing
+PoleSwingDistanceForward
+PoleSwingDistanceSide
+PoleSwingHeightMax
+PoleSwingHeightMin
+Swing Config
+Swing Config Test
+Follow Camera User Swing
+Camera Stick Swing
+Aim Context Swing
+HeroAirReactData
+SwingEngage
+MotionBlurBonusMaxSwing
+MotionBlurBonusMaxNonSwing
+HeroJumpConfigCollection
+HeroAirFireData
+HeroPoleSwingConfig
+PoleSwingConfig
+WebZipSetupSwingFail
+SlingDataSwingFail
+SwingFailZipData
+SwingVelocityImpactLoss
+SwingVelocityImpactAngle
+SwingVelocityImpactRange
+Pole Swing Search Config
+HeroJumpOffYankData
+Amount of speed lost to impact to cause swing-velocity to override invalid input direction
+HeroJumpSpeedData
+HeroJumpSpeedDataOverride
+HeroJumpSpeedDataSet
+HeroJumpMotionData
+MaxSwingTargetRange
+MaxSwingTargetRangeY
+MaxSwingTargetAngle
+Max distance to look for melee swing targets
+Max distance to search down for melee swing targets
+Max angle to search for melee swing targets
+Damage amount done to bots we hit while swinging around
+BodySizeSwingKick
+Swing Kick Size
+SwingReleaseGravityData
+Gravity applied on initial downswing when going straight
+Gravity applied on initial downswing while turning
+Gravity applied when holding onto line past initial upswing
+Line tilt angle to apply GravityFallInit on downswing
+Line tilt angle to apply GravityFallTurn on downswing
+Line tilt considered 'straight' for upswing gravity
+Line tilt considered fully tilted for upswing gravity
+SwingJumpBankZone
+SwingJumpRedirectZone
+SwingCameraConfig
+SwingCameraConfigIndoor
+SwingReleaseParameters
+SwingMotionParameters
+SwingInputBoostParameters
+kSwingJump
+kBackSwing
+Swing angle to target zero camera tilt
+Swing angle to target max down tilt
+Gain for blending to target tilt on down swing
+Damp for blending to target tilt on down swing
+Speed for blending to target tilt on down swing
+Swing angle to target max up tilt
+Gain for blending to target tilt on up swing
+Damp for blending to target tilt on up swing
+Speed for blending to target tilt on up swing
+Gain for blending back to non-swing tilt
+Damp for blending back to non-swing tilt
+Speed for blending back to non-swing tilt
+Default pitch used for most non-swing situations
+Angle of swing arc, 0 is horz down, 90 is trough, 180 is horz up
+SwingMomentumDataPoint
+SwingMomentumData
+SwingAngleMin
+SwingAngleMax
+SwingReleaseMomentumDataPoint
+SwingReleaseMomentumData
+SwingSetupStandard
+SwingSetupGround
+SwingSetupIndoor
+DefaultSwingCameraConfigSet
+AccessibilitySwingCameraConfigSet
+SwingCameraConfigTest
+SwingRopeConfig
+BackSwingMomentumData
+Scale on swing-plane-angle when turn COUNTER to swing line side
+Blend gain of roll value when swinging
+Blend damp of roll value when swinging
+Maximum rate-of-change of roll value when swinging
+Blend gain of roll value when NOT swinging
+Blend damp of roll value when NOT swinging
+Maximum rate-of-change of roll value when NOT swinging
+Maximum momentum swinging alone can boost us
+Swing Rope Config
+PostSwingDelay
+PostSwingRampTime
+SwingTweakData
+SwingJumpData
+HeroSwingCameraConfigSet
+SwingTransitionData
+Time after swinging when we freeze fov, z-offset settings
+HeroSwingConfig
+Minimum FOV target boost applied while swinging
+Maximum FOV target boost applied while swinging
+SwingCameraFOVData
+DiveShakeSwingConfig
+SwingCameraDiveData
+SwingCameraSwingTweakData
+SwingCameraZOffsetData
+SwingCameraYOffsetData
+On a back-swing, momentum is capped to this value
+SwingCameraXOffsetData
+SwingCameraSwingJumpData
+Maximum adjustment to follow distance while swinging
+Maximum adjustment to follow distance while swinging from a dive
+Maximum adjustment to FOV while swinging
+Speed at which z-tweak is removed on swing end
+SwingCameraPitchData
+SwingCameraRollData
+Ideal line length of swing line when swinging forward
+Ideal line length of swing line when trying to turn
+Ideal line angle when swing forward
+HeroSwingCameraConfig
+YOffsetDownSwingGain
+YOffsetDownSwingDamp
+YOffsetDownSwingSpeed
+YOffsetUpSwingGain
+YOffsetUpSwingDamp
+HeroRopeConfig
+YOffsetUpSwingSpeed
+SwingData
+SwingReleaseData
+BackSwingData
+Camera-Relative Y-Offset at swing arc angle AngleStart
+Camera-Relative Y-Offset at swing arc trough
+Camera-Relative Y-Offset at swing arc angle AnglePeak
+Gain when blending y-offset on the down-swing
+Damp when blending y-offset on the down-swing
+Maximum rate-of-change when blending y-offset on the down-swing
+Gain when blending y-offset on the up-swing
+Damp when blending y-offset on the up-swing
+Maximum rate-of-change when blending y-offset on the up-swing
+SwingPointParameters
+SwingMotionTurnParams
+Swing terminal velocity when entering with fall speed of FallSpeedThresholdMin
+Swing terminal velocity when entering with fall speed of FallSpeedThresholdMid
+Swing terminal velocity when entering with fall speed of FallSpeedThresholdMax
+Percent of max swing speed that is used for swing speed at zero-input for a given swing
+Percent of speed over baseline max that is kept on a new swing
+SwingMotionSpeedParams
+SwingMotionGravityParams
+1 is clean swing, 0 is true pivot
+SwingReleaseParamSet
+Hero Swing Config
+Swing Tweak Data
+Swing Jump Data
+Hero Swing Camera
+kMeleeSwing
+AddSwingSpeedLevel
+kSwinging
+@SwingIntroFollowAnimEvent
+PoleSwingBeginEvent
+PoleSwingEndEvent
+UseSwingContext
+HeroJumpOffEnemyEvent
+HeroJumpUpToEnemyEvent
+HeroJumpToAirTargetEvent
+HeroAirDodgeStartEvent
+HeroAirDodgeEndEvent
+HeroAirAssistTimeScaleStartEvent
+HeroSwingTransitionValidStartEvent
+HeroSwingTransitionValidEndEvent
+HeroRopeAttachEvent
+HeroRopeReleaseEvent
+HeroRopeImpactEvent
+HeroRopeFiredEvent
+HeroJumpChargeEnd
+HeroSetSwingRumbleActiveEvent
+HeroReswingEvent
+HeroSetSwingReleaseEvent
+HeroReswingEndEvent
+HeroSetSwingRopeHandEvent
+HeroWebSwingFireEvent
+@HeroWebSwingReleaseEvent
+HeroWebSwingJumpEvent
+HeroWebSwingLetGoEvent
+HeroWebSwingLetGoLowEvent
+HeroWebSwingLetGoMediumEvent
+HeroWebSwingLetGoHighEvent
+$HeroWebSwingJumpLowEvent
+HeroWebSwingJumpMediumEvent
+$HeroWebSwingJumpHighEvent
+HeroWebSwingThresholdFallEvent
+HeroWebSwingThresholdLowEvent
+@HeroWebSwingThresholdMedEvent
+HeroWebSwingThresholdHighEvent
+HeroWebSwingFailEvent
+HeroJumpOverLedgeEvent
+SwingIntro_Lt_1H
+SwingIntro_Lt_2H
+SwingIntro_Rt_1H
+SwingIntro_Rt_2H
+MainSwingDriver
+SwingTroughEvent
+SwingAllowFlopEvent
+SwingAllowKickEvent
+SwingReleaseAnim
+SwingJumpAnim
+HeroWebSwingCollideEvent
+EnableSwingEvent
+PlayerSwingStartEvent
+PlayerSwingCompleteEvent
+PlayerSwingApexEvent
+HeroJumpChargeStart
+@VehiclePlayerSwingByEvent
+Speed at which the player was swinging.
+MeleeStartSwingEvent
+OnSwingIsToggle
+OnSwingIsHold
+HeroAirFireDataOverrideArray
+IsSwinging
+SetSwingJump
+SwingingMotion
+SwingingMotionPrius
+SwingPlane
+SwingingMotionHitEvent
+Event for audio or vfx when a SwingingMotion component hits a limit
+kSwingVolumes
+Swing Volume Data
+.?AVBenchmarkSwingKick@@
+.?AVBenchmarkHighSwingSpeedTime@@
+.?AVBenchmarkSwingNearGround@@
+.?AVMeleeSwingPointHunter@@
+.?AVSwingPointHunter@@
+.?AVHeroAirFireDataOverride@Hero@@
+.?AVSwingAttachClue@@
+.?AVSwingAttachCluePrius@@
+.?AVSwingHintVolume@@
+.?AVSwingHintVolumePrius@@
+.?AVHeroAirCombatTracker@Hero@@
+.?AVAimContextSwing@Hero@@
+.?AVHeroRopeManager@Hero@@
+.?AVHeroStatePoleSwing@Hero@@
+.?AVHeroStatePoleSwingLocal@Hero@@
+.?AVHeroStateSwing@Hero@@
+.?AVHeroStateSwingLocal@Hero@@
+.?AVHeroStateSwingRemote@Hero@@
+.?AVHeroStateSwingIntroJump@Hero@@
+.?AVHeroStateSwingIntroJumpLocal@Hero@@
+.?AVHeroStateSwingIntroJumpRemote@Hero@@
+.?AVHeroStateSwingJump@Hero@@
+.?AVHeroStateSwingJumpLocal@Hero@@
+.?AVHeroStateSwingJumpRemote@Hero@@
+.?AVSwingMotionTracker@@
+.?AVHeroSwingSetupVolume@@
+.?AVSwingPushVolume@Hero@@
+.?AVSwingPushVolumePrius@@
+.?AV?$GameplayBuiltVolumeSystem@USwingHintVolumeBuilt@@@@
+.?AVChallengeCounterSwingKickPrius@@
+.?AVChallengeCounterSwingKick@@
+.?AVBenchmarkSwingKickPrius@@
+.?AVBenchmarkSwingNearGroundPrius@@
+.?AVBenchmarkHighSwingSpeedTimePrius@@
+.?AVHeroJumpPullVolumePrius@@
+.?AVHeroRopeManagerPrius@@
+.?AVHeroSwingSetupVolumePrius@@
+.?AVTwitterSwingData@@
+.?AVHeroAirCombatConfigConfigAllocator@@
+.?AVHeroAirCombatConfig@@
+.?AVHeroJumpDragOverrideConfigConfigAllocator@@
+.?AVHeroJumpSpeedData@@
+.?AVHeroJumpSpeedDataOverride@@
+.?AVHeroJumpSpeedDataSet@@
+.?AVHeroJumpMotionData@@
+.?AVHeroJumpDragProfile@@
+.?AVHeroJumpDragOverrideConfig@@
+.?AVHeroJumpMotionDataOverride@@
+.?AVHeroJumpMotionDataSet@@
+.?AVHeroJumpConfigCollection@@
+.?AVHeroPoleSwingConfig@@
+.?AVHeroJumpOffYankData@@
+.?AVHeroSwingFailZipData@@
+.?AVHeroAirReactData@@
+.?AVHeroAirFireData@@
+.?AVHeroRopeConfigConfigAllocator@@
+.?AVSwingSetupConfigConfigAllocator@@
+.?AVHeroSwingConfigConfigAllocator@@
+.?AVHeroSwingCameraConfigConfigAllocator@@
+.?AVHeroRopeConfig@@
+.?AVSwingPointParameters@@
+.?AVSwingMotionTurnParams@@
+.?AVSwingMotionSpeedParams@@
+.?AVSwingMotionGravityParams@@
+.?AVSwingReleaseParamSet@@
+.?AVSwingReleaseGravityData@@
+.?AVSwingJumpBankZone@@
+.?AVSwingJumpRedirectZone@@
+.?AVSwingReleaseParameters@@
+.?AVSwingMotionParameters@@
+.?AVSwingInputBoostParameters@@
+.?AVSwingMomentumDataPoint@@
+.?AVSwingMomentumData@@
+.?AVSwingReleaseMomentumDataPoint@@
+.?AVSwingReleaseMomentumData@@
+.?AVBackSwingMomentumData@@
+.?AVSwingSetupConfig@@
+.?AVHeroSwingCameraConfigSet@@
+.?AVSwingTransitionData@@
+.?AVHeroSwingConfig@@
+.?AVSwingCameraFOVData@@
+.?AVSwingCameraDiveData@@
+.?AVSwingCameraSwingTweakData@@
+.?AVSwingCameraZOffsetData@@
+.?AVSwingCameraYOffsetData@@
+.?AVSwingCameraXOffsetData@@
+.?AVSwingCameraSwingJumpData@@
+.?AVSwingCameraPitchData@@
+.?AVSwingCameraRollData@@
+.?AVHeroSwingCameraConfig@@
+.?AVWAMSetTypeSwing@@
+.?AVSwingIntroFollowAnimEvent@@
+.?AVPoleSwingBeginEvent@@
+.?AVPoleSwingEndEvent@@
+.?AVHeroAirAssistTimeScaleStartEvent@@
+.?AVHeroSwingTransitionValidStartEvent@@
+.?AVHeroSwingTransitionValidEndEvent@@
+.?AVHeroJumpOffEnemyEvent@@
+.?AVHeroJumpUpToEnemyEvent@@
+.?AVHeroJumpToAirTargetEvent@@
+.?AVHeroAirDodgeStartEvent@@
+.?AVHeroAirDodgeEndEvent@@
+.?AVHeroRopeAttachEvent@@
+.?AVHeroRopeReleaseEvent@@
+.?AVHeroRopeImpactEvent@@
+.?AVHeroRopeFiredEvent@@
+.?AVHeroWebSwingFireEvent@@
+.?AVHeroWebSwingReleaseEvent@@
+.?AVHeroWebSwingJumpEvent@@
+.?AVHeroWebSwingLetGoEvent@@
+.?AVHeroWebSwingLetGoLowEvent@@
+.?AVHeroWebSwingLetGoMediumEvent@@
+.?AVHeroWebSwingLetGoHighEvent@@
+.?AVHeroWebSwingJumpLowEvent@@
+.?AVHeroWebSwingJumpMediumEvent@@
+.?AVHeroWebSwingJumpHighEvent@@
+.?AVHeroWebSwingThresholdFallEvent@@
+.?AVHeroWebSwingThresholdLowEvent@@
+.?AVHeroWebSwingThresholdMedEvent@@
+.?AVHeroWebSwingThresholdHighEvent@@
+.?AVHeroWebSwingFailEvent@@
+.?AVHeroWebSwingCollideEvent@@
+.?AVEnableSwingEvent@@
+.?AVPlayerSwingStartEvent@@
+.?AVPlayerSwingCompleteEvent@@
+.?AVPlayerSwingApexEvent@@
+.?AVHeroReswingEvent@@
+.?AVHeroSetSwingReleaseEvent@@
+.?AVHeroReswingEndEvent@@
+.?AVHeroSetSwingRopeHandEvent@@
+.?AVHeroJumpOverLedgeEvent@@
+.?AVSwingTroughEvent@@
+.?AVSwingAllowFlopEvent@@
+.?AVSwingAllowKickEvent@@
+.?AVHeroJumpChargeStart@@
+.?AVHeroJumpChargeEnd@@
+.?AVHeroSetSwingRumbleActiveEvent@@
+.?AVVehiclePlayerSwingByEvent@@
+.?AVMeleeStartSwingEvent@@
+.?AVHeroAirFireDataOverrideArray@@
+.?AVSwingingMotion@@
+.?AVSwingingMotionPrius@@
+.?AVSwingingMotionHitEvent@@

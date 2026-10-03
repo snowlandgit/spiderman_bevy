@@ -1,0 +1,32 @@
+{
+  "PriorityScoreSet": {
+    "PriorityScoreTraverse": {
+      "AngleUpMidValue": 0.8999999761581421,
+      "RangeScoreFar": 0.3499999940395355,
+      "RangeScoreMid": 0.8500000238418579,
+      "WeightRange": 0.75,
+      "AngleDownBias": 2,
+      "AngleUpMin": 8,
+      "RangeIdeal": 25,
+      "RangeMidFar": 30,
+      "AngleDownMin": 3,
+      "AngleSideMax": 12,
+      "AngleUpMid": 20
+    },
+    "PriorityScoreStandard": {
+      "RangeScoreFar": 0.20000000298023224,
+      "RangeScoreMid": 0.800000011920929,
+      "WeightRange": 0.75,
+      "RangeIdeal": 20,
+      "RangeMidFar": 25,
+      "RangeMidNear": 12,
+      "AngleDownBias": 2,
+      "AngleDownMax": 40,
+      "AngleSideMax": 12
+    },
+    "CommonScoreData": {
+      "PriorityBonusMax": 1.149999976158142
+    }
+  },
+  "ZipToPerchSetup": "configs/hero/hero_ziptoperchsetup_standard.config"
+}

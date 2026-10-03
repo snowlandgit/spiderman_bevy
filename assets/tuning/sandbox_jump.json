@@ -1,0 +1,12 @@
+{
+  "provenance": "Sandbox integration and jump velocities; original charge-jump clips are used. Native charge-jump runtime tuning has not been recovered.",
+  "full_charge_seconds": 1.0,
+  "tap_seconds": 0.16,
+  "gravity": 23.0,
+  "normal_up_speed": 21.0,
+  "high_up_speed": 34.0,
+  "long_up_speed": 24.0,
+  "long_forward_speed": 26.0,
+  "moving_threshold": 3.0,
+  "charge_pose_seconds": 0.0
+}

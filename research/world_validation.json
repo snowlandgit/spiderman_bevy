@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "buildings": 7,
+  "cars": 56,
+  "car_scale": 1,
+  "units": "meters",
+  "assets_checked": 12,
+  "referenced_textures_checked": 72,
+  "facade_floor_height": 4,
+  "building_layout_from_original_game": false
+}

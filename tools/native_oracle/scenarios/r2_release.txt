@@ -1,0 +1,10 @@
+# Let go of the swing button past the bottom, no stick
+dt 0.0166667
+frames 240
+pos 0 50 0
+vel 0 0 18
+yaw 0
+swing 0 1 70 30 5 70 30
+r2 0 1
+r2 1.4 0
+cam follow 3 -12

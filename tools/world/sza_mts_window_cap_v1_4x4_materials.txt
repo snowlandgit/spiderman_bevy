@@ -1,0 +1,17 @@
+LookGroups:
+0 5
+
+Materials used:
+3	material\environment\template\architecture\gbl_arch_Window_Mtg_V2_4x4_01\gbl_arch_Window_Mts_V2_4x4_01.material
+0	material\environment\template\architecture\gbl_arch_concrete_01\jn_gbl_arch_concrete_01.material
+1	material\environment\global\procedural\gbl_proc_Stain_Decal_Random_01\jn_gbl_proc_stain_trim_decal_random_01.material
+2	material\environment\template\architecture\gbl_arch_brass_trim_01\mo_gbl_arch_brushed_metal_trim_01.material
+4	material\environment\template\architecture\gbl_arch_concrete_trim_02\sza_gbl_arch_concrete_trim_02_dirty.material
+
+Slots:
+===============================================================
+0	material\environment\template\architecture\gbl_arch_concrete_01\jn_gbl_arch_concrete_01.material
+1	material\environment\global\procedural\gbl_proc_Stain_Decal_Random_01\jn_gbl_proc_stain_trim_decal_random_01.material
+2	material\environment\template\architecture\gbl_arch_brass_trim_01\mo_gbl_arch_brushed_metal_trim_01.material
+3	material\environment\template\architecture\gbl_arch_Window_Mtg_V2_4x4_01\gbl_arch_Window_Mts_V2_4x4_01.material
+4	material\environment\template\architecture\gbl_arch_concrete_trim_02\sza_gbl_arch_concrete_trim_02_dirty.material

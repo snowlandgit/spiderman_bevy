@@ -1,0 +1,45 @@
+LookGroups:
+0 18
+0 13
+13 5
+
+Materials used:
+13	materials\hrm_bdy_raj_body\hero_spiderman_body_modcolor.material
+10	materials\hrm_bdy_raj_body\hero_spiderman_glove_modcolor.material
+14	materials\hrm_bdy_raj_body\hero_spiderman_leg.material
+7	material\characters\hero\hero_Spiderman_Newgauntlet\hero_Spiderman_Newgauntlet.material
+4	materials\hrm_bdy_raj_body\hero_spiderman_shoe.material
+8	materials\hrm_bdy_raj_body\hero_spiderman_spider_sign.material
+9	material\characters\hero\hero_spiderman_shooter\hero_spiderman_webshooter.material
+3	material\characters\hero\hero_spiderman_shooter\hero_spiderman_webshooter_glass.material
+1	materials\hrm_bdy_raj_body\reviewasset_spiderman_leg_modcolor.material
+16	materials\hrm_bdy_raj_body\reviewasset_spiderman_shoe_modcolor.material
+2	materials\hrm_bdya_raj_clothes_sneakers\spiderman_gauntlet_mat.material
+17	materials\hrm_bdya_raj_clothes_sneakers\spiderman_whitelegs_mat.material
+6	materials\hrm_bdya_raj_clothes_sneakers\spiderman_whiteshoes_mat.material
+11	materials\ceg_test_chrome_01\hero_spiderman_eye_base.material
+15	materials\HRM_BDY_raj_body\hero_spiderman_eye_lense.material
+12	materials\hrm_bdy_raj_body\hero_spiderman_eyeshutters.material
+5	materials\hrm_bdy_raj_body\hero_spiderman_head_eyeframe.material
+0	materials\hrm_bdy_raj_body\hero_spiderman_head_newweb.material
+
+Slots:
+===============================================================
+0	materials\hrm_bdy_raj_body\hero_spiderman_head_newweb.material
+1	materials\hrm_bdy_raj_body\reviewasset_spiderman_leg_modcolor.material
+2	materials\hrm_bdya_raj_clothes_sneakers\spiderman_gauntlet_mat.material
+3	material\characters\hero\hero_spiderman_shooter\hero_spiderman_webshooter_glass.material
+4	materials\hrm_bdy_raj_body\hero_spiderman_shoe.material
+5	materials\hrm_bdy_raj_body\hero_spiderman_head_eyeframe.material
+6	materials\hrm_bdya_raj_clothes_sneakers\spiderman_whiteshoes_mat.material
+7	material\characters\hero\hero_Spiderman_Newgauntlet\hero_Spiderman_Newgauntlet.material
+8	materials\hrm_bdy_raj_body\hero_spiderman_spider_sign.material
+9	material\characters\hero\hero_spiderman_shooter\hero_spiderman_webshooter.material
+10	materials\hrm_bdy_raj_body\hero_spiderman_glove_modcolor.material
+11	materials\ceg_test_chrome_01\hero_spiderman_eye_base.material
+12	materials\hrm_bdy_raj_body\hero_spiderman_eyeshutters.material
+13	materials\hrm_bdy_raj_body\hero_spiderman_body_modcolor.material
+14	materials\hrm_bdy_raj_body\hero_spiderman_leg.material
+15	materials\HRM_BDY_raj_body\hero_spiderman_eye_lense.material
+16	materials\hrm_bdy_raj_body\reviewasset_spiderman_shoe_modcolor.material
+17	materials\hrm_bdya_raj_clothes_sneakers\spiderman_whitelegs_mat.material

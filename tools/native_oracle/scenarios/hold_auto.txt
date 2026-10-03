@@ -1,0 +1,10 @@
+# Held to the top: no jump, the swing lets go by itself
+dt 0.0166667
+frames 300
+pos 0 64 0
+vel 0 -2 24
+yaw 0
+swing 0 1 82 36 5 82 36
+stick 0 0 1
+r2 0 1
+cam follow 3 -12

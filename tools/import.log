@@ -1,0 +1,13 @@
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+Traceback (most recent call last):
+Error: hero_spiderman_body.model doesn't contain a complete game model. Choose a different original .model file. Missing internal data: ModelSubsetGeomData.
+  File "H:\SteamLibrary\steamapps\common\Marvel's Spider-Man Remastered\spiderman_bevy\tools\import_probe.py", line 9, in <module>
+    result=bpy.ops.import_scene.engine_model(filepath=str(root/'assets/source/characters/hero/hero_spiderman/hero_spiderman_body.model'),import_all_lods=False,import_shape_keys=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\SteamLibrary\steamapps\common\Marvel's Spider-Man Remastered\spiderman_bevy\tools\blender-5.0.1-windows-x64\5.0\scripts\modules\bpy\ops.py", line 109, in __call__
+    ret = _op_call(self.idname_py(), kw)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Error: hero_spiderman_body.model doesn't contain a complete game model. Choose a different original .model file. Missing internal data: ModelSubsetGeomData.
+
+
+Blender quit

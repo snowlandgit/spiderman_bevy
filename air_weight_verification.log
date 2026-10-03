@@ -1,0 +1,231 @@
+   Compiling spiderman_bevy v0.1.0 (H:\SteamLibrary\steamapps\common\Marvel's Spider-Man Remastered\spiderman_bevy)
+    Finished `dev` profile [optimized + debuginfo] target(s) in 18.05s
+Ready: Play.bat
+    Finished `test` profile [optimized + debuginfo] target(s) in 0.46s
+     Running unittests src\main.rs (target\debug\deps\spiderman_bevy-ab03819819e09504.exe)
+
+running 64 tests
+test animation::tests::charged_ground_and_air_poses_use_original_directional_clips ... ok
+test animation::tests::main_clip_sampling_stays_bounded_when_arc_phase_changes_abruptly ... ok
+test animation::tests::release_clip_finishes_after_the_physics_apex ... ok
+test animation::tests::blend_interruption_preserves_weights_and_outgoing_motion ... ok
+test camera::tests::automatic_turning_and_collision_recovery_are_rate_limited ... ok
+test camera::tests::rising_and_falling_do_not_whip_camera_pitch ... ok
+test camera::tests::constant_speed_has_no_focus_lag_and_teleport_recovers ... ok
+test animation::tests::swing_uses_the_native_traversal_clip_and_matching_hand ... ok
+test animation::tests::main_swing_brings_legs_forward_without_skipping_to_an_advanced_pose ... ok
+test animation::tests::intros_are_not_looped_or_cut_at_the_old_short_gate ... ok
+test native_swing::tests::native_gravity_blend_reference_cases ... ok
+test jump::tests::holding_after_an_air_jump_does_not_auto_charge_on_landing ... ok
+test jump::tests::interrupted_charge_cancels_without_a_launch ... ok
+test native_swing::tests::native_gravity_reference_cases ... ok
+test native_swing::tests::native_pivot_and_terminal_reference_cases ... ok
+test physics::tests::arc_is_consistent_at_different_fixed_steps ... ok
+test physics::tests::attachment_has_no_velocity_impulse ... ok
+test jump::tests::tap_retains_normal_jump_and_full_charge_gains_height ... ok
+test physics::tests::arena_has_seven_towers_and_surface_anchors ... ok
+test physics::tests::available_lead_wins_over_a_surface_about_to_be_passed ... ok
+test physics::tests::ascending_swing_has_weight_instead_of_low_gravity_hang ... ok
+test physics::tests::buildings_behind_travel_do_not_create_wrong_way_webs ... ok
+test jump::tests::moving_charge_travels_farther_than_standing_charge ... ok
+test physics::tests::automatic_arc_releases_with_forward_momentum_and_bounded_climb ... ok
+test physics::tests::falling_from_rest_can_build_horizontal_movement ... ok
+test physics::tests::forward_assist_does_not_add_energy_on_the_upstroke ... ok
+test jump::tests::held_swing_does_not_cancel_a_charged_jump_ascent ... ok
+test physics::tests::forward_surfaces_allow_a_long_swing_radius ... ok
+test physics::tests::dive_releases_a_held_line ... ok
+test physics::tests::gain_caps_do_not_discard_existing_momentum ... ok
+test physics::tests::low_entry_and_near_roof_find_reachable_heights ... ok
+test physics::tests::ordinary_release_has_a_shorter_apex_and_heavier_fall ... ok
+test physics::tests::high_speed_collisions_do_not_enter_towers ... ok
+test physics::tests::near_end_of_side_facade_still_accepts_a_forward_web ... ok
+test physics::tests::moving_attachment_ignores_camera_and_opposite_steering ... ok
+test physics::tests::level_entry_keeps_height_without_a_speed_impulse ... ok
+test physics::tests::opposite_air_input_turns_through_a_continuous_arc ... ok
+test physics::tests::press_during_release_cooldown_retries_while_rising ... ok
+test physics::tests::release_is_ballistic_and_jump_boost_is_additive ... ok
+test physics::tests::ordinary_release_returns_to_fall_promptly ... ok
+test presentation::tests::release_timers_reset_immediately_and_then_advance_smoothly ... ok
+test presentation::tests::constant_travel_is_uniform_across_mismatched_render_and_physics_rates ... ok
+test presentation::tests::resets_and_paused_ticks_do_not_show_old_motion ... ok
+test physics::tests::sideways_input_redirects_fast_falling_momentum_without_lift ... ok
+test physics::tests::rope_constraint_holds_and_release_preserves_momentum ... ok
+test physics::tests::sideways_and_reverse_movement_choose_ahead_surfaces ... ok
+test zip::tests::native_zip_caps_preserve_existing_fast_momentum ... ok
+test physics::tests::slow_or_vertical_entry_uses_movement_then_heading ... ok
+test physics::tests::wall_run_stays_in_contact_and_wall_jump_detaches ... ok
+test physics::tests::swing_crosses_the_trough_before_automatic_release ... ok
+test zip::tests::forward_zip_does_not_steer_into_the_attachment ... ok
+test zip::tests::zip_webs_attach_to_visible_tower_faces ... ok
+test zip::tests::point_zip_stops_on_the_selected_roof ... ok
+test physics::tests::upward_entry_preserves_ascent_until_the_web_catches ... ok
+test zip::tests::grounded_zip_finishes_the_shot_before_launching ... ok
+test physics::tests::web_carries_a_fast_swing_past_the_old_release_angle ... ok
+test zip::tests::zip_interrupts_swing_and_respects_repeat_lockout ... ok
+test physics::tests::forward_input_keeps_the_arc_in_the_street ... ok
+test zip::tests::zip_from_dive_can_finish_with_dive_button_held ... ok
+test physics::tests::holding_swing_selects_successive_lines ... ok
+test zip::tests::zip_without_surfaces_does_not_create_floating_webs ... ok
+test physics::tests::consecutive_swings_keep_height_with_and_without_forward_input ... ok
+test physics::tests::real_city_new_shots_remain_forward_after_the_entry_step ... ok
+test physics::tests::long_traversal_is_finite_and_contacts_floor ... ok
+
+test result: ok. 64 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+held: swings 4 -> 7, lateral 19.31 -> 0.03 m, peak speed 56.69 -> 28.22 m/s
+normal_release: swings 1 -> 1, lateral 10.89 -> 0.02 m, peak speed 44.24 -> 55.51 m/s
+jump_release: swings 1 -> 1, lateral 17.62 -> 0.02 m, peak speed 50.29 -> 61.35 m/s
+dive_entry: swings 5 -> 5, lateral 17.60 -> 3.35 m, peak speed 57.08 -> 80.00 m/s
+2026-10-03T15:09:29.174594Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b15
+2026-10-03T15:09:29.174671Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b8
+2026-10-03T15:09:29.174677Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b16
+2026-10-03T15:09:29.174679Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b9
+2026-10-03T15:09:29.174682Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b13
+2026-10-03T15:09:29.174684Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b11
+2026-10-03T15:09:29.174688Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b10
+2026-10-03T15:09:29.174690Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b14
+2026-10-03T15:09:29.174692Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b12
+2026-10-03T15:09:29.174994Z  WARN gilrs::gamepad: No mapping found for UUID 00000000-0000-0000-0000-000000000000
+	Default mapping will be used.
+2026-10-03T15:09:54.793430Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b15
+2026-10-03T15:09:54.793483Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b8
+2026-10-03T15:09:54.793488Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b16
+2026-10-03T15:09:54.793490Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b9
+2026-10-03T15:09:54.793493Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b13
+2026-10-03T15:09:54.793495Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b11
+2026-10-03T15:09:54.793498Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b10
+2026-10-03T15:09:54.793500Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b14
+2026-10-03T15:09:54.793503Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b12
+2026-10-03T15:09:54.793879Z  WARN gilrs::gamepad: No mapping found for UUID 00000000-0000-0000-0000-000000000000
+	Default mapping will be used.
+SCENE_LOADING character=true {"expected":63,"models":[{"path":"world/tower_1.glb","state":"Some((Loaded, Loaded, Loaded))"},{"path":"world/tower_2.glb","state":"Some((Loaded, Loaded, Loaded))"},{"path":"world/tower_3.glb","state":"Some((Loaded, Loaded, Loaded))"},{"path":"world/tower_4.glb","state":"Some((Loaded, Loaded, Loaded))"},{"path":"world/tower_5.glb","state":"Some((Loaded, Loaded, Loaded))"},{"path":"world/tower_6.glb","state":"Some((Loaded, Loaded, Loaded))"},{"path":"world/tower_7.glb","state":"Some((Loaded, Loaded, Loaded))"},{"path":"world/sedan_blue.glb","state":"Some((Loaded, Loaded, Loaded))"},{"path":"world/sedan_red.glb","state":"Some((Loaded, Loaded, Loaded))"},{"path":"world/suv.glb","state":"Some((Loaded, Loaded, Loaded))"},{"path":"world/taxi.glb","state":"Some((Loaded, Loaded, Loaded))"},{"path":"world/sedan_silver.glb","state":"Some((Loaded, Loaded, Loaded))"}],"spawned":63}
+2026-10-03T15:10:20.538180Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b15
+2026-10-03T15:10:20.538245Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b8
+2026-10-03T15:10:20.538251Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b16
+2026-10-03T15:10:20.538253Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b9
+2026-10-03T15:10:20.538256Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b13
+2026-10-03T15:10:20.538258Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b11
+2026-10-03T15:10:20.538262Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b10
+2026-10-03T15:10:20.538265Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b14
+2026-10-03T15:10:20.538267Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b12
+2026-10-03T15:10:20.538473Z  WARN gilrs::gamepad: No mapping found for UUID 00000000-0000-0000-0000-000000000000
+	Default mapping will be used.
+2026-10-03T15:10:45.018388Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b15
+2026-10-03T15:10:45.018462Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b8
+2026-10-03T15:10:45.018467Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b16
+2026-10-03T15:10:45.018469Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b9
+2026-10-03T15:10:45.018472Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b13
+2026-10-03T15:10:45.018476Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b11
+2026-10-03T15:10:45.018479Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b10
+2026-10-03T15:10:45.018481Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b14
+2026-10-03T15:10:45.018483Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b12
+2026-10-03T15:10:45.018663Z  WARN gilrs::gamepad: No mapping found for UUID 00000000-0000-0000-0000-000000000000
+	Default mapping will be used.
+{
+  "asset_validation_passed": true,
+  "meshes": 18,
+  "joints": 212,
+  "animations": 68,
+  "native_bind_max_identity_error": 3.708425734666183e-05,
+  "source_files_checked": 431,
+  "captures": {
+    "swing": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 32047
+    },
+    "swing_main": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 32622
+    },
+    "release": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 31595
+    },
+    "traversal": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 30132
+    },
+    "zip_fire": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 32580
+    },
+    "zip_flight": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 31926
+    },
+    "roof_zip": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 34485
+    },
+    "jump_charge": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 36130
+    },
+    "high_jump": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 34021
+    },
+    "long_jump": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 34048
+    }
+  },
+  "one_to_one_fidelity_verified": false,
+  "known_gap": "Native traversal, animation blending, IK and layered materials are not fully ported."
+}
+POSE_MATCH web_swing_fwd_rh_spiderman 1.4333049169423795e-05 1.0049623485628032e-05
+POSE_MATCH web_swing_intro_fromairaggro_fwd_rh_spiderman 1.4842586952168446e-05 6.6965048935561195e-06
+POSE_MATCH web_zip_fwd_2hand_spiderman 1.0920856105101073e-05 8.066723405990366e-06
+POSE_MATCH web_zip_fwd_fastfall_2h_spiderman 1.0949083229849776e-05 8.548025036362064e-06
+POSE_MATCH web_zip_fwd_skydive_2h_spiderman 1.278672724702723e-05 9.316934970172271e-06
+POSE_MATCH web_zip_attach_short_fwd_spiderman 9.119810899349545e-06 4.991096608569755e-06
+POSE_MATCH stand_jump_spiderman 6.997656912810513e-06 5.22173781122946e-06
+POSE_MATCH stand_chargejump_up_spiderman 1.678743998567711e-05 1.9551342921138866e-05
+POSE_MATCH stand_chargejump_fwd_spiderman 8.057517304593809e-06 6.546399842644427e-06
+POSE_MATCH stand_sprint_high_jump_fwd_spiderman 7.3904887339937275e-06 6.619728467506923e-06
+POSE_MATCH web_swing_release_mid1_spiderman 1.016834173850345e-05 6.77469363829523e-06
+POSE_MATCH web_swing_jump_high_spiderman 1.2740965339874677e-05 8.063447103807293e-06
+POSE_MATCH wall_run_up_intro_spiderman 4.454318733082552e-06 2.5662544133399084e-06
+ANIMATION_POSES_VERIFIED
+{
+  "passed": true,
+  "buildings": 7,
+  "cars": 56,
+  "car_scale": 1,
+  "units": "meters",
+  "assets_checked": 12,
+  "referenced_textures_checked": 72,
+  "facade_floor_height": 4,
+  "building_layout_from_original_game": false
+}
+Recorded verified build and character hashes.

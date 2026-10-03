@@ -1,0 +1,88 @@
+   Compiling spiderman_bevy v0.1.0 (H:\SteamLibrary\steamapps\common\Marvel's Spider-Man Remastered\spiderman_bevy)
+    Finished `test` profile [optimized + debuginfo] target(s) in 9.03s
+     Running unittests src\main.rs (spiderman_bevy\target\debug\deps\spiderman_bevy-ab03819819e09504.exe)
+
+running 60 tests
+test animation::tests::charged_ground_and_air_poses_use_original_directional_clips ... ok
+test animation::tests::release_clip_finishes_after_the_physics_apex ... ok
+test animation::tests::main_clip_sampling_stays_bounded_when_arc_phase_changes_abruptly ... ok
+test camera::tests::automatic_turning_and_collision_recovery_are_rate_limited ... ok
+test camera::tests::rising_and_falling_do_not_whip_camera_pitch ... ok
+test animation::tests::intros_are_not_looped_or_cut_at_the_old_short_gate ... ok
+test animation::tests::blend_interruption_preserves_weights_and_outgoing_motion ... ok
+test native_swing::tests::native_gravity_blend_reference_cases ... ok
+test animation::tests::main_swing_brings_legs_forward_without_skipping_to_an_advanced_pose ... ok
+test animation::tests::swing_uses_the_native_traversal_clip_and_matching_hand ... ok
+test camera::tests::constant_speed_has_no_focus_lag_and_teleport_recovers ... ok
+test native_swing::tests::native_pivot_and_terminal_reference_cases ... ok
+test jump::tests::interrupted_charge_cancels_without_a_launch ... ok
+test jump::tests::holding_after_an_air_jump_does_not_auto_charge_on_landing ... ok
+ASCENT firm_vy=0.000012561679 native_only_vy=14.227595
+test native_swing::tests::native_gravity_reference_cases ... ok
+test physics::tests::available_lead_wins_over_a_surface_about_to_be_passed ... ok
+test physics::tests::attachment_has_no_velocity_impulse ... ok
+test physics::tests::ascending_swing_has_weight_instead_of_low_gravity_hang ... ok
+test physics::tests::buildings_behind_travel_do_not_create_wrong_way_webs ... ok
+test physics::tests::arena_has_seven_towers_and_surface_anchors ... ok
+LONG radius=42.83518 actual_length=45.57366
+ARC release_height=23.540653 velocity=Vec3(-0.007260017, 9.010203, -11.901978) phase=0.7112965 peak=23.540653
+test jump::tests::tap_retains_normal_jump_and_full_charge_gains_height ... ok
+test physics::tests::forward_surfaces_allow_a_long_swing_radius ... ok
+test physics::tests::automatic_arc_releases_with_forward_momentum_and_bounded_climb ... ok
+test physics::tests::forward_assist_does_not_add_energy_on_the_upstroke ... ok
+test physics::tests::dive_releases_a_held_line ... ok
+CHAIN height=18 driven=false swing=1 entry=18 release=19.384827 velocity=Vec3(-4.85806, 5.2499814, -10.89425) radius=40.514645
+test jump::tests::held_swing_does_not_cancel_a_charged_jump_ascent ... ok
+test physics::tests::arc_is_consistent_at_different_fixed_steps ... ok
+test physics::tests::high_speed_collisions_do_not_enter_towers ... ok
+test physics::tests::gain_caps_do_not_discard_existing_momentum ... ok
+test jump::tests::moving_charge_travels_farther_than_standing_charge ... ok
+ENTRY speed=16 initial_vy=-0.267 trough_drop=3.251
+CHAIN height=18 driven=false swing=2 entry=19.793156 release=19.816565 velocity=Vec3(-11.844922, 2.1998224, 0.8494889) radius=38.05439
+test physics::tests::low_entry_and_near_roof_find_reachable_heights ... ok
+ENTRY speed=24 initial_vy=-0.267 trough_drop=3.925
+test physics::tests::near_end_of_side_facade_still_accepts_a_forward_web ... ok
+ENTRY speed=32 initial_vy=-0.267 trough_drop=3.231
+test physics::tests::ordinary_release_returns_to_fall_promptly ... ok
+CHAIN height=40 driven=false swing=1 entry=40 release=45.973167 velocity=Vec3(-7.5243816, 15.895905, -9.243557) radius=17.854282
+test physics::tests::moving_attachment_ignores_camera_and_opposite_steering ... ok
+test physics::tests::press_during_release_cooldown_retries_while_rising ... ok
+test physics::tests::level_entry_keeps_height_without_a_speed_impulse ... ok
+test physics::tests::release_is_ballistic_and_jump_boost_is_additive ... ok
+test physics::tests::rope_constraint_holds_and_release_preserves_momentum ... ok
+test presentation::tests::release_timers_reset_immediately_and_then_advance_smoothly ... ok
+CHAIN height=40 driven=false swing=2 entry=49.854458 release=49.887325 velocity=Vec3(-6.999186, 1.9995396, 9.342836) radius=7.898122
+test presentation::tests::constant_travel_is_uniform_across_mismatched_render_and_physics_rates ... ok
+test presentation::tests::resets_and_paused_ticks_do_not_show_old_motion ... ok
+test physics::tests::sideways_and_reverse_movement_choose_ahead_surfaces ... ok
+test physics::tests::slow_or_vertical_entry_uses_movement_then_heading ... ok
+test zip::tests::native_zip_caps_preserve_existing_fast_momentum ... ok
+test physics::tests::wall_run_stays_in_contact_and_wall_jump_detaches ... okCHAIN height=40 driven=false swing=3 entry=49.830593 release=49.91524 velocity=Vec3(5.894653, 6.388242, 7.9251814) radius=8.443479
+
+test zip::tests::zip_webs_attach_to_visible_tower_faces ... ok
+test physics::tests::swing_crosses_the_trough_before_automatic_release ... ok
+CHAIN height=40 driven=false swing=4 entry=50.526222 release=50.60593 velocity=Vec3(3.9518483, 8.235653, 3.2263842) radius=10.272203
+test physics::tests::upward_entry_preserves_ascent_until_the_web_catches ... ok
+test zip::tests::forward_zip_does_not_steer_into_the_attachment ... ok
+test zip::tests::grounded_zip_finishes_the_shot_before_launching ... ok
+CHAIN height=18 driven=true swing=1 entry=18 release=23.540653 velocity=Vec3(-0.007260017, 9.010203, -11.901978) radius=41.3146
+test physics::tests::forward_input_keeps_the_arc_in_the_street ... ok
+test physics::tests::web_carries_a_fast_swing_past_the_old_release_angle ... ok
+test zip::tests::point_zip_stops_on_the_selected_roof ... ok
+test physics::tests::holding_swing_selects_successive_lines ... ok
+test zip::tests::zip_without_surfaces_does_not_create_floating_webs ... ok
+test zip::tests::zip_interrupts_swing_and_respects_repeat_lockout ... ok
+test zip::tests::zip_from_dive_can_finish_with_dive_button_held ... ok
+CHAIN height=18 driven=true swing=2 entry=24.771322 release=29.85131 velocity=Vec3(0.007194648, 8.495222, -11.946954) radius=45.73701
+CHAIN height=18 driven=true swing=3 entry=30.94337 release=33.27359 velocity=Vec3(-0.015435252, 7.9092526, -11.992817) radius=23.26055
+CHAIN height=18 driven=true swing=4 entry=34.217567 release=38.557755 velocity=Vec3(0.011085753, 10.187794, -11.996912) radius=34.12111
+CHAIN height=40 driven=true swing=1 entry=40 release=44.149586 velocity=Vec3(-0.016021233, 19.383308, -11.978037) radius=23.174448
+CHAIN height=40 driven=true swing=2 entry=49.93888 release=53.269722 velocity=Vec3(0.01347909, 11.001813, -11.953765) radius=26.103361
+CHAIN height=40 driven=true swing=3 entry=55.11369 release=60.009304 velocity=Vec3(-0.008197091, 9.674766, -11.878603) radius=36.688457
+CHAIN height=40 driven=true swing=4 entry=61.430134 release=61.5504 velocity=Vec3(5.855271, 11.127774, -3.7421575) radius=7.654436
+test physics::tests::consecutive_swings_keep_height_with_and_without_forward_input ... ok
+test physics::tests::real_city_new_shots_remain_forward_after_the_entry_step ... ok
+test physics::tests::long_traversal_is_finite_and_contacts_floor ... ok
+
+test result: ok. 60 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+

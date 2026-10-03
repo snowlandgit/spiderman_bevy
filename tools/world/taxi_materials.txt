@@ -1,0 +1,57 @@
+LookGroups:
+0 41
+
+Materials used:
+6	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_ext_01.material
+5	material\environment\global\prop\gbl_prop_license_plate_random_01\jn_gbl_prop_license_plate_random_01.material
+6	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_ext_01.material
+0	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_glass_01.material
+4	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_lights_01.material
+8	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_uc_01.material
+7	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_wheel_01.material
+6	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_ext_01.material
+0	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_glass_01.material
+4	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_lights_01.material
+8	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_uc_01.material
+7	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_wheel_01.material
+6	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_ext_01.material
+0	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_glass_01.material
+2	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_int_01.material
+6	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_ext_01.material
+0	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_glass_01.material
+2	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_int_01.material
+6	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_ext_01.material
+0	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_glass_01.material
+5	material\environment\global\prop\gbl_prop_license_plate_random_01\jn_gbl_prop_license_plate_random_01.material
+6	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_ext_01.material
+0	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_glass_01.material
+4	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_lights_01.material
+7	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_wheel_01.material
+6	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_ext_01.material
+0	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_glass_01.material
+4	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_lights_01.material
+6	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_ext_01.material
+0	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_glass_01.material
+4	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_lights_01.material
+7	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_wheel_01.material
+6	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_ext_01.material
+4	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_lights_01.material
+9	material\vehicle\veh_jn_taxi_random_advert\veh_jn_taxi_random_advert.material
+6	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_ext_01.material
+0	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_glass_01.material
+1	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_eng_01.material
+6	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_ext_01.material
+2	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_int_01.material
+8	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_uc_01.material
+
+Slots:
+===============================================================
+0	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_glass_01.material
+1	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_eng_01.material
+2	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_int_01.material
+4	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_lights_01.material
+5	material\environment\global\prop\gbl_prop_license_plate_random_01\jn_gbl_prop_license_plate_random_01.material
+6	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_ext_01.material
+7	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_wheel_01.material
+8	environment\outsourcing\dhruva\manmade\os_hybridtaxi_01\os_hybridtaxi_uc_01.material
+9	material\vehicle\veh_jn_taxi_random_advert\veh_jn_taxi_random_advert.material

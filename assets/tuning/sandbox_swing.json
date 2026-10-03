@@ -1,0 +1,4 @@
+{
+  "provenance": "The sandbox's own air weight for zips and the charged jumps' ascent. The swing, swing jump and fall are the game's (crates/sm_traversal); the authored swing floors and targets that were here are gone (research/NATIVE_TRAVERSAL.md).",
+  "release_gravity_min": 44.0
+}

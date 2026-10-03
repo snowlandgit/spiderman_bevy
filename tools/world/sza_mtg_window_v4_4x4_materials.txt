@@ -1,0 +1,13 @@
+LookGroups:
+0 3
+
+Materials used:
+0	material\environment\template\architecture\gbl_arch_Window_Mtg_V2_4x4_01\gbl_arch_Window_Mtg_V4_4x4_01.material
+1	material\environment\template\architecture\gbl_arch_brass_trim_01\sza_gbl_arch_brushed_metal_tile_dark.material
+2	material\environment\template\architecture\gbl_arch_concrete_trim_02\sza_gbl_arch_metal_trim_01_red.material
+
+Slots:
+===============================================================
+0	material\environment\template\architecture\gbl_arch_Window_Mtg_V2_4x4_01\gbl_arch_Window_Mtg_V4_4x4_01.material
+1	material\environment\template\architecture\gbl_arch_brass_trim_01\sza_gbl_arch_brushed_metal_tile_dark.material
+2	material\environment\template\architecture\gbl_arch_concrete_trim_02\sza_gbl_arch_metal_trim_01_red.material

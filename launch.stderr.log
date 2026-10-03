@@ -1,0 +1,9 @@
+2026-10-03T00:23:51.050468Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b15
+2026-10-03T00:23:51.056076Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b8
+2026-10-03T00:23:51.057031Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b16
+2026-10-03T00:23:51.057923Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b9
+2026-10-03T00:23:51.058745Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b13
+2026-10-03T00:23:51.059629Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b11
+2026-10-03T00:23:51.059871Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b10
+2026-10-03T00:23:51.059972Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b14
+2026-10-03T00:23:51.060095Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b12

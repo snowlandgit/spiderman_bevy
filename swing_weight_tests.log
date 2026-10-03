@@ -1,0 +1,58 @@
+   Compiling spiderman_bevy v0.1.0 (H:\SteamLibrary\steamapps\common\Marvel's Spider-Man Remastered\spiderman_bevy)
+    Finished `test` profile [optimized + debuginfo] target(s) in 8.55s
+     Running unittests src\main.rs (spiderman_bevy\target\debug\deps\spiderman_bevy-ab03819819e09504.exe)
+
+running 46 tests
+test animation::tests::charged_ground_and_air_poses_use_original_directional_clips ... ok
+test camera::tests::automatic_turning_and_collision_recovery_are_rate_limited ... ok
+test camera::tests::constant_speed_has_no_focus_lag_and_teleport_recovers ... ok
+test animation::tests::main_swing_brings_legs_forward_without_skipping_to_an_advanced_pose ... ok
+test animation::tests::release_clip_finishes_after_the_physics_apex ... ok
+test animation::tests::blend_interruption_preserves_weights_and_outgoing_motion ... ok
+test animation::tests::swing_uses_the_native_traversal_clip_and_matching_hand ... ok
+test camera::tests::rising_and_falling_do_not_whip_camera_pitch ... ok
+test animation::tests::main_clip_sampling_stays_bounded_when_arc_phase_changes_abruptly ... ok
+test animation::tests::intros_are_not_looped_or_cut_at_the_old_short_gate ... ok
+test native_swing::tests::native_gravity_blend_reference_cases ... ok
+test jump::tests::holding_after_an_air_jump_does_not_auto_charge_on_landing ... ok
+test native_swing::tests::native_pivot_and_terminal_reference_cases ... ok
+test native_swing::tests::native_gravity_reference_cases ... ok
+ASCENT firm_vy=4.9999704 native_only_vy=14.227595
+test jump::tests::interrupted_charge_cancels_without_a_launch ... ok
+test physics::tests::attachment_has_no_velocity_impulse ... ok
+test physics::tests::arena_has_seven_towers_and_surface_anchors ... ok
+test physics::tests::ascending_swing_has_weight_instead_of_low_gravity_hang ... ok
+test physics::tests::dive_releases_a_held_line ... ok
+test physics::tests::gain_caps_do_not_discard_existing_momentum ... ok
+test physics::tests::high_speed_collisions_do_not_enter_towers ... ok
+test physics::tests::rope_constraint_holds_and_release_preserves_momentum ... ok
+test presentation::tests::release_timers_reset_immediately_and_then_advance_smoothly ... ok
+test presentation::tests::constant_travel_is_uniform_across_mismatched_render_and_physics_rates ... ok
+ENTRY speed=16 initial_vy=-0.121 trough_drop=3.769
+ENTRY speed=24 initial_vy=-0.121 trough_drop=3.238
+test physics::tests::ordinary_release_returns_to_fall_promptly ... ok
+ENTRY speed=32 initial_vy=-0.121 trough_drop=1.645
+test presentation::tests::resets_and_paused_ticks_do_not_show_old_motion ... ok
+test physics::tests::release_is_ballistic_and_jump_boost_is_additive ... ok
+test physics::tests::arc_is_consistent_at_different_fixed_steps ... ok
+test jump::tests::held_swing_does_not_cancel_a_charged_jump_ascent ... ok
+test physics::tests::level_entry_keeps_height_without_a_speed_impulse ... ok
+test zip::tests::native_zip_caps_preserve_existing_fast_momentum ... ok
+test zip::tests::zip_webs_attach_to_visible_tower_faces ... ok
+test jump::tests::tap_retains_normal_jump_and_full_charge_gains_height ... ok
+test zip::tests::forward_zip_does_not_steer_into_the_attachment ... ok
+test physics::tests::wall_run_stays_in_contact_and_wall_jump_detaches ... ok
+test physics::tests::swing_crosses_the_trough_before_automatic_release ... ok
+test zip::tests::grounded_zip_finishes_the_shot_before_launching ... ok
+test physics::tests::upward_entry_preserves_ascent_until_the_web_catches ... ok
+test jump::tests::moving_charge_travels_farther_than_standing_charge ... ok
+test zip::tests::zip_without_surfaces_does_not_create_floating_webs ... ok
+test physics::tests::forward_input_keeps_the_arc_in_the_street ... ok
+test zip::tests::zip_interrupts_swing_and_respects_repeat_lockout ... ok
+test physics::tests::holding_swing_selects_successive_lines ... ok
+test zip::tests::point_zip_stops_on_the_selected_roof ... ok
+test zip::tests::zip_from_dive_can_finish_with_dive_button_held ... ok
+test physics::tests::long_traversal_is_finite_and_contacts_floor ... ok
+
+test result: ok. 46 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+

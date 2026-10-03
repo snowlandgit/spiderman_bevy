@@ -1,0 +1,15 @@
+LookGroups:
+0 4
+
+Materials used:
+2	material\environment\template\architecture\gbl_arch_metal_trim_worn_01\jn_gbl_arch_metal_trim_worn_01.material
+3	material\environment\template\architecture\gbl_arch_Brass_Trim_01\mo_gbl_arch_hvac_grate_01.material
+1	material\environment\template\architecture\gbl_arch_Stone_Wall_01\sza_gbl_arch_granite_wall_01.material
+0	material\environment\template\architecture\gbl_arch_Concrete_Trim_02\sza_gbl_arch_metal_trim_01.material
+
+Slots:
+===============================================================
+0	material\environment\template\architecture\gbl_arch_Concrete_Trim_02\sza_gbl_arch_metal_trim_01.material
+1	material\environment\template\architecture\gbl_arch_Stone_Wall_01\sza_gbl_arch_granite_wall_01.material
+2	material\environment\template\architecture\gbl_arch_metal_trim_worn_01\jn_gbl_arch_metal_trim_worn_01.material
+3	material\environment\template\architecture\gbl_arch_Brass_Trim_01\mo_gbl_arch_hvac_grate_01.material

@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "joint_count": 212,
+  "original_clips": 49,
+  "mirrored_clips": 19,
+  "sampled_original_clips": [
+    {
+      "clip": "web_swing_fwd_rh_spiderman",
+      "frames": 6,
+      "max_matrix_error": 1.4333049169423795e-05,
+      "max_joint_position_error_m": 1.0049623485628032e-05
+    },
+    {
+      "clip": "web_swing_intro_fromairaggro_fwd_rh_spiderman",
+      "frames": 5,
+      "max_matrix_error": 1.4842586952168446e-05,
+      "max_joint_position_error_m": 6.6965048935561195e-06
+    },
+    {
+      "clip": "web_zip_fwd_2hand_spiderman",
+      "frames": 5,
+      "max_matrix_error": 1.0920856105101073e-05,
+      "max_joint_position_error_m": 8.066723405990366e-06
+    },
+    {
+      "clip": "web_zip_fwd_fastfall_2h_spiderman",
+      "frames": 5,
+      "max_matrix_error": 1.0949083229849776e-05,
+      "max_joint_position_error_m": 8.548025036362064e-06
+    },
+    {
+      "clip": "web_zip_fwd_skydive_2h_spiderman",
+      "frames": 5,
+      "max_matrix_error": 1.278672724702723e-05,
+      "max_joint_position_error_m": 9.316934970172271e-06
+    },
+    {
+      "clip": "web_zip_attach_short_fwd_spiderman",
+      "frames": 4,
+      "max_matrix_error": 9.119810899349545e-06,
+      "max_joint_position_error_m": 4.991096608569755e-06
+    },
+    {
+      "clip": "stand_jump_spiderman",
+      "frames": 4,
+      "max_matrix_error": 6.997656912810513e-06,
+      "max_joint_position_error_m": 5.22173781122946e-06
+    },
+    {
+      "clip": "stand_chargejump_up_spiderman",
+      "frames": 5,
+      "max_matrix_error": 1.678743998567711e-05,
+      "max_joint_position_error_m": 1.9551342921138866e-05
+    },
+    {
+      "clip": "stand_chargejump_fwd_spiderman",
+      "frames": 5,
+      "max_matrix_error": 8.057517304593809e-06,
+      "max_joint_position_error_m": 6.546399842644427e-06
+    },
+    {
+      "clip": "stand_sprint_high_jump_fwd_spiderman",
+      "frames": 5,
+      "max_matrix_error": 7.3904887339937275e-06,
+      "max_joint_position_error_m": 6.619728467506923e-06
+    },
+    {
+      "clip": "web_swing_release_mid1_spiderman",
+      "frames": 4,
+      "max_matrix_error": 1.016834173850345e-05,
+      "max_joint_position_error_m": 6.77469363829523e-06
+    },
+    {
+      "clip": "web_swing_jump_high_spiderman",
+      "frames": 4,
+      "max_matrix_error": 1.2740965339874677e-05,
+      "max_joint_position_error_m": 8.063447103807293e-06
+    },
+    {
+      "clip": "wall_run_up_intro_spiderman",
+      "frames": 4,
+      "max_matrix_error": 4.454318733082552e-06,
+      "max_joint_position_error_m": 2.5662544133399084e-06
+    }
+  ],
+  "native_graph_runtime_parity_verified": false
+}

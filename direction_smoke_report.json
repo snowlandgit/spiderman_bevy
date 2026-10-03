@@ -1,0 +1,94 @@
+{
+  "cars": 56,
+  "character_loaded": true,
+  "environment_diagnostics": {
+    "expected": 63,
+    "models": [
+      {
+        "path": "world/tower_1.glb",
+        "state": "Some((Loaded, Loaded, Loaded))"
+      },
+      {
+        "path": "world/tower_2.glb",
+        "state": "Some((Loaded, Loaded, Loaded))"
+      },
+      {
+        "path": "world/tower_3.glb",
+        "state": "Some((Loaded, Loaded, Loaded))"
+      },
+      {
+        "path": "world/tower_4.glb",
+        "state": "Some((Loaded, Loaded, Loaded))"
+      },
+      {
+        "path": "world/tower_5.glb",
+        "state": "Some((Loaded, Loaded, Loaded))"
+      },
+      {
+        "path": "world/tower_6.glb",
+        "state": "Some((Loaded, Loaded, Loaded))"
+      },
+      {
+        "path": "world/tower_7.glb",
+        "state": "Some((Loaded, Loaded, Loaded))"
+      },
+      {
+        "path": "world/sedan_blue.glb",
+        "state": "Some((Loaded, Loaded, Loaded))"
+      },
+      {
+        "path": "world/sedan_red.glb",
+        "state": "Some((Loaded, Loaded, Loaded))"
+      },
+      {
+        "path": "world/suv.glb",
+        "state": "Some((Loaded, Loaded, Loaded))"
+      },
+      {
+        "path": "world/taxi.glb",
+        "state": "Some((Loaded, Loaded, Loaded))"
+      },
+      {
+        "path": "world/sedan_silver.glb",
+        "state": "Some((Loaded, Loaded, Loaded))"
+      }
+    ],
+    "spawned": 63
+  },
+  "environment_loaded": true,
+  "ground_jumps": 0,
+  "high_jump_peak": 0.0,
+  "loaded": true,
+  "long_jump_distance": 0.0,
+  "max_rope_error": 7.62939453125e-6,
+  "passed": true,
+  "peak_speed": 30.47513771057129,
+  "perched": false,
+  "position": [
+    -10.196351051330566,
+    15.524908065795898,
+    -210.41983032226562
+  ],
+  "presentation": {
+    "first_main_swing_age": 0.4598694145679474,
+    "horizontal_fov_degrees": 80.0,
+    "interpolated_frames": 230,
+    "main_swing_captured": true,
+    "max_auto_pitch_degrees": 3.247725486755371,
+    "max_blend_weight_error": 0.0,
+    "max_camera_focus_error": 1.1685190200805664,
+    "max_interpolation_offset": 0.3056691288948059,
+    "max_main_seek_rate": 2.4281668663024902
+  },
+  "steps": 1001,
+  "swing_to_zips": 0,
+  "swings": 4,
+  "towers": 7,
+  "web_selection": {
+    "behind_body_shots": 0,
+    "behind_shots": 0,
+    "minimum_rendered_shot_lead": 15.00224494934082,
+    "new_shots": 4
+  },
+  "zips": 0
+}

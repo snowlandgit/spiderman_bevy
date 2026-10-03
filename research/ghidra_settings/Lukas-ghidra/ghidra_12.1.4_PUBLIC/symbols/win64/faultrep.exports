@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY NAME="faultrep.dll" PATH="C:\Windows\System32\Faultrep.dll" DATE="Wed May 14 01:28:56 CEST 2025" VERSION="10.0.19041.5794 (WinBuild.160101.0800)">
+    <EXPORT ORDINAL="3" NAME="BasepReportFault" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="4" NAME="CheckForReadOnlyResourceFilter" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="5" NAME="CheckPerUserCrossProcessThrottle" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="6" NAME="UpdatePerUserLastCrossProcessCollectionTime" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="7" NAME="AddERExcludedApplicationA" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="8" NAME="AddERExcludedApplicationW" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="9" NAME="CancelHangReporting" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="10" NAME="DllCanUnloadNow" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="11" NAME="DllGetClassObject" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="12" NAME="ReportCoreHang" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="13" NAME="ReportFault" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="14" NAME="ReportHang" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="15" NAME="WerReportHang" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="16" NAME="WerpGetDebugger" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="17" NAME="WerpInitiateCrashReporting" PURGE="0" COMMENT="" />
+    <EXPORT ORDINAL="18" NAME="WerpLaunchAeDebug" PURGE="0" COMMENT="" />
+</LIBRARY>

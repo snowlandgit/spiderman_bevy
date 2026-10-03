@@ -1,0 +1,120 @@
+{
+  "passed": true,
+  "method": "Reflect skin deformation in model space, preserve asymmetric bind frames",
+  "clips": [
+    {
+      "source": "web_swing_fwd_rh_spiderman",
+      "mirrored": "web_swing_fwd_rh_spiderman_mirrored",
+      "frames": 285,
+      "max_matrix_error": 2.4813971303258575e-05
+    },
+    {
+      "source": "web_swing_intro_fromairaggro_fwd_rh_spiderman",
+      "mirrored": "web_swing_intro_fromairaggro_fwd_rh_spiderman_mirrored",
+      "frames": 47,
+      "max_matrix_error": 0.0001134653227282123
+    },
+    {
+      "source": "web_swing_intro_fromfastfall_fwd_rh_spiderman",
+      "mirrored": "web_swing_intro_fromfastfall_fwd_rh_spiderman_mirrored",
+      "frames": 47,
+      "max_matrix_error": 3.0072239172840298e-05
+    },
+    {
+      "source": "web_swing_jump_high1_spiderman",
+      "mirrored": "web_swing_jump_high1_spiderman_mirrored",
+      "frames": 151,
+      "max_matrix_error": 0.00011050789612632173
+    },
+    {
+      "source": "web_swing_jump_high2_spiderman",
+      "mirrored": "web_swing_jump_high2_spiderman_mirrored",
+      "frames": 161,
+      "max_matrix_error": 5.8564085112733366e-05
+    },
+    {
+      "source": "web_swing_jump_high_spiderman",
+      "mirrored": "web_swing_jump_high_spiderman_mirrored",
+      "frames": 155,
+      "max_matrix_error": 2.6827433737275364e-05
+    },
+    {
+      "source": "web_swing_jump_mid2_spiderman",
+      "mirrored": "web_swing_jump_mid2_spiderman_mirrored",
+      "frames": 185,
+      "max_matrix_error": 2.779273979564012e-05
+    },
+    {
+      "source": "web_swing_jump_mid3_spiderman",
+      "mirrored": "web_swing_jump_mid3_spiderman_mirrored",
+      "frames": 185,
+      "max_matrix_error": 2.267420243132201e-05
+    },
+    {
+      "source": "web_swing_jump_mid4_spiderman",
+      "mirrored": "web_swing_jump_mid4_spiderman_mirrored",
+      "frames": 185,
+      "max_matrix_error": 3.014535812323471e-05
+    },
+    {
+      "source": "web_swing_jump_mid5_spiderman",
+      "mirrored": "web_swing_jump_mid5_spiderman_mirrored",
+      "frames": 185,
+      "max_matrix_error": 2.1154722446403706e-05
+    },
+    {
+      "source": "web_swing_jump_mid_spiderman",
+      "mirrored": "web_swing_jump_mid_spiderman_mirrored",
+      "frames": 185,
+      "max_matrix_error": 2.267420243132201e-05
+    },
+    {
+      "source": "web_swing_release_high_spiderman",
+      "mirrored": "web_swing_release_high_spiderman_mirrored",
+      "frames": 157,
+      "max_matrix_error": 2.5566443149868667e-05
+    },
+    {
+      "source": "web_swing_release_low_spiderman",
+      "mirrored": "web_swing_release_low_spiderman_mirrored",
+      "frames": 69,
+      "max_matrix_error": 2.4156731212476856e-05
+    },
+    {
+      "source": "web_swing_release_mid1_spiderman",
+      "mirrored": "web_swing_release_mid1_spiderman_mirrored",
+      "frames": 161,
+      "max_matrix_error": 2.6822508621404673e-05
+    },
+    {
+      "source": "web_swing_release_mid2_spiderman",
+      "mirrored": "web_swing_release_mid2_spiderman_mirrored",
+      "frames": 161,
+      "max_matrix_error": 2.6737765647030787e-05
+    },
+    {
+      "source": "web_swing_release_mid3_spiderman",
+      "mirrored": "web_swing_release_mid3_spiderman_mirrored",
+      "frames": 161,
+      "max_matrix_error": 2.6737765647030787e-05
+    },
+    {
+      "source": "web_swing_release_mid4_spiderman",
+      "mirrored": "web_swing_release_mid4_spiderman_mirrored",
+      "frames": 161,
+      "max_matrix_error": 2.8593600259252394e-05
+    },
+    {
+      "source": "web_swing_release_mid5_spiderman",
+      "mirrored": "web_swing_release_mid5_spiderman_mirrored",
+      "frames": 161,
+      "max_matrix_error": 3.0148939803742447e-05
+    },
+    {
+      "source": "web_swing_release_mid_spiderman",
+      "mirrored": "web_swing_release_mid_spiderman_mirrored",
+      "frames": 161,
+      "max_matrix_error": 2.6737765647030787e-05
+    }
+  ]
+}

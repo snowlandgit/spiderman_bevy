@@ -1,0 +1,18 @@
+2026-10-02T23:16:09.914475Z  INFO bevy_diagnostic::system_information_diagnostics_plugin::internal: SystemInfo { os: "Windows 10 Home", kernel: "19045", cpu: "11th Gen Intel(R) Core(TM) i7-11700KF @ 3.60GHz", core_count: "8", memory: "31.8 GiB" }
+2026-10-02T23:16:10.142839Z  INFO bevy_render::renderer: AdapterInfo { name: "NVIDIA GeForce RTX 3080", vendor: 4318, device: 8710, device_type: DiscreteGpu, device_pci_bus_id: "0000:01:00.0", driver: "32.0.15.8142", driver_info: "", backend: Dx12, subgroup_min_size: 32, subgroup_max_size: 32, transient_saves_memory: false }
+2026-10-02T23:16:10.397177Z  INFO bevy_pbr::cluster: GPU clustering is supported on this device.
+2026-10-02T23:16:10.397228Z  INFO bevy_render::batching::gpu_preprocessing: GPU preprocessing is fully supported on this device.
+2026-10-02T23:16:10.397908Z  INFO bevy_winit::system: Creating new window Spider-Man | Bevy Swing Sandbox (65v0)
+2026-10-02T23:16:10.431648Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b15
+2026-10-02T23:16:10.431689Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b8
+2026-10-02T23:16:10.431693Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b16
+2026-10-02T23:16:10.431696Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b9
+2026-10-02T23:16:10.431698Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b13
+2026-10-02T23:16:10.431700Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b11
+2026-10-02T23:16:10.431703Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b10
+2026-10-02T23:16:10.431705Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b14
+2026-10-02T23:16:10.431707Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b12
+2026-10-02T23:16:10.432322Z  INFO bevy_input::gamepad: Gamepad 384v0 connected.
+2026-10-02T23:16:20.034292Z  INFO bevy_render::view::window::screenshot: Screenshot saved to screenshots/swing.png
+2026-10-02T23:16:22.282199Z  INFO bevy_render::view::window::screenshot: Screenshot saved to screenshots/release.png
+2026-10-02T23:16:26.037529Z  INFO bevy_render::view::window::screenshot: Screenshot saved to screenshots/traversal.png

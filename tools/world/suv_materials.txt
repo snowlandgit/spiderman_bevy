@@ -1,0 +1,66 @@
+LookGroups:
+0 44
+
+Materials used:
+1	material\vehicle\veh_Suv_01_Chassis\veh_Suv_01_Chassis.material
+3	material\vehicle\veh_sedan_01_engine_1\veh_sedan_01_engine_1.material
+11	material\vehicle\veh_Suv_01_Engine_2\veh_Suv_01_Engine_2.material
+13	material\vehicle\veh_Suv_01_Ext_1\veh_Suv_01_Ext_1.material
+6	material\vehicle\veh_Suv_01_Ext_2\veh_Suv_01_Ext_2.material
+4	material\vehicle\veh_Suv_01_Int_1\veh_Suv_01_Int_1.material
+10	material\vehicle\veh_Suv_01_Int_2\veh_Suv_01_Int_2.material
+11	material\vehicle\veh_Suv_01_Engine_2\veh_Suv_01_Engine_2.material
+13	material\vehicle\veh_Suv_01_Ext_1\veh_Suv_01_Ext_1.material
+13	material\vehicle\veh_Suv_01_Ext_1\veh_Suv_01_Ext_1.material
+15	material\vehicle\veh_Suv_01_Glass\veh_Suv_01_Glass.material
+0	material\vehicle\veh_Suv_01_Lights\veh_Suv_01_Lights.material
+8	material\vehicle\veh_Suv_01_Wheel\veh_Suv_01_Wheel.material
+13	material\vehicle\veh_Suv_01_Ext_1\veh_Suv_01_Ext_1.material
+15	material\vehicle\veh_Suv_01_Glass\veh_Suv_01_Glass.material
+0	material\vehicle\veh_Suv_01_Lights\veh_Suv_01_Lights.material
+9	material\vehicle\veh_Suv_01_Wheel\veh_Suv_01_Wheel_damage.material
+13	material\vehicle\veh_Suv_01_Ext_1\veh_Suv_01_Ext_1.material
+6	material\vehicle\veh_Suv_01_Ext_2\veh_Suv_01_Ext_2.material
+15	material\vehicle\veh_Suv_01_Glass\veh_Suv_01_Glass.material
+4	material\vehicle\veh_Suv_01_Int_1\veh_Suv_01_Int_1.material
+13	material\vehicle\veh_Suv_01_Ext_1\veh_Suv_01_Ext_1.material
+6	material\vehicle\veh_Suv_01_Ext_2\veh_Suv_01_Ext_2.material
+15	material\vehicle\veh_Suv_01_Glass\veh_Suv_01_Glass.material
+0	material\vehicle\veh_Suv_01_Lights\veh_Suv_01_Lights.material
+8	material\vehicle\veh_Suv_01_Wheel\veh_Suv_01_Wheel.material
+13	material\vehicle\veh_Suv_01_Ext_1\veh_Suv_01_Ext_1.material
+6	material\vehicle\veh_Suv_01_Ext_2\veh_Suv_01_Ext_2.material
+15	material\vehicle\veh_Suv_01_Glass\veh_Suv_01_Glass.material
+0	material\vehicle\veh_Suv_01_Lights\veh_Suv_01_Lights.material
+8	material\vehicle\veh_Suv_01_Wheel\veh_Suv_01_Wheel.material
+13	material\vehicle\veh_Suv_01_Ext_1\veh_Suv_01_Ext_1.material
+6	material\vehicle\veh_Suv_01_Ext_2\veh_Suv_01_Ext_2.material
+15	material\vehicle\veh_Suv_01_Glass\veh_Suv_01_Glass.material
+4	material\vehicle\veh_Suv_01_Int_1\veh_Suv_01_Int_1.material
+13	material\vehicle\veh_Suv_01_Ext_1\veh_Suv_01_Ext_1.material
+15	material\vehicle\veh_Suv_01_Glass\veh_Suv_01_Glass.material
+5	material\environment\global\prop\gbl_prop_license_plate_random_01\jn_gbl_prop_license_plate_random_01.material
+6	material\vehicle\veh_Suv_01_Ext_2\veh_Suv_01_Ext_2.material
+15	material\vehicle\veh_Suv_01_Glass\veh_Suv_01_Glass.material
+10	material\vehicle\veh_Suv_01_Int_2\veh_Suv_01_Int_2.material
+0	material\vehicle\veh_Suv_01_Lights\veh_Suv_01_Lights.material
+6	material\vehicle\veh_Suv_01_Ext_2\veh_Suv_01_Ext_2.material
+15	material\vehicle\veh_Suv_01_Glass\veh_Suv_01_Glass.material
+
+Slots:
+===============================================================
+0	material\vehicle\veh_Suv_01_Lights\veh_Suv_01_Lights.material
+1	material\vehicle\veh_Suv_01_Chassis\veh_Suv_01_Chassis.material
+2	material\vehicle\veh_Suv_01_Glass_Damage\veh_Suv_01_Glass_Damage.material
+3	material\vehicle\veh_sedan_01_engine_1\veh_sedan_01_engine_1.material
+4	material\vehicle\veh_Suv_01_Int_1\veh_Suv_01_Int_1.material
+5	material\environment\global\prop\gbl_prop_license_plate_random_01\jn_gbl_prop_license_plate_random_01.material
+6	material\vehicle\veh_Suv_01_Ext_2\veh_Suv_01_Ext_2.material
+7	material\vehicle\veh_Suv_01_Ext_1_Damage\veh_Suv_01_Ext_1_Damage.material
+8	material\vehicle\veh_Suv_01_Wheel\veh_Suv_01_Wheel.material
+9	material\vehicle\veh_Suv_01_Wheel\veh_Suv_01_Wheel_damage.material
+10	material\vehicle\veh_Suv_01_Int_2\veh_Suv_01_Int_2.material
+11	material\vehicle\veh_Suv_01_Engine_2\veh_Suv_01_Engine_2.material
+13	material\vehicle\veh_Suv_01_Ext_1\veh_Suv_01_Ext_1.material
+14	material\vehicle\veh_Suv_01_Ext_1_Damage\veh_Suv_01_Ext_2_Damage.material
+15	material\vehicle\veh_Suv_01_Glass\veh_Suv_01_Glass.material

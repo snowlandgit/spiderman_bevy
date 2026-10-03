@@ -1,0 +1,16 @@
+# Build output (Build.ps1 rebuilds it)
+/target/
+/spiderman_bevy.exe
+/spiderman_bevy_previous.exe
+/tools/physics_tests.exe
+
+# Third-party portable tools: download them separately (see README)
+/tools/rustup/
+/tools/blender-5.0.1-windows-x64/
+/tools/ghidra_12.1.4_PUBLIC/
+/tools/jdk-21.0.12.1+1/
+
+# Blender's automatic backups
+*.blend1
+
+__pycache__/

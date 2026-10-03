@@ -1,0 +1,1274 @@
+[
+  {
+    "name": "RT_clavicle",
+    "hash": 40277829,
+    "parent": 28,
+    "flags": 0
+  },
+  {
+    "name": "camera",
+    "hash": 46703956,
+    "parent": 9,
+    "flags": 0
+  },
+  {
+    "name": "RT_loarm",
+    "hash": 59529709,
+    "parent": 73,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_D_B",
+    "hash": 66113770,
+    "parent": 120,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_A_B",
+    "hash": 87757313,
+    "parent": 123,
+    "flags": 0
+  },
+  {
+    "name": "LF_outer_eye_lower_deform",
+    "hash": 110541513,
+    "parent": 36,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_C_B",
+    "hash": 113231471,
+    "parent": 127,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_B_B",
+    "hash": 125676632,
+    "parent": 125,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_A_D_end",
+    "hash": 139791163,
+    "parent": 188,
+    "flags": 0
+  },
+  {
+    "name": "a_body",
+    "hash": 185711289,
+    "parent": -1,
+    "flags": 0
+  },
+  {
+    "name": "spine_helper1",
+    "hash": 185889693,
+    "parent": 52,
+    "flags": 0
+  },
+  {
+    "name": "LF_pelvis_front_helper",
+    "hash": 202811329,
+    "parent": 107,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_B_D_end",
+    "hash": 240085936,
+    "parent": 44,
+    "flags": 0
+  },
+  {
+    "name": "RT_loleg_bind_4",
+    "hash": 268017796,
+    "parent": 191,
+    "flags": 0
+  },
+  {
+    "name": "LF_upleg",
+    "hash": 318290930,
+    "parent": 107,
+    "flags": 0
+  },
+  {
+    "name": "LF_loarm_bind_3",
+    "hash": 332395036,
+    "parent": 121,
+    "flags": 0
+  },
+  {
+    "name": "LF_upleg_bind_3",
+    "hash": 334474684,
+    "parent": 14,
+    "flags": 0
+  },
+  {
+    "name": "LF_uplegTwist",
+    "hash": 346228364,
+    "parent": 14,
+    "flags": 0
+  },
+  {
+    "name": "RT_foot_rear_helper",
+    "hash": 387205937,
+    "parent": 27,
+    "flags": 0
+  },
+  {
+    "name": "jaw",
+    "hash": 446580404,
+    "parent": 36,
+    "flags": 0
+  },
+  {
+    "name": "RT_thumb_A",
+    "hash": 451773511,
+    "parent": 155,
+    "flags": 0
+  },
+  {
+    "name": "LF_foot_mJ",
+    "hash": 497585848,
+    "parent": 9,
+    "flags": 0
+  },
+  {
+    "name": "LF_webStart",
+    "hash": 543671684,
+    "parent": 204,
+    "flags": 0
+  },
+  {
+    "name": "neck_collar_helper",
+    "hash": 546306471,
+    "parent": 28,
+    "flags": 0
+  },
+  {
+    "name": "LF_loleg_bind_4",
+    "hash": 557113215,
+    "parent": 86,
+    "flags": 0
+  },
+  {
+    "name": "RT_inner_eye_upper_deform",
+    "hash": 558425471,
+    "parent": 197,
+    "flags": 0
+  },
+  {
+    "name": "spine_B",
+    "hash": 565165901,
+    "parent": 113,
+    "flags": 0
+  },
+  {
+    "name": "RT_foot",
+    "hash": 585533744,
+    "parent": 191,
+    "flags": 0
+  },
+  {
+    "name": "chest",
+    "hash": 601247858,
+    "parent": 142,
+    "flags": 0
+  },
+  {
+    "name": "RT_latissimus",
+    "hash": 650668723,
+    "parent": 10,
+    "flags": 0
+  },
+  {
+    "name": "spine_B_helper1",
+    "hash": 689838254,
+    "parent": 26,
+    "flags": 0
+  },
+  {
+    "name": "RT_loarm_down_helper",
+    "hash": 750261263,
+    "parent": 165,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_B_A",
+    "hash": 817243371,
+    "parent": 65,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_C_A",
+    "hash": 829705948,
+    "parent": 65,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_A_A",
+    "hash": 854629042,
+    "parent": 65,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_D_A",
+    "hash": 876304473,
+    "parent": 65,
+    "flags": 0
+  },
+  {
+    "name": "head",
+    "hash": 928094482,
+    "parent": 143,
+    "flags": 0
+  },
+  {
+    "name": "neck3_twist",
+    "hash": 928098334,
+    "parent": 143,
+    "flags": 0
+  },
+  {
+    "name": "LF_thumb_B",
+    "hash": 951389777,
+    "parent": 131,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_B_D_end",
+    "hash": 968692134,
+    "parent": 192,
+    "flags": 0
+  },
+  {
+    "name": "RT_loarm_bind_3",
+    "hash": 1023577575,
+    "parent": 2,
+    "flags": 0
+  },
+  {
+    "name": "RT_upleg_bind_3",
+    "hash": 1025692231,
+    "parent": 102,
+    "flags": 0
+  },
+  {
+    "name": "RT_pelvis_side_helper",
+    "hash": 1028145886,
+    "parent": 107,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_A_D_end",
+    "hash": 1067938093,
+    "parent": 47,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_B_D",
+    "hash": 1088213092,
+    "parent": 176,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_C_D",
+    "hash": 1092532819,
+    "parent": 177,
+    "flags": 0
+  },
+  {
+    "name": "LF_loarmTwist_A",
+    "hash": 1116539372,
+    "parent": 121,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_A_D",
+    "hash": 1117417021,
+    "parent": 174,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_D_D",
+    "hash": 1146203350,
+    "parent": 172,
+    "flags": 0
+  },
+  {
+    "name": "LF_outer_eye_upper_deform",
+    "hash": 1224034000,
+    "parent": 36,
+    "flags": 0
+  },
+  {
+    "name": "RT_loarm_bind_2",
+    "hash": 1241890161,
+    "parent": 2,
+    "flags": 0
+  },
+  {
+    "name": "RT_upleg_bind_2",
+    "hash": 1243996881,
+    "parent": 102,
+    "flags": 0
+  },
+  {
+    "name": "spine",
+    "hash": 1247612170,
+    "parent": 9,
+    "flags": 0
+  },
+  {
+    "name": "RT_foot_front_helper",
+    "hash": 1322982181,
+    "parent": 27,
+    "flags": 0
+  },
+  {
+    "name": "LF_thumb_C",
+    "hash": 1337081543,
+    "parent": 38,
+    "flags": 0
+  },
+  {
+    "name": "LF_loleg_bind_1",
+    "hash": 1365126128,
+    "parent": 86,
+    "flags": 0
+  },
+  {
+    "name": "LF_uparm_bind_1",
+    "hash": 1367241808,
+    "parent": 210,
+    "flags": 0
+  },
+  {
+    "name": "RT_upleg_rear_helper",
+    "hash": 1376998227,
+    "parent": 166,
+    "flags": 0
+  },
+  {
+    "name": "mid",
+    "hash": 1404476391,
+    "parent": 107,
+    "flags": 0
+  },
+  {
+    "name": "LF_uparm_bind_5",
+    "hash": 1444130889,
+    "parent": 210,
+    "flags": 0
+  },
+  {
+    "name": "LF_loleg_bind_5",
+    "hash": 1446244329,
+    "parent": 86,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_D_D_end",
+    "hash": 1517102236,
+    "parent": 186,
+    "flags": 0
+  },
+  {
+    "name": "LF_foot",
+    "hash": 1528417587,
+    "parent": 86,
+    "flags": 0
+  },
+  {
+    "name": "LF_uparm_front_helper",
+    "hash": 1528813355,
+    "parent": 59,
+    "flags": 0
+  },
+  {
+    "name": "LF_loarm_front_helper",
+    "hash": 1550596470,
+    "parent": 207,
+    "flags": 0
+  },
+  {
+    "name": "LF_wrist",
+    "hash": 1557927675,
+    "parent": 121,
+    "flags": 0
+  },
+  {
+    "name": "LF_upleg_front_helper",
+    "hash": 1593958332,
+    "parent": 208,
+    "flags": 0
+  },
+  {
+    "name": "RT_spiderlegA_attach",
+    "hash": 1615532307,
+    "parent": 28,
+    "flags": 0
+  },
+  {
+    "name": "LF_loarm_up_helper",
+    "hash": 1616983373,
+    "parent": 207,
+    "flags": 0
+  },
+  {
+    "name": "LF_uparm_up_helper",
+    "hash": 1649882615,
+    "parent": 59,
+    "flags": 0
+  },
+  {
+    "name": "RT_loarm_back_helper",
+    "hash": 1661531110,
+    "parent": 165,
+    "flags": 0
+  },
+  {
+    "name": "LF_loarm_bind_2",
+    "hash": 1690878602,
+    "parent": 121,
+    "flags": 0
+  },
+  {
+    "name": "LF_upleg_bind_2",
+    "hash": 1692966186,
+    "parent": 14,
+    "flags": 0
+  },
+  {
+    "name": "RT_uparm",
+    "hash": 1711729623,
+    "parent": 0,
+    "flags": 0
+  },
+  {
+    "name": "LF_pelvis_rear_helper",
+    "hash": 1748026136,
+    "parent": 107,
+    "flags": 0
+  },
+  {
+    "name": "LF_wrist_end",
+    "hash": 1783573759,
+    "parent": 65,
+    "flags": 0
+  },
+  {
+    "name": "RT_loarmTwist_A",
+    "hash": 1816163863,
+    "parent": 2,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_D_D_end",
+    "hash": 1839160970,
+    "parent": 48,
+    "flags": 0
+  },
+  {
+    "name": "RT_inner_eye_lower_deform",
+    "hash": 1865095526,
+    "parent": 148,
+    "flags": 0
+  },
+  {
+    "name": "cameraTarget",
+    "hash": 1873069033,
+    "parent": -1,
+    "flags": 0
+  },
+  {
+    "name": "LF_spiderlegB_attach",
+    "hash": 1879886665,
+    "parent": 28,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_B_C",
+    "hash": 1887083726,
+    "parent": 7,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_C_C",
+    "hash": 1907947257,
+    "parent": 6,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_A_C",
+    "hash": 1916543639,
+    "parent": 4,
+    "flags": 0
+  },
+  {
+    "name": "LF_ball_end",
+    "hash": 1928486181,
+    "parent": 183,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_D_C",
+    "hash": 1962401916,
+    "parent": 3,
+    "flags": 0
+  },
+  {
+    "name": "LF_loleg",
+    "hash": 2003962312,
+    "parent": 14,
+    "flags": 0
+  },
+  {
+    "name": "RT_wristIK",
+    "hash": 2021156355,
+    "parent": -1,
+    "flags": 0
+  },
+  {
+    "name": "RT_middle_eye_deform",
+    "hash": 2025827965,
+    "parent": 148,
+    "flags": 0
+  },
+  {
+    "name": "aimTarget",
+    "hash": 2027520314,
+    "parent": -1,
+    "flags": 0
+  },
+  {
+    "name": "RT_uparm_bind_5",
+    "hash": 2027868082,
+    "parent": 73,
+    "flags": 0
+  },
+  {
+    "name": "RT_loleg_bind_5",
+    "hash": 2029948946,
+    "parent": 191,
+    "flags": 0
+  },
+  {
+    "name": "RT_wrist_end",
+    "hash": 2046586647,
+    "parent": 155,
+    "flags": 0
+  },
+  {
+    "name": "LF_webShooter",
+    "hash": 2067216166,
+    "parent": 204,
+    "flags": 0
+  },
+  {
+    "name": "RT_uparm_bicep_helper",
+    "hash": 2077105287,
+    "parent": 111,
+    "flags": 0
+  },
+  {
+    "name": "RT_uparm_back_helper",
+    "hash": 2099427298,
+    "parent": 90,
+    "flags": 0
+  },
+  {
+    "name": "head_end",
+    "hash": 2132549670,
+    "parent": 36,
+    "flags": 0
+  },
+  {
+    "name": "RT_loleg_bind_1",
+    "hash": 2140361739,
+    "parent": 191,
+    "flags": 0
+  },
+  {
+    "name": "RT_uparm_bind_1",
+    "hash": 2142440363,
+    "parent": 73,
+    "flags": 0
+  },
+  {
+    "name": "RT_thumb_B",
+    "hash": 2212812285,
+    "parent": 20,
+    "flags": 0
+  },
+  {
+    "name": "LF_latissimus",
+    "hash": 2282402746,
+    "parent": 10,
+    "flags": 0
+  },
+  {
+    "name": "RT_webAttach",
+    "hash": 2283083772,
+    "parent": 155,
+    "flags": 0
+  },
+  {
+    "name": "RT_upleg",
+    "hash": 2340951308,
+    "parent": 107,
+    "flags": 0
+  },
+  {
+    "name": "RT_footIK",
+    "hash": 2341946309,
+    "parent": -1,
+    "flags": 0
+  },
+  {
+    "name": "LF_gunAttach",
+    "hash": 2357022010,
+    "parent": 65,
+    "flags": 0
+  },
+  {
+    "name": "LF_upleg_bind_4",
+    "hash": 2374711327,
+    "parent": 14,
+    "flags": 0
+  },
+  {
+    "name": "LF_loarm_bind_4",
+    "hash": 2376820671,
+    "parent": 121,
+    "flags": 0
+  },
+  {
+    "name": "pelvis",
+    "hash": 2388243263,
+    "parent": 9,
+    "flags": 0
+  },
+  {
+    "name": "LF_pelvis_side_helper",
+    "hash": 2406187307,
+    "parent": 107,
+    "flags": 0
+  },
+  {
+    "name": "neck2_twist",
+    "hash": 2435228586,
+    "parent": 143,
+    "flags": 0
+  },
+  {
+    "name": "RT_loleg_bind_3",
+    "hash": 2442999079,
+    "parent": 191,
+    "flags": 0
+  },
+  {
+    "name": "RT_uparm_bind_3",
+    "hash": 2445109895,
+    "parent": 73,
+    "flags": 0
+  },
+  {
+    "name": "RT_upperButtock",
+    "hash": 2448681043,
+    "parent": 166,
+    "flags": 0
+  },
+  {
+    "name": "spine_helper2",
+    "hash": 2451382823,
+    "parent": 10,
+    "flags": 0
+  },
+  {
+    "name": "RT_gunAttachIK",
+    "hash": 2483255552,
+    "parent": -1,
+    "flags": 0
+  },
+  {
+    "name": "RT_loarm_up_helper",
+    "hash": 2491576934,
+    "parent": 165,
+    "flags": 0
+  },
+  {
+    "name": "RT_uparm_up_helper",
+    "hash": 2528408284,
+    "parent": 90,
+    "flags": 0
+  },
+  {
+    "name": "RT_upknee",
+    "hash": 2538726451,
+    "parent": 102,
+    "flags": 0
+  },
+  {
+    "name": "LF_inner_eye_upper_deform",
+    "hash": 2564787762,
+    "parent": 49,
+    "flags": 0
+  },
+  {
+    "name": "LF_thumb_C_end",
+    "hash": 2569829193,
+    "parent": 54,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_D_A",
+    "hash": 2600042832,
+    "parent": 155,
+    "flags": 0
+  },
+  {
+    "name": "LF_loarm",
+    "hash": 2600269587,
+    "parent": 210,
+    "flags": 0
+  },
+  {
+    "name": "LF_webAttach",
+    "hash": 2611368980,
+    "parent": 65,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_A_A",
+    "hash": 2620539835,
+    "parent": 155,
+    "flags": 0
+  },
+  {
+    "name": "LF_leg_accessory_helper",
+    "hash": 2645400094,
+    "parent": 72,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_B_A",
+    "hash": 2658467298,
+    "parent": 155,
+    "flags": 0
+  },
+  {
+    "name": "RT_ball",
+    "hash": 2673604856,
+    "parent": 27,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_C_A",
+    "hash": 2679543765,
+    "parent": 155,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_C_D_end",
+    "hash": 2680822290,
+    "parent": 195,
+    "flags": 0
+  },
+  {
+    "name": "RT_gunAttach",
+    "hash": 2681081554,
+    "parent": 155,
+    "flags": 0
+  },
+  {
+    "name": "neck1_twist",
+    "hash": 2697902391,
+    "parent": 143,
+    "flags": 0
+  },
+  {
+    "name": "LF_thumb_A",
+    "hash": 2713477099,
+    "parent": 65,
+    "flags": 0
+  },
+  {
+    "name": "RT_upleg_bind_4",
+    "hash": 2739292132,
+    "parent": 102,
+    "flags": 0
+  },
+  {
+    "name": "RT_loarm_bind_4",
+    "hash": 2741377092,
+    "parent": 2,
+    "flags": 0
+  },
+  {
+    "name": "RT_foot_mJ",
+    "hash": 2801358100,
+    "parent": 9,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_C_D_end",
+    "hash": 2822266884,
+    "parent": 45,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_C_B",
+    "hash": 2826772326,
+    "parent": 33,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_B_B",
+    "hash": 2847896913,
+    "parent": 32,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_A_B",
+    "hash": 2885274376,
+    "parent": 34,
+    "flags": 0
+  },
+  {
+    "name": "RT_ball_end",
+    "hash": 2905203517,
+    "parent": 126,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_D_B",
+    "hash": 2905737699,
+    "parent": 35,
+    "flags": 0
+  },
+  {
+    "name": "RT_webEnd",
+    "hash": 2944029212,
+    "parent": 9,
+    "flags": 0
+  },
+  {
+    "name": "spine_B_helper2",
+    "hash": 2954316052,
+    "parent": 30,
+    "flags": 0
+  },
+  {
+    "name": "neck",
+    "hash": 2964568541,
+    "parent": 28,
+    "flags": 0
+  },
+  {
+    "name": "LF_loarm_down_helper",
+    "hash": 2993736118,
+    "parent": 207,
+    "flags": 0
+  },
+  {
+    "name": "RT_uplegTwist",
+    "hash": 3126976389,
+    "parent": 102,
+    "flags": 0
+  },
+  {
+    "name": "LF_foot_rear_helper",
+    "hash": 3143389494,
+    "parent": 62,
+    "flags": 0
+  },
+  {
+    "name": "sync",
+    "hash": 3163134708,
+    "parent": -1,
+    "flags": 0
+  },
+  {
+    "name": "RT_outer_eye_lower_deform",
+    "hash": 3204567428,
+    "parent": 36,
+    "flags": 0
+  },
+  {
+    "name": "LF_upperButtock",
+    "hash": 3208550312,
+    "parent": 208,
+    "flags": 0
+  },
+  {
+    "name": "LF_loleg_bind_3",
+    "hash": 3209710300,
+    "parent": 86,
+    "flags": 0
+  },
+  {
+    "name": "LF_uparm_bind_3",
+    "hash": 3211793788,
+    "parent": 210,
+    "flags": 0
+  },
+  {
+    "name": "RT_pelvis_front_helper",
+    "hash": 3245572753,
+    "parent": 107,
+    "flags": 0
+  },
+  {
+    "name": "LF_wristIK",
+    "hash": 3274292655,
+    "parent": -1,
+    "flags": 0
+  },
+  {
+    "name": "LF_chest_helper",
+    "hash": 3292218600,
+    "parent": 28,
+    "flags": 0
+  },
+  {
+    "name": "RT_wrist",
+    "hash": 3316430853,
+    "parent": 2,
+    "flags": 0
+  },
+  {
+    "name": "LF_loleg_bind_2",
+    "hash": 3361176138,
+    "parent": 86,
+    "flags": 0
+  },
+  {
+    "name": "LF_uparm_bind_2",
+    "hash": 3363251690,
+    "parent": 210,
+    "flags": 0
+  },
+  {
+    "name": "LF_uparm_bicep_helper",
+    "hash": 3387809650,
+    "parent": 151,
+    "flags": 0
+  },
+  {
+    "name": "RT_scapula_helper",
+    "hash": 3418727453,
+    "parent": 0,
+    "flags": 0
+  },
+  {
+    "name": "LF_upleg_rear_helper",
+    "hash": 3436941034,
+    "parent": 208,
+    "flags": 0
+  },
+  {
+    "name": "LF_upknee",
+    "hash": 3452783494,
+    "parent": 14,
+    "flags": 0
+  },
+  {
+    "name": "LF_foot_front_helper",
+    "hash": 3490956956,
+    "parent": 62,
+    "flags": 0
+  },
+  {
+    "name": "LF_footIK",
+    "hash": 3507219568,
+    "parent": -1,
+    "flags": 0
+  },
+  {
+    "name": "fx_root",
+    "hash": 3521056244,
+    "parent": -1,
+    "flags": 0
+  },
+  {
+    "name": "RT_loarm_bind_1",
+    "hash": 3540839627,
+    "parent": 2,
+    "flags": 0
+  },
+  {
+    "name": "RT_upleg_bind_1",
+    "hash": 3542922091,
+    "parent": 102,
+    "flags": 0
+  },
+  {
+    "name": "RT_upleg_bind_5",
+    "hash": 3561060210,
+    "parent": 102,
+    "flags": 0
+  },
+  {
+    "name": "RT_loarm_bind_5",
+    "hash": 3563137234,
+    "parent": 2,
+    "flags": 0
+  },
+  {
+    "name": "RT_webShooter",
+    "hash": 3589664303,
+    "parent": 168,
+    "flags": 0
+  },
+  {
+    "name": "LF_inner_eye_lower_deform",
+    "hash": 3602674219,
+    "parent": 5,
+    "flags": 0
+  },
+  {
+    "name": "RT_pelvis_rear_helper",
+    "hash": 3658678509,
+    "parent": 107,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_D_C",
+    "hash": 3660921205,
+    "parent": 140,
+    "flags": 0
+  },
+  {
+    "name": "LF_loarmTwist_B",
+    "hash": 3682883670,
+    "parent": 121,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_A_C",
+    "hash": 3707698078,
+    "parent": 138,
+    "flags": 0
+  },
+  {
+    "name": "LF_clavicle",
+    "hash": 3720161629,
+    "parent": 28,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_B_C",
+    "hash": 3736618439,
+    "parent": 137,
+    "flags": 0
+  },
+  {
+    "name": "LF_finger_C_C",
+    "hash": 3749326832,
+    "parent": 136,
+    "flags": 0
+  },
+  {
+    "name": "RT_lowerButtock",
+    "hash": 3750761546,
+    "parent": 166,
+    "flags": 0
+  },
+  {
+    "name": "RT_thumb_C_end",
+    "hash": 3764257076,
+    "parent": 199,
+    "flags": 0
+  },
+  {
+    "name": "LF_uparm_back_helper",
+    "hash": 3823790683,
+    "parent": 59,
+    "flags": 0
+  },
+  {
+    "name": "LF_middle_eye_deform",
+    "hash": 3866588100,
+    "parent": 5,
+    "flags": 0
+  },
+  {
+    "name": "RT_loleg_bind_2",
+    "hash": 3868853681,
+    "parent": 191,
+    "flags": 0
+  },
+  {
+    "name": "LF_ball",
+    "hash": 3869555963,
+    "parent": 62,
+    "flags": 0
+  },
+  {
+    "name": "RT_uparm_bind_2",
+    "hash": 3870972433,
+    "parent": 73,
+    "flags": 0
+  },
+  {
+    "name": "RT_uparm_front_helper",
+    "hash": 3913028830,
+    "parent": 90,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_D_D",
+    "hash": 3935532511,
+    "parent": 85,
+    "flags": 0
+  },
+  {
+    "name": "RT_chest_helper",
+    "hash": 3942005523,
+    "parent": 28,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_A_D",
+    "hash": 3965237044,
+    "parent": 83,
+    "flags": 0
+  },
+  {
+    "name": "RT_upleg_front_helper",
+    "hash": 3978435657,
+    "parent": 166,
+    "flags": 0
+  },
+  {
+    "name": "LF_gunAttachIK",
+    "hash": 3983606653,
+    "parent": -1,
+    "flags": 0
+  },
+  {
+    "name": "RT_loleg",
+    "hash": 3993151286,
+    "parent": 102,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_B_D",
+    "hash": 3994945901,
+    "parent": 81,
+    "flags": 0
+  },
+  {
+    "name": "RT_loarm_front_helper",
+    "hash": 3998218883,
+    "parent": 165,
+    "flags": 0
+  },
+  {
+    "name": "RT_spiderlegB_attach",
+    "hash": 4005828336,
+    "parent": 28,
+    "flags": 0
+  },
+  {
+    "name": "RT_finger_C_D",
+    "hash": 4024197978,
+    "parent": 82,
+    "flags": 0
+  },
+  {
+    "name": "LF_lowerButtock",
+    "hash": 4049431473,
+    "parent": 208,
+    "flags": 0
+  },
+  {
+    "name": "RT_outer_eye_upper_deform",
+    "hash": 4049743261,
+    "parent": 36,
+    "flags": 0
+  },
+  {
+    "name": "neck4_twist",
+    "hash": 4076246672,
+    "parent": 143,
+    "flags": 0
+  },
+  {
+    "name": "RT_thumb_C",
+    "hash": 4108576107,
+    "parent": 99,
+    "flags": 0
+  },
+  {
+    "name": "RT_loarmTwist_B",
+    "hash": 4115212205,
+    "parent": 2,
+    "flags": 0
+  },
+  {
+    "name": "LF_webEnd",
+    "hash": 4125556137,
+    "parent": 9,
+    "flags": 0
+  },
+  {
+    "name": "RT_leg_accessory_helper",
+    "hash": 4127960783,
+    "parent": 51,
+    "flags": 0
+  },
+  {
+    "name": "LF_upleg_bind_5",
+    "hash": 4203481225,
+    "parent": 14,
+    "flags": 0
+  },
+  {
+    "name": "LF_loarm_bind_5",
+    "hash": 4205598505,
+    "parent": 121,
+    "flags": 0
+  },
+  {
+    "name": "LF_scapula_helper",
+    "hash": 4231519755,
+    "parent": 175,
+    "flags": 0
+  },
+  {
+    "name": "LF_loarm_back_helper",
+    "hash": 4257230431,
+    "parent": 207,
+    "flags": 0
+  },
+  {
+    "name": "LF_loarm_bind_1",
+    "hash": 4257321776,
+    "parent": 121,
+    "flags": 0
+  },
+  {
+    "name": "LF_upleg_bind_1",
+    "hash": 4259433616,
+    "parent": 14,
+    "flags": 0
+  },
+  {
+    "name": "LF_spiderlegA_attach",
+    "hash": 4270050474,
+    "parent": 28,
+    "flags": 0
+  },
+  {
+    "name": "LF_uparm",
+    "hash": 4285941033,
+    "parent": 175,
+    "flags": 0
+  },
+  {
+    "name": "RT_webStart",
+    "hash": 4290542492,
+    "parent": 168,
+    "flags": 0
+  }
+]

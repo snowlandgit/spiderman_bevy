@@ -1,0 +1,31 @@
+LookGroups:
+0 12
+
+Materials used:
+4	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_generic_red01.material
+9	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_generic_yellow02.material
+10	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_generic_yellow01.material
+7	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_industrial01.material
+0	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_industrial02.material
+1	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_modern01.material
+8	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_modern02.material
+11	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_modern03.material
+5	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_modern04.material
+3	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_modern08.material
+6	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_modern10.material
+2	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_residential01.material
+
+Slots:
+===============================================================
+0	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_industrial02.material
+1	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_modern01.material
+2	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_residential01.material
+3	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_modern08.material
+4	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_generic_red01.material
+5	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_modern04.material
+6	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_modern10.material
+7	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_industrial01.material
+8	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_modern02.material
+9	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_generic_yellow02.material
+10	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_generic_yellow01.material
+11	environment\outsourcing\dhruva\os_brooklynandqueensterrain_01\buildings\material\os_bro_building_modern03.material

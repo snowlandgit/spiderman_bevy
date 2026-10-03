@@ -1,0 +1,6114 @@
+[
+  {
+    "path": "characters/hero/hero_spiderman/hero_spiderman_body.model",
+    "hash": "878B7EEABDC354A2",
+    "bytes": 12027440,
+    "sha256": "5e01cbdfb9f73a35ad3d61518386212b709e13515a215cca8e1a4d3f754eef30",
+    "spans": [
+      [
+        0,
+        25364
+      ]
+    ]
+  },
+  {
+    "path": "configs/hero/hero_swingconfig.config",
+    "hash": "B62E10A56DBB587C",
+    "bytes": 31252,
+    "sha256": "6d9bb31aa714fb769641e93d98e96ebb17e899d219476fa3fbed942c4b39b317",
+    "spans": [
+      [
+        0,
+        180286
+      ]
+    ]
+  },
+  {
+    "path": "configs/hero/hero_swingsetup_standard.config",
+    "hash": "891D95C69E28BC2F",
+    "bytes": 3636,
+    "sha256": "5b9fba89c4fdb1c2934d6dda01bf349919977507041b5e77e42cd7bee39e82f5",
+    "spans": [
+      [
+        0,
+        30638
+      ]
+    ]
+  },
+  {
+    "path": "configs/hero/hero_swingcameraconfig.config",
+    "hash": "8CFFBA865B23082A",
+    "bytes": 4564,
+    "sha256": "c1ccec19936382a7a5c67527fbdba3068db7e464f53c8c3feac741c2feb03aa5",
+    "spans": [
+      [
+        0,
+        43500
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_2rh_000_twist_0_spiderman.animclip",
+    "hash": "AAE6D95569C8AE9A",
+    "bytes": 4708,
+    "sha256": "4054a7230d27590741eae40395ff14e74a273dae3b801447ca45a7791d482ca3",
+    "spans": [
+      [
+        0,
+        142654
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_2rh_045_twist_0_spiderman.animclip",
+    "hash": "95E38A2856951F70",
+    "bytes": 4660,
+    "sha256": "14060442c6b322ece444758e833a8bda5ead43e72853ff63c161916c64d07089",
+    "spans": [
+      [
+        0,
+        73009
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_2rh_000_bend_l_spiderman.animclip",
+    "hash": "901231D18472A0D3",
+    "bytes": 4708,
+    "sha256": "294e79d4b54072f7eefad42a92758206b3b29bca5bc61534f8b642185483a6e0",
+    "spans": [
+      [
+        0,
+        53704
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_2rh_000_bend_r_spiderman.animclip",
+    "hash": "AC3ECEC41FD6F150",
+    "bytes": 4708,
+    "sha256": "2b0bcf8d64018361922308648734bd4217ac6a452213c3302e7e10b7a8a8413b",
+    "spans": [
+      [
+        0,
+        147229
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_rh_a_spiderman.animclip",
+    "hash": "B78A092A133D5B0B",
+    "bytes": 105972,
+    "sha256": "59f5a2cf4fceb8ea63148b3ab7a1482578601e62a60e3de1c706917f3147cd6d",
+    "spans": [
+      [
+        0,
+        184811
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_intro_fromairaggro_fwd_rh_spiderman.animclip",
+    "hash": "80CCE76672E15B24",
+    "bytes": 24036,
+    "sha256": "c890c041744f6012eb90fb2adc18406a11354442a55b751520c9803ffb1bcc44",
+    "spans": [
+      [
+        0,
+        2703
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_intro_fromairaggro_fwd_spiderman.animclip",
+    "hash": "82533CAF9E6503CB",
+    "bytes": 25636,
+    "sha256": "7ef8ffadab336bae260e002c7e77b968c0cb4d3abab153d743b6c757946d8c3b",
+    "spans": [
+      [
+        0,
+        7740
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_jump_high_spiderman.animclip",
+    "hash": "92E9FFF59FC6F350",
+    "bytes": 59652,
+    "sha256": "0288ee32f122a1ddf8b84d3cd90181c01699f56cf0a4dadfb8244c46be5ba554",
+    "spans": [
+      [
+        0,
+        63095
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_jump_mid_spiderman.animclip",
+    "hash": "A3BBF02DD4E1AFA6",
+    "bytes": 70756,
+    "sha256": "948905cfe52d4aed57baba09a515ca9478196b945ea0c5d51be81cdd5f23dc1e",
+    "spans": [
+      [
+        0,
+        118830
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_jump_mid2_spiderman.animclip",
+    "hash": "AD3AFC8D9C5F679B",
+    "bytes": 69956,
+    "sha256": "cb8b201158c4328f4c62867ddf745d8110d7838efd858bf1832a0285ff1026f2",
+    "spans": [
+      [
+        0,
+        150484
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_jump_mid3_spiderman.animclip",
+    "hash": "97187FCE89171014",
+    "bytes": 72180,
+    "sha256": "2b25a1f57fb703fd9659534b700c99fba094dd69584cd91e90efa65f0554f27e",
+    "spans": [
+      [
+        0,
+        77132
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_release_low_spiderman.animclip",
+    "hash": "A01B1C437E03AA04",
+    "bytes": 34228,
+    "sha256": "2c9d09316928347961b04ce0a6bd96aa23b1fb3e8c1d007c37c73a29697a1bf7",
+    "spans": [
+      [
+        0,
+        106861
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_release_mid_spiderman.animclip",
+    "hash": "9F0093BE82DABA28",
+    "bytes": 62452,
+    "sha256": "9e63b5b03085a6d9faccde12fbd36d8141e5f4a2ecfe090537e7949969b83260",
+    "spans": [
+      [
+        0,
+        103267
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_release_high_spiderman.animclip",
+    "hash": "A25D8EA9CF6BDA31",
+    "bytes": 60964,
+    "sha256": "084cf95d7934a9a6812dbf9170e425d8b536a214d092faec08af79cbcfb59c8e",
+    "spans": [
+      [
+        0,
+        114288
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/fall_cycle_spiderman.animclip",
+    "hash": "8BE6F302507ECEBE",
+    "bytes": 37540,
+    "sha256": "c329ac6a954843b9c46247a8907cfd0ddd52d86b768259f7999341dedd4fafc1",
+    "spans": [
+      [
+        0,
+        39909
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/fastfall_spiderman.animclip",
+    "hash": "98E20F31F0890FE6",
+    "bytes": 47604,
+    "sha256": "97c4f6b8e28ca14b2e6d9d8bb731fc89a1d3969c6eeb8364a0788d9431c76887",
+    "spans": [
+      [
+        0,
+        82927
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/skydive_spiderman.animclip",
+    "hash": "A215521270B3568C",
+    "bytes": 23812,
+    "sha256": "a897e00722cbc43bca6cacb9292c497ad0b2920dd492d81a5bb0b08555f9a030",
+    "spans": [
+      [
+        0,
+        113340
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/fall_toland_spiderman.animclip",
+    "hash": "81E5E02470612C7D",
+    "bytes": 16868,
+    "sha256": "5ded60bd58877764318635a40f94f08e469d0580733214b62ca4617529d82618",
+    "spans": [
+      [
+        0,
+        6332
+      ]
+    ]
+  },
+  {
+    "path": "material/characters/hero/hero_spiderman_newgauntlet/hero_spiderman_newgauntlet.material",
+    "hash": "9D881FAE13A9E1F7",
+    "bytes": 612,
+    "sha256": "07e4ead79777a82e1ed579ce17c96c15942fe45b9ff6b5a1fc85803fc4905aeb",
+    "spans": [
+      [
+        0,
+        98454
+      ]
+    ]
+  },
+  {
+    "path": "material/characters/hero/hero_spiderman_shooter/hero_spiderman_webshooter.material",
+    "hash": "9E8ED99782F40DF2",
+    "bytes": 564,
+    "sha256": "27a5c83764464f6b474099c12c05a1887f1c939b0ea2f9ecff80f5806f38bba5",
+    "spans": [
+      [
+        0,
+        101832
+      ]
+    ]
+  },
+  {
+    "path": "material/characters/hero/hero_spiderman_shooter/hero_spiderman_webshooter_glass.material",
+    "hash": "9FD4BB4A8630CD0C",
+    "bytes": 500,
+    "sha256": "29bf866afac810458dafd3e5e0a9b72fc8ea828d54098b931c3c01f90f2ecee8",
+    "spans": [
+      [
+        0,
+        105967
+      ]
+    ]
+  },
+  {
+    "path": "materials/ceg_test_chrome_01/hero_spiderman_eye_base.material",
+    "hash": "8A771F244DBDB4AC",
+    "bytes": 724,
+    "sha256": "96b799c087d2b0532f9f7a52b0d0a1882ab2e165c6a6a54886ca0c405d9cc966",
+    "spans": [
+      [
+        0,
+        35108
+      ]
+    ]
+  },
+  {
+    "path": "materials/hrm_bdy_raj_body/hero_spiderman_body_modcolor.material",
+    "hash": "B519641108AA8672",
+    "bytes": 955188,
+    "sha256": "faa0b313eb868c3f5a1691d29c17807dac030ff3b24e56597dc10c4bade5d1b4",
+    "spans": [
+      [
+        0,
+        176706
+      ]
+    ]
+  },
+  {
+    "path": "materials/hrm_bdy_raj_body/hero_spiderman_eye_lense.material",
+    "hash": "B93DB19755E48812",
+    "bytes": 1460,
+    "sha256": "03bed09041582e27c3a826552f29c6dbd664f307988148a987edb40ed372b090",
+    "spans": [
+      [
+        0,
+        190519
+      ]
+    ]
+  },
+  {
+    "path": "materials/hrm_bdy_raj_body/hero_spiderman_eyeshutters.material",
+    "hash": "88A5AE9E6B25C5EA",
+    "bytes": 1204,
+    "sha256": "b5d717cf8e473c7b6a71542760c7df59162d586ae3ec80f524b01160b7ba41ab",
+    "spans": [
+      [
+        0,
+        29065
+      ]
+    ]
+  },
+  {
+    "path": "materials/hrm_bdy_raj_body/hero_spiderman_glove_modcolor.material",
+    "hash": "89BAF581240AC51F",
+    "bytes": 996,
+    "sha256": "3088aa5c19e5bd25bff60f08afe610f7e962ea3b6c02c5d6ece50e68e9a49467",
+    "spans": [
+      [
+        0,
+        32683
+      ]
+    ]
+  },
+  {
+    "path": "materials/hrm_bdy_raj_body/hero_spiderman_head_eyeframe.material",
+    "hash": "86AE03A0F1031479",
+    "bytes": 916,
+    "sha256": "4c646766b6722b3d51d801595e96360365716a08a38c49c86302ffa3c0e78077",
+    "spans": [
+      [
+        0,
+        22471
+      ]
+    ]
+  },
+  {
+    "path": "materials/hrm_bdy_raj_body/hero_spiderman_head_newweb.material",
+    "hash": "90DF578E289CF7F0",
+    "bytes": 1028,
+    "sha256": "707b3c3e935e34e121d1ceb98eb3fddc8f709ae712b507b935486e6173731d5a",
+    "spans": [
+      [
+        0,
+        56350
+      ]
+    ]
+  },
+  {
+    "path": "materials/hrm_bdy_raj_body/hero_spiderman_leg.material",
+    "hash": "832EFB3F602A506C",
+    "bytes": 516,
+    "sha256": "292314c24ae5784a3d7a1c152a2db209dee2219acc9276eb0b8e8d9a894b9e71",
+    "spans": [
+      [
+        0,
+        10589
+      ]
+    ]
+  },
+  {
+    "path": "materials/hrm_bdy_raj_body/hero_spiderman_shoe.material",
+    "hash": "8E51BB034BE2ADA3",
+    "bytes": 532,
+    "sha256": "b6a24e8407aaae0c77130910fc0e44c1ca41ce790df704c02157a2c5a98337b8",
+    "spans": [
+      [
+        0,
+        47823
+      ]
+    ]
+  },
+  {
+    "path": "materials/hrm_bdy_raj_body/hero_spiderman_spider_sign.material",
+    "hash": "BBAEF0DAE5779DFF",
+    "bytes": 740,
+    "sha256": "3bda365f738e86e5a32f198f7ba302543281bc14214870753102efdf03346e81",
+    "spans": [
+      [
+        0,
+        198581
+      ]
+    ]
+  },
+  {
+    "path": "materials/hrm_bdy_raj_body/reviewasset_spiderman_leg_modcolor.material",
+    "hash": "85FB02351CAEE24E",
+    "bytes": 955236,
+    "sha256": "532d4133a120384ccad73a3595508d70972ef5919e2c1e1e02666303c5cb3e63",
+    "spans": [
+      [
+        0,
+        20019
+      ]
+    ]
+  },
+  {
+    "path": "materials/hrm_bdy_raj_body/reviewasset_spiderman_shoe_modcolor.material",
+    "hash": "AFE547A22B821611",
+    "bytes": 1060,
+    "sha256": "1edd2b81a94190b6746b84350d365c869e0b6ce48531b55ecdbf0beb54c6e0ee",
+    "spans": [
+      [
+        0,
+        159368
+      ]
+    ]
+  },
+  {
+    "path": "materials/hrm_bdya_raj_clothes_sneakers/spiderman_gauntlet_mat.material",
+    "hash": "A21351DC22F9151C",
+    "bytes": 964,
+    "sha256": "cde30174870925fedc9de0998a54e90e948da2dbde5c35138ec9e186ff3ba82d",
+    "spans": [
+      [
+        0,
+        113310
+      ]
+    ]
+  },
+  {
+    "path": "materials/hrm_bdya_raj_clothes_sneakers/spiderman_whitelegs_mat.material",
+    "hash": "BF363EAD9851E795",
+    "bytes": 964,
+    "sha256": "004880bae228c289c694d5cea6102dfe97bf6c03f174730ea39233f582d799b4",
+    "spans": [
+      [
+        0,
+        210197
+      ]
+    ]
+  },
+  {
+    "path": "materials/hrm_bdya_raj_clothes_sneakers/spiderman_whiteshoes_mat.material",
+    "hash": "A8F81781C0FBBA52",
+    "bytes": 788,
+    "sha256": "cfd23c6d1b1acee685c8628af77f18fceb570488c9cde34ee3d1c9a2fa96030e",
+    "spans": [
+      [
+        0,
+        136263
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_adv_detail_array_g.texture",
+    "hash": "9FA28BF3AE94259A",
+    "bytes": 87424,
+    "sha256": "d46df2ea9728db29e800375d60ab5e1b5ca10922ca166bc208293504ba9abdbe",
+    "spans": [
+      [
+        0,
+        105332
+      ],
+      [
+        1,
+        223693
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_adv_detail_array_n.texture",
+    "hash": "870CD38F201A2B1B",
+    "bytes": 87424,
+    "sha256": "5020145ea7675049ca8e3d620ae4f48cb994db56edbdf1be8c18dabd39781c61",
+    "spans": [
+      [
+        0,
+        23732
+      ],
+      [
+        1,
+        215283
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_body_c.texture",
+    "hash": "A1D2E08960670142",
+    "bytes": 349632,
+    "sha256": "534fa1951ad3b1d08a4e625922bd6a47ef8adc975bbfc6bd86d398429deb4291",
+    "spans": [
+      [
+        0,
+        112441
+      ],
+      [
+        1,
+        224437
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_body_damagemask_g.texture",
+    "hash": "92244AE9C08E9721",
+    "bytes": 21952,
+    "sha256": "b3c8ee3e23c3257b90989cec889a0b71496910b672ba098ed5a9a5b537b076b2",
+    "spans": [
+      [
+        0,
+        60560
+      ],
+      [
+        1,
+        219079
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_body_g.texture",
+    "hash": "A1085E1CCFA0861D",
+    "bytes": 349632,
+    "sha256": "5cac0c4fa102a2c5f3baf635e39d5c1d246627409b7408fe06752477f4a75daf",
+    "spans": [
+      [
+        0,
+        109854
+      ],
+      [
+        1,
+        224177
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_body_n.texture",
+    "hash": "B9A60660412E889C",
+    "bytes": 349632,
+    "sha256": "519b73e2105d9c9de890e69d73ea850cefbbfb87560f372fbb81975bf72a773c",
+    "spans": [
+      [
+        0,
+        191850
+      ],
+      [
+        1,
+        232610
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_body_wrinkle_mask_x.texture",
+    "hash": "BDD24CA12D324B2D",
+    "bytes": 21952,
+    "sha256": "c594b03c4120d48bbd14a136ebfa7d12a2276ea4d90d48aab0559b78eafc73c7",
+    "spans": [
+      [
+        0,
+        205690
+      ],
+      [
+        1,
+        234062
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_body_wrinklemask_x.texture",
+    "hash": "BF98CCB63B9AE216",
+    "bytes": 43808,
+    "sha256": "eae737a94ec7787c5ca4143819212fe5e44c5c409c072a598c41ccce49477f29",
+    "spans": [
+      [
+        0,
+        211537
+      ],
+      [
+        1,
+        234662
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_detail_array_blank_h.texture",
+    "hash": "96B88E8BBF65940D",
+    "bytes": 21952,
+    "sha256": "be0e2448d16390efabf336f72862921e60c934a1cc3d1acf680206750430fc3d",
+    "spans": [
+      [
+        0,
+        75843
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_eye_c.texture",
+    "hash": "82504E07732D51BB",
+    "bytes": 21952,
+    "sha256": "bfbbe7bc3c4dc7205bd2103fdabb4fa876233691586ddd83fb40301db0dacef1",
+    "spans": [
+      [
+        0,
+        7695
+      ],
+      [
+        1,
+        213611
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_eye_damaged_g.texture",
+    "hash": "B343DB0DE35E2DF8",
+    "bytes": 21952,
+    "sha256": "6928f2e9aa5eb34a321887d8ad4348713f4fa4df0f2e286311189d736c62ff2e",
+    "spans": [
+      [
+        0,
+        170552
+      ],
+      [
+        1,
+        230451
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_eye_lens_damage_c.texture",
+    "hash": "806A0B99FCF62129",
+    "bytes": 21952,
+    "sha256": "6d25d7038f9fc56af2e01e869e6dcc8d727475346d6d9fa2e9a347719566a7ec",
+    "spans": [
+      [
+        0,
+        1401
+      ],
+      [
+        1,
+        212980
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_eye_n.texture",
+    "hash": "9A24A8EE5264D865",
+    "bytes": 21952,
+    "sha256": "5be148f48d937654ce6a5dd8c3161922bf0a82ba487c3f25d8eb7959d1795741",
+    "spans": [
+      [
+        0,
+        87072
+      ],
+      [
+        1,
+        221807
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_eye_tiling_c.texture",
+    "hash": "96F77B97BF402453",
+    "bytes": 21952,
+    "sha256": "40c1d4ff5bc7d7de6f2276b25ace84d4fb4e7012ea8d7c00f044e41990f01d79",
+    "spans": [
+      [
+        0,
+        76715
+      ],
+      [
+        1,
+        220781
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_eye_tiling_g.texture",
+    "hash": "962DC5021087A30C",
+    "bytes": 21952,
+    "sha256": "56b630f50f2dba0d3811de06395d3ca99e75f7cd222f88b382c5d23393d29b79",
+    "spans": [
+      [
+        0,
+        73945
+      ],
+      [
+        1,
+        220496
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_eye_tiling_n.texture",
+    "hash": "8E839D7E9E09AD8D",
+    "bytes": 21952,
+    "sha256": "49aeb01c2ae1f417030305083f044880a7e4b30c4a479ca720f8830313dad492",
+    "spans": [
+      [
+        0,
+        48470
+      ],
+      [
+        1,
+        217871
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_eyeshutters_c.texture",
+    "hash": "976E39A4F645A541",
+    "bytes": 349632,
+    "sha256": "54a28e0341cc2f38fee30688f2230b44f1b4156170e9016b5fd2dab028882bba",
+    "spans": [
+      [
+        0,
+        78175
+      ],
+      [
+        1,
+        220945
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_eyeshutters_g.texture",
+    "hash": "97B487315982221E",
+    "bytes": 144,
+    "sha256": "fde1f917c3c01c56014b93bf5b598b6c89d983441fc17721f4a5a9f3b16004eb",
+    "spans": [
+      [
+        0,
+        79101
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_eyeshutters_n.texture",
+    "hash": "8F1ADF4DD70C2C9F",
+    "bytes": 349632,
+    "sha256": "23a53f2398cce80c3d8d8b549eea3afcdd02a8a6b94a196bdabe1bebade82c76",
+    "spans": [
+      [
+        0,
+        50496
+      ],
+      [
+        1,
+        218070
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_eyeshutters_x.texture",
+    "hash": "BE9CD12165D7B6C2",
+    "bytes": 349632,
+    "sha256": "b9b88b57e29d32fffa7729714c277b0871eb27cd281b9a8478100c43b5e2a463",
+    "spans": [
+      [
+        0,
+        208254
+      ],
+      [
+        1,
+        234326
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_gauntlet_g.texture",
+    "hash": "ACC21D585AF12837",
+    "bytes": 349632,
+    "sha256": "8ee959643deae7e93a96b5c9c0ae59b8fec9226f139712d6b1d583706c94900d",
+    "spans": [
+      [
+        0,
+        148924
+      ],
+      [
+        1,
+        228241
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_gauntlet_n.texture",
+    "hash": "B46C4524D47F26B6",
+    "bytes": 349632,
+    "sha256": "93fb0e805f057657cd806bdd5c0f73dff240873caf332297b9ba50f026ba5f53",
+    "spans": [
+      [
+        0,
+        174376
+      ],
+      [
+        1,
+        230859
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_glove_damagemask_g.texture",
+    "hash": "8D5315E1F20DFBFA",
+    "bytes": 21952,
+    "sha256": "99c068eb6b22494c2e400a4672e707d4b4c5bea1cef39143ef697aa8a947fb3e",
+    "spans": [
+      [
+        0,
+        44592
+      ],
+      [
+        1,
+        217468
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_glove_fabrics_x.texture",
+    "hash": "B84340B139CB67F5",
+    "bytes": 349632,
+    "sha256": "dda7333fca9cb24c649141a2990d7df089034bf14e71c4af8c06651f0cebbb64",
+    "spans": [
+      [
+        0,
+        187223
+      ],
+      [
+        1,
+        232140
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_glove_g.texture",
+    "hash": "AB7E759849DB9A54",
+    "bytes": 349632,
+    "sha256": "5919f0792f7eda8f015217e75184c0f7c06d37bb953d1362815f5b9512a2f6a6",
+    "spans": [
+      [
+        0,
+        144710
+      ],
+      [
+        1,
+        227814
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_glove_modcolor_c.texture",
+    "hash": "989A5B1CD6FBB590",
+    "bytes": 349632,
+    "sha256": "27b175ede36dcaa5d90c6cc557afdeabab82a35d9c5f7f8f8a3f74ed44f6fc88",
+    "spans": [
+      [
+        0,
+        81995
+      ],
+      [
+        1,
+        221304
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_glove_n.texture",
+    "hash": "B3D02DE4C75594D5",
+    "bytes": 349632,
+    "sha256": "276a2f58098445d060dae4efb309feef858fc9881f0ba17573923757c2d63b22",
+    "spans": [
+      [
+        0,
+        172400
+      ],
+      [
+        1,
+        230647
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_head_c.texture",
+    "hash": "BF0FCB62F5415C64",
+    "bytes": 349632,
+    "sha256": "7368432c23efaa078b4a4e49bdabaf73bd572b9b1bffd6ad9a14692d68c4097f",
+    "spans": [
+      [
+        0,
+        209725
+      ],
+      [
+        1,
+        234480
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_head_damagemask_02_g.texture",
+    "hash": "90B728D76C1EF90D",
+    "bytes": 21952,
+    "sha256": "4fbd4328420796681bf1019dff1c3fe8f1cd9bb5e09d2e45fe95890fae5d18db",
+    "spans": [
+      [
+        0,
+        55864
+      ],
+      [
+        1,
+        218587
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_head_fabrics_x.texture",
+    "hash": "BBEC845FDB841894",
+    "bytes": 349632,
+    "sha256": "a720ab864140befef7b4fc212f71e7f7aeb57f85b7977411e1b7db1006365cfa",
+    "spans": [
+      [
+        0,
+        199380
+      ],
+      [
+        1,
+        233397
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_head_g.texture",
+    "hash": "BFD575F75A86DB3B",
+    "bytes": 349632,
+    "sha256": "fdbcf9da3059a6f8fa836741a93979210b4e0500b2e3d51982da6433e7ef3301",
+    "spans": [
+      [
+        0,
+        212321
+      ],
+      [
+        1,
+        234746
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_head_n.texture",
+    "hash": "A77B2D8BD408D5BA",
+    "bytes": 349632,
+    "sha256": "ac6ca80a6e351ca7ae3bb17853d8c30248142ae20770ab9d4b4d6d457c63771c",
+    "spans": [
+      [
+        0,
+        131323
+      ],
+      [
+        1,
+        226402
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_leg_bend_bw_n.texture",
+    "hash": "A34A1F91D063A84B",
+    "bytes": 349632,
+    "sha256": "6f3b5f4bda9fb18a4c2d247c8cb0c8a89b10fdf7bb1cd77441a0aeeb7c3662da",
+    "spans": [
+      [
+        0,
+        117323
+      ],
+      [
+        1,
+        224917
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_leg_damagemask_g.texture",
+    "hash": "8C00416D7F5F3D66",
+    "bytes": 21952,
+    "sha256": "61bbf052b4b6562399787cd733c6146d7ebfb6db1198b9a9ff4b76f5c3ad8bf6",
+    "spans": [
+      [
+        0,
+        40259
+      ],
+      [
+        1,
+        217015
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_leg_flex_n.texture",
+    "hash": "A4747B853351B458",
+    "bytes": 349632,
+    "sha256": "82e1eb98b1fd42c9f990010b843692a33f634bbabc30fff63eed900f5aab0223",
+    "spans": [
+      [
+        0,
+        121188
+      ],
+      [
+        1,
+        225341
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_leg_g.texture",
+    "hash": "AB4BA1CB6E2A3A47",
+    "bytes": 349632,
+    "sha256": "7d3d071a139dd9166a9c5c83c6a47a23975d758459607489b6bea5c581e18934",
+    "spans": [
+      [
+        0,
+        144003
+      ],
+      [
+        1,
+        227744
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_leg_modcolor_c.texture",
+    "hash": "BFFA20E69068D740",
+    "bytes": 349632,
+    "sha256": "353d6ed7a85312e9b82ffffd9bf6814ba5761075d24830802d525fe23b81de0c",
+    "spans": [
+      [
+        0,
+        212780
+      ],
+      [
+        1,
+        234802
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_leg_n.texture",
+    "hash": "B3E5F9B7E0A434C6",
+    "bytes": 349632,
+    "sha256": "d89b23cb1040f9a5aa364da083fdcd8c35645e10c78af7bf20829ea9d6681ea6",
+    "spans": [
+      [
+        0,
+        172680
+      ],
+      [
+        1,
+        230682
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_leg_wrinklemask_x.texture",
+    "hash": "9216CF6A81B46D76",
+    "bytes": 43808,
+    "sha256": "0a214b2237e44aca144f5e157dc6e1503d149e23a3b8a3d7dcdc41cc2d087aee",
+    "spans": [
+      [
+        0,
+        60375
+      ],
+      [
+        1,
+        219060
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_newgauntlet_c.texture",
+    "hash": "B9DF0F3507283807",
+    "bytes": 349632,
+    "sha256": "a20971fb5456b270d9dd5bdd4475b8c93362fe75918bbdd4314ffa9822afa5cc",
+    "spans": [
+      [
+        0,
+        192592
+      ],
+      [
+        1,
+        232684
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_newgauntlet_g.texture",
+    "hash": "B905B1A0A8EFBF58",
+    "bytes": 349632,
+    "sha256": "11ca9f207ebfec5078508a766571754a4f7ff54a5f4620f038c323413c4d36cb",
+    "spans": [
+      [
+        0,
+        189769
+      ],
+      [
+        1,
+        232388
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_shoe_damagemask_g.texture",
+    "hash": "8C4E940CBAF72948",
+    "bytes": 21952,
+    "sha256": "d7ef8f47429d65f63ecccda52dc4d8d5836ac47c1b5179ed56543ee71d08edef",
+    "spans": [
+      [
+        0,
+        41223
+      ],
+      [
+        1,
+        217118
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_shoe_g.texture",
+    "hash": "872EDB9EBF78EAD7",
+    "bytes": 349632,
+    "sha256": "746765ddc8ef9a4f42897b6d00c017d610b1f00a90096037fde05e6494c92ab1",
+    "spans": [
+      [
+        0,
+        24156
+      ],
+      [
+        1,
+        215327
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_shoe_modcolor_c.texture",
+    "hash": "952DEB1EC5A9D896",
+    "bytes": 349632,
+    "sha256": "d2a0a64aec50d1f3f8b0f1ec937e1987b412fde2db452de06a6a5b8a7afe3d69",
+    "spans": [
+      [
+        0,
+        70717
+      ],
+      [
+        1,
+        220164
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_shoe_n.texture",
+    "hash": "9F8083E231F6E456",
+    "bytes": 349632,
+    "sha256": "c74bf0012b86aa3ad75a472ea05875a7b1b3891da6793de3fbf6c8f38e5b0faf",
+    "spans": [
+      [
+        0,
+        104903
+      ],
+      [
+        1,
+        223647
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_specdetail_09_x.texture",
+    "hash": "A0AEE1C5469BC483",
+    "bytes": 21952,
+    "sha256": "75af3ea3aa86bd60a6e1f4284fd37a2976631c3efcb32d376ed9d68cb6209238",
+    "spans": [
+      [
+        0,
+        108741
+      ],
+      [
+        1,
+        224058
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_specdetail_10_x.texture",
+    "hash": "8A9F4C48C80E2A47",
+    "bytes": 21952,
+    "sha256": "86559c0a64d4a7a61a86784498c0af6df5762eb333785a5b0a8d39db76d7621e",
+    "spans": [
+      [
+        0,
+        35633
+      ],
+      [
+        1,
+        216501
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_specdetail_11_n.texture",
+    "hash": "B973BE62C5FD042F",
+    "bytes": 43776,
+    "sha256": "4478226d3930f4f7be420dcbce48247af2a82ec020347083af24ea7a6e0e14c2",
+    "spans": [
+      [
+        0,
+        191211
+      ],
+      [
+        1,
+        232542
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_specdetail_11_x.texture",
+    "hash": "88F5B00E77269E72",
+    "bytes": 21952,
+    "sha256": "f82e6d402122a4e4ec9f9a8d3771d7e406657ce2c1addac25acc34988f79f38a",
+    "spans": [
+      [
+        0,
+        30124
+      ],
+      [
+        1,
+        215916
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_specdetail_20_x.texture",
+    "hash": "A33CB3817AC4A007",
+    "bytes": 21952,
+    "sha256": "c8630d5acb20347beecf4108f4c359a83b45824b0da2a72ce1e3f13cc6012b9c",
+    "spans": [
+      [
+        0,
+        117164
+      ],
+      [
+        1,
+        224893
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_specdetail_null_x.texture",
+    "hash": "A2EE23256B31CDC7",
+    "bytes": 21952,
+    "sha256": "01ca104ae53721311dc3dfa5aa1f2cf3abed36487f8c861013be41ca7cc2b84a",
+    "spans": [
+      [
+        0,
+        116118
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_spider_g.texture",
+    "hash": "BD70ADEB98CBB998",
+    "bytes": 349632,
+    "sha256": "e27300be62292275608654293c562e196680bb8b394802b2e8a5e72819fcc60d",
+    "spans": [
+      [
+        0,
+        204372
+      ],
+      [
+        1,
+        233942
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_spider_n.texture",
+    "hash": "A5DEF5971645B719",
+    "bytes": 349632,
+    "sha256": "76111be0548e2c68c2d7d72b978127b293104cc772ffbbf2778bbdbbd3e67aae",
+    "spans": [
+      [
+        0,
+        125876
+      ],
+      [
+        1,
+        225852
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_tiling2_n.texture",
+    "hash": "A3533E84B291A0E4",
+    "bytes": 21952,
+    "sha256": "2863345f49640b69affc7d78024c6958271e60827ea0c67c283ed08cda504ba6",
+    "spans": [
+      [
+        0,
+        117438
+      ],
+      [
+        1,
+        224927
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_tiling_c.texture",
+    "hash": "91CBED53A3FEA21E",
+    "bytes": 21952,
+    "sha256": "be409f1269349669a7bc06e50a4153cf2415216170fc35a5ad255ee30622b813",
+    "spans": [
+      [
+        0,
+        59482
+      ],
+      [
+        1,
+        218968
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_tiling_g.texture",
+    "hash": "911153C60C392541",
+    "bytes": 21952,
+    "sha256": "3c07388ed749abe272ac6bde688aaa1e221801078aee9b9479282981b0bb917d",
+    "spans": [
+      [
+        0,
+        57047
+      ],
+      [
+        1,
+        218712
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_waist_bend_bw_n.texture",
+    "hash": "8651CF2501E2C8AC",
+    "bytes": 349632,
+    "sha256": "5c62b5cfae06e178cd3f3bf52ac01bf535dd0a0defb532e99bbfe410a0d625e8",
+    "spans": [
+      [
+        0,
+        21181
+      ],
+      [
+        1,
+        215028
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_waist_bend_fw_n.texture",
+    "hash": "A30F574BF5862A93",
+    "bytes": 349632,
+    "sha256": "0d6e5730dcab8a614810729fdf58fb19c0e9df1a0517c68c589339ff766e96cb",
+    "spans": [
+      [
+        0,
+        116563
+      ],
+      [
+        1,
+        224845
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_waist_bend_lt_n.texture",
+    "hash": "991404A04DC7C40C",
+    "bytes": 349632,
+    "sha256": "c82fdd0f76f5fd8c5ca2dd2a821e8edb84dfcc13cc4a02cf5f990662505f2046",
+    "spans": [
+      [
+        0,
+        83573
+      ],
+      [
+        1,
+        221458
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_waist_bend_rt_n.texture",
+    "hash": "B84ED60A2D4C14EF",
+    "bytes": 349632,
+    "sha256": "5f5fe053604c6561d81b4aa85b5a003bbb4443c157449cb77b622b14302d322f",
+    "spans": [
+      [
+        0,
+        187370
+      ],
+      [
+        1,
+        232153
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_waist_twist_lt_n.texture",
+    "hash": "AB9AF1EB28ECCA9A",
+    "bytes": 349632,
+    "sha256": "d014954a87dfbe1cfd9ce957ab188d12dff3095c31ede3dfdb00d72a002b4a1a",
+    "spans": [
+      [
+        0,
+        145087
+      ],
+      [
+        1,
+        227847
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_waist_twist_rt_n.texture",
+    "hash": "8AC0234148671A79",
+    "bytes": 349632,
+    "sha256": "45a05cef3b8eaae9ce2cef897cc352d094e4d7cd81d83e6013a4de8e48d948af",
+    "spans": [
+      [
+        0,
+        36063
+      ],
+      [
+        1,
+        216543
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_webshooter_c.texture",
+    "hash": "A402798CC471102E",
+    "bytes": 349632,
+    "sha256": "25638fc016755aa8d47ac85d44c33ab6142a543bc8d2a23b07077e1095ba76c8",
+    "spans": [
+      [
+        0,
+        119725
+      ],
+      [
+        1,
+        225186
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_webshooter_g.texture",
+    "hash": "A4D8C7196BB69771",
+    "bytes": 349632,
+    "sha256": "da00ca17969ff39a15d63e35e00752f3fba475e565b25197967f36214593ba8e",
+    "spans": [
+      [
+        0,
+        122457
+      ],
+      [
+        1,
+        225486
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/hero_spiderman_webshooter_n.texture",
+    "hash": "BC769F65E53899F0",
+    "bytes": 349632,
+    "sha256": "b30b5271ca1ea1c5a9ee2fa6858a3a2878e5160d138c53c36f5a4804115926de",
+    "spans": [
+      [
+        0,
+        201132
+      ],
+      [
+        1,
+        233580
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/reviewasset_spiderman_body_fabrics_x.texture",
+    "hash": "BB258143C8AE617E",
+    "bytes": 349632,
+    "sha256": "89ce4a239451fe27b90489af89023d37bb09c1a9d0a0f8312e78c269addb4959",
+    "spans": [
+      [
+        0,
+        196799
+      ],
+      [
+        1,
+        233111
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/reviewasset_spiderman_leg_fabrics_x.texture",
+    "hash": "805F7222F893FE47",
+    "bytes": 349632,
+    "sha256": "ec5f67654a41e01a968c71e930f6e1a779953cfd0de132a00b4bc9e666ae52a7",
+    "spans": [
+      [
+        0,
+        1263
+      ],
+      [
+        1,
+        212963
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/reviewasset_spiderman_leg_n.texture",
+    "hash": "BCCFD8F6038AE6C2",
+    "bytes": 349632,
+    "sha256": "e1df86d3009b8c318beca322526f21cb927a6b3ff895742bf3a15f4cd49f3874",
+    "spans": [
+      [
+        0,
+        202297
+      ],
+      [
+        1,
+        233701
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/reviewasset_spiderman_shoe_fabrics_x.texture",
+    "hash": "BB39E2B965F16308",
+    "bytes": 349632,
+    "sha256": "a8b88494d89b0f6590d3ad4cfbaaba1b925cb64472b37e69f34b8631bad967db",
+    "spans": [
+      [
+        0,
+        197060
+      ],
+      [
+        1,
+        233139
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/reviewasset_spiderman_shoe_g.texture",
+    "hash": "89AD874B802EE25A",
+    "bytes": 349632,
+    "sha256": "15a231e2ce5c76935274f81237ee386ce7eb2bd6ca86194c519126a0527385ed",
+    "spans": [
+      [
+        0,
+        32492
+      ],
+      [
+        1,
+        216167
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/reviewasset_spiderman_shoe_n.texture",
+    "hash": "9103DF370EA0ECDB",
+    "bytes": 349632,
+    "sha256": "8a9e608a6f1fb8620e2a20a4852282747aa03a230ec959c4a2ce856f117d1ad8",
+    "spans": [
+      [
+        0,
+        56877
+      ],
+      [
+        1,
+        218697
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/textures/reviewasset_spiderman_whiteleg_g.texture",
+    "hash": "98CD0F7965DB0B76",
+    "bytes": 349632,
+    "sha256": "0637ece7187c9211b9270fe41e20ad3e139487beb2da03a3523bd29f1e9e281b",
+    "spans": [
+      [
+        0,
+        82665
+      ],
+      [
+        1,
+        221361
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman_mcu/textures/hero_spiderman_mcu_body_g.texture",
+    "hash": "B3C5527D51236F3F",
+    "bytes": 349632,
+    "sha256": "415b362590b58be00a9e741f6a613369f4d32b894f41fd507e50dd6005911195",
+    "spans": [
+      [
+        0,
+        172264
+      ],
+      [
+        1,
+        230633
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman_mcu/textures/hero_spiderman_mcu_body_n.texture",
+    "hash": "AB6B0A01DFAD61BE",
+    "bytes": 349632,
+    "sha256": "8cdcaa5f3c89c4e61bb7444d24a3f9e6541e21042947e3795e9d5307f71fb62b",
+    "spans": [
+      [
+        0,
+        144428
+      ],
+      [
+        1,
+        227785
+      ]
+    ]
+  },
+  {
+    "path": "characters/shared/default/character_default_g.texture",
+    "hash": "9FB7363DCB26B637",
+    "bytes": 11040,
+    "sha256": "638d5b894f958f168da17eb8bf95a71b6e26925f12d3f8a00215c40ca7d5ec05",
+    "spans": [
+      [
+        0,
+        105592
+      ]
+    ]
+  },
+  {
+    "path": "characters/shared/textures/detail/detail_tech_05_c.texture",
+    "hash": "8D0D16167E0BCD8A",
+    "bytes": 43808,
+    "sha256": "c4d938f06f8ff6185f7d9321027d0fb1db0c4a23f86d6b73207a44b8c977d4cb",
+    "spans": [
+      [
+        0,
+        43680
+      ],
+      [
+        1,
+        217374
+      ]
+    ]
+  },
+  {
+    "path": "characters/shared/textures/detail/detail_tech_05_g.texture",
+    "hash": "8DD7A883D1CC4AD5",
+    "bytes": 43808,
+    "sha256": "20046e2ca37d6560ae20831a53139d379d412ec539cb6279ead082cf99779d6f",
+    "spans": [
+      [
+        0,
+        46273
+      ],
+      [
+        1,
+        217620
+      ]
+    ]
+  },
+  {
+    "path": "characters/shared/textures/detail/detail_tech_05_n.texture",
+    "hash": "9579F0FF5F424454",
+    "bytes": 21952,
+    "sha256": "723122b1d9007aff437e9e1e61a01c5c1e98b2f7fd62601f5aa88853fb2b2c40",
+    "spans": [
+      [
+        0,
+        71664
+      ],
+      [
+        1,
+        220267
+      ]
+    ]
+  },
+  {
+    "path": "characters/shared/textures/detail/hero_spiderman_damage_c.texture",
+    "hash": "9EAD1EEE78E7D5D4",
+    "bytes": 524384,
+    "sha256": "aace2863a2e5943800e49178285e92e847bad09247ee1b20827be0f2ea7b97fe",
+    "spans": [
+      [
+        0,
+        102209
+      ],
+      [
+        1,
+        223377
+      ]
+    ]
+  },
+  {
+    "path": "characters/shared/wrinklemaps/cg_wrinkles_flowing_n.texture",
+    "hash": "AD6C683647C118CC",
+    "bytes": 87488,
+    "sha256": "c5b09384c53f4d5f57e55178b54c3ed6664397ee083b99d9c980b8470a1bd03c",
+    "spans": [
+      [
+        0,
+        151118
+      ],
+      [
+        1,
+        228466
+      ]
+    ]
+  },
+  {
+    "path": "characters/test/ken/gray_103_c.texture",
+    "hash": "A841B2DFDF86C36E",
+    "bytes": 288,
+    "sha256": "78fc070390003e5303bc82361e0d46a4a2efe89cc2645733fe396a6d1606452e",
+    "spans": [
+      [
+        0,
+        133917
+      ]
+    ]
+  },
+  {
+    "path": "test/bmullen/black.texture",
+    "hash": "8DE5E32571B503B6",
+    "bytes": 144,
+    "sha256": "ecdad9b1eed6d9b81954bab0b1c4d017b7f5d0dbb49f7af21ed781c982edf1db",
+    "spans": [
+      [
+        0,
+        46463
+      ]
+    ]
+  },
+  {
+    "path": "textures/default_pink_shader/default_pink_shader_c.texture",
+    "hash": "B00B74A8DC8798CC",
+    "bytes": 144,
+    "sha256": "6be6e8dd948a467c791e539b848ce8e01f451ad1ea53ea84de282016ea1c1603",
+    "spans": [
+      [
+        0,
+        159870
+      ]
+    ]
+  },
+  {
+    "path": "textures/default_pink_shader/default_pink_shader_g.texture",
+    "hash": "B0D1CA3D73401F93",
+    "bytes": 132,
+    "sha256": "7fccffdc5cb5be49eed2811dc2b56d82cc1e268292d4b738023beccda770d3aa",
+    "spans": [
+      [
+        0,
+        162428
+      ]
+    ]
+  },
+  {
+    "path": "textures/default_pink_shader/default_pink_shader_n.texture",
+    "hash": "A87F9241FDCE1112",
+    "bytes": 256,
+    "sha256": "c78ca643324bd9a93fb9be17fe67da1892602f7d09a091c132ccd20c645b3f7a",
+    "spans": [
+      [
+        0,
+        134740
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/stand_idle_spiderman.animclip",
+    "hash": "B7A1CE24953F73E2",
+    "bytes": 78820,
+    "sha256": "af637541b2217d60c2e564f13cc383be53467044e2b57397437d5af03716d935",
+    "spans": [
+      [
+        0,
+        185093
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/stand_jog_fwd_spiderman.animclip",
+    "hash": "B4CA360D59D7A28B",
+    "bytes": 45524,
+    "sha256": "1425cadd0955c52e345556167d3d5f0ccecb0137d144c51a41269f39c5900571",
+    "spans": [
+      [
+        0,
+        175601
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/stand_sprint_fwd_spiderman.animclip",
+    "hash": "8B616BE0755CFED7",
+    "bytes": 19876,
+    "sha256": "bcd0073fba3387cfc6cd94db520bbe797bd55224108b2eb71fe515ba41629f57",
+    "spans": [
+      [
+        0,
+        38169
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/wall_run_up_spiderman.animclip",
+    "hash": "8A0F00F6910E0A0C",
+    "bytes": 21284,
+    "sha256": "38e9ad983087c1581dc9e0abe9f960fcf19235e7f32dcef62328828d3b83e3b3",
+    "spans": [
+      [
+        0,
+        33783
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/wall_run_up_intro_spiderman.animclip",
+    "hash": "AA605FD38398A539",
+    "bytes": 48276,
+    "sha256": "55b0c09a6abf1f7c7305d2ca10f5c8a17194279b9a37b42894a83ac20ec2fb6c",
+    "spans": [
+      [
+        0,
+        140941
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/wall_run_jump_spin_rt_spiderman.animclip",
+    "hash": "84DD02FEEDC391AF",
+    "bytes": 33572,
+    "sha256": "e8c29635a0366b8a0698032ae09189918cbda2dbf134b6982d1eb875e515a2e6",
+    "spans": [
+      [
+        0,
+        16288
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_zip_attach_fwd_spiderman.animclip",
+    "hash": "B7AF29075773ADFB",
+    "bytes": 37204,
+    "sha256": "5caa85655058266e832f06a53304d8d71478c9c3698f3390a880d07ca0c7894d",
+    "spans": [
+      [
+        0,
+        185263
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_zip_fwd_spiderman.animclip",
+    "hash": "A22D605B482FD453",
+    "bytes": 28052,
+    "sha256": "6d3b7da93ad36611af3ca488643a61ef7292bd43bc9ed329b06566a6413fffcc",
+    "spans": [
+      [
+        0,
+        113664
+      ]
+    ]
+  },
+  {
+    "path": "actors/hrm_bdy_firsthero/hero_spiderman.actor",
+    "hash": "A896EE61F3C11FB8",
+    "bytes": 11220,
+    "sha256": "4233fe5c0545ef18b88ee7630ffd7da8c82427f3e27b7dd9e21bcdddec044b6a",
+    "spans": [
+      [
+        0,
+        135061
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hma_master/spiderman_base.animset",
+    "hash": "A18BCEC8189C4022",
+    "bytes": 493940,
+    "sha256": "62c2fffc2744b7207949176139b41c366456fdd146d775e7717af1bb06d419d3",
+    "spans": [
+      [
+        0,
+        111509
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hma_master/spiderman_traversal.animset",
+    "hash": "888DBF4798E4E906",
+    "bytes": 483088,
+    "sha256": "6799c4c804ee76b30f92508071b603333c16bd8f56db0d1c3cdf9bcbf41cab9d",
+    "spans": [
+      [
+        0,
+        28745
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman_base/hero_spiderman_base.model",
+    "hash": "B742D90D7B153BDF",
+    "bytes": 134452,
+    "sha256": "bca4cae093e80ada34be4534ca80b8beee93df552183688d86493bbd32329a51",
+    "spans": [
+      [
+        0,
+        183833
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_static.model",
+    "hash": "8E845F1350F8871E",
+    "bytes": 618732,
+    "sha256": "9fb647e149021945ba6585f3cd931dc0b38b02c90bbcb7d491e960b95da31c6f",
+    "spans": [
+      [
+        0,
+        48478
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_01.model",
+    "hash": "9A5E9DABEB106A68",
+    "bytes": 1032452,
+    "sha256": "d6cdfce702ee3cdb230f6f7de7a17051d0f003d72171f5a809f596b0340c41d8",
+    "spans": [
+      [
+        0,
+        87811
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01.model",
+    "hash": "B91FBFD99850321B",
+    "bytes": 2072244,
+    "sha256": "bdb84b83ad02730bd6f58ac0920787803584bf06208d022e17f92c950a2cde9f",
+    "spans": [
+      [
+        0,
+        190130
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/os_brooklynandqueensterrain_01/rb_os_bro_buildings_grp_01/rb_os_bro_buildings_grp_01.model",
+    "hash": "90B32FEE3A31AB60",
+    "bytes": 1463456,
+    "sha256": "ba91f50d6eed18b93b0632abbae8a70754abd59fd890f4191f0079e9de9834fd",
+    "spans": [
+      [
+        0,
+        55804
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/os_brooklynandqueensterrain_01/rb_os_bro_buildings_grp_02/rb_os_bro_buildings_grp_02.model",
+    "hash": "A76F6429144F14E0",
+    "bytes": 18016,
+    "sha256": "f697644605a9c224ed4700d6d04f4e68f6f729403f9f0dcb5c0c435e3aa24b52",
+    "spans": [
+      [
+        0,
+        131144
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/os_brooklynandqueensterrain_01/rb_os_bro_buildings_grp_03/rb_os_bro_buildings_grp_03.model",
+    "hash": "B5DB5D6BF19A819F",
+    "bytes": 322428,
+    "sha256": "d0526481ed765827dc8a00b785a628e7833d7e8f6d01a5948b3797856ef8b228",
+    "spans": [
+      [
+        0,
+        179188
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/os_brooklynandqueensterrain_01/rb_os_bro_buildings_grp_04/rb_os_bro_buildings_grp_04.model",
+    "hash": "AC61D86DA371EC40",
+    "bytes": 259396,
+    "sha256": "4040123966ede4f22dc5115ce7a6911abc258a819ba010d1de178de6342ffbd0",
+    "spans": [
+      [
+        0,
+        147689
+      ]
+    ]
+  },
+  {
+    "path": "environment/building_kits/midtown_glass_building/sza_mtg_window_v1_4x4/sza_mtg_window_v1_4x4.model",
+    "hash": "8DB585D0C6A99D53",
+    "bytes": 10132,
+    "sha256": "87d791b168de73b82821b725caf95c0b8b283c6a7a56f93b0ab62bf4d15826ce",
+    "spans": [
+      [
+        0,
+        45857
+      ]
+    ]
+  },
+  {
+    "path": "environment/building_kits/midtown_glass_building/sza_mtg_window_v4_4x4/sza_mtg_window_v4_4x4.model",
+    "hash": "9EB3D1DCD4D42F03",
+    "bytes": 5956,
+    "sha256": "0d8af381c4d177f609c8d849c1d60028f16108b0a850f7ef7074eda9a77ca619",
+    "spans": [
+      [
+        0,
+        102292
+      ]
+    ]
+  },
+  {
+    "path": "environment/building_kits/midtown_stone_building/sza_mts_window_v1_4x4/sza_mts_window_v1_4x4.model",
+    "hash": "AD02B7B379DE4BF1",
+    "bytes": 20868,
+    "sha256": "57ef2b30b68261b62231cd87dd5d1af31c7755080ca2ab4d63969ec2ba2e7c26",
+    "spans": [
+      [
+        0,
+        149779
+      ]
+    ]
+  },
+  {
+    "path": "environment/building_kits/midtown_glass_building/sza_mtg_door_v1_1stfl_8x8/sza_mtg_door_v1_1stfl_8x8.model",
+    "hash": "ABF1C6CFD4449E26",
+    "bytes": 39460,
+    "sha256": "1fb2cde482695a19713ce53a0ecdc99caa90a5c31fc174f9b50f671252225f70",
+    "spans": [
+      [
+        0,
+        146204
+      ]
+    ]
+  },
+  {
+    "path": "environment/building_kits/midtown_stone_building/sza_mts_door_1stfl_8x8/sza_mts_door_1stfl_8x8.model",
+    "hash": "9F5484F8ACD96F57",
+    "bytes": 33396,
+    "sha256": "6f01182ebd9245f748c1fed565f8cc659829cbfb2713c529c5bb7f00c5adc4b7",
+    "spans": [
+      [
+        0,
+        104377
+      ]
+    ]
+  },
+  {
+    "path": "environment/building_kits/midtown_glass_building/sza_mtg_window_cap_v1_4x4/sza_mtg_window_cap_v1_4x4.model",
+    "hash": "879991A88F6A3561",
+    "bytes": 16964,
+    "sha256": "4dd24b6dfe5265c6723638feafd8d682cbe08a4937ba8494948003bb5f437bfa",
+    "spans": [
+      [
+        0,
+        25550
+      ]
+    ]
+  },
+  {
+    "path": "environment/building_kits/midtown_stone_building/sza_mts_window_cap_v1_4x4/sza_mts_window_cap_v1_4x4.model",
+    "hash": "9518C7710E2DF335",
+    "bytes": 7556,
+    "sha256": "73df389d1e4873afa2cedf29ba88221c8b2e93915709c461c9501c90a22f2e04",
+    "spans": [
+      [
+        0,
+        70437
+      ]
+    ]
+  },
+  {
+    "path": "environment/props/manmade/global/pp_skyscraper_ac_unit/pp_skyscraper_ac_unit.model",
+    "hash": "8015FFF40BEE20AB",
+    "bytes": 240372,
+    "sha256": "2b229e36ef9919f149905b19cd0e45d1172562a81257b8a91a0a02fe98b064a8",
+    "spans": [
+      [
+        0,
+        298
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_eng_01.material",
+    "hash": "BC32365799D7161C",
+    "bytes": 452548,
+    "sha256": "96fcb3bd836cab041b8ecb6b31f6b33ad7bdde92332f686cd344f3efe2b0fa0f",
+    "spans": [
+      [
+        0,
+        200273
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_ext_01.material",
+    "hash": "8AC99AFDA15475AE",
+    "bytes": 804,
+    "sha256": "a81a638f089ef333c97e00c8ddd487a986e9a5e758333e0436371bc43a3a6fa4",
+    "spans": [
+      [
+        0,
+        36201
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_glass_01.material",
+    "hash": "83687A32BDE700A0",
+    "bytes": 1028,
+    "sha256": "5b9497029b5f7fccac1a434e7adfad8dee3c3f592dde197e31d63bc3d2a767a2",
+    "spans": [
+      [
+        0,
+        11377
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_int_01.material",
+    "hash": "9906DADDFCE3D0F8",
+    "bytes": 452628,
+    "sha256": "aee853171655728d7202b169775dc8dd2a6545ef230608ea91b48cb80afa2e05",
+    "spans": [
+      [
+        0,
+        83385
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_lights_01.material",
+    "hash": "B97CC53972FB02A9",
+    "bytes": 932,
+    "sha256": "fbd50154a598949172545d32a9ea9629c877a86efef83ea99e9c98ede0bdb177",
+    "spans": [
+      [
+        0,
+        191319
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_uc_01.material",
+    "hash": "95517A4E2A4325A3",
+    "bytes": 452532,
+    "sha256": "57a38d19f8a6fdee3b99e03ebfb709f39aa6f5627a8b34a0478a193f770cf304",
+    "spans": [
+      [
+        0,
+        71170
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_wheel_01.material",
+    "hash": "8259F53CAD8C643A",
+    "bytes": 452532,
+    "sha256": "871ac819456887bb629b44dfe33dfb2766e09cf6457a1f0ccc06e6be5367ad30",
+    "spans": [
+      [
+        0,
+        7825
+      ]
+    ]
+  },
+  {
+    "path": "environment/props/manmade/global/pp_skyscraper_ac_unit/materials/pp_skyscraper_ac_unit.material",
+    "hash": "9A55BA8179D59FC8",
+    "bytes": 692,
+    "sha256": "dacb2c9eec6d8c6c254a233fbca8882fc0e47a24595ea4afb3017b1a4eced573",
+    "spans": [
+      [
+        0,
+        87704
+      ]
+    ]
+  },
+  {
+    "path": "environment/props/manmade/global/pp_skyscraper_ac_unit/materials/pp_skyscraper_ac_unit_02.material",
+    "hash": "B2641BCAA0DEB6D7",
+    "bytes": 692,
+    "sha256": "861ba719b58773e0f66075901b97de58269a38590a2c97e6ba0bcba6d2df604a",
+    "spans": [
+      [
+        0,
+        167738
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/global/procedural/gbl_proc_stain_decal_random_01/jn_gbl_proc_stain_trim_decal_random_01.material",
+    "hash": "85FBDF3BC5058680",
+    "bytes": 388,
+    "sha256": "a6c93ab98f7b24cff11b4b3f404e87915a391179bc840d0b12fe001602f30057",
+    "spans": [
+      [
+        0,
+        20026
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/global/prop/gbl_prop_license_plate_random_01/jn_gbl_prop_license_plate_random_01.material",
+    "hash": "8010653ABB4F13F1",
+    "bytes": 324,
+    "sha256": "4d1aa5159058a418ec7d495de389cd69d932f8e188f20c0ee5859942f7b7b3db",
+    "spans": [
+      [
+        0,
+        236
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_brass_trim_01/mo_gbl_arch_brushed_metal_trim_01.material",
+    "hash": "B48426D1A0698519",
+    "bytes": 660,
+    "sha256": "42039a8bdfe066ce6343e6854f7b37f964e7bb94cad7976471f7382eccbfcb2e",
+    "spans": [
+      [
+        0,
+        174685
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_brass_trim_01/mo_gbl_arch_brushed_metal_trim_01_shiny.material",
+    "hash": "AE2E7E013BA2969F",
+    "bytes": 676,
+    "sha256": "2f3d75bda9fc169718fcca27b2ed4a44a1d0224f71dfe60b31d6af83835f2850",
+    "spans": [
+      [
+        0,
+        153654
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_brass_trim_01/mo_gbl_arch_hvac_grate_01.material",
+    "hash": "A3885935734729A2",
+    "bytes": 524196,
+    "sha256": "4a41f88773b7c5bb942a76a96aeda664f4ad77a44abbc88155239b0e61a755d4",
+    "spans": [
+      [
+        0,
+        118143
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_brass_trim_01/sza_gbl_arch_brushed_metal_tile_dark.material",
+    "hash": "BA20AF57395EE9AE",
+    "bytes": 900,
+    "sha256": "c062499421dcb8c5399e7c7e74767cfe1ea5ec3f6ab22e9901fb7ea16d124f5a",
+    "spans": [
+      [
+        0,
+        193415
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_concrete_01/jn_gbl_arch_concrete_01.material",
+    "hash": "81C987676474C17D",
+    "bytes": 524548,
+    "sha256": "8246d672deaaf772dfd23069c12ff4e08c60d5131613b1d081e88ac519d69732",
+    "spans": [
+      [
+        0,
+        5959
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_concrete_trim_02/jn_gbl_arch_metal_trim_01_black.material",
+    "hash": "82F844F129F2177F",
+    "bytes": 499124,
+    "sha256": "b55b94853a581a48a064b8c753341168f95a3a9324842a8beefa9c5ecb257840",
+    "spans": [
+      [
+        0,
+        9870
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_concrete_trim_02/sza_gbl_arch_concrete_trim_02_dirty.material",
+    "hash": "A5409CC6E766F7F7",
+    "bytes": 628,
+    "sha256": "7196c060d40256ac539a27d648b1f63db2cbb944d259bb4fdde022e50e15d7f9",
+    "spans": [
+      [
+        0,
+        123827
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_concrete_trim_02/sza_gbl_arch_metal_trim_01.material",
+    "hash": "8000B10F551366C6",
+    "bytes": 564,
+    "sha256": "ab1472781f1b169b19bf5807a5cf5c9beefe51252fd6d2a80220b3dde38a79fa",
+    "spans": [
+      [
+        0,
+        8
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_concrete_trim_02/sza_gbl_arch_metal_trim_01_red.material",
+    "hash": "B5508A60AF43B891",
+    "bytes": 740,
+    "sha256": "dc193f85b9ea0beba4f60b810aa820e0f0f9d6656fede6ae11caeecb6477adeb",
+    "spans": [
+      [
+        0,
+        177416
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_metal_trim_worn_01/jn_gbl_arch_metal_trim_worn_01.material",
+    "hash": "A9B6C6DCE7F3F891",
+    "bytes": 996,
+    "sha256": "d8f02c901d58cc9e09bc5e7cc7ca79e9c9da83d5119a5e185f12dd7560b69770",
+    "spans": [
+      [
+        0,
+        138796
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_stone_wall_01/sza_gbl_arch_granite_wall_01.material",
+    "hash": "AAE702D909CC4605",
+    "bytes": 524260,
+    "sha256": "5ba0b74907f8b0417900bc70c08c1ce23204fc869f9daf0dc1bed2fb191a1c58",
+    "spans": [
+      [
+        0,
+        142658
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_window_mtg_v2_4x4_01/gbl_arch_window_mtg_v4_4x4_01.material",
+    "hash": "A794EDB2B3A05954",
+    "bytes": 548,
+    "sha256": "b3469bbddd1d430d765ea69e0f60c7d869974ef841cc62931dc252ad50d27eb8",
+    "spans": [
+      [
+        0,
+        131654
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_window_mtg_v2_4x4_01/gbl_arch_window_mtg_v4_4x4_02.material",
+    "hash": "9A9ECD48A1C37242",
+    "bytes": 580,
+    "sha256": "ca4e7ac9390180b94f9fa84169c0d5ebc0473ab5d19ce2670d547de0c30a8a19",
+    "spans": [
+      [
+        0,
+        88671
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_window_mtg_v2_4x4_01/gbl_arch_window_mts_v2_4x4_01.material",
+    "hash": "9702D1520A8DF7F2",
+    "bytes": 868,
+    "sha256": "9abbcc145748eb29651521d4c5faf02f8c783c4fb919176d7db99d22ca114cd6",
+    "spans": [
+      [
+        0,
+        76851
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_jn_taxi_random_advert/veh_jn_taxi_random_advert.material",
+    "hash": "98F24D18AD01F050",
+    "bytes": 468,
+    "sha256": "b3c3dd0a7ccde44cbefe0da8635c4e30d7df74c5c893c95bdf0c2308ea527d72",
+    "spans": [
+      [
+        0,
+        83147
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_nypdpolicecar_cine_glass/veh_sedan_01_glass.material",
+    "hash": "A355FB315EC6B58C",
+    "bytes": 596,
+    "sha256": "6f811ee2871bbeefa85a9b796604aaa23cdf2efea8df11f34274a4ddd59ba2cf",
+    "spans": [
+      [
+        0,
+        117493
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_nypdpolicecar_cine_lights/veh_sedan_01_lights.material",
+    "hash": "86739AB9A0289D2D",
+    "bytes": 884,
+    "sha256": "4d29cc7b781b870eb1747e00289c458df5085e7d38254db32b28c53ba2eb0bd4",
+    "spans": [
+      [
+        0,
+        21657
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_sedan_01_chassis/veh_sedan_01_chassis.material",
+    "hash": "9CA5C2B3304F4A9A",
+    "bytes": 452676,
+    "sha256": "9acade68cbf549e9a347be165a632b26981d1b88e38fbd65d407464b07c7e388",
+    "spans": [
+      [
+        0,
+        95488
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_sedan_01_engine_1/veh_sedan_01_engine_1.material",
+    "hash": "AFFA650A6112D16F",
+    "bytes": 508052,
+    "sha256": "df4888804e01f560ed989c9a6033c21eb04753c72890330691b6aa2ccba04a01",
+    "spans": [
+      [
+        0,
+        159640
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_sedan_01_engine_1/veh_sedan_01_engine_2.material",
+    "hash": "92F045F07371FA79",
+    "bytes": 506020,
+    "sha256": "62497ee2a9716f6828cba894527638878f23ff9f1b41c7afc472e73a12687dda",
+    "spans": [
+      [
+        0,
+        63190
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_sedan_01_int_1/veh_sedan_01_int_1.material",
+    "hash": "A74251CD437D2F95",
+    "bytes": 820,
+    "sha256": "ae2b25680f1d8b2520673aec4919ac8999cb1b0032fe756d994b72547dbd8e1f",
+    "spans": [
+      [
+        0,
+        130542
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_sedan_01_int_1/veh_sedan_01_int_2.material",
+    "hash": "9A487137511E0483",
+    "bytes": 804,
+    "sha256": "39df4e5f94a458ddf62a71168193d010397e0199e082479f5d42f30bca4e66cd",
+    "spans": [
+      [
+        0,
+        87532
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_sedan_01_wheel/veh_sedan_01_wheel.material",
+    "hash": "BCEE5C34F436D316",
+    "bytes": 509108,
+    "sha256": "df893ff28d21c3dae4eeb5b05e6f5925ef82aca258bedfbbec9014c74def7a6e",
+    "spans": [
+      [
+        0,
+        202712
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_suv_01_chassis/veh_suv_01_chassis.material",
+    "hash": "99C9BD0E791C5D76",
+    "bytes": 772,
+    "sha256": "69fea4be891b8f86be47129b1898d4164c9b3d0542fc9ca447965ec45a05c6f1",
+    "spans": [
+      [
+        0,
+        85876
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_suv_01_engine_2/veh_suv_01_engine_2.material",
+    "hash": "924FC44CD6F628C4",
+    "bytes": 788,
+    "sha256": "fbbc8c887068d689bfc7552f93b3985ee22cbc5d7160cbfc29cc1d948b3e979c",
+    "spans": [
+      [
+        0,
+        61160
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_suv_01_ext_1/veh_suv_01_ext_1.material",
+    "hash": "8F645713B18BA62C",
+    "bytes": 772,
+    "sha256": "0f11bb867914ed31210052c925ba302d9a62ac19c8482364e38dce8b3f566aac",
+    "spans": [
+      [
+        0,
+        51450
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_suv_01_ext_1_damage/veh_suv_01_ext_1_damage.material",
+    "hash": "B1798CBF82048CAB",
+    "bytes": 772,
+    "sha256": "6bd4323447f2de98d1b83d80c5c8afe4ac0dac52f8cc89035c90da3bfcd727d2",
+    "spans": [
+      [
+        0,
+        164650
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_suv_01_ext_1_damage/veh_suv_01_ext_2_damage.material",
+    "hash": "ACE0349F84AED5C9",
+    "bytes": 772,
+    "sha256": "f54f133a19a9a21c2224d6aed336aa5729c335cb3d3e85c35da5f510d161d326",
+    "spans": [
+      [
+        0,
+        149331
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_suv_01_ext_2/veh_suv_01_ext_2.material",
+    "hash": "B76103616A10C364",
+    "bytes": 772,
+    "sha256": "c7f3c88079dcabb92acb0919dcabfad31eed83add8410d534fd4bc68db73b49a",
+    "spans": [
+      [
+        0,
+        184234
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_suv_01_glass/veh_suv_01_glass.material",
+    "hash": "AB6AD44F51B3CF31",
+    "bytes": 1012,
+    "sha256": "2e3654e2f8aa91a1bf492d46d401ba25841a57e08f185ae41eafb353ed34e655",
+    "spans": [
+      [
+        0,
+        144426
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_suv_01_glass_damage/veh_suv_01_glass_damage.material",
+    "hash": "8E9A8284119F3438",
+    "bytes": 612,
+    "sha256": "aac0ec89a5fa4736259845fe96eb9e2a6cc16fdf2624a692d46a7791677d5741",
+    "spans": [
+      [
+        0,
+        48798
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_suv_01_int_1/veh_suv_01_int_1.material",
+    "hash": "9DE6A2621FC76378",
+    "bytes": 804,
+    "sha256": "957041a79878e8ac2676450580e07d40a9f2c13f979be4c1abeaa48117a3bf9b",
+    "spans": [
+      [
+        0,
+        99658
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_suv_01_int_2/veh_suv_01_int_2.material",
+    "hash": "A5E3F610C45C0630",
+    "bytes": 804,
+    "sha256": "948f555c2d54982b12f8353e26b901f2126abbf214347519e15678836f15c5b1",
+    "spans": [
+      [
+        0,
+        125942
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_suv_01_lights/veh_suv_01_lights.material",
+    "hash": "918C54C3FCD52C78",
+    "bytes": 868,
+    "sha256": "fadfed779a1a8ee4abf0f5b0cf977e67814daaccee1ac63ffb3218200601bfaf",
+    "spans": [
+      [
+        0,
+        58638
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_suv_01_wheel/veh_suv_01_wheel.material",
+    "hash": "AAD1F83CA1CB5957",
+    "bytes": 564,
+    "sha256": "34065901c6bf80d291e11816e4ef2a234c89650f85b5fd78e377018c839af34d",
+    "spans": [
+      [
+        0,
+        142400
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_suv_01_wheel/veh_suv_01_wheel_damage.material",
+    "hash": "BA1F01EFBC69D42B",
+    "bytes": 548,
+    "sha256": "733ec95ee7d0b7a7ed06eb367b5de836bd7424fd636a4b388507eed872b58c6e",
+    "spans": [
+      [
+        0,
+        193388
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_suv_cine_ext_1/veh_sedan_01_ext_1.material",
+    "hash": "AF9E30DBAED036B7",
+    "bytes": 852,
+    "sha256": "9b6ea977009df792153a7c9d890874783aa81d9efefd90c0645af8ab0ca5f7f4",
+    "spans": [
+      [
+        0,
+        158444
+      ]
+    ]
+  },
+  {
+    "path": "material/vehicle/veh_suv_cine_ext_1/veh_sedan_01_ext_2.material",
+    "hash": "92941021BCB31DA1",
+    "bytes": 820,
+    "sha256": "0b21fe1f892d073a2eff9b073d7cec1a39671f53fd21ccde4bc77493bcf097a0",
+    "spans": [
+      [
+        0,
+        62028
+      ]
+    ]
+  },
+  {
+    "path": "materials/jn_glass_01/jn_glass_01_opaque.material",
+    "hash": "A16F4330FEDECFDF",
+    "bytes": 788,
+    "sha256": "2aa73753639c017e785b8ce2ff5f93e167ed68f2fd9c3222b6c1012f822a4c30",
+    "spans": [
+      [
+        0,
+        111166
+      ]
+    ]
+  },
+  {
+    "path": "materials/jn_glass_01/sza_jn_glass_01_opaque_darker_02.material",
+    "hash": "93B0B6AD9556B398",
+    "bytes": 404,
+    "sha256": "974d5334febf5fe1793cd55a7d08317b9d779670e0602f6f9855ac9eb13d5dc9",
+    "spans": [
+      [
+        0,
+        65731
+      ]
+    ]
+  },
+  {
+    "path": "characters/shared/textures/detail/detail_knit_05_n.texture",
+    "hash": "B1C37F83653409D1",
+    "bytes": 21952,
+    "sha256": "5fcdaaa86b08d3022827e82cc22c253c22e98e9b0d01de6b10834d802c503c77",
+    "spans": [
+      [
+        0,
+        165624
+      ],
+      [
+        1,
+        229939
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_eng_01_c.texture",
+    "hash": "8FFA7D75655A8EDD",
+    "bytes": 174880,
+    "sha256": "b78b3d64fce4ee1b523dac4cebecbad50ea00c4c9af3b2e436990030ab97f60f",
+    "spans": [
+      [
+        0,
+        53395
+      ],
+      [
+        1,
+        218330
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_eng_01_g.texture",
+    "hash": "8F20C3E0CA9D0982",
+    "bytes": 174880,
+    "sha256": "3c1ca15ee7633bd106c5eb5a790c73b2e83cf080956c6264b7aefc61622b5c2f",
+    "spans": [
+      [
+        0,
+        50572
+      ],
+      [
+        1,
+        218077
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_eng_01_n.texture",
+    "hash": "978E9B9C44130703",
+    "bytes": 87488,
+    "sha256": "5e830a9d3aa4efba6e33fad421527d5809bb03d6b8427997cdb7ac77d72d5ed3",
+    "spans": [
+      [
+        0,
+        78623
+      ],
+      [
+        1,
+        220987
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_ext_01_c.texture",
+    "hash": "B599EB23FF5D5744",
+    "bytes": 349632,
+    "sha256": "7ee478ae05adbea3641d2e78daca9f6f1e5f1dcaad32982f08c4a039c68757ec",
+    "spans": [
+      [
+        0,
+        178351
+      ],
+      [
+        1,
+        231259
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_ext_01_g.texture",
+    "hash": "B54355B6509AD01B",
+    "bytes": 174880,
+    "sha256": "fa0e79a6b116b338bd6efd66e0c2594ce53dcc500343d8dc4515a92adc016430",
+    "spans": [
+      [
+        0,
+        177226
+      ],
+      [
+        1,
+        231155
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_ext_01_h.texture",
+    "hash": "9F01F9F0D3D159BA",
+    "bytes": 43808,
+    "sha256": "f0b2b1c0625d8224333e8f977e4e8e079615524b00181a6b8165b605ba7ce4b5",
+    "spans": [
+      [
+        0,
+        103295
+      ],
+      [
+        1,
+        223483
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_ext_01_n.texture",
+    "hash": "ADED0DCADE14DE9A",
+    "bytes": 1398144,
+    "sha256": "8c349a8ece3797f625b29c2613c2a81e0ee220ba770f264e2cbe2ce0c39cc62e",
+    "spans": [
+      [
+        0,
+        152807
+      ],
+      [
+        1,
+        228622
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_glass_01_16bit_n.texture",
+    "hash": "98181AB03AF7E853",
+    "bytes": 349568,
+    "sha256": "d1bb6dbf729c561b6d23d6b44efd9caa527297bf0e3e61043f1493f5227d2533",
+    "spans": [
+      [
+        0,
+        80348
+      ],
+      [
+        1,
+        221147
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_glass_01_c.texture",
+    "hash": "A9D313D37353219E",
+    "bytes": 87488,
+    "sha256": "6910c58cc586172dcf1282d6954d86ce9485827538be28c5d656c086361a7ba1",
+    "spans": [
+      [
+        0,
+        139141
+      ],
+      [
+        1,
+        227236
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_glass_01_g.texture",
+    "hash": "A909AD46DC94A6C1",
+    "bytes": 87488,
+    "sha256": "fb5c63813893562a7535a370ad6720dbc7335ee4c29443c95dde0165dd48ab52",
+    "spans": [
+      [
+        0,
+        136485
+      ],
+      [
+        1,
+        226942
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_int_01_c.texture",
+    "hash": "A2E2B4328E92A059",
+    "bytes": 174880,
+    "sha256": "f62e03887e28bae3682786ad5f89cf10c32f70e8b467c0f5e139c47070cee15c",
+    "spans": [
+      [
+        0,
+        115961
+      ],
+      [
+        1,
+        224778
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_int_01_g.texture",
+    "hash": "A2380AA721552706",
+    "bytes": 174880,
+    "sha256": "24d778bded6f9893efbbbbf8fa885c84c9a1458981003c38130dae98cf7d8f6f",
+    "spans": [
+      [
+        0,
+        113821
+      ],
+      [
+        1,
+        224572
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_int_01_n.texture",
+    "hash": "BA9652DBAFDB2987",
+    "bytes": 349632,
+    "sha256": "8b2071cb967dcf0aee267138fc11c59f78c6efdf1a80020aed85d349b673bbe7",
+    "spans": [
+      [
+        0,
+        195015
+      ],
+      [
+        1,
+        232934
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_lights_01_c.texture",
+    "hash": "B4F1EA8485F67122",
+    "bytes": 43808,
+    "sha256": "02a9d51407a12231beb54446aaae401719302d1f4a8d516e8fecd4040c3983a6",
+    "spans": [
+      [
+        0,
+        176154
+      ],
+      [
+        1,
+        231048
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_lights_01_g.texture",
+    "hash": "B42B54112A31F67D",
+    "bytes": 87488,
+    "sha256": "703a916c5a2d7a0ae25eb25c438ff87a8054693a9bb8dde5ff8ffbf0e9de5567",
+    "spans": [
+      [
+        0,
+        173523
+      ],
+      [
+        1,
+        230773
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_lights_01_m.texture",
+    "hash": "87A86395D7BCF8BC",
+    "bytes": 43808,
+    "sha256": "5daa878aa2c8638d138712c49f727c005f3492a0d99c34db3d1cbcfb2e367ff2",
+    "spans": [
+      [
+        0,
+        25763
+      ],
+      [
+        1,
+        215502
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_lights_01_n.texture",
+    "hash": "AC850C6DA4BFF8FC",
+    "bytes": 87488,
+    "sha256": "b118f83f340477bdffdf14077ad087b94a3053325249b63c149c4388fddf6e70",
+    "spans": [
+      [
+        0,
+        148124
+      ],
+      [
+        1,
+        228156
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_uc_01_c.texture",
+    "hash": "9B33E54A251902E3",
+    "bytes": 43808,
+    "sha256": "800688342aac822d4232e029da99dbe1764a3ba39e941747d43264c9df07f4f2",
+    "spans": [
+      [
+        0,
+        90666
+      ],
+      [
+        1,
+        222151
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_uc_01_g.texture",
+    "hash": "9BE95BDF8ADE85BC",
+    "bytes": 43808,
+    "sha256": "189cb074c400de9e36fcf254df8928d92295a78a6d3aee80193fec3257dce1af",
+    "spans": [
+      [
+        0,
+        93044
+      ],
+      [
+        1,
+        222402
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_uc_01_n.texture",
+    "hash": "834703A304508B3D",
+    "bytes": 87488,
+    "sha256": "288cf7b9bb078c43d1c22692748f1e9a5ca3e9b532e66a37b686ef92b15a01a2",
+    "spans": [
+      [
+        0,
+        10924
+      ],
+      [
+        1,
+        213947
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_wheel_01_c.texture",
+    "hash": "B3DA19F090EDB72F",
+    "bytes": 43808,
+    "sha256": "ab1a13e0fa657d20cb3e912ad52c6f554514e1022feeeb5845eea2d940b32284",
+    "spans": [
+      [
+        0,
+        172531
+      ],
+      [
+        1,
+        230664
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_wheel_01_g.texture",
+    "hash": "B300A7653F2A3070",
+    "bytes": 43808,
+    "sha256": "ebbc41ee6466db983ac32c3c1aa1fc7c4260963040fbbef4082450ff74b3e98a",
+    "spans": [
+      [
+        0,
+        169721
+      ],
+      [
+        1,
+        230372
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_wheel_01_n.texture",
+    "hash": "ABAEFF19B1A43EF1",
+    "bytes": 21952,
+    "sha256": "de43948a4e434abc47eab0f57e52cfc473747011f209c27e79c3a96231d7855d",
+    "spans": [
+      [
+        0,
+        145353
+      ],
+      [
+        1,
+        227875
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/damagemasks/os_sedan_01_chassis_dmg_h.texture",
+    "hash": "90A1DB6696E7D0D3",
+    "bytes": 43808,
+    "sha256": "058a185a16bba5be334c2aadc7f068ae21d058e1a4bba1acc371ab1d922def6f",
+    "spans": [
+      [
+        0,
+        55578
+      ],
+      [
+        1,
+        218561
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/damagemasks/os_sedan_01_engine_1_dmg_h.texture",
+    "hash": "B48C29CD9934E64F",
+    "bytes": 43808,
+    "sha256": "c3e1785cfa837537840c2c5115a7c7d8e5fb50f2f1ce49269b1621f4ec5fff8f",
+    "spans": [
+      [
+        0,
+        174775
+      ],
+      [
+        1,
+        230906
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/damagemasks/os_sedan_01_engine_2_dmg_h.texture",
+    "hash": "941D897BCA74D06E",
+    "bytes": 43808,
+    "sha256": "fe6b767965ee1407af89a111b3497b95e900da80fcd523fb32470d0fba61850c",
+    "spans": [
+      [
+        0,
+        67173
+      ],
+      [
+        1,
+        219829
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/damagemasks/os_sedan_01_int_1_dmg_h.texture",
+    "hash": "BAE6B7CD14C3F2A1",
+    "bytes": 43808,
+    "sha256": "b715f0859c5e8ab674425ee18f7ead9376448ac0a5d62b6a3a126ff27b6cee3f",
+    "spans": [
+      [
+        0,
+        196003
+      ],
+      [
+        1,
+        233036
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/damagemasks/os_sedan_01_int_2_dmg_h.texture",
+    "hash": "9A77177B4783C480",
+    "bytes": 43808,
+    "sha256": "165e9892c01deba59610d1567cfb9330546b06b628092795f5ab888f8c7af754",
+    "spans": [
+      [
+        0,
+        88161
+      ],
+      [
+        1,
+        221916
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/damagemasks/os_towncar_01_wheel_dmg_h.texture",
+    "hash": "866568132B8262B2",
+    "bytes": 43808,
+    "sha256": "a5bc849b5a5a4c489ee5a0bbe4e6a32b3a5c3724181949da440ac614b2a63d19",
+    "spans": [
+      [
+        0,
+        21450
+      ],
+      [
+        1,
+        215053
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_chassis_01_c.texture",
+    "hash": "BDA25BB9A74F2792",
+    "bytes": 174880,
+    "sha256": "6aed0cc900c4c818056f9e582a2b1728c883f71e5984b67fd7716164c25593f9",
+    "spans": [
+      [
+        0,
+        205037
+      ],
+      [
+        1,
+        234008
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_chassis_01_g.texture",
+    "hash": "BD78E52C0888A0CD",
+    "bytes": 174880,
+    "sha256": "f279b054249e7b49bc97c0331d2e5aa8705f29a9215419761f9cd9bf2f089740",
+    "spans": [
+      [
+        0,
+        204481
+      ],
+      [
+        1,
+        233957
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_chassis_01_n.texture",
+    "hash": "A5D6BD508606AE4C",
+    "bytes": 349632,
+    "sha256": "ea4abd5b2a7217bceff113d270d743c3b50751a2ce325c8e9eecea294975e4b5",
+    "spans": [
+      [
+        0,
+        125783
+      ],
+      [
+        1,
+        225839
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_engine_01_c.texture",
+    "hash": "ABC84D1959016864",
+    "bytes": 87488,
+    "sha256": "92c42c274f64916c42abdeb21d50ef73a356bf92ef3d1f3a9c155db25b256520",
+    "spans": [
+      [
+        0,
+        145667
+      ],
+      [
+        1,
+        227907
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_engine_01_g.texture",
+    "hash": "AB12F38CF6C6EF3B",
+    "bytes": 87488,
+    "sha256": "5eac164fb3620f253b5f21fa41a8ff7ada15a880caf0ccf446df269cebba05f2",
+    "spans": [
+      [
+        0,
+        143283
+      ],
+      [
+        1,
+        227672
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_engine_01_n.texture",
+    "hash": "B3BCABF07848E1BA",
+    "bytes": 87488,
+    "sha256": "cb60814aa628f50c679721e628d2b3b8a55284e3f55d4868ca08cd58ca2cf901",
+    "spans": [
+      [
+        0,
+        172151
+      ],
+      [
+        1,
+        230623
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_engine_02_c.texture",
+    "hash": "AD7749D29878B43A",
+    "bytes": 174848,
+    "sha256": "5c145aaf6ca023c944433a9f76aab1bc1dac5e61b9a6e8477e6023d96d2264b7",
+    "spans": [
+      [
+        0,
+        151257
+      ],
+      [
+        1,
+        228483
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_engine_02_g.texture",
+    "hash": "ADADF74737BF3365",
+    "bytes": 87488,
+    "sha256": "a412122205b38fea4ee894bafcf8e5b246d3d0c7d1b16e50c7e7cf03324b96c8",
+    "spans": [
+      [
+        0,
+        151979
+      ],
+      [
+        1,
+        228556
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_engine_02_n.texture",
+    "hash": "B503AF3BB9313DE4",
+    "bytes": 174848,
+    "sha256": "9ecfc04ef9e8b7a70135588c07aef5a3d027eb6d09a557ec3457c04028db1cd0",
+    "spans": [
+      [
+        0,
+        176383
+      ],
+      [
+        1,
+        231079
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_16b_n.texture",
+    "hash": "8DDC383510D49390",
+    "bytes": 1398144,
+    "sha256": "f8108c6e9382e6cb2f1f8c071d0ec16935595a0981787bc4579220fd79789195",
+    "spans": [
+      [
+        0,
+        46334
+      ],
+      [
+        1,
+        217629
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_c.texture",
+    "hash": "A72F049AF930008A",
+    "bytes": 349632,
+    "sha256": "b5a0d2571654bda416a13cf46f15a57141419630182cddad7481700506ed1559",
+    "spans": [
+      [
+        0,
+        130289
+      ],
+      [
+        1,
+        226296
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_g.texture",
+    "hash": "A7F5BA0F56F787D5",
+    "bytes": 174880,
+    "sha256": "31789ae7ed4688d458a50715d93e870245ae1495d4669d1f2ed347ca741071b9",
+    "spans": [
+      [
+        0,
+        132910
+      ],
+      [
+        1,
+        226562
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_h.texture",
+    "hash": "8DB71649D5BC0E74",
+    "bytes": 43808,
+    "sha256": "2240e2332a1fe8f2981b3223e8fad275c58a740096ea767be2151f81076a5478",
+    "spans": [
+      [
+        0,
+        45872
+      ],
+      [
+        1,
+        217580
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_02_16b_n.texture",
+    "hash": "AD4D98834394A5B1",
+    "bytes": 1398144,
+    "sha256": "66da60313a1a458b150aa6732f6d5c439c7ebde2d6fb2aede01528a3dafb7614",
+    "spans": [
+      [
+        0,
+        150725
+      ],
+      [
+        1,
+        228429
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_02_c.texture",
+    "hash": "A19000513849DCD4",
+    "bytes": 349632,
+    "sha256": "0a3b46f4f7bd6d087cb961e74696e60293e129f41110f4573fa4fce2c648f7ae",
+    "spans": [
+      [
+        0,
+        111563
+      ],
+      [
+        1,
+        224348
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_02_g.texture",
+    "hash": "A14ABEC4978E5B8B",
+    "bytes": 174880,
+    "sha256": "2704c940d5d5438a506eacb294aee1895bd81d266f399c15330203613d327710",
+    "spans": [
+      [
+        0,
+        110687
+      ],
+      [
+        1,
+        224268
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_02_h.texture",
+    "hash": "8B08128214C5D22A",
+    "bytes": 43808,
+    "sha256": "b980fada29c4b618d99e463be0064f6c63bbe46ce4c3bbca0d2cdb2544cc71e7",
+    "spans": [
+      [
+        0,
+        37001
+      ],
+      [
+        1,
+        216643
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_glass_c.texture",
+    "hash": "A553FCAC5C97EF04",
+    "bytes": 349632,
+    "sha256": "99a60c9e080f730bd5ac57c3635f0ab61e08f90b64d822c2f17c2797cae12012",
+    "spans": [
+      [
+        0,
+        124101
+      ],
+      [
+        1,
+        225658
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_glass_g.texture",
+    "hash": "A5894239F350685B",
+    "bytes": 349632,
+    "sha256": "aa5e5b8521926a5a8655c9e300d0f9e5bd74eb3d005599fff996456e7764d31e",
+    "spans": [
+      [
+        0,
+        124779
+      ],
+      [
+        1,
+        225737
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_glass_n.texture",
+    "hash": "BD271A457DDE66DA",
+    "bytes": 87488,
+    "sha256": "43cbb9b959df3007c17b6db53549107a57ccb44a73197779d0bfccdc0d4f61fa",
+    "spans": [
+      [
+        0,
+        203442
+      ],
+      [
+        1,
+        233838
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_interior_01_c.texture",
+    "hash": "813A420CCC8DB732",
+    "bytes": 349632,
+    "sha256": "e140dd5f90a22caa29a19fd16f0f6e69d2d95efa4b0fb65ca3fd8f41248cab90",
+    "spans": [
+      [
+        0,
+        4116
+      ],
+      [
+        1,
+        213251
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_interior_01_g.texture",
+    "hash": "81E0FC99634A306D",
+    "bytes": 174880,
+    "sha256": "417b5474173c5af15becbdd2f1eff8486aab80c93767b6c6134a122a80bf883d",
+    "spans": [
+      [
+        0,
+        6270
+      ],
+      [
+        1,
+        213469
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_interior_01_n.texture",
+    "hash": "994EA4E5EDC43EEC",
+    "bytes": 349632,
+    "sha256": "4991635f2bc625e4a7caed57e9c545044e675644473659b71bc9268666308c76",
+    "spans": [
+      [
+        0,
+        84313
+      ],
+      [
+        1,
+        221528
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_interior_02_c.texture",
+    "hash": "878546C70DF46B6C",
+    "bytes": 43808,
+    "sha256": "5a7afd06b466a4a89255113ffcb18aff382ed7c617a2b6c6004470c3fd4bc62c",
+    "spans": [
+      [
+        0,
+        25294
+      ],
+      [
+        1,
+        215450
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_interior_02_g.texture",
+    "hash": "875FF852A233EC33",
+    "bytes": 174880,
+    "sha256": "f6f383fd90540532cab9fb3e77717fb749f13d48ff9b22f8ceae09f54e5ae48a",
+    "spans": [
+      [
+        0,
+        24820
+      ],
+      [
+        1,
+        215392
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_interior_02_n.texture",
+    "hash": "9FF1A02E2CBDE2B2",
+    "bytes": 87488,
+    "sha256": "3662952cb0b854560411cc2cb30294a6f898d172243aea35884708fbf5747e08",
+    "spans": [
+      [
+        0,
+        106344
+      ],
+      [
+        1,
+        223798
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_lights_c.texture",
+    "hash": "9280E4C220CFC520",
+    "bytes": 87488,
+    "sha256": "04ede2f9127451e75417e85323807b9b8fae3da64e677b810891832257c0a2e4",
+    "spans": [
+      [
+        0,
+        61796
+      ],
+      [
+        1,
+        219209
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_lights_g.texture",
+    "hash": "925A5A578F08427F",
+    "bytes": 349632,
+    "sha256": "fc0314874418fd609e073e91efce9e9ac38b1109d51b49e46dd6a193bddc1f8f",
+    "spans": [
+      [
+        0,
+        61295
+      ],
+      [
+        1,
+        219156
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_lights_n.texture",
+    "hash": "8AF4022B01864CFE",
+    "bytes": 87488,
+    "sha256": "3aa1c61edb430604b58d2b830773c52a5c927575486c7903145838c279a4fe44",
+    "spans": [
+      [
+        0,
+        36731
+      ],
+      [
+        1,
+        216612
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_lights_ultility.texture",
+    "hash": "A038199E43EF763D",
+    "bytes": 174880,
+    "sha256": "2210557d3551fcdb6ed657a99090ea114811a3379c9df1ffbc82ac49f73ce8b9",
+    "spans": [
+      [
+        0,
+        107262
+      ],
+      [
+        1,
+        223895
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/interchangeable/veh_suv_01_chassis_h.texture",
+    "hash": "BADF05C492648C78",
+    "bytes": 43808,
+    "sha256": "e1800f191dd7862110801a4de6dc2df0fae5548707e093fcedad6ba600622c7c",
+    "spans": [
+      [
+        0,
+        195894
+      ],
+      [
+        1,
+        233023
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/interchangeable/veh_suv_01_engine_2_h.texture",
+    "hash": "B42CEBABA04B897D",
+    "bytes": 43808,
+    "sha256": "538d91ae001b3211a5edaf07cd481c83bf57c7f5fa6b924aca0e63d44b3c139d",
+    "spans": [
+      [
+        0,
+        173541
+      ],
+      [
+        1,
+        230777
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/interchangeable/veh_suv_01_ext_1_h.texture",
+    "hash": "9CA973056C656EA8",
+    "bytes": 43808,
+    "sha256": "80c63dfb0625c21db6b8b6dd03258296a4e3db3f2a7537ea6f7119f8a125928a",
+    "spans": [
+      [
+        0,
+        95555
+      ],
+      [
+        1,
+        222681
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/interchangeable/veh_suv_01_ext_2_h.texture",
+    "hash": "9A1677CEAD1CB2F6",
+    "bytes": 43808,
+    "sha256": "387bf9d152aa74e6e6fb06feb91c2f56f2c7f6e5f166ecd0bc86fe7e227dc67a",
+    "spans": [
+      [
+        0,
+        86882
+      ],
+      [
+        1,
+        221789
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/interchangeable/veh_suv_01_int_1_h.texture",
+    "hash": "8F66332531D2CBFE",
+    "bytes": 43808,
+    "sha256": "2cdb82aeb8dbd8c91f4e5f5f536497e684d6a0ef9289a304de53c9cedf3bea34",
+    "spans": [
+      [
+        0,
+        51479
+      ],
+      [
+        1,
+        218158
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/interchangeable/veh_suv_01_int_2_h.texture",
+    "hash": "89D937EEF0AB17A0",
+    "bytes": 43808,
+    "sha256": "d631893f7de5eb55f10603d523dd2ca377e5a5c6234069a6da6c1858539cecf5",
+    "spans": [
+      [
+        0,
+        33068
+      ],
+      [
+        1,
+        216242
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_chassis_c.texture",
+    "hash": "9A18EF969456F7B8",
+    "bytes": 174880,
+    "sha256": "f8b0aa0895835e111cba9a7fa46dab7042d4dc365d5c2a980e8d18d54deb3e6c",
+    "spans": [
+      [
+        0,
+        86918
+      ],
+      [
+        1,
+        221792
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_chassis_g.texture",
+    "hash": "9AC251033B9170E7",
+    "bytes": 174880,
+    "sha256": "000474e93d08f1ad11b27ad4c8930904b24f8abfc21839f201e7647a557f7885",
+    "spans": [
+      [
+        0,
+        89158
+      ],
+      [
+        1,
+        221999
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_chassis_n.texture",
+    "hash": "826C097FB51F7E66",
+    "bytes": 349632,
+    "sha256": "dc34adba038978da832965fb751464ee8de2d88a7cbe36a73b5161fca9f0cbb4",
+    "spans": [
+      [
+        0,
+        8046
+      ],
+      [
+        1,
+        213648
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_ext_01_c.texture",
+    "hash": "BA79E86428586935",
+    "bytes": 349632,
+    "sha256": "096068f7a8c48ab8ad97aacc80e79764f715e159319ec410b50797462cd5b973",
+    "spans": [
+      [
+        0,
+        194618
+      ],
+      [
+        1,
+        232876
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_ext_01_g.texture",
+    "hash": "BAA356F1879FEE6A",
+    "bytes": 174880,
+    "sha256": "7fa80cf16f518d655be426b57446f72178a0087427521b16e2b27c403917e009",
+    "spans": [
+      [
+        0,
+        195178
+      ],
+      [
+        1,
+        232951
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_ext_01_n.texture",
+    "hash": "A20D0E8D0911E0EB",
+    "bytes": 1398144,
+    "sha256": "0268d71225edbceb4480e8028ec4964bae3fef792eea92c2238a48796e5a6be3",
+    "spans": [
+      [
+        0,
+        113225
+      ],
+      [
+        1,
+        224518
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_ext_02_c.texture",
+    "hash": "BCC6ECAFE921B56B",
+    "bytes": 349632,
+    "sha256": "7bf2543da26f0ee2cdb929000ac226a05fb857738c75025cc2ed503c9591f83d",
+    "spans": [
+      [
+        0,
+        202166
+      ],
+      [
+        1,
+        233690
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_ext_02_g.texture",
+    "hash": "BC1C523A46E63234",
+    "bytes": 174880,
+    "sha256": "7bc42b970fd5e99767c855f3a4cddf5c4968e6e011517b26ba01937050608334",
+    "spans": [
+      [
+        0,
+        199988
+      ],
+      [
+        1,
+        233460
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_ext_02_n.texture",
+    "hash": "A4B20A46C8683CB5",
+    "bytes": 1398144,
+    "sha256": "099b19738d5d234503341e6279a6a966d4850d6a5150302cb66cedc7be1916cc",
+    "spans": [
+      [
+        0,
+        121948
+      ],
+      [
+        1,
+        225431
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_wheel_c.texture",
+    "hash": "B5AB8E5076B257C5",
+    "bytes": 87488,
+    "sha256": "32c98d3bf073b53d3220e6f31f0adb7a6d6f392c65602e7c022f87cc7a269c88",
+    "spans": [
+      [
+        0,
+        178573
+      ],
+      [
+        1,
+        231289
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_wheel_g.texture",
+    "hash": "B57130C5D975D09A",
+    "bytes": 43808,
+    "sha256": "1e7c4b8b1237fb616efcbc302a8711bde01940359318997ae9db9b37711e33c5",
+    "spans": [
+      [
+        0,
+        177864
+      ],
+      [
+        1,
+        231205
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_wheel_n.texture",
+    "hash": "ADDF68B957FBDE1B",
+    "bytes": 87488,
+    "sha256": "fb256a3eda661b22b8ff4cc83096d6f9199937a9f179e53c08ece296389f168d",
+    "spans": [
+      [
+        0,
+        152630
+      ],
+      [
+        1,
+        228607
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_engine_02_c.texture",
+    "hash": "954B7C55191C4401",
+    "bytes": 87488,
+    "sha256": "be9d5a7710b6217c1e48cbb19cd70b0c703da75ee8057a01383772ea499fa6af",
+    "spans": [
+      [
+        0,
+        71100
+      ],
+      [
+        1,
+        220204
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_engine_02_g.texture",
+    "hash": "9591C2C0B6DBC35E",
+    "bytes": 43808,
+    "sha256": "386c4ec683932f235a0aaa9cb4067eb2bb6fda96130d7c529dc92ac843ed122b",
+    "spans": [
+      [
+        0,
+        71962
+      ],
+      [
+        1,
+        220304
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_engine_02_n.texture",
+    "hash": "8D3F9ABC3855CDDF",
+    "bytes": 87488,
+    "sha256": "5f14a3ed23547dfa16925b79dc57d6102c762c46f107502f1324df8e04c4779a",
+    "spans": [
+      [
+        0,
+        44356
+      ],
+      [
+        1,
+        217444
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_ext_01_16b_n.texture",
+    "hash": "BCABB7B7644779FD",
+    "bytes": 1398144,
+    "sha256": "10de065ad2f55a4a857c9d867288fc6be3d5054fb25c7577877ee6dd7dd21d85",
+    "spans": [
+      [
+        0,
+        201812
+      ],
+      [
+        1,
+        233651
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_ext_01_c.texture",
+    "hash": "97FB7DCE715A9242",
+    "bytes": 349632,
+    "sha256": "1a884638fbf6980cff1437d08fa3949ea0981ef1b9d06bc020a3a0c4fe774007",
+    "spans": [
+      [
+        0,
+        80003
+      ],
+      [
+        1,
+        221112
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_ext_01_g.texture",
+    "hash": "9721C35BDE9D151D",
+    "bytes": 174880,
+    "sha256": "93c8620509d947caec8d2f7c564af39e085d6f9043566c5e0c9b2e2cd7b70215",
+    "spans": [
+      [
+        0,
+        77233
+      ],
+      [
+        1,
+        220839
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_ext_02_16b_n.texture",
+    "hash": "9C3A170137074FDC",
+    "bytes": 1398144,
+    "sha256": "87f4dae8be58213fab6c6a993c67a092f61fe45c3cb2c086b7eddb225b1e0b3b",
+    "spans": [
+      [
+        0,
+        94081
+      ],
+      [
+        1,
+        222528
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_ext_02_c.texture",
+    "hash": "91447905B0234E1C",
+    "bytes": 349632,
+    "sha256": "fe40b9c1fa9612b208066115e291e8d43ee5887706982efda45ceb07eedfafcc",
+    "spans": [
+      [
+        0,
+        57743
+      ],
+      [
+        1,
+        218791
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_ext_02_g.texture",
+    "hash": "919EC7901FE4C943",
+    "bytes": 174880,
+    "sha256": "c4a05711c506145dbd7be9096e3bed530e067811b6786311b734e8eb1d96d3fb",
+    "spans": [
+      [
+        0,
+        58884
+      ],
+      [
+        1,
+        218898
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_glass_01_g.texture",
+    "hash": "A482C607EFF999D2",
+    "bytes": 87488,
+    "sha256": "fff16fd782085fd6b97a8aff152ab19aeca3b96744b73b30c34307552fc4c95b",
+    "spans": [
+      [
+        0,
+        121354
+      ],
+      [
+        1,
+        225361
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_interior_01_c.texture",
+    "hash": "9F79FC201EF2E06C",
+    "bytes": 349632,
+    "sha256": "c4d71ebdaf90818cc216e4f43c56245f361c3be0c74ba07731311cd4bf05d84a",
+    "spans": [
+      [
+        0,
+        104830
+      ],
+      [
+        1,
+        223640
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_interior_01_g.texture",
+    "hash": "9FA342B5B1356733",
+    "bytes": 174880,
+    "sha256": "27dbce9ac3893c292a6586bd7fe523be057acfe051756706b3910c1c436961ed",
+    "spans": [
+      [
+        0,
+        105344
+      ],
+      [
+        1,
+        223695
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_interior_01_n.texture",
+    "hash": "870D1AC93FBB69B2",
+    "bytes": 349632,
+    "sha256": "861202f8a3ca10ffb31304020ba0028e6d59607e6eaaef26043ccbad7728b34f",
+    "spans": [
+      [
+        0,
+        23737
+      ],
+      [
+        1,
+        215284
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_interior_02_c.texture",
+    "hash": "99C6F8EBDF8B3C32",
+    "bytes": 349632,
+    "sha256": "9ea547c1685710baa42be24d6c4a4a13d17411c7e0a1f4363854a6f87196b8ab",
+    "spans": [
+      [
+        0,
+        85839
+      ],
+      [
+        1,
+        221689
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_interior_02_g.texture",
+    "hash": "991C467E704CBB6D",
+    "bytes": 174880,
+    "sha256": "fce1c436cee1672776fae1761931e7490b7bb42acf2e769273b805d337e5a0e9",
+    "spans": [
+      [
+        0,
+        83673
+      ],
+      [
+        1,
+        221465
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_interior_02_n.texture",
+    "hash": "81B21E02FEC2B5EC",
+    "bytes": 349632,
+    "sha256": "a59c048f174c3295ea2c9f473a603552d45c41f5b60cf8b2003821195b9ef5a1",
+    "spans": [
+      [
+        0,
+        5655
+      ],
+      [
+        1,
+        213409
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_light_01_c.texture",
+    "hash": "88854EF616561DCC",
+    "bytes": 43808,
+    "sha256": "1c48062173b29ae5df223f23ef020575f23caac91b54b61bc29eefa3abbba565",
+    "spans": [
+      [
+        0,
+        28628
+      ],
+      [
+        1,
+        215771
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_light_01_g.texture",
+    "hash": "885FF063B9919A93",
+    "bytes": 87488,
+    "sha256": "01e8754af78b1aafae4bf422386adabc91910b3ec72bd5f31033aba23ac11135",
+    "spans": [
+      [
+        0,
+        28137
+      ],
+      [
+        1,
+        215719
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_light_01_mask.texture",
+    "hash": "BB2AB7937912B65D",
+    "bytes": 43808,
+    "sha256": "dde820ffb54658c4a7fbcb7578e8fa555639d8227bf3464cdff4a0febc5ea54f",
+    "spans": [
+      [
+        0,
+        196855
+      ],
+      [
+        1,
+        233119
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_light_01_n.texture",
+    "hash": "90F1A81F371F9412",
+    "bytes": 87488,
+    "sha256": "3dce8c4eb34d553652813e5b1cf44fbed40c886a9e3aea3390b957ab13e63f2f",
+    "spans": [
+      [
+        0,
+        56629
+      ],
+      [
+        1,
+        218671
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_wheel_01_c.texture",
+    "hash": "BE5172B1A380883C",
+    "bytes": 87488,
+    "sha256": "520e6879cd2c289d8b12649304d20bec8dde9322ab0dc720272952577909d470",
+    "spans": [
+      [
+        0,
+        207314
+      ],
+      [
+        1,
+        234221
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_wheel_01_g.texture",
+    "hash": "BE8BCC240C470F63",
+    "bytes": 43808,
+    "sha256": "87e42a5402d3cc25914c64f61437d0daf5282ffa08bac202c3c871cef1519a19",
+    "spans": [
+      [
+        0,
+        208051
+      ],
+      [
+        1,
+        234305
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_wheel_01_n.texture",
+    "hash": "A625945882C901E2",
+    "bytes": 87488,
+    "sha256": "fb256a3eda661b22b8ff4cc83096d6f9199937a9f179e53c08ece296389f168d",
+    "spans": [
+      [
+        0,
+        126771
+      ],
+      [
+        1,
+        225948
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_cine_01/os_suv_cine_damage_glass_01_c.texture",
+    "hash": "BC38D1A9FA5C5463",
+    "bytes": 349632,
+    "sha256": "97ec22fdb8dba922713becbc20aa9d90c76f120987fdcc378f10566843a48219",
+    "spans": [
+      [
+        0,
+        200367
+      ],
+      [
+        1,
+        233507
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_cine_01/os_suv_cine_damage_glass_01_g.texture",
+    "hash": "BCE26F3C559BD33C",
+    "bytes": 349632,
+    "sha256": "7c666aca13e40fc8d42b0421e11990d436b68afb6cc06e890bf10b3ae9316710",
+    "spans": [
+      [
+        0,
+        202561
+      ],
+      [
+        1,
+        233727
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_cine_01/os_suv_cine_damage_glass_01_n.texture",
+    "hash": "A44C3740DB15DDBD",
+    "bytes": 87488,
+    "sha256": "4e44e5caf620efe644ea32e7ebf54eb8f00f23b1823241e1d0d23b158177572c",
+    "spans": [
+      [
+        0,
+        120679
+      ],
+      [
+        1,
+        225291
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_cine_01/os_suv_cine_glass_01_c.texture",
+    "hash": "9F2FB7E661223B78",
+    "bytes": 349632,
+    "sha256": "0d152a6b5ba5f40c4adf3c81dc37eddf8cf5aa6e4176ac96c3bef7cb8ae34639",
+    "spans": [
+      [
+        0,
+        103913
+      ],
+      [
+        1,
+        223553
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_suv_cine_01/os_suv_cine_glass_01_g.texture",
+    "hash": "9FF50973CEE5BC27",
+    "bytes": 349632,
+    "sha256": "2600461ca04dcca9f0316e37963bdc310ac72f9595728eb5817a119ea8cedf13",
+    "spans": [
+      [
+        0,
+        106395
+      ],
+      [
+        1,
+        223807
+      ]
+    ]
+  },
+  {
+    "path": "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_01_c.texture",
+    "hash": "843E2FCEB87F390C",
+    "bytes": 174880,
+    "sha256": "3823d9c26435ae2398b952814b3ce98e3244d5e49719d975c1137274ca8dbc40",
+    "spans": [
+      [
+        0,
+        14124
+      ],
+      [
+        1,
+        214296
+      ]
+    ]
+  },
+  {
+    "path": "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_01_g.texture",
+    "hash": "84E4915B17B8BE53",
+    "bytes": 174880,
+    "sha256": "603a3b72a499ffb29c251247cb3b78c680d247716196d7083db8b433a5085fb2",
+    "spans": [
+      [
+        0,
+        16378
+      ],
+      [
+        1,
+        214556
+      ]
+    ]
+  },
+  {
+    "path": "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_01_m.texture",
+    "hash": "B767A6DFEA35B092",
+    "bytes": 174880,
+    "sha256": "aacaaa4b28983f6ab214da8592e0aac589a804c2476fe813d192d4b739175917",
+    "spans": [
+      [
+        0,
+        184341
+      ],
+      [
+        1,
+        231871
+      ]
+    ]
+  },
+  {
+    "path": "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_01_n.texture",
+    "hash": "9C4AC9279936B0D2",
+    "bytes": 349632,
+    "sha256": "10e9441868abdc45ed7f154b2a6aa25af00269c8e8ebaa57a7a454f3148d7c2a",
+    "spans": [
+      [
+        0,
+        94320
+      ],
+      [
+        1,
+        222555
+      ]
+    ]
+  },
+  {
+    "path": "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_02_c.texture",
+    "hash": "82812B057906E552",
+    "bytes": 349632,
+    "sha256": "769590333b51463fda0ba08190b966c810f6c6a5685b516cc69ee406e5c609e4",
+    "spans": [
+      [
+        0,
+        8334
+      ],
+      [
+        1,
+        213675
+      ]
+    ]
+  },
+  {
+    "path": "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_02_g.texture",
+    "hash": "825B9590D6C1620D",
+    "bytes": 174880,
+    "sha256": "68f0e400127790c68f3dc409977d3201d635997a666e5cf7c93d201218350a1c",
+    "spans": [
+      [
+        0,
+        7843
+      ],
+      [
+        1,
+        213624
+      ]
+    ]
+  },
+  {
+    "path": "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_02_m.texture",
+    "hash": "B1D8A2142B4C6CCC",
+    "bytes": 174880,
+    "sha256": "941cc577e1c1812332ae69b5bf6c284feb6b6224a8e898bb18d5c3c827709ef0",
+    "spans": [
+      [
+        0,
+        165916
+      ],
+      [
+        1,
+        229971
+      ]
+    ]
+  },
+  {
+    "path": "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_02_n.texture",
+    "hash": "9AF5CDEC584F6C8C",
+    "bytes": 349632,
+    "sha256": "f4ba82febc957e73bf0fb1d86a44e7d48d33e1dd31880b6fbf8e6c04831308da",
+    "spans": [
+      [
+        0,
+        89838
+      ],
+      [
+        1,
+        222073
+      ]
+    ]
+  },
+  {
+    "path": "i20_substances/sza_granite_wall_01/sza_granite_wall_01_c.texture",
+    "hash": "9017D8B837F5E401",
+    "bytes": 43808,
+    "sha256": "1d6a775dcb81c13533561ea672cff9108c87815f3fddd9f94e29630785190825",
+    "spans": [
+      [
+        0,
+        53768
+      ],
+      [
+        1,
+        218374
+      ]
+    ]
+  },
+  {
+    "path": "i20_substances/sza_granite_wall_01/sza_granite_wall_01_g.texture",
+    "hash": "90CD662D9832635E",
+    "bytes": 43808,
+    "sha256": "2eda51473b9c5867ee99ccc5122418be124c79f8b651b22ca50f6c13e00d10ae",
+    "spans": [
+      [
+        0,
+        56134
+      ]
+    ]
+  },
+  {
+    "path": "i20_substances/sza_granite_wall_01/sza_granite_wall_01_n.texture",
+    "hash": "88633E5116BC6DDF",
+    "bytes": 21952,
+    "sha256": "7dea0589b3ecdd3225cb6c8ea051ad1c39fb1e12aceaf457251d12f958b491df",
+    "spans": [
+      [
+        0,
+        28182
+      ],
+      [
+        1,
+        215723
+      ]
+    ]
+  },
+  {
+    "path": "i20_substances/sza_metal_trim_01/sza_metal_trim_01_c.texture",
+    "hash": "986AB6B0FF23418D",
+    "bytes": 5568,
+    "sha256": "88c038803b970f8a44fa000baee9f4351e31f85929e3200942db16100b980906",
+    "spans": [
+      [
+        0,
+        81401
+      ]
+    ]
+  },
+  {
+    "path": "i20_substances/sza_metal_trim_01/sza_metal_trim_01_g.texture",
+    "hash": "98B0082550E4C6D2",
+    "bytes": 43808,
+    "sha256": "c6cf828a7f3fb538587c5e0dbcd0e6b52b2492e76770640c1c30545a1f9ab131",
+    "spans": [
+      [
+        0,
+        82283
+      ],
+      [
+        1,
+        221330
+      ]
+    ]
+  },
+  {
+    "path": "i20_substances/sza_metal_trim_01/sza_metal_trim_01_n.texture",
+    "hash": "801E5059DE6AC853",
+    "bytes": 87488,
+    "sha256": "2879c30172549ff465d802cedb820d5ff0b746e167e3172e10458ac698541033",
+    "spans": [
+      [
+        0,
+        418
+      ],
+      [
+        1,
+        212896
+      ]
+    ]
+  },
+  {
+    "path": "levels/i20_interior_cube_capture/envprobes/interior_cube_office_array_02.texture",
+    "hash": "A2F37CE15F59C8B6",
+    "bytes": 3145856,
+    "sha256": "ea0fedc212d64505902bc12776a24a2120f66e307f583bc0d96b5ea5345a68bb",
+    "spans": [
+      [
+        0,
+        116196
+      ]
+    ]
+  },
+  {
+    "path": "levels/i20_interior_cube_capture/envprobes_sunset/rv_interior_cube_array_residential_01.texture",
+    "hash": "8E031F08185BAD12",
+    "bytes": 262016,
+    "sha256": "5e412da2be64f20580342758939d31a20e0b0a99d1ec1d7c622b11c0fa74806a",
+    "spans": [
+      [
+        0,
+        46821
+      ],
+      [
+        1,
+        217679
+      ]
+    ]
+  },
+  {
+    "path": "textures/cameron/car_color_picker_1d.texture",
+    "hash": "BD876BFE85C812F1",
+    "bytes": 256,
+    "sha256": "96a3bd3dabc4ad734ade73f88e9f57e0560028023a87d39d14169ed52e6c3b7c",
+    "spans": [
+      [
+        0,
+        204670
+      ]
+    ]
+  },
+  {
+    "path": "textures/cameron/taxi_color_picker_1d.texture",
+    "hash": "8A454C839534D9A0",
+    "bytes": 160,
+    "sha256": "7fdd91713e29e38fc35f921936e26678f433649038cd626410bb57d3de4c4e35",
+    "spans": [
+      [
+        0,
+        34486
+      ]
+    ]
+  },
+  {
+    "path": "textures/concrete/jn_concrete_01/jn_concrete_01_g.texture",
+    "hash": "8C96DF4110F8C988",
+    "bytes": 174880,
+    "sha256": "3c9baed6b69b943c53dc822a39ad1153fe1135edf4f84465e6f46a0fa92877ab",
+    "spans": [
+      [
+        0,
+        42165
+      ],
+      [
+        1,
+        217214
+      ]
+    ]
+  },
+  {
+    "path": "textures/concrete/jn_concrete_trim_02/jn_concrete_trim_02_c.texture",
+    "hash": "B98FB4DC64FAD84C",
+    "bytes": 174880,
+    "sha256": "5010ff62cf4f37009a4a870bed7d5bc7d1eec9a3e72d6d6cd54ebe57b4c377ff",
+    "spans": [
+      [
+        0,
+        191568
+      ],
+      [
+        1,
+        232576
+      ]
+    ]
+  },
+  {
+    "path": "textures/concrete/jn_concrete_trim_02/jn_concrete_trim_02_g.texture",
+    "hash": "B9550A49CB3D5F13",
+    "bytes": 174880,
+    "sha256": "5b7c63811094394d5ed8ebdfc1a1228077e31404ed61f092501f0a7e49ee7633",
+    "spans": [
+      [
+        0,
+        190801
+      ],
+      [
+        1,
+        232494
+      ]
+    ]
+  },
+  {
+    "path": "textures/concrete/jn_concrete_trim_02/jn_concrete_trim_02_n.texture",
+    "hash": "A1FB523545B35192",
+    "bytes": 349632,
+    "sha256": "ee0be4b643a8d71354b0fa254c3a6ec6a7578b15cdc9c8787d9c003af6f331f7",
+    "spans": [
+      [
+        0,
+        112961
+      ],
+      [
+        1,
+        224493
+      ]
+    ]
+  },
+  {
+    "path": "textures/cperrella/detail/cp_detail_normal_metal_01_n.texture",
+    "hash": "A4644029C5DA2BB7",
+    "bytes": 21952,
+    "sha256": "ca86efe1d02d51bba5dcbc321ac158165f5523e346c1557f42d1eb0d8c320d94",
+    "spans": [
+      [
+        0,
+        120998
+      ],
+      [
+        1,
+        225329
+      ]
+    ]
+  },
+  {
+    "path": "textures/cperrella/misc/cp_kelvin_01.texture",
+    "hash": "98CE3BB47F722AC2",
+    "bytes": 192,
+    "sha256": "b665b050548f35e552f56b08e1a862922806004e19d13c22ada3f6d1325e4cc0",
+    "spans": [
+      [
+        0,
+        82686
+      ]
+    ]
+  },
+  {
+    "path": "textures/cperrella/vehicle/cp_blend_rust_01_c.texture",
+    "hash": "8AD2CC96BB2BB2D5",
+    "bytes": 65600,
+    "sha256": "b397906f4b8c89f00946c10d33b92c7f9745a88f17b6f66ae338bca3b3a084aa",
+    "spans": [
+      [
+        0,
+        36312
+      ],
+      [
+        1,
+        216571
+      ]
+    ]
+  },
+  {
+    "path": "textures/cperrella/vehicle/cp_blend_rust_01_n.texture",
+    "hash": "92A62A7F9A623B0B",
+    "bytes": 131168,
+    "sha256": "d1c84a175b7bf85bca577f81c71c329f8f1a59384334b4a1241516d45b56d4b8",
+    "spans": [
+      [
+        0,
+        62282
+      ],
+      [
+        1,
+        219255
+      ]
+    ]
+  },
+  {
+    "path": "textures/cperrella/vehicle/cp_veh_utility_01_h.texture",
+    "hash": "B0C947929041965A",
+    "bytes": 87488,
+    "sha256": "133cdb6cdb36c3404a59a3090d391143cf6ed8ae192dd488aeb1e8ed89f04755",
+    "spans": [
+      [
+        0,
+        162311
+      ],
+      [
+        1,
+        229580
+      ]
+    ]
+  },
+  {
+    "path": "textures/decals/jn_drip_stains/jn_drip_stain_trim_array.texture",
+    "hash": "A52D636027F7877D",
+    "bytes": 174720,
+    "sha256": "6cd7db6bc0600c7cee448bd8a4683a6cb65fa276cd05a98d387a2d2ec27869b7",
+    "spans": [
+      [
+        0,
+        123564
+      ],
+      [
+        1,
+        225601
+      ]
+    ]
+  },
+  {
+    "path": "textures/effects/gradients/jn_brick_wall_paint_1d.texture",
+    "hash": "9658979FE9332603",
+    "bytes": 192,
+    "sha256": "4b349368256a6872eaee1f7c381c0a3b7912d041f0ed5ff7ce7f27f7dbe5b895",
+    "spans": [
+      [
+        0,
+        74544
+      ]
+    ]
+  },
+  {
+    "path": "textures/environment/shared/distortion_normals/window_normal_distortion_01_n.texture",
+    "hash": "92B23B47F87F574E",
+    "bytes": 21952,
+    "sha256": "7c5d6af180667024871d4b01d877e7ff90572feebce582e04b21ee2d8a621d59",
+    "spans": [
+      [
+        0,
+        62435
+      ],
+      [
+        1,
+        219268
+      ]
+    ]
+  },
+  {
+    "path": "textures/ghollis/taxi_ad_array.texture",
+    "hash": "B4F44CCD04A80E50",
+    "bytes": 76288,
+    "sha256": "adb71f1c3fcbf6bd15fd08c3266331c54d6d71639b3fa1bc864851d96ac651f0",
+    "spans": [
+      [
+        0,
+        176191
+      ],
+      [
+        1,
+        231054
+      ]
+    ]
+  },
+  {
+    "path": "textures/ghollis/taxi_ad_g.texture",
+    "hash": "BCFA6B8AB1A5C2D8",
+    "bytes": 43776,
+    "sha256": "d19fdfc2e51ce37d2078aef64640b823f089b50986287763486aa32417be1d41",
+    "spans": [
+      [
+        0,
+        202855
+      ]
+    ]
+  },
+  {
+    "path": "textures/glass/cp_window_default/cp_window_default_g.texture",
+    "hash": "B96FE282455F46DD",
+    "bytes": 174880,
+    "sha256": "a3f4e6ba2346e592b85dc1b293f60a1e3c69b0f4c6543f28cc10994fe908c8d8",
+    "spans": [
+      [
+        0,
+        191153
+      ],
+      [
+        1,
+        232536
+      ]
+    ]
+  },
+  {
+    "path": "textures/glass/glass_patterns/glass_pattern_bump_n.texture",
+    "hash": "9330895269CDDA38",
+    "bytes": 349632,
+    "sha256": "e60ed327dfc92d2053460d7457284cda8bb5bb007629544831f16857b6a5cc6d",
+    "spans": [
+      [
+        0,
+        64047
+      ],
+      [
+        1,
+        219451
+      ]
+    ]
+  },
+  {
+    "path": "textures/gmartinez/os_sedan_01_wheel/gm_os_sedan_01_wheel_01_c.texture",
+    "hash": "820B3FA1F0520C04",
+    "bytes": 349632,
+    "sha256": "70bd65a41f257a30ecc6b59f2c75e1804230fc3606b6b3d0a02656bc24d3a638",
+    "spans": [
+      [
+        0,
+        6805
+      ],
+      [
+        1,
+        213526
+      ]
+    ]
+  },
+  {
+    "path": "textures/gmartinez/os_sedan_01_wheel/gm_os_sedan_01_wheel_01_g.texture",
+    "hash": "82D181345F958B5B",
+    "bytes": 174880,
+    "sha256": "dcb1ae937c3a29eab2cd222e431c35148a497fd72b1ecb861afd68f8e73b3c22",
+    "spans": [
+      [
+        0,
+        9380
+      ],
+      [
+        1,
+        213789
+      ]
+    ]
+  },
+  {
+    "path": "textures/gmartinez/os_sedan_01_wheel/gm_os_sedan_01_wheel_01_n.texture",
+    "hash": "9A7FD948D11B85DA",
+    "bytes": 349632,
+    "sha256": "592fba38f07b010df57491ca08404498593ced92bcd564c27bf8c3cf312df5ca",
+    "spans": [
+      [
+        0,
+        88274
+      ],
+      [
+        1,
+        221926
+      ]
+    ]
+  },
+  {
+    "path": "textures/jnoble/storefront_parallax/jn_parallax_generic_blurred.texture",
+    "hash": "BC00508939785673",
+    "bytes": 43776,
+    "sha256": "23be4aa0f641f468b050bcf736f119a1c620dbece2f4328d3a5b29de051f5dca",
+    "spans": [
+      [
+        0,
+        199630
+      ],
+      [
+        1,
+        233429
+      ]
+    ]
+  },
+  {
+    "path": "textures/masks/1d_color_picker/city_color_picker_1d.texture",
+    "hash": "B1EE2D372DE75CFF",
+    "bytes": 160,
+    "sha256": "de725e0914f49c5a1e56da7b011f25d84c37b48494b0c45ecf1583740e18b762",
+    "spans": [
+      [
+        0,
+        166196
+      ]
+    ]
+  },
+  {
+    "path": "textures/masks/grunge_noise_mask_02.texture",
+    "hash": "9C9564FF8C5B3457",
+    "bytes": 43808,
+    "sha256": "979043fd6bda68495d4cba8a219589d995ed3f00688b6761628d5fd9e71a5fc7",
+    "spans": [
+      [
+        0,
+        95296
+      ],
+      [
+        1,
+        222653
+      ]
+    ]
+  },
+  {
+    "path": "textures/masks/jn_brick_wall_mask.texture",
+    "hash": "8B8A3CCB00D0BD15",
+    "bytes": 174880,
+    "sha256": "eb63caecf93e4eef9df5de636239c75b81b40b53600e1b030dae5943bf6cb463",
+    "spans": [
+      [
+        0,
+        38691
+      ],
+      [
+        1,
+        216828
+      ]
+    ]
+  },
+  {
+    "path": "textures/masks/mo_black/mo_black_h.texture",
+    "hash": "8486AC2887FE920F",
+    "bytes": 288,
+    "sha256": "33160923854dcaca49d0eff69c94afcda9a93dbd7cb877cc0acd5f990db58111",
+    "spans": [
+      [
+        0,
+        15128
+      ]
+    ]
+  },
+  {
+    "path": "textures/metal/jn_beekman_metal/jn_beekman_metal_c.texture",
+    "hash": "AEAD343AF6489A6B",
+    "bytes": 43808,
+    "sha256": "aeb189152112aea9c827d60f1e1ef08c91987948847ab2889a5493486a85ef81",
+    "spans": [
+      [
+        0,
+        155259
+      ],
+      [
+        1,
+        228886
+      ]
+    ]
+  },
+  {
+    "path": "textures/metal/jn_beekman_metal/jn_beekman_metal_g.texture",
+    "hash": "AE778AAF598F1D34",
+    "bytes": 87488,
+    "sha256": "f615b4b722af83164433912405083671976bb7b000d77a765aa723b01df52e09",
+    "spans": [
+      [
+        0,
+        154580
+      ],
+      [
+        1,
+        228804
+      ]
+    ]
+  },
+  {
+    "path": "textures/metal/jn_beekman_metal/jn_beekman_metal_n.texture",
+    "hash": "B6D9D2D3D70113B5",
+    "bytes": 87488,
+    "sha256": "6dc8c64ffbf6a644533d459640b3d6a1b648de1089b225b9b7f257bb4a22e300",
+    "spans": [
+      [
+        0,
+        182504
+      ],
+      [
+        1,
+        231692
+      ]
+    ]
+  },
+  {
+    "path": "textures/metal/jn_metal_trim_worn_01/jn_metal_trim_worn_01_g.texture",
+    "hash": "8E589DA9C1419495",
+    "bytes": 43808,
+    "sha256": "2148d043b5c4fc627af4fed36fe97a9f699441a9e8fe9b318301f514f93f02a9",
+    "spans": [
+      [
+        0,
+        47922
+      ],
+      [
+        1,
+        217803
+      ]
+    ]
+  },
+  {
+    "path": "textures/metal/jn_metal_trim_worn_01/jn_metal_trim_worn_01_n.texture",
+    "hash": "96F6C5D54FCF9A14",
+    "bytes": 87488,
+    "sha256": "a80d81e4564eb58f26a933a3fd2209e31ff3958573a75b09da84599ff9b8095c",
+    "spans": [
+      [
+        0,
+        76705
+      ],
+      [
+        1,
+        220780
+      ]
+    ]
+  },
+  {
+    "path": "textures/metal/jn_shiny_metal_trim_01/jn_shiny_metal_trim_01_n.texture",
+    "hash": "BE9F1B286E8D6BCD",
+    "bytes": 87488,
+    "sha256": "c6e6c620f55d6c1fce1b379bfb359a966504de39202544e49485bb8846503555",
+    "spans": [
+      [
+        0,
+        208278
+      ],
+      [
+        1,
+        234331
+      ]
+    ]
+  },
+  {
+    "path": "textures/mmcauliffe/concrete/concrete_05/mm_concrete_05_c.texture",
+    "hash": "A618D26A1F370031",
+    "bytes": 174880,
+    "sha256": "2746fa61ffdd7adf8802c23999cc1842c11a702d61cc4fa9c86c84f6a9a5f4a5",
+    "spans": [
+      [
+        0,
+        126606
+      ],
+      [
+        1,
+        225929
+      ]
+    ]
+  },
+  {
+    "path": "textures/mmcauliffe/concrete/concrete_05/mm_concrete_05_n.texture",
+    "hash": "BE6C34833E7E89EF",
+    "bytes": 349632,
+    "sha256": "b1a3fd2b53b0727983afcd6b40aff7eeadb197f1afaca35e5afaa4e58e7cd356",
+    "spans": [
+      [
+        0,
+        207668
+      ],
+      [
+        1,
+        234265
+      ]
+    ]
+  },
+  {
+    "path": "textures/mmcauliffe/metal/steel_01_trim/mm_steel_01_trim_g.texture",
+    "hash": "A10362815943EFB3",
+    "bytes": 174880,
+    "sha256": "128eb1cd9111c188dd197e17289ae797955e2f39937cada8520fb8d439824740",
+    "spans": [
+      [
+        0,
+        109793
+      ],
+      [
+        1,
+        224170
+      ]
+    ]
+  },
+  {
+    "path": "textures/mmcauliffe/metal/steel_01_trim/mm_steel_01_trim_n.texture",
+    "hash": "B9AD3AFDD7CDE132",
+    "bytes": 349632,
+    "sha256": "c74f06451068f530ddb4c8bf246ff2fafb0cf2f6ff77f8bc1cf59c7a8e8f8c81",
+    "spans": [
+      [
+        0,
+        191946
+      ],
+      [
+        1,
+        232618
+      ]
+    ]
+  },
+  {
+    "path": "textures/molsen/car_color_picker_1d_white.texture",
+    "hash": "A8382D81F0F59548",
+    "bytes": 192,
+    "sha256": "00b9b1d82f02d32956db192890d79a4de89cd290e9214e256871b3164b628cb2",
+    "spans": [
+      [
+        0,
+        133790
+      ]
+    ]
+  },
+  {
+    "path": "textures/molsen/mo_brass_trim_01/mo_brass_trim_01_c.texture",
+    "hash": "87E395F72A4B6B8D",
+    "bytes": 43808,
+    "sha256": "8f37b8ea6b6d09dbc186a2b4328903d5180d762c35f435f5e645c088c3e468f5",
+    "spans": [
+      [
+        0,
+        26502
+      ],
+      [
+        1,
+        215570
+      ]
+    ]
+  },
+  {
+    "path": "textures/molsen/mo_brass_trim_01/mo_brass_trim_01_g.texture",
+    "hash": "87392B62858CECD2",
+    "bytes": 349632,
+    "sha256": "e5963ee27494f0f8ab8294f4bdaf75360dc0a334ea22fede06a84cccd82fdf28",
+    "spans": [
+      [
+        0,
+        24301
+      ],
+      [
+        1,
+        215343
+      ]
+    ]
+  },
+  {
+    "path": "textures/molsen/mo_brass_trim_01/mo_brass_trim_01_n.texture",
+    "hash": "9F97731E0B02E253",
+    "bytes": 349632,
+    "sha256": "ecb04c3c51600be2ba56af0b990e13ecec34ecc00834660b20ce0532bcbe4923",
+    "spans": [
+      [
+        0,
+        105205
+      ],
+      [
+        1,
+        223677
+      ]
+    ]
+  },
+  {
+    "path": "textures/molsen/mo_color_mixer_mask/mo_color_mixer_mask_01_h.texture",
+    "hash": "8DE15058DFC938B4",
+    "bytes": 43808,
+    "sha256": "8d881a510d75fcc99c2bcc062f956534ef8f9298b3672c94aa8590f0957f92a6",
+    "spans": [
+      [
+        0,
+        46399
+      ],
+      [
+        1,
+        217637
+      ]
+    ]
+  },
+  {
+    "path": "textures/molsen/mo_dirt_mask_01/mo_dirt_mask_01_h.texture",
+    "hash": "B760B9B9C99F5C64",
+    "bytes": 174880,
+    "sha256": "d95febb27f2dc18976abd67fe44f17c34dbae5fe8d1f388392a8b7cf85099af3",
+    "spans": [
+      [
+        0,
+        184229
+      ],
+      [
+        1,
+        231860
+      ]
+    ]
+  },
+  {
+    "path": "textures/molsen/mo_gbl_window_glass_01/za_gbl_window_glass_01_g.texture",
+    "hash": "A6216E28039308E7",
+    "bytes": 43808,
+    "sha256": "63f1068d90230f0dcc29122cd327a3d67e24b7d0e1c1c98b41388c5913aab78b",
+    "spans": [
+      [
+        0,
+        126708
+      ],
+      [
+        1,
+        225938
+      ]
+    ]
+  },
+  {
+    "path": "textures/molsen/mo_procedural_dirt_mask_01/mo_procedural_dirt_mask_01_h.texture",
+    "hash": "8B5323DBF135E662",
+    "bytes": 43808,
+    "sha256": "a9746e3f76e8bb5ff7e0488eab985720947d4f0b6eeee8c003bb6f86faae8bff",
+    "spans": [
+      [
+        0,
+        37949
+      ],
+      [
+        1,
+        216753
+      ]
+    ]
+  },
+  {
+    "path": "textures/props/mo_hvac_grate_01/mo_hvac_grate_01_c.texture",
+    "hash": "968684AC5457F4EF",
+    "bytes": 43808,
+    "sha256": "b85e53d7d994ebbaf3ea30541760471c3bebd2c8beef1885945a31ccb97a39e8",
+    "spans": [
+      [
+        0,
+        75183
+      ],
+      [
+        1,
+        220632
+      ]
+    ]
+  },
+  {
+    "path": "textures/props/mo_hvac_grate_01/mo_hvac_grate_01_g.texture",
+    "hash": "965C3A39FB9073B0",
+    "bytes": 43808,
+    "sha256": "2b2196973c7267cd8d70be7f8941ec26254953be9f6b8b8aa846a23c0fadac51",
+    "spans": [
+      [
+        0,
+        74594
+      ]
+    ]
+  },
+  {
+    "path": "textures/props/mo_hvac_grate_01/mo_hvac_grate_01_n.texture",
+    "hash": "8EF26245751E7D31",
+    "bytes": 21952,
+    "sha256": "2a10403bae67d45dfbe951d54299b893ddf3cd7fbb93be071bced0ab922e8aa2",
+    "spans": [
+      [
+        0,
+        49923
+      ],
+      [
+        1,
+        218008
+      ]
+    ]
+  },
+  {
+    "path": "textures/rbenno/bricks/jn_rb_brick_warehouse_paint_mask.texture",
+    "hash": "BAF1DB4AA2EC3017",
+    "bytes": 43808,
+    "sha256": "356c984417246d6c900d585ea645c11981c88ab3320a7a3891b086d7366ec3cd",
+    "spans": [
+      [
+        0,
+        196136
+      ],
+      [
+        1,
+        233048
+      ]
+    ]
+  },
+  {
+    "path": "textures/window_blinds/window_blinds_01/window_blinds_01.texture",
+    "hash": "82471C47EEDA4AC3",
+    "bytes": 43808,
+    "sha256": "839a9f757ed426edbc5455452c8d33362e545e13770449924c92faf2e137c52e",
+    "spans": [
+      [
+        0,
+        7563
+      ],
+      [
+        1,
+        213593
+      ]
+    ]
+  },
+  {
+    "path": "textures/window_blinds/window_blinds_01/window_blinds_01_h.texture",
+    "hash": "9C049F5C0BF532D8",
+    "bytes": 1152,
+    "sha256": "b1e3d043082810b05b2e657de7bd2da43deb1903414dcd57fa616ef5a2ba3244",
+    "spans": [
+      [
+        0,
+        93346
+      ]
+    ]
+  },
+  {
+    "path": "configs/hero/hero_webzipsetup_outdoor.config",
+    "hash": "AE17D34588A5319C",
+    "bytes": 1252,
+    "sha256": "9c9a34497af15fdc927aae9e2e3c47163c31ababd6dbd0851971483053e5aa76",
+    "spans": [
+      [
+        0,
+        153362
+      ]
+    ]
+  },
+  {
+    "path": "configs/hero/hero_webzipsetup_ground.config",
+    "hash": "8C6DF99210347456",
+    "bytes": 1304,
+    "sha256": "de4df1ed7c0d226652225fe9baedff1447e53c955ff87c2629b67a3db2e5a90e",
+    "spans": [
+      [
+        0,
+        41604
+      ]
+    ]
+  },
+  {
+    "path": "configs/hero/hero_ziptoperchconfig.config",
+    "hash": "B3AFCF77CDF8E191",
+    "bytes": 1140,
+    "sha256": "8f2f1bdd13d059278f29f39ed3b718b04a3b9901aaa48e8650d31dc4207055a2",
+    "spans": [
+      [
+        0,
+        171979
+      ]
+    ]
+  },
+  {
+    "path": "configs/hero/hero_ziptoperchsetup_standard.config",
+    "hash": "BAD87AA155E3A92B",
+    "bytes": 1704,
+    "sha256": "a11bb637ce13eafa7deeada9faefa4b983f6797e2421d4c96cc8ef151f9c558c",
+    "spans": [
+      [
+        0,
+        195805
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/stand_jump_land_spiderman.animclip",
+    "hash": "B05DFB0533D63B30",
+    "bytes": 42340,
+    "sha256": "c477c71c55ca7b9185d365f8068c7ced07f176277527c441c591d10b59593a5f",
+    "spans": [
+      [
+        0,
+        160966
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/stand_jump_spiderman.animclip",
+    "hash": "80D6FBD10312F05B",
+    "bytes": 28404,
+    "sha256": "0167ec6f43ccc877ef216e42aca3d5c16ee59903e719392db8d7aa56f556182b",
+    "spans": [
+      [
+        0,
+        2833
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/air_tofastfall_spiderman.animclip",
+    "hash": "B1715151C73055B7",
+    "bytes": 39380,
+    "sha256": "3b98a269da879e2023d0ab45042e6115848f6c4b778adc497439a795920408fc",
+    "spans": [
+      [
+        0,
+        164543
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_fwd_rh_spiderman.animclip",
+    "hash": "A3308F454560A378",
+    "bytes": 93444,
+    "sha256": "4c99459c27f8e3264fac5af20c6a7d92ae328bd1a3ee364446b0fd624ee3879d",
+    "spans": [
+      [
+        0,
+        116993
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_intro_fromair_fwd_spiderman.animclip",
+    "hash": "95294D980675472F",
+    "bytes": 22580,
+    "sha256": "5f55784f47ba5847d1021701148c25be721fa5d4562f5e95ba86342bcb7788d7",
+    "spans": [
+      [
+        0,
+        70654
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_intro_fromfastfall_fwd_rh_spiderman.animclip",
+    "hash": "ACC0F9BCDC62F599",
+    "bytes": 23476,
+    "sha256": "44830a87be71efc7020cdec51249e1e99900dd70acebae30ed8c5c693cb86a44",
+    "spans": [
+      [
+        0,
+        148911
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_jump_high1_spiderman.animclip",
+    "hash": "B3031B83DE852352",
+    "bytes": 62916,
+    "sha256": "a0842d44643c1b6398d3857a3a9170b702b2dd51bb06adda59cc5c829716a4a4",
+    "spans": [
+      [
+        0,
+        169750
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_jump_high2_spiderman.animclip",
+    "hash": "99D2B58C0A9E3C62",
+    "bytes": 65524,
+    "sha256": "7b1aba2e09ef2d987e337f2ac0f92794170c346a0cacf690e8bb9d3b37d8efb4",
+    "spans": [
+      [
+        0,
+        85994
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_jump_mid4_spiderman.animclip",
+    "hash": "9C2F8B58DFAADE5B",
+    "bytes": 75508,
+    "sha256": "5df44880687af8585c827c6bf8068b257969fdc1ed3d7cd668cdccc7bde6bc24",
+    "spans": [
+      [
+        0,
+        93939
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_jump_mid5_spiderman.animclip",
+    "hash": "A60D081BCAE2A9D4",
+    "bytes": 71844,
+    "sha256": "c3c615383e2036eeec5405569748e6b4bbb4d38615931ad8a3d3912e890ddd8d",
+    "spans": [
+      [
+        0,
+        126457
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_jump_mid_long_2_spiderman.animclip",
+    "hash": "87128F4EE5FEB407",
+    "bytes": 64228,
+    "sha256": "502084f9e1892be05b9b7f78d09a2bf0de8880bac49e94883b7182c29fba73ef",
+    "spans": [
+      [
+        0,
+        23804
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_jump_mid_long_3_spiderman.animclip",
+    "hash": "BD300C0DF0B6C388",
+    "bytes": 68116,
+    "sha256": "aa0f178c49f802a57f4e84808c1827ddc0945de00e43493756c0fbf66304dcee",
+    "spans": [
+      [
+        0,
+        203556
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_jump_mid_long_4_spiderman.animclip",
+    "hash": "B607F89BA60B0DC7",
+    "bytes": 68292,
+    "sha256": "887693b2b56b2c9b2db2e18afb36400313745caa13598b2cced2a62eb5a8c7a9",
+    "spans": [
+      [
+        0,
+        179777
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_jump_mid_long_spiderman.animclip",
+    "hash": "AA945ABD57E6308F",
+    "bytes": 73716,
+    "sha256": "0e6d843bbc18c013c37bde846fbeb888ec918ff5dd6f1400551e7843ec5c0a7c",
+    "spans": [
+      [
+        0,
+        141599
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_lh_090_pivot_to_090_l_lean_l_spiderman.animclip",
+    "hash": "833676DBF838B6FD",
+    "bytes": 25492,
+    "sha256": "018f7e9ae010dc7dcceb2ce457d089a1a74a8377f062c44481c408b79a4f129b",
+    "spans": [
+      [
+        0,
+        10704
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_lh_090_pivot_to_090_l_lean_r_spiderman.animclip",
+    "hash": "BF1A89CE639CE77E",
+    "bytes": 25492,
+    "sha256": "cf0cee212e2949fb9f1dbc0e9cbc191445a775fcdd92c199bb187fca8afd7e77",
+    "spans": [
+      [
+        0,
+        209857
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_lh_090_pivot_to_090_l_spiderman.animclip",
+    "hash": "BD06285BA865B877",
+    "bytes": 25492,
+    "sha256": "c4588099e8c28fdf4620d9dc6e3d071cf4f637d94f2008d8bca1055acb830fec",
+    "spans": [
+      [
+        0,
+        203007
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_lh_135_pivot_to_045_l_lean_l_spiderman.animclip",
+    "hash": "9CA20FF3DB26324C",
+    "bytes": 27268,
+    "sha256": "031141430ef550b663deb51fffa7c926a0ad9ec53d1e65eb3eb3596ffd9538fd",
+    "spans": [
+      [
+        0,
+        95437
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_lh_135_pivot_to_045_l_lean_r_spiderman.animclip",
+    "hash": "A08EF0E6408263CF",
+    "bytes": 27268,
+    "sha256": "ebb1f604e580141388e458e5acaaa7df09176f71ebeac9f13c00a8e62adb8cfa",
+    "spans": [
+      [
+        0,
+        108337
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_lh_135_pivot_to_045_l_spiderman.animclip",
+    "hash": "96BB7325E54AFE2B",
+    "bytes": 27236,
+    "sha256": "9e8e9e13f7fdd5c48f3e9c168143952d49051894ade3c9c1551e5bcbc6661e9d",
+    "spans": [
+      [
+        0,
+        75885
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_lh_180_pivot_to_000_l_lean_l_spiderman.animclip",
+    "hash": "A666AA40FA2F1670",
+    "bytes": 26772,
+    "sha256": "241a79e12e464ad81b5d0e354d61765d3df9f3883bc532b1d40fa8260a462c0d",
+    "spans": [
+      [
+        0,
+        127621
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_lh_180_pivot_to_000_l_lean_r_spiderman.animclip",
+    "hash": "9A4A5555618B47F3",
+    "bytes": 26772,
+    "sha256": "7fc6804e184d7a36b30720faae3a504f0f7bb3bc99f105748a83f558300d5a9b",
+    "spans": [
+      [
+        0,
+        87558
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_lh_180_pivot_to_000_l_spiderman.animclip",
+    "hash": "BD839E9F4CFACE36",
+    "bytes": 26772,
+    "sha256": "6332f65281df0f2fc7902f08af61734dd2b01780bc5ab87abe61612fef745f61",
+    "spans": [
+      [
+        0,
+        204626
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_lh_side_intro_spiderman.animclip",
+    "hash": "977CF3EB54F81877",
+    "bytes": 16324,
+    "sha256": "3610dc24423aa4f5e6e17d0b9f4509885c755080bf4f0b89d824b7dca68e4fce",
+    "spans": [
+      [
+        0,
+        78380
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_release_low_mir_spiderman.animclip",
+    "hash": "A2673330ADFEC103",
+    "bytes": 34276,
+    "sha256": "fc32766512f2e274808fd30a9cb388ec99e0f2bb5d782cd4304df14fc0a325a7",
+    "spans": [
+      [
+        0,
+        114410
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_release_low_toground_spiderman.animclip",
+    "hash": "BC40D54B27FDA792",
+    "bytes": 16068,
+    "sha256": "c0382b2ce7202ebb20ac6850c6dda16b3c54e47be5c8f02d40b6d0077c8e2c47",
+    "spans": [
+      [
+        0,
+        200461
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_release_mid1_spiderman.animclip",
+    "hash": "B75F23DE18E951CA",
+    "bytes": 61364,
+    "sha256": "b75db0f9c7959936d21340db16dc5362f7e2af02dd1da7d6aeebc5ba6a5b4f14",
+    "spans": [
+      [
+        0,
+        184206
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_release_mid2_spiderman.animclip",
+    "hash": "9D8E8DD1CCF24EFA",
+    "bytes": 63092,
+    "sha256": "65af63b54280653c2c132fda62859946e61e56f995dbc4f5ad34d6f2a0e80cad",
+    "spans": [
+      [
+        0,
+        98534
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_release_mid3_spiderman.animclip",
+    "hash": "A7AC0E92D9BA3975",
+    "bytes": 62772,
+    "sha256": "482d8a3554f24728a4faeab0e3d4ff26e072fdc758ff7b1c31f3ccc8ce79fcde",
+    "spans": [
+      [
+        0,
+        131949
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_release_mid4_spiderman.animclip",
+    "hash": "AC9BFA048F07F73A",
+    "bytes": 60932,
+    "sha256": "eed582d0b02bee385db4908f15b039aff0dfac63701196fb2d63f3838fbea7f1",
+    "spans": [
+      [
+        0,
+        148427
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_release_mid5_spiderman.animclip",
+    "hash": "96B979479A4F80B5",
+    "bytes": 66932,
+    "sha256": "5eaa17997f52e606af7a2ab999428f8e34d229ca55c4a3ca23f71fb06217e7b8",
+    "spans": [
+      [
+        0,
+        75851
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_rh_090_pivot_to_090_l_lean_l_spiderman.animclip",
+    "hash": "85FFE2ACCFB44B54",
+    "bytes": 24628,
+    "sha256": "322dca952631952392ba0a6c0244fb5c787b274dc80c7ca42d0fb2788a31496f",
+    "spans": [
+      [
+        0,
+        20093
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_rh_090_pivot_to_090_l_lean_r_spiderman.animclip",
+    "hash": "B9D31DB954101AD7",
+    "bytes": 24628,
+    "sha256": "850c5d6a38e42215883bab5c7ebac1b89fc0258a2b2dd652fc17fe02a4256b93",
+    "spans": [
+      [
+        0,
+        192428
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_rh_090_pivot_to_090_l_spiderman.animclip",
+    "hash": "AABDC51292CFA097",
+    "bytes": 24036,
+    "sha256": "3948108476153e0766e928369156ced26c78a097552cbbb074cf06fc8324948e",
+    "spans": [
+      [
+        0,
+        142147
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_rh_135_pivot_to_045_l_lean_l_spiderman.animclip",
+    "hash": "9A6B9B84ECAACFE5",
+    "bytes": 27060,
+    "sha256": "6a1c9fb89587b26ceadcebe4d07b2e34e8c76ae1a96321bd7368b56065562466",
+    "spans": [
+      [
+        0,
+        87976
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_rh_135_pivot_to_045_l_lean_r_spiderman.animclip",
+    "hash": "A6476491770E9E66",
+    "bytes": 27060,
+    "sha256": "7037349a4fd9e9b82c9cd784f37818c5697fc038433bb45e2b4e94ad2e4cb032",
+    "spans": [
+      [
+        0,
+        127218
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_rh_135_pivot_to_045_l_spiderman.animclip",
+    "hash": "81009E6CDFE0E6CB",
+    "bytes": 27044,
+    "sha256": "242a4acb2e0a77052065ee776c4cfea41723a8d0a7490694559f111ab7f823fd",
+    "spans": [
+      [
+        0,
+        3347
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_rh_180_pivot_to_000_l_lean_l_spiderman.animclip",
+    "hash": "A0AF3E37CDA3EBD9",
+    "bytes": 26772,
+    "sha256": "770f50f6929d69de481e6d0f602ff4ec2a53e9f98df964e8f17514e82754fe33",
+    "spans": [
+      [
+        0,
+        108747
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_rh_180_pivot_to_000_l_lean_r_spiderman.animclip",
+    "hash": "9C83C1225607BA5A",
+    "bytes": 26772,
+    "sha256": "802a7f3c956315727ba6fd507f29846953bb2870c7e713bbb087562d7377e7bd",
+    "spans": [
+      [
+        0,
+        95044
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_rh_180_pivot_to_000_l_spiderman.animclip",
+    "hash": "AA3873D67650D6D6",
+    "bytes": 26756,
+    "sha256": "097007d75beab8f59f998353726ac463fd04711a2105b841175eeb93e8c0469a",
+    "spans": [
+      [
+        0,
+        140442
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_swing_rh_side_intro_spiderman.animclip",
+    "hash": "B8440C1C372514EF",
+    "bytes": 16324,
+    "sha256": "d8700ab88ae8c83d70f845fdd155dcb9fef0f37165a26d10e68062f8a1744e21",
+    "spans": [
+      [
+        0,
+        187235
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_zip_attach_short_fwd_spiderman.animclip",
+    "hash": "81D66AE2BF7771FF",
+    "bytes": 19396,
+    "sha256": "db2514cff503a16e613bd315cedee5d250cb04a3b917d9b333f4fc7bae08c142",
+    "spans": [
+      [
+        0,
+        6124
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_zip_fwd_2hand_spiderman.animclip",
+    "hash": "A358A4E5DB71F62C",
+    "bytes": 31348,
+    "sha256": "cbe81c29adc1d2eff78708b9ab130ea69ff75f5a67992d36f7e71345f49c4d86",
+    "spans": [
+      [
+        0,
+        117530
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_zip_fwd_fastfall_2h_spiderman.animclip",
+    "hash": "9A51FC3BA49C040C",
+    "bytes": 31476,
+    "sha256": "1aa63bfd3b8e6604674ad4ed218bf7fc25e2d6353f6abe015a7b1e690450bbe7",
+    "spans": [
+      [
+        0,
+        87651
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_zip_fwd_fastfall_rh_spiderman.animclip",
+    "hash": "8DF4D619DB3EF807",
+    "bytes": 30020,
+    "sha256": "803bbef64115d9566b8b2aa60b16e5568cea517e69566d3f62e5b02fb8b85418",
+    "spans": [
+      [
+        0,
+        46659
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_zip_fwd_skydive_2h_spiderman.animclip",
+    "hash": "B3432AAA7439B24E",
+    "bytes": 27316,
+    "sha256": "984aeb75239876cefb26ca906479747c88ac9524dcb244528a291de04b950a9a",
+    "spans": [
+      [
+        0,
+        170542
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_zip_fwd_skydive_spiderman.animclip",
+    "hash": "8FF8AC1D2D032183",
+    "bytes": 30884,
+    "sha256": "47553d6922042fd949b86f63cf262fa078596019e8e28c5f6c0bd05ff76a188e",
+    "spans": [
+      [
+        0,
+        53367
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/traversal/web_zip_fwd_jumpreleasehigh_2h_spiderman.animclip",
+    "hash": "A79B8071E095154E",
+    "bytes": 30916,
+    "sha256": "cc9ffaf73dc52a0e44eab5ab214b180b036869ec9c907b2bfeddb8a840c626c2",
+    "spans": [
+      [
+        0,
+        131726
+      ]
+    ]
+  },
+  {
+    "path": "configs/equipment/skill_charge_jump.config",
+    "hash": "953AB63D5BA9B5C3",
+    "bytes": 236,
+    "sha256": "fae9470d509f85ce82124c2da764ff262dd337ef474912f34958b0419a53001a",
+    "spans": [
+      [
+        0,
+        70883
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/stand_chargejump_up_spiderman.animclip",
+    "hash": "94F8B57EFA042E54",
+    "bytes": 48676,
+    "sha256": "0e37f490d21371c9366c18c9bc37130db21838e8edf917cd584ed887c12aab3d",
+    "spans": [
+      [
+        0,
+        70031
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/stand_chargejump_fwd_spiderman.animclip",
+    "hash": "A6234F2F19EDF07A",
+    "bytes": 66148,
+    "sha256": "b21a7ce106cea87862193281733b72a64c46d9da93d96c3c29c7be5905c00a81",
+    "spans": [
+      [
+        0,
+        126743
+      ]
+    ]
+  },
+  {
+    "path": "characters/hero/hero_spiderman/animations/stand_sprint_high_jump_fwd_spiderman.animclip",
+    "hash": "B5F19A91FC1D5331",
+    "bytes": 48772,
+    "sha256": "602f141e7e22e1576066a3724bb6ebe0011469b0a386dbcfbbd92f588b7d46cf",
+    "spans": [
+      [
+        0,
+        179482
+      ]
+    ]
+  }
+]

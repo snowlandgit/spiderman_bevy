@@ -1,0 +1,28 @@
+LookGroups:
+0 11
+
+Materials used:
+10	material\environment\global\prop\gbl_prop_license_plate_random_01\jn_gbl_prop_license_plate_random_01.material
+10	material\environment\global\prop\gbl_prop_license_plate_random_01\jn_gbl_prop_license_plate_random_01.material
+8	material\vehicle\veh_Sedan_01_Chassis\veh_Sedan_01_Chassis.material
+1	material\vehicle\veh_Sedan_01_Engine_1\veh_Sedan_01_Engine_2.material
+5	material\vehicle\veh_Suv_Cine_Ext_1\veh_sedan_01_ext_1.material
+2	material\vehicle\veh_Suv_Cine_Ext_1\veh_sedan_01_ext_2.material
+6	material\vehicle\veh_Nypdpolicecar_Cine_Glass\veh_sedan_01_glass.material
+0	material\vehicle\veh_Sedan_01_Int_1\veh_Sedan_01_Int_1.material
+4	material\vehicle\veh_Sedan_01_Int_1\veh_Sedan_01_Int_2.material
+3	material\vehicle\veh_Nypdpolicecar_Cine_Lights\veh_sedan_01_lights.material
+7	material\vehicle\veh_Sedan_01_Wheel\veh_Sedan_01_Wheel.material
+
+Slots:
+===============================================================
+0	material\vehicle\veh_Sedan_01_Int_1\veh_Sedan_01_Int_1.material
+1	material\vehicle\veh_Sedan_01_Engine_1\veh_Sedan_01_Engine_2.material
+2	material\vehicle\veh_Suv_Cine_Ext_1\veh_sedan_01_ext_2.material
+3	material\vehicle\veh_Nypdpolicecar_Cine_Lights\veh_sedan_01_lights.material
+4	material\vehicle\veh_Sedan_01_Int_1\veh_Sedan_01_Int_2.material
+5	material\vehicle\veh_Suv_Cine_Ext_1\veh_sedan_01_ext_1.material
+6	material\vehicle\veh_Nypdpolicecar_Cine_Glass\veh_sedan_01_glass.material
+7	material\vehicle\veh_Sedan_01_Wheel\veh_Sedan_01_Wheel.material
+8	material\vehicle\veh_Sedan_01_Chassis\veh_Sedan_01_Chassis.material
+10	material\environment\global\prop\gbl_prop_license_plate_random_01\jn_gbl_prop_license_plate_random_01.material

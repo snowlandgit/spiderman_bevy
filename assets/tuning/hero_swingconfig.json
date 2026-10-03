@@ -1,0 +1,1019 @@
+{
+  "MomentumConfig": {
+    "MomentumStages": [
+      {
+        "TruePivotFactorFinal": 0.75,
+        "TruePivotFactorStart": 0.949999988079071,
+        "TruePivotFactorTrough": 0.75
+      },
+      {
+        "TruePivotFactorFinal": 0.6600000262260437,
+        "TruePivotFactorStart": 0.8999999761581421,
+        "TruePivotFactorTrough": 0.6600000262260437,
+        "MomentumValue": 1,
+        "TerminalVelocityHorzFloor": 24,
+        "GravityScale": 1,
+        "LineAngleTweak": 0,
+        "LineLengthTweak": 0
+      },
+      {
+        "SkillOffsetForHorzFloor": [
+          1.7999999523162842,
+          3.5999999046325684,
+          5.5
+        ],
+        "GravityScale": 0.5,
+        "TruePivotFactorFinal": 0.6000000238418579,
+        "TruePivotFactorStart": 0.8999999761581421,
+        "TruePivotFactorTrough": 0.6000000238418579,
+        "TerminalVelocityHorzFloor": 28,
+        "LineLengthTweak": 4,
+        "MomentumValue": 4,
+        "LineAngleTweak": 3,
+        "TurnSpeedScale": 1
+      }
+    ],
+    "SwingReleaseData": {
+      "RateScaleList": [
+        {
+          "Angle": 100,
+          "Scale": 0
+        },
+        {
+          "Angle": 90,
+          "Scale": 1
+        },
+        {
+          "Angle": 120
+        },
+        {
+          "Angle": 160,
+          "Scale": 0
+        }
+      ],
+      "ReleaseData": {
+        "Boost": 0.25,
+        "BoostCap": 3,
+        "RetriggerDelay": 1
+      },
+      "JumpData": {
+        "Boost": 1,
+        "BoostCap": 5,
+        "RetriggerDelay": 1
+      }
+    },
+    "SwingData": {
+      "RateList": [
+        {
+          "Rate": 0.125,
+          "Angle": 20
+        },
+        {
+          "Rate": 0.20000000298023224,
+          "Angle": 90
+        },
+        {
+          "Angle": 120
+        }
+      ],
+      "MinTime": 0.15000000596046448,
+      "MaxTime": 0.33000001311302185,
+      "BoostCap": 4
+    },
+    "DecayDataAir": [
+      {
+        "DecayRate": 0.25,
+        "DecayDelay": 1
+      },
+      {
+        "DecayDelay": 0.75,
+        "DecayRate": 0.6600000262260437,
+        "MomentumValue": 3.5
+      },
+      {
+        "DecayDelay": 0.5,
+        "DecayRate": 1,
+        "MomentumValue": 5
+      }
+    ],
+    "FallData": {
+      "DiveGainMax": 1.25,
+      "DiveGainMin": 0.5,
+      "DiveTimeBias": 1.25,
+      "DiveTimeMin": 0.5,
+      "FallGainMin": 0.33000001311302185,
+      "DiveBonusMax": 2,
+      "DiveTimeMax": 2,
+      "FallMomentumCapMax": 5,
+      "FallTimeMax": 4,
+      "FallTimeMin": 1
+    },
+    "WebZipData": {
+      "FullBoostData": {
+        "BoostCap": 5,
+        "RetriggerDelay": 2
+      }
+    },
+    "SprintJumpData": {
+      "Boost": 1.5,
+      "BoostCap": 1.5,
+      "RetriggerDelay": 2
+    },
+    "TunnelData": {
+      "Boost": 2,
+      "BoostCap": 4,
+      "RetriggerDelay": 2
+    },
+    "DecayDataSprint": {
+      "DecayRate": 0.5,
+      "DecayDelay": 2
+    },
+    "DecayDataStop": {
+      "DecayDelay": 2,
+      "DecayRate": 2
+    },
+    "ZipData": {
+      "BoostCap": 5,
+      "RetriggerDelay": 2
+    },
+    "BackSwingData": {
+      "MomentumCap": 0.5
+    },
+    "DecayDataGround": {
+      "DecayDelay": 2
+    }
+  },
+  "SwingRopeConfig": {
+    "ReleaseData": {
+      "EndDropSpeed": 1.5,
+      "ExpandTime": 0.5,
+      "FollowTime": 0.15000000596046448,
+      "ReleaseExpandTime": 0.5,
+      "ReleaseFollowTime": 0.15000000596046448,
+      "ReleaseTautTime": 0.10000000149011612,
+      "SagDropSpeed": 2.5,
+      "TautTime": 0.05000000074505806,
+      "ReleaseDropTime": 8,
+      "DropTime": 2,
+      "KillOnRelease": false,
+      "WaveAnimFrequency": 1,
+      "WaveLength": 30
+    },
+    "KnotData": {
+      "MaxInterval": 0.11999999731779099,
+      "MaxScaleNormal": 3.25,
+      "MaxScaleTangent": 2.25,
+      "MaxScaleXY": 1.5,
+      "MaxScaleZ": 1.5,
+      "MinInterval": 0.05999999865889549,
+      "MinScaleNormal": 2.5,
+      "MinScaleTangent": 1.25,
+      "MinScaleXY": 1.25,
+      "MinScaleZ": 1
+    },
+    "ExtensionData": {
+      "CoilExpandFullTime": 0.10000000149011612,
+      "CoilTautFullTime": 0.3330000042915344,
+      "CoilTautStartTime": 0.2329999953508377,
+      "RopeExtendMaxTime": 0.4000000059604645,
+      "RopeExtendMinTime": 0.10000000149011612,
+      "RopeExtendSpeedBias": 0.20000000298023224,
+      "CoilTautWaveScale": 2,
+      "RopeExtendSpeedMin": 40
+    },
+    "DissolveMaterial": "materialgraph/visualeffect/characters/hero/hero_webstrand_dissolve_pre/hero_webstrand_dissolve_pre.materialgraph",
+    "MacroShapeData": {
+      "HighBound": 0.949999988079071,
+      "RampEnd": -0.8500000238418579,
+      "RampStart": -0.9399999976158142,
+      "AmplitudeRopeLength": 10,
+      "LowBound": -1,
+      "WavelengthScaleMax": 4,
+      "WavelengthScaleRangeMin": 2
+    },
+    "VerticalRopeSineWave": {
+      "Amplitude": 0.17000000178813934,
+      "OffsetAnimMin": 0.5,
+      "OffsetAnimMax": 3,
+      "OffsetAnimMaxTime": 2,
+      "CycleOffset": 0,
+      "Wavelength": 2
+    },
+    "HorizontalRopeSineWave": {
+      "Amplitude": 0.17000000178813934,
+      "OffsetAnimMin": 0.5,
+      "OffsetAnimMax": 3,
+      "OffsetAnimMaxTime": 2,
+      "CycleOffset": 0,
+      "Wavelength": 2
+    },
+    "PostTautWobble": {
+      "TimeMax": 0.44999998807907104,
+      "TimeMin": 0.05000000074505806
+    },
+    "MaxEndConeRadius": 0.20000000298023224,
+    "MinConeLength": 0.4000000059604645,
+    "MinEndConeRadius": 0.15000000596046448,
+    "KnotRadius": 0.03999999910593033,
+    "InnerRadius": 0.004000000189989805,
+    "RopePointStartBias": 0.699999988079071,
+    "MaxConeLength": 0.5,
+    "KnotTiling": 1,
+    "IncludeCone": true,
+    "SimpleCone": false,
+    "MaxRopePoints": 80
+  },
+  "ZipRopeConfig": {
+    "ReleaseData": {
+      "DropTime": 2.25,
+      "ExpandTime": 0.5,
+      "ReleaseTautTime": 0.16599999368190765,
+      "WaveAmplitude": 0.25,
+      "ReleaseDropSpeed": 3,
+      "ReleaseDropTime": 2,
+      "ReleaseExpandTime": 1,
+      "EndDropSpeed": 1,
+      "SagDropSpeed": 1,
+      "KillOnRelease": false,
+      "WaveAnimFrequency": 1,
+      "WaveLength": 60
+    },
+    "ExtensionData": {
+      "CoilExpandFullTime": 0.032999999821186066,
+      "CoilExpandStartValue": 0.5,
+      "CoilTautFullTime": 0.30000001192092896,
+      "CoilTautStartTime": 0.10000000149011612,
+      "RopeExtendMaxTime": 0.3499999940395355,
+      "RopeExtendSpeedBias": 0,
+      "RopeExtendSpeedMax": 200,
+      "RopeExtendSpeedMin": 50
+    },
+    "MacroShapeData": {
+      "HighBound": 0.8500000238418579,
+      "LowBound": -0.949999988079071,
+      "RampEnd": -0.8399999737739563,
+      "RampStart": -0.8500000238418579,
+      "AmplitudeRopeLength": 10,
+      "WavelengthScaleMax": 5,
+      "WavelengthScaleRangeMax": 70,
+      "WavelengthScaleRangeMin": 2
+    },
+    "DissolveMaterial": "materialgraph/visualeffect/characters/hero/hero_webstrand_dissolve_pre/hero_webstrand_dissolve_pre.materialgraph",
+    "KnotData": {
+      "MaxInterval": 0.11999999731779099,
+      "MaxScaleXY": 1.850000023841858,
+      "MaxScaleZ": 1.75,
+      "MinInterval": 0.05999999865889549,
+      "MinScaleXY": 1.399999976158142,
+      "MinScaleZ": 1
+    },
+    "HorizontalRopeSineWave": {
+      "Amplitude": 0.5,
+      "CycleOffset": 0.019999999552965164,
+      "OffsetAnimMax": 4,
+      "OffsetAnimMaxTime": 3,
+      "OffsetAnimMin": 1,
+      "Wavelength": 4
+    },
+    "VerticalRopeSineWave": {
+      "Amplitude": 0.5,
+      "CycleOffset": 0,
+      "OffsetAnimMax": 4,
+      "OffsetAnimMaxTime": 3,
+      "OffsetAnimMin": 1,
+      "Wavelength": 4
+    },
+    "InnerRadius": 0.004000000189989805,
+    "MaxConeLength": 0.5,
+    "MaxEndConeRadius": 0.20000000298023224,
+    "MinConeLength": 0.4000000059604645,
+    "MinEndConeRadius": 0.15000000596046448,
+    "ConvexityMult": 1.100000023841858,
+    "KnotRadius": 0.03999999910593033,
+    "IncludeCone": true,
+    "MaxRopePoints": 54,
+    "KnotTiling": 1
+  },
+  "YankRopeConfig": {
+    "ReleaseData": {
+      "DropTime": 1.5,
+      "ExpandTime": 0.3499999940395355,
+      "ReleaseTautTime": 0.25,
+      "SagDropSpeed": 1.5,
+      "TautTime": 0.10000000149011612,
+      "ReleaseDropTime": 1,
+      "EndDropSpeed": 1,
+      "KillOnRelease": false,
+      "ReleaseDropSpeed": 2,
+      "WaveLength": 15
+    },
+    "DissolveMaterial": "materialgraph\\\\visualeffect\\\\characters\\\\hero\\\\hero_webstrand_dissolve_pre\\\\hero_webstrand_dissolve_pre.materialgraph",
+    "MacroShapeData": {
+      "HighBound": 0.949999988079071,
+      "LowBound": -0.9900000095367432,
+      "RampEnd": -0.8500000238418579,
+      "RampStart": -0.949999988079071,
+      "AmplitudeRopeLength": 10,
+      "WavelengthScaleMax": 2,
+      "WavelengthScaleRangeMin": 2
+    },
+    "ExtensionData": {
+      "CoilExpandFullTime": 0.05000000074505806,
+      "CoilTautFullTime": 0.15000000596046448,
+      "CoilTautStartTime": 0.05000000074505806,
+      "RopeExtendMaxTime": 0.3499999940395355,
+      "RopeExtendSpeedBias": 0,
+      "RopeExtendSpeedMax": 120,
+      "RopeExtendSpeedMin": 30
+    },
+    "KnotData": {
+      "MaxInterval": 0.11999999731779099,
+      "MaxScaleXY": 1.850000023841858,
+      "MaxScaleZ": 1.75,
+      "MinInterval": 0.07000000029802322,
+      "MinScaleXY": 1.399999976158142,
+      "MinScaleZ": 1
+    },
+    "HorizontalRopeSineWave": {
+      "Amplitude": 0.15000000596046448,
+      "CycleOffset": 0.15000000596046448,
+      "OffsetAnimMax": 0.10000000149011612,
+      "OffsetAnimMin": 2.25,
+      "Wavelength": 1.659999966621399,
+      "OffsetAnimMaxTime": 0
+    },
+    "VerticalRopeSineWave": {
+      "Amplitude": 0.25,
+      "OffsetAnimMax": 0.10000000149011612,
+      "OffsetAnimMin": 1.5,
+      "OffsetAnimMaxTime": 0,
+      "CycleOffset": 0,
+      "Wavelength": 1
+    },
+    "InnerRadius": 0.004000000189989805,
+    "MaxConeLength": 0.5,
+    "MaxEndConeRadius": 0.20000000298023224,
+    "MinConeEndAttachBias": 0.5,
+    "MinConeLength": 0.4000000059604645,
+    "MinEndConeRadius": 0.15000000596046448,
+    "ConvexityMult": 1.100000023841858,
+    "KnotRadius": 0.03999999910593033,
+    "MaxRopePoints": 80,
+    "SimpleCone": true,
+    "IncludeCone": true
+  },
+  "MotionParamsStandard": {
+    "GravityParams": {
+      "RiseLineLengthScale": 0.5,
+      "GravityFallInit": -24,
+      "GravityFallTurn": -24,
+      "InitTiltAngleMax": 60,
+      "InitTiltAngleMin": 30,
+      "RiseGravityHighMax": -14,
+      "RiseGravityHighMaxZero": -45,
+      "RiseGravityHighMin": -6,
+      "RiseGravityHighMinZero": -30,
+      "RiseGravityHighTilt": -20,
+      "RiseGravityLowMax": -4,
+      "RiseGravityLowMaxZero": -40,
+      "RiseGravityLowMin": -2,
+      "RiseGravityLowMinZero": -28,
+      "RiseGravityLowTilt": -12,
+      "RiseHighSpeedMax": 30,
+      "RiseHighSpeedMin": 12,
+      "RiseLineLengthMax": 55,
+      "RiseLineLengthMin": 28,
+      "GravityFallHold": -15,
+      "RiseLowSpeedMax": 40,
+      "RiseLowSpeedMin": 16,
+      "RisePitchAngleMax": 70,
+      "RisePitchAngleMin": 30,
+      "RiseTiltAngleMax": 60,
+      "RiseTiltAngleMin": 25
+    },
+    "SpeedParams": {
+      "InSpeedCarryover": 0.8500000238418579,
+      "JumpBoostXZ": 1.5,
+      "FallSpeedThresholdMin": 8,
+      "FallSpeedThresholdMax": 42,
+      "JumpBoostPitchHighMax": 55,
+      "JumpBoostPitchHighMin": 35,
+      "JumpBoostPitchLowMax": 30,
+      "JumpBoostPitchLowMin": 10,
+      "FallSpeedThresholdMid": 18,
+      "ReleaseBoostAltMin": 6,
+      "ReleaseBoostXZ": 1,
+      "SpeedBoostAccel": 20,
+      "SpeedBoostAccelAccel": 120,
+      "SpeedBoostAltMin": 12,
+      "SpeedBoostBonusBase": 6,
+      "SpeedBoostBonusTurn": 6,
+      "SpeedBoostTarget": 8,
+      "TerminalVelocityHorzMax": 44,
+      "TerminalVelocityHorzMid": 27,
+      "TerminalVelocityHorzMin": 24,
+      "TerminalVelocityMaxFloor": 20,
+      "TerminalVelocityMinFloor": 18,
+      "TerminalVelocityPureMax": 60
+    },
+    "TurnParams": {
+      "TurnGainMax": -0.5799999833106995,
+      "TurnGainMin": -0.5,
+      "TurnRampSpeed": 1.2000000476837158,
+      "TurnSpeedTiltScale": 0.5,
+      "TurnDampMax": -20,
+      "TurnSpeedMaxMax": 95,
+      "TurnSpeedMaxMin": 58,
+      "TurnSpeedMinMax": 70,
+      "TurnSpeedMinMin": 38,
+      "TurnSpeedPitchMax": 70,
+      "TurnSpeedPitchMin": 35,
+      "TurnSpeedTiltAngleMax": 60,
+      "TurnSpeedTiltAngleMin": 30,
+      "TurnDampMin": -20
+    }
+  },
+  "MotionParamsIndoor": {
+    "GravityParams": {
+      "RiseLineLengthScale": 0.5,
+      "GravityFallInit": -40,
+      "GravityFallTurn": -35,
+      "InitTiltAngleMax": 60,
+      "InitTiltAngleMin": 30,
+      "RiseGravityHighMax": -30,
+      "RiseGravityHighMaxZero": -36,
+      "RiseGravityHighMin": -30,
+      "RiseGravityHighMinZero": -26,
+      "RiseGravityHighTilt": -35,
+      "RiseGravityLowMax": -12,
+      "RiseGravityLowMaxZero": -26,
+      "RiseGravityLowMin": -12,
+      "RiseGravityLowMinZero": -18,
+      "RiseGravityLowTilt": -24,
+      "RiseHighSpeedMax": 40,
+      "RiseHighSpeedMin": 15,
+      "RiseLineLengthMax": 45,
+      "RiseLineLengthMin": 33,
+      "GravityFallHold": -25,
+      "RiseLowSpeedMax": 44,
+      "RiseLowSpeedMin": 25,
+      "RisePitchAngleMax": 70,
+      "RisePitchAngleMin": 30,
+      "RiseTiltAngleMax": 60,
+      "RiseTiltAngleMin": 25
+    },
+    "SpeedParams": {
+      "FallSpeedThresholdMax": 40,
+      "FallSpeedThresholdMid": 15,
+      "FallSpeedThresholdMin": 1,
+      "JumpBoostPitchHighMax": 60,
+      "JumpBoostPitchHighMin": 40,
+      "JumpBoostPitchLowMax": 15,
+      "JumpBoostPitchLowMin": 5,
+      "JumpBoostXZ": 3,
+      "ReleaseBoostAltMin": 1,
+      "ReleaseBoostXZ": 0,
+      "SpeedBoostAccel": 60,
+      "SpeedBoostAccelAccel": 180,
+      "SpeedBoostAltMin": 16,
+      "SpeedBoostBonusBase": 10,
+      "SpeedBoostBonusTurn": 10,
+      "SpeedBoostTarget": 10,
+      "TerminalVelocityHorzMax": 26,
+      "TerminalVelocityHorzMid": 23,
+      "TerminalVelocityHorzMin": 21,
+      "TerminalVelocityMaxFloor": 18,
+      "TerminalVelocityMinFloor": 16,
+      "TerminalVelocityPureMax": 30
+    },
+    "TurnParams": {
+      "TurnGainMax": -0.5600000023841858,
+      "TurnGainMin": -0.5199999809265137,
+      "TurnRampSpeed": 1.0499999523162842,
+      "TurnSpeedTiltScale": 0.3799999952316284,
+      "TurnDampMax": -22,
+      "TurnSpeedMaxMax": 105,
+      "TurnSpeedMaxMin": 60,
+      "TurnSpeedMinMax": 70,
+      "TurnSpeedMinMin": 35,
+      "TurnSpeedPitchMax": 70,
+      "TurnSpeedPitchMin": 35,
+      "TurnSpeedTiltAngleMax": 60,
+      "TurnSpeedTiltAngleMin": 30,
+      "TurnDampMin": -20
+    }
+  },
+  "ZipJumpRopeConfig": {
+    "DissolveMaterial": "materialgraph/visualeffect/characters/hero/hero_webstrand_dissolve_pre/hero_webstrand_dissolve_pre.materialgraph",
+    "KnotData": {
+      "MaxInterval": 0.14000000059604645,
+      "MaxScaleXY": 1.850000023841858,
+      "MaxScaleZ": 1.75,
+      "MinInterval": 0.07500000298023224,
+      "MinScaleXY": 1.399999976158142,
+      "MinScaleZ": 1
+    },
+    "ExtensionData": {
+      "CoilExpandFullTime": 0.05000000074505806,
+      "CoilTautFullTime": 0.20000000298023224,
+      "CoilTautStartTime": 0.10000000149011612,
+      "RopeExtendMaxTime": 0.15000000596046448,
+      "RopeExtendSpeedBias": 0,
+      "RopeExtendSpeedMin": 40
+    },
+    "MacroShapeData": {
+      "HighBound": 0.949999988079071,
+      "LowBound": -0.9900000095367432,
+      "RampEnd": -0.5,
+      "RampStart": -0.949999988079071,
+      "AmplitudeRopeLength": 8
+    },
+    "HorizontalRopeSineWave": {
+      "Amplitude": 0.20000000298023224,
+      "OffsetAnimMax": 0.10000000149011612,
+      "CycleOffset": 0,
+      "OffsetAnimMin": 1,
+      "Wavelength": 2
+    },
+    "VerticalRopeSineWave": {
+      "Amplitude": 0.20000000298023224,
+      "OffsetAnimMax": 0.10000000149011612,
+      "CycleOffset": 0,
+      "OffsetAnimMin": 1,
+      "Wavelength": 2
+    },
+    "ReleaseData": {
+      "DropTime": 1,
+      "KillOnRelease": false,
+      "ReleaseDropTime": 5
+    },
+    "InnerRadius": 0.004000000189989805,
+    "MaxConeLength": 0.5,
+    "MaxEndConeRadius": 0.20000000298023224,
+    "MinConeLength": 0.4000000059604645,
+    "MinEndConeRadius": 0.15000000596046448,
+    "ConvexityMult": 1.100000023841858,
+    "KnotRadius": 0.03999999910593033,
+    "IncludeCone": true,
+    "MaxRopePoints": 50
+  },
+  "WallRunCornerRopeConfig": {
+    "DissolveMaterial": "materialgraph/visualeffect/characters/hero/hero_webstrand_dissolve_pre/hero_webstrand_dissolve_pre.materialgraph",
+    "KnotData": {
+      "MaxInterval": 0.07999999821186066,
+      "MaxScaleXY": 1.2000000476837158,
+      "MaxScaleZ": 1.3300000429153442,
+      "MinInterval": 0.03999999910593033,
+      "MinScaleXY": 0.800000011920929,
+      "MinScaleZ": 0.800000011920929
+    },
+    "ReleaseData": {
+      "EndDropSpeed": 0.5,
+      "FollowTime": 0.20000000298023224,
+      "SagDropSpeed": 0.25,
+      "KillOnRelease": false,
+      "ReleaseDropTime": 5,
+      "DropTime": 1
+    },
+    "VerticalRopeSineWave": {
+      "Amplitude": 0.07000000029802322,
+      "OffsetAnimMax": 0.10000000149011612,
+      "Wavelength": 1.5,
+      "OffsetAnimMin": 5,
+      "CycleOffset": 0
+    },
+    "HorizontalRopeSineWave": {
+      "Amplitude": 0.07000000029802322,
+      "OffsetAnimMax": 0.10000000149011612,
+      "CycleOffset": 0,
+      "OffsetAnimMin": 5,
+      "Wavelength": 3
+    },
+    "ExtensionData": {
+      "CoilTautFullTime": 0.15000000596046448,
+      "CoilTautStartTime": 0.05000000074505806,
+      "RopeExtendSpeedBias": 0,
+      "RopeExtendSpeedMin": 40
+    },
+    "MacroShapeData": {
+      "RampEnd": -0.5,
+      "RampStart": -0.8999999761581421
+    },
+    "InnerRadius": 0.004000000189989805,
+    "MaxConeLength": 0.5,
+    "MaxEndConeRadius": 0.20000000298023224,
+    "MinConeLength": 0.4000000059604645,
+    "MinEndConeRadius": 0.15000000596046448,
+    "ConvexityMult": 1.100000023841858,
+    "KnotRadius": 0.03999999910593033,
+    "IncludeCone": true,
+    "RopePointStartBias": 0,
+    "SimpleCone": false,
+    "MaxRopePoints": 32
+  },
+  "MotionParamsGround": {
+    "GravityParams": {
+      "RiseGravityHighMin": -8.5,
+      "RiseLineLengthScale": 0.5,
+      "GravityFallTurn": -24,
+      "InitTiltAngleMax": 60,
+      "InitTiltAngleMin": 30,
+      "RiseGravityHighMax": -23,
+      "RiseGravityHighMaxZero": -36,
+      "GravityFallHold": -15,
+      "RiseGravityHighMinZero": -26,
+      "RiseGravityHighTilt": -35,
+      "RiseGravityLowMax": -8,
+      "RiseGravityLowMaxZero": -26,
+      "RiseGravityLowMin": -4,
+      "RiseGravityLowMinZero": -18,
+      "RiseGravityLowTilt": -22,
+      "RiseHighSpeedMax": 30,
+      "RiseHighSpeedMin": 12,
+      "RiseLineLengthMax": 45,
+      "RiseLineLengthMin": 33,
+      "GravityFallInit": -24,
+      "RiseLowSpeedMax": 40,
+      "RiseLowSpeedMin": 16,
+      "RisePitchAngleMax": 70,
+      "RisePitchAngleMin": 30,
+      "RiseTiltAngleMax": 60,
+      "RiseTiltAngleMin": 25
+    },
+    "SpeedParams": {
+      "TerminalVelocityHorzMin": 17.5,
+      "FallSpeedThresholdMid": 22,
+      "FallSpeedThresholdMin": 8,
+      "JumpBoostPitchHighMax": 60,
+      "JumpBoostPitchHighMin": 40,
+      "JumpBoostPitchLowMax": 15,
+      "JumpBoostPitchLowMin": 5,
+      "JumpBoostXZ": 3,
+      "ReleaseBoostXZ": 0,
+      "SpeedBoostAccel": 60,
+      "SpeedBoostAccelAccel": 180,
+      "SpeedBoostAltMin": 8,
+      "SpeedBoostBonusBase": 4,
+      "SpeedBoostBonusTurn": 4,
+      "SpeedBoostTarget": 10,
+      "TerminalVelocityHorzMax": 40,
+      "TerminalVelocityHorzMid": 20,
+      "FallSpeedThresholdMax": 50,
+      "TerminalVelocityMaxFloor": 18,
+      "TerminalVelocityMinFloor": 16,
+      "TerminalVelocityPureMax": 70
+    },
+    "TurnParams": {
+      "TurnGainMax": -0.5600000023841858,
+      "TurnGainMin": -0.5199999809265137,
+      "TurnRampSpeed": 1.0499999523162842,
+      "TurnSpeedTiltScale": 0.3799999952316284,
+      "TurnDampMax": -22,
+      "TurnSpeedMaxMax": 105,
+      "TurnSpeedMaxMin": 60,
+      "TurnSpeedMinMax": 70,
+      "TurnSpeedMinMin": 35,
+      "TurnSpeedPitchMax": 70,
+      "TurnSpeedPitchMin": 35,
+      "TurnSpeedTiltAngleMax": 60,
+      "TurnSpeedTiltAngleMin": 30,
+      "TurnDampMin": -20
+    }
+  },
+  "MotionParamsFast": {
+    "GravityParams": {
+      "RiseLineLengthScale": 0.5,
+      "GravityFallInit": -40,
+      "GravityFallTurn": -45,
+      "InitTiltAngleMax": 60,
+      "InitTiltAngleMin": 30,
+      "RiseGravityHighMax": -22,
+      "RiseGravityHighMin": -16,
+      "RiseGravityHighTilt": -40,
+      "RiseGravityLowMax": -6,
+      "RiseGravityLowMin": -6,
+      "RiseGravityLowTilt": -28,
+      "RiseHighSpeedMax": 40,
+      "RiseHighSpeedMin": 15,
+      "RiseLineLengthMax": 45,
+      "RiseLineLengthMin": 33,
+      "GravityFallHold": -25,
+      "RiseLowSpeedMax": 44,
+      "RiseLowSpeedMin": 25,
+      "RisePitchAngleMax": 70,
+      "RisePitchAngleMin": 30,
+      "RiseTiltAngleMax": 60,
+      "RiseTiltAngleMin": 25
+    },
+    "SpeedParams": {
+      "InSpeedCarryover": 0.699999988079071,
+      "JumpBoostXZ": 2.5,
+      "TerminalVelocityHorzMin": 27.5,
+      "FallSpeedThresholdMax": 50,
+      "JumpBoostPitchHighMax": 55,
+      "JumpBoostPitchHighMin": 35,
+      "JumpBoostPitchLowMax": 30,
+      "JumpBoostPitchLowMin": 10,
+      "FallSpeedThresholdMid": 22,
+      "ReleaseBoostAltMin": 6,
+      "ReleaseBoostXZ": 1,
+      "SpeedBoostAccel": 50,
+      "SpeedBoostAltMin": 26,
+      "SpeedBoostBonusBase": 15,
+      "SpeedBoostBonusTurn": 15,
+      "TerminalVelocityHorzMax": 40,
+      "TerminalVelocityHorzMid": 33,
+      "FallSpeedThresholdMin": 6,
+      "TerminalVelocityPureMax": 50
+    },
+    "TurnParams": {
+      "TurnGainMax": -0.47999998927116394,
+      "TurnGainMin": -0.47999998927116394,
+      "TurnRampSpeed": 1.0499999523162842,
+      "TurnSpeedTiltScale": 0.3799999952316284,
+      "TurnDampMax": -22,
+      "TurnSpeedMaxMax": 82,
+      "TurnSpeedMaxMin": 55,
+      "TurnSpeedMinMax": 60,
+      "TurnSpeedMinMin": 30,
+      "TurnSpeedPitchMax": 70,
+      "TurnSpeedPitchMin": 35,
+      "TurnSpeedTiltAngleMax": 60,
+      "TurnSpeedTiltAngleMin": 30,
+      "TurnDampMin": -20
+    }
+  },
+  "RopeManagerData": {
+    "AttachInfo": [
+      {
+        "Grip2LocatorName": "igLoc_LF_webAttach",
+        "GripLocatorName": "igLoc_LF_gunAttach",
+        "StartLocatorName": "igLoc_LF_webStart",
+        "EndLocatorName": "igLoc_LF_webEnd"
+      },
+      {
+        "Grip2LocatorName": "igLoc_RT_webAttach",
+        "GripLocatorName": "igLoc_RT_gunAttach",
+        "StartLocatorName": "igLoc_RT_webStart",
+        "EndLocatorName": "igLoc_RT_webEnd",
+        "AttachType": "kRightHand"
+      }
+    ],
+    "InnerMaterial": "material/visualeffect/global/test/test_gbl_webline_rendertarget/gbl_hero_webline_rendertarget.material",
+    "WebConeEndModel": "characters\\\\prop\\\\prop_web_cone\\\\prop_web_cone.model",
+    "KnotListConfig": "configs/other/RopeKnotList_Common.config",
+    "CamFacingMaterial": ""
+  },
+  "ReleaseParamsIndoor": {
+    "ReleaseGravityData": {
+      "GravityAngleMid": 35,
+      "GravityJumpHigh": 60,
+      "GravityJumpLow": 25,
+      "GravityJumpMid": 45,
+      "GravityReleaseHigh": 35,
+      "GravityReleaseLow": 15,
+      "GravityReleaseMid": 25
+    },
+    "ParamsHigh": {
+      "TimeToPeakJump": 0.6000000238418579,
+      "TimeToPeakStandard": 0.44999998807907104,
+      "JumpBoost": 8,
+      "VertFloorBase": 5,
+      "VertFloorJump": 12
+    },
+    "ParamsLow": {
+      "TimeToPeakJump": 0.41999998688697815,
+      "TimeToPeakStandard": 0.25,
+      "JumpBoost": 8,
+      "VertFloorBase": 2,
+      "VertFloorJump": 8
+    },
+    "ParamsMiddle": {
+      "TimeToPeakJump": 0.5,
+      "TimeToPeakStandard": 0.3499999940395355,
+      "JumpBoost": 8,
+      "VertFloorBase": 5,
+      "VertFloorJump": 12
+    },
+    "ParamsFall": {
+      "TimeToPeakJump": 0.10000000149011612,
+      "TimeToPeakStandard": 0.10000000149011612,
+      "JumpBoost": 4,
+      "VertFloorBase": 2,
+      "VertFloorJump": 2
+    }
+  },
+  "ReleaseParamsStandard": {
+    "ReleaseGravityData": {
+      "GravityAngleMid": 35,
+      "GravityJumpHigh": 45,
+      "GravityJumpLow": 20,
+      "GravityJumpMid": 38,
+      "GravityReleaseHigh": 26,
+      "GravityReleaseLow": 13,
+      "GravityReleaseMid": 23
+    },
+    "ParamsHigh": {
+      "TimeToPeakJump": 1.0499999523162842,
+      "TimeToPeakStandard": 0.75,
+      "JumpBoost": 24,
+      "VertFloorBase": 8,
+      "VertFloorJump": 30
+    },
+    "ParamsLow": {
+      "TimeToPeakJump": 0.5,
+      "TimeToPeakStandard": 0.4000000059604645,
+      "JumpBoost": 8,
+      "VertFloorBase": -30,
+      "VertFloorJump": 12
+    },
+    "ParamsMiddle": {
+      "TimeToPeakJump": 0.75,
+      "TimeToPeakStandard": 0.550000011920929,
+      "JumpBoost": 20,
+      "VertFloorBase": 0,
+      "VertFloorJump": 22
+    },
+    "ParamsFall": {
+      "TimeToPeakJump": 0.5,
+      "TimeToPeakStandard": 0.4000000059604645,
+      "JumpBoost": 8,
+      "VertFloorBase": -30,
+      "VertFloorJump": 12
+    }
+  },
+  "ReleaseParamsGround": {
+    "ReleaseGravityData": {
+      "GravityAngleMid": 35,
+      "GravityJumpHigh": 42,
+      "GravityJumpLow": 16,
+      "GravityJumpMid": 33,
+      "GravityReleaseHigh": 34,
+      "GravityReleaseLow": 12,
+      "GravityReleaseMid": 21
+    },
+    "ParamsLow": {
+      "TimeToPeakJump": 0.41999998688697815,
+      "TimeToPeakStandard": 0.33000001311302185,
+      "JumpBoost": 8,
+      "VertFloorBase": -30,
+      "VertFloorJump": 9
+    },
+    "ParamsMiddle": {
+      "TimeToPeakJump": 0.6600000262260437,
+      "TimeToPeakStandard": 0.44999998807907104,
+      "JumpBoost": 14,
+      "VertFloorBase": 0,
+      "VertFloorJump": 16
+    },
+    "ParamsFall": {
+      "TimeToPeakJump": 0.10000000149011612,
+      "TimeToPeakStandard": 0.10000000149011612,
+      "JumpBoost": 4,
+      "VertFloorBase": -30,
+      "VertFloorJump": 2
+    },
+    "ParamsHigh": {
+      "TimeToPeakStandard": 0.699999988079071,
+      "TimeToPeakJump": 1,
+      "JumpBoost": 20,
+      "VertFloorBase": 8,
+      "VertFloorJump": 20
+    }
+  },
+  "CeilingHangConfig": {
+    "KnotData": {
+      "MaxInterval": 0.05000000074505806,
+      "MaxScaleXY": 1.2000000476837158,
+      "MaxScaleZ": 0.800000011920929,
+      "MinInterval": 0.029999999329447746,
+      "MinScaleXY": 0.699999988079071,
+      "MinScaleZ": 0.4000000059604645
+    },
+    "ExtensionData": {
+      "CoilTautFullTime": 0.009999999776482582,
+      "RopeExtendMaxTime": 0.009999999776482582,
+      "RopeExtendSpeedMin": 300,
+      "CoilExpandStartValue": 1,
+      "RopeExtendSpeedBias": 0,
+      "CoilTautStartTime": 0
+    },
+    "ReleaseData": {
+      "EndDropSpeed": 0.25,
+      "DropTime": 2,
+      "KillOnRelease": true,
+      "SagDropSpeed": 0
+    },
+    "VerticalRopeSineWave": {
+      "Amplitude": 0.019999999552965164,
+      "CycleOffset": 0
+    },
+    "HorizontalRopeSineWave": {
+      "Amplitude": 0.019999999552965164
+    },
+    "InnerRadius": 0.004000000189989805,
+    "SimpleCone": false,
+    "IncludeCone": true
+  },
+  "JumpRedirectZones": [
+    {
+      "ExitBias": 0.6000000238418579,
+      "ExitAngleStart": 100,
+      "ExitAngleEnd": 110,
+      "LineAngleEnd": 110,
+      "LineAngleStart": 100
+    },
+    {
+      "ExitBias": 1.5,
+      "ExitAngleStart": 120,
+      "ExitAngleEnd": 135,
+      "LineAngleEnd": 135,
+      "LineAngleStart": 120
+    },
+    {
+      "ExitBias": 0.800000011920929,
+      "ExitAngleStart": 137,
+      "ExitAngleEnd": 145,
+      "LineAngleEnd": 145,
+      "LineAngleStart": 137
+    }
+  ],
+  "AccessibilitySwingCameraConfigSet": {
+    "SwingCameraConfigIndoor": "configs/hero/hero_accessibilityswingcameraconfig_indoor.config",
+    "SwingCameraConfig": "configs/hero/hero_accessibilityswingcameraconfig.config"
+  },
+  "DefaultSwingCameraConfigSet": {
+    "SwingCameraConfigIndoor": "configs/hero/hero_SwingCameraConfig_Indoor.config",
+    "SwingCameraConfig": "configs/hero/hero_SwingCameraConfig.config"
+  },
+  "SearchParamsStandard": {
+    "IdealAngleTurnSpeedMax": 18.5,
+    "IdealAngleFall": 14,
+    "IdealAngleFallSpeedMax": 22,
+    "IdealAngleFallSpeedMin": 12,
+    "IdealAngleForward": 32,
+    "IdealAngleTurn": 32,
+    "BroadSearchRadius": 62,
+    "IdealAngleTurnSpeedMin": 8,
+    "IdealLineLengthForward": 27,
+    "IdealLineLengthTurn": 24,
+    "NarrowSearchRadius": 55
+  },
+  "SearchParamsGround": {
+    "IdealAngleTurnSpeedMax": 18.5,
+    "IdealAngleFall": 27,
+    "IdealAngleFallSpeedMax": 40,
+    "IdealAngleFallSpeedMin": 15,
+    "IdealAngleForward": 45,
+    "IdealAngleTurn": 45,
+    "BroadSearchRadius": 40,
+    "IdealAngleTurnSpeedMin": 8,
+    "IdealLineLengthForward": 20,
+    "IdealLineLengthTurn": 20,
+    "NarrowSearchRadius": 35
+  },
+  "SearchParamsIndoor": {
+    "IdealAngleTurnSpeedMax": 18.5,
+    "IdealAngleFall": 20,
+    "IdealAngleFallSpeedMax": 40,
+    "IdealAngleFallSpeedMin": 15,
+    "IdealAngleForward": 40,
+    "IdealAngleTurn": 40,
+    "BroadSearchRadius": 40,
+    "IdealAngleTurnSpeedMin": 8,
+    "IdealLineLengthForward": 20,
+    "IdealLineLengthTurn": 20,
+    "NarrowSearchRadius": 35
+  },
+  "SwingLineMaterialInner": "material/visualeffect/characters/hero/hero_Web_Traversal_HelixBase/hero_Web_Traversal_HelixBase.material",
+  "InputBoost": {
+    "AccelerationTime": 0.4000000059604645,
+    "GravityScaleMax": 0.30000001192092896,
+    "GravityFactorSpeed": 5,
+    "ActiveAcceleration": 8,
+    "MaxSpeedAccelMaxSpeed": 32,
+    "MaxSpeedAccelMinSpeed": 24,
+    "MaxSpeedAcceleration": 14
+  },
+  "SwingLineMaterialCamFacing": "material/characters/hero/hero_web_cylinder_knots/hero_web_cylinder_knots.material",
+  "SwingCameraConfigTest": "configs/hero/test/test_hero_swingcameraconfig.config",
+  "WebImpactEndCone": "characters/prop/prop_web_cone/prop_web_cone.model",
+  "SwingCameraConfigIndoor": "configs/hero/hero_swingcameraconfig_indoor.config",
+  "SwingSetupStandard": "configs/hero/hero_SwingSetup_Standard.config",
+  "SwingSetupGround": "configs/hero/hero_SwingSetup_Ground.config",
+  "SwingSetupIndoor": "configs/hero/hero_SwingSetup_Indoor.config",
+  "SwingCameraConfig": "configs/hero/hero_SwingCameraConfig.config",
+  "JumpBankZones": {
+    "MaxJumpDelay": 0.15000000596046448,
+    "LineAngleStart": 75,
+    "LineAngleEnd": 85
+  },
+  "SwingLineMaterialOuter": "",
+  "Comment": "",
+  "JumpFromFallHorzDamp": 0.6600000262260437,
+  "ReleaseAngleHighStart": 45,
+  "ReleaseAngleLowFinal": 7,
+  "ReleaseAngleLowStart": -10,
+  "JumpFromFallHorzMin": 8,
+  "ReleaseAngleHighFinal": 70
+}

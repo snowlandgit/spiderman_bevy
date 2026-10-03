@@ -1,0 +1,129 @@
+{
+ "SearchParams": {
+  "BroadSearchRadius": 62.0,
+  "NarrowSearchRadius": 55.0,
+  "IdealLineLengthForward": 25.0,
+  "IdealLineLengthTurn": 24.0,
+  "IdealAngleForward": 30.0,
+  "IdealAngleTurn": 32.0,
+  "IdealAngleTurnSpeedMin": 8.0,
+  "IdealAngleTurnSpeedMax": 18.5,
+  "IdealAngleFall": 14.0,
+  "IdealAngleFallSpeedMin": 12.0,
+  "IdealAngleFallSpeedMax": 22.0,
+  "IdealAngleDive": 20.0,
+  "IdealAngleDiveSpeedMin": 12.0,
+  "IdealAngleDiveSpeedMax": 40.0,
+  "NearGroundDistanceMin": 14.0,
+  "NearGroundDistanceMax": 24.0,
+  "NearGroundAngle": 35.0,
+  "LineLengthFallTweak": 6.0,
+  "LineLengthDiveTweak": 1.2000000476837158,
+  "LineLengthTweakSpeedMin": 10.0,
+  "LineLengthTweakSpeedMax": 30.0
+ },
+ "MotionParams": {
+  "SpeedParams": {
+   "FallSpeedThresholdMin": 6.0,
+   "FallSpeedThresholdMid": 16.0,
+   "FallSpeedThresholdMax": 42.0,
+   "TerminalVelocityHorzMin": 24.0,
+   "TerminalVelocityHorzMid": 27.25,
+   "TerminalVelocityHorzMax": 40.0,
+   "TerminalVelocityPureMax": 80.0,
+   "TerminalVelocityMinPercent": 0.8500000238418579,
+   "TerminalVelocityMinFloor": 18.0,
+   "TerminalVelocityMaxFloor": 20.0,
+   "InputDecelZero": 4.0,
+   "InputDecelBack": 4.0,
+   "InSpeedCarryover": 0.8299999833106995,
+   "SpeedBoostTarget": 10.0,
+   "SpeedBoostAccel": 20.0,
+   "SpeedBoostAccelAccel": 120.0,
+   "ReleaseBoostXZ": 1.0,
+   "ReleaseBoostAltMin": 6.0,
+   "JumpBoostXZ": 1.5,
+   "JumpBoostPitchLowMin": 10.0,
+   "JumpBoostPitchLowMax": 30.0,
+   "JumpBoostPitchHighMin": 35.0,
+   "JumpBoostPitchHighMax": 55.0
+  },
+  "TurnParams": {
+   "TurnSpeedMinMin": 38.0,
+   "TurnSpeedMinMax": 70.0,
+   "TurnSpeedMaxMin": 58.0,
+   "TurnSpeedMaxMax": 95.0,
+   "TurnGainMin": -0.5,
+   "TurnGainMax": -0.5799999833106995,
+   "TurnDampMin": -20.0,
+   "TurnDampMax": -20.0,
+   "TurnRampSpeed": 1.2000000476837158,
+   "TurnSpeedTiltAngleMin": 30.0,
+   "TurnSpeedTiltAngleMax": 60.0,
+   "TurnSpeedTiltScale": 0.5,
+   "TurnSpeedPitchMin": 35.0,
+   "TurnSpeedPitchMax": 70.0
+  },
+  "GravityParams": {
+   "GravityFallInit": -24.0,
+   "GravityFallTurn": -24.0,
+   "GravityFallHold": -15.0,
+   "InitTiltAngleMin": 30.0,
+   "InitTiltAngleMax": 60.0,
+   "RisePitchAngleMin": 30.0,
+   "RisePitchAngleMax": 70.0,
+   "RiseTiltAngleMin": 25.0,
+   "RiseTiltAngleMax": 60.0,
+   "RiseLowSpeedMin": 16.0,
+   "RiseLowSpeedMax": 40.0,
+   "RiseHighSpeedMin": 12.0,
+   "RiseHighSpeedMax": 30.0,
+   "RiseGravityLowMin": -2.0,
+   "RiseGravityLowMax": -4.0,
+   "RiseGravityHighMin": -6.0,
+   "RiseGravityHighMax": -11.0,
+   "RiseGravityLowMinZero": -28.0,
+   "RiseGravityLowMaxZero": -40.0,
+   "RiseGravityHighMinZero": -30.0,
+   "RiseGravityHighMaxZero": -45.0,
+   "RiseGravityLowTilt": -12.0,
+   "RiseGravityHighTilt": -20.0,
+   "RiseLineLengthScale": 0.5,
+   "RiseLineLengthMin": 28.0,
+   "RiseLineLengthMax": 55.0
+  }
+ },
+ "ReleaseParams": {
+  "ParamsFall": {
+   "JumpBoost": 8.0,
+   "VertFloorBase": -30.0,
+   "VertFloorJump": 12.0
+  },
+  "ParamsLow": {
+   "JumpBoost": 8.0,
+   "VertFloorBase": -30.0,
+   "VertFloorJump": 12.0
+  },
+  "ParamsMiddle": {
+   "JumpBoost": 20.0,
+   "VertFloorBase": 0.0,
+   "VertFloorJump": 22.0
+  },
+  "ParamsHigh": {
+   "JumpBoost": 24.0,
+   "VertFloorBase": 8.0,
+   "VertFloorJump": 30.0
+  },
+  "ReleaseGravityData": {
+   "GravityReleaseLow": 13.0,
+   "GravityReleaseMid": 23.0,
+   "GravityReleaseHigh": 26.0,
+   "GravityJumpLow": 20.0,
+   "GravityJumpMid": 38.0,
+   "GravityJumpHigh": 45.0,
+   "GravityAngleLow": 0.0,
+   "GravityAngleMid": 35.0,
+   "GravityAngleHigh": 70.0
+  }
+ }
+}

@@ -1,0 +1,17 @@
+LookGroups:
+0 5
+
+Materials used:
+4	material\environment\template\architecture\gbl_arch_window_mtg_v2_4x4_01\gbl_arch_window_mtg_v4_4x4_02.material
+2	material\environment\template\architecture\gbl_arch_Concrete_Trim_02\jn_gbl_arch_metal_trim_01_black.material
+1	material\environment\template\architecture\gbl_arch_metal_trim_worn_01\jn_gbl_arch_metal_trim_worn_01.material
+0	material\environment\template\architecture\gbl_arch_Concrete_Trim_02\sza_gbl_arch_metal_trim_01.material
+3	material\environment\template\architecture\gbl_arch_concrete_trim_02\sza_gbl_arch_metal_trim_01_red.material
+
+Slots:
+===============================================================
+0	material\environment\template\architecture\gbl_arch_Concrete_Trim_02\sza_gbl_arch_metal_trim_01.material
+1	material\environment\template\architecture\gbl_arch_metal_trim_worn_01\jn_gbl_arch_metal_trim_worn_01.material
+2	material\environment\template\architecture\gbl_arch_Concrete_Trim_02\jn_gbl_arch_metal_trim_01_black.material
+3	material\environment\template\architecture\gbl_arch_concrete_trim_02\sza_gbl_arch_metal_trim_01_red.material
+4	material\environment\template\architecture\gbl_arch_window_mtg_v2_4x4_01\gbl_arch_window_mtg_v4_4x4_02.material

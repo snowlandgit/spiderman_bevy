@@ -1,0 +1,78 @@
+{
+ "RopePointStartBias": 0.699999988079071,
+ "InnerRadius": 0.004000000189989805,
+ "VerticalRopeSineWave": {
+  "Amplitude": 0.17000000178813934,
+  "Wavelength": 2.0,
+  "CycleOffset": 0.0,
+  "OffsetAnimMaxTime": 2.0,
+  "OffsetAnimMax": 3.0,
+  "OffsetAnimMin": 0.5
+ },
+ "HorizontalRopeSineWave": {
+  "Amplitude": 0.17000000178813934,
+  "Wavelength": 2.0,
+  "CycleOffset": 0.0,
+  "OffsetAnimMaxTime": 2.0,
+  "OffsetAnimMax": 3.0,
+  "OffsetAnimMin": 0.5
+ },
+ "MacroShapeData": {
+  "WavelengthScaleMax": 4.0,
+  "WavelengthScaleRangeMin": 2.0,
+  "WavelengthScaleRangeMax": 40.0,
+  "AmplitudeRopeLength": 10.0,
+  "LowBound": -1.0,
+  "HighBound": 0.949999988079071,
+  "RampStart": -0.9399999976158142,
+  "RampEnd": -0.8500000238418579
+ },
+ "ExtensionData": {
+  "RopeExtendSpeedMin": 40.0,
+  "RopeExtendSpeedMax": 100.0,
+  "RopeExtendMinTime": 0.10000000149011612,
+  "RopeExtendMaxTime": 0.4000000059604645,
+  "RopeExtendSpeedBias": 0.20000000298023224,
+  "CoilExpandStartValue": 0.20000000298023224,
+  "CoilExpandFullTime": 0.10000000149011612,
+  "CoilTautStartTime": 0.2329999953508377,
+  "CoilTautFullTime": 0.3330000042915344,
+  "CoilTautWaveScale": 2.0
+ },
+ "PostTautWobble": {
+  "TimeMin": 0.05000000074505806,
+  "TimeMax": 0.44999998807907104,
+  "AnimFrequency": 8.0,
+  "Amplitude": 0.05000000074505806,
+  "WaveCount": 1.5
+ },
+ "ReleaseData": {
+  "DropTime": 2.0,
+  "EndDropSpeed": 1.5,
+  "SagDropSpeed": 2.5,
+  "TautTime": 0.05000000074505806,
+  "ExpandTime": 0.5,
+  "FollowTime": 0.15000000596046448,
+  "WaveLength": 30.0,
+  "WaveAmplitude": 0.25,
+  "WaveAnimFrequency": 1.0,
+  "KillOnRelease": false
+ },
+ "KnotData": {
+  "MinInterval": 0.05999999865889549,
+  "MaxInterval": 0.11999999731779099,
+  "FadeDistance": 35.0,
+  "MinScaleXY": 1.25,
+  "MaxScaleXY": 1.5,
+  "MinScaleZ": 1.0,
+  "MaxScaleZ": 1.5
+ },
+ "MinEndConeRadius": 0.15000000596046448,
+ "MaxEndConeRadius": 0.20000000298023224,
+ "ConvexityMult": 1.5,
+ "IncludeCone": true,
+ "SimpleCone": false,
+ "SimpleConeHead": false,
+ "MinConeLength": 0.4000000059604645,
+ "MaxConeLength": 0.5
+}

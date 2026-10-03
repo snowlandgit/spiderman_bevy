@@ -1,0 +1,42 @@
+{
+  "ReZipThree": {
+    "BoostScale": 0.800000011920929,
+    "DropSpeedKept": 0.5,
+    "PeakScale": 0.699999988079071,
+    "ZipLockoutTime": 1.25,
+    "OutSpeedFloor": 18,
+    "BoostCap": 23,
+    "FallGravity": 28
+  },
+  "ReZipTwo": {
+    "BoostScale": 0.8500000238418579,
+    "DropSpeedKept": 0.3499999940395355,
+    "PeakScale": 0.75,
+    "ZipLockoutTime": 1.25,
+    "OutSpeedFloor": 19,
+    "BoostCap": 24,
+    "FallGravity": 26
+  },
+  "ReZipBonus": {
+    "DropSpeedKept": 0.25,
+    "ZipLockoutTime": 1.2000000476837158,
+    "FallGravity": 18,
+    "OutSpeedFloor": 20,
+    "BoostCap": 30
+  },
+  "ReZipTimeBonus": 0.6600000262260437,
+  "ReZipTime": 1.25,
+  "SpeedScaleLimit": 0.699999988079071,
+  "TimeToPeakMax": 0.75,
+  "TimeToPeakMin": 0.6000000238418579,
+  "SpeedBoostForwardMax": 14,
+  "SpeedBoostForwardMin": 2,
+  "SpeedBoostLeft": 16,
+  "SpeedInMax": 28,
+  "OutSpeedFloor": 20,
+  "SpeedScaleRange": 10,
+  "TTPOutSpeedMax": 25,
+  "TTPOutSpeedMin": 18,
+  "OutHeightMax": 5,
+  "OutHeightMin": 3
+}

@@ -1,0 +1,17 @@
+LookGroups:
+0 5
+
+Materials used:
+3	materials\jn_glass_01\jn_glass_01_opaque.material
+1	material\environment\template\architecture\gbl_arch_brass_trim_01\mo_gbl_arch_brushed_metal_trim_01_shiny.material
+2	material\environment\template\architecture\gbl_arch_brass_trim_01\mo_gbl_arch_hvac_grate_01.material
+4	material\environment\template\architecture\gbl_arch_concrete_trim_02\sza_gbl_arch_concrete_trim_02_dirty.material
+0	material\environment\template\architecture\gbl_arch_concrete_trim_02\sza_gbl_arch_metal_trim_01.material
+
+Slots:
+===============================================================
+0	material\environment\template\architecture\gbl_arch_concrete_trim_02\sza_gbl_arch_metal_trim_01.material
+1	material\environment\template\architecture\gbl_arch_brass_trim_01\mo_gbl_arch_brushed_metal_trim_01_shiny.material
+2	material\environment\template\architecture\gbl_arch_brass_trim_01\mo_gbl_arch_hvac_grate_01.material
+3	materials\jn_glass_01\jn_glass_01_opaque.material
+4	material\environment\template\architecture\gbl_arch_concrete_trim_02\sza_gbl_arch_concrete_trim_02_dirty.material

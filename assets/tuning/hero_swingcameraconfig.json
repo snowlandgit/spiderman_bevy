@@ -1,0 +1,144 @@
+{
+  "DiveData": {
+    "DiveCameraShakeConfig": "configs/camerashake/camerashake_webrush_flight.config",
+    "DiveShakeConfig": "configs/camerashake/camerashake_divecycle.config",
+    "DiveShakeSwingConfig": "configs/camerashake/camerashake_DiveToSwing.config",
+    "DiveShakeFreqScaleMin": 0.4000000059604645,
+    "DiveShakeMagScaleMin": 0.4000000059604645,
+    "DiveCameraTimeMax": 3.5,
+    "DiveShakeTimeMin": 0.10000000149011612,
+    "DiveYOffsetMax": 0.5,
+    "DiveYOffsetOutSpeed": 0.25,
+    "DiveZOffsetMax": -0.5,
+    "DiveZOffsetMin": 1.5,
+    "DivePitchTargetTimeDelay": 0,
+    "DivePitchTargetTimeMax": 2,
+    "DivePitchTargetTimeMin": 0,
+    "DiveCameraTimeMin": 0,
+    "DiveShakeFreqScaleMax": 1,
+    "DiveFOVBoost": 15,
+    "DiveShakeMagScaleMax": 1,
+    "DiveFOVSpeed": 30,
+    "DivePitchDamp": -12,
+    "DiveShakeTimeMax": 2,
+    "DivePitchGain": -8,
+    "DiveYOffsetInSpeed": 10,
+    "DivePitchSpeed": 120,
+    "DivePitchTarget": 45,
+    "DiveZOffsetDamp": -20,
+    "DiveZOffsetGain": -5,
+    "DivePitchTargetMax": 75,
+    "DivePitchTargetMin": 60,
+    "DiveZOffsetSpeedIn": 10,
+    "DiveZOffsetSpeedOut": 10
+  },
+  "PitchData": {
+    "DownAngleBias": 0.5,
+    "DownPitchGain": -1.7999999523162842,
+    "PostDiveAngleBias": 0.8999999761581421,
+    "PostDivePitchDelay": 0.125,
+    "SettlePitchGain": -1.5,
+    "UpAngleBias": 1.2000000476837158,
+    "DownAngleMax": 70,
+    "DownAngleMin": 0,
+    "DownPitchDamp": -30,
+    "DiveAngleBias": 2,
+    "DownPitchMax": 40,
+    "DownPitchSpeed": 60,
+    "DiveAngleMin": 0,
+    "PostDiveAngleMax": 60,
+    "PostDiveAngleMin": -50,
+    "PostDivePitchDamp": -20,
+    "DivePitchGain": -3,
+    "PostDivePitchDownMax": 35,
+    "PostDivePitchGain": -7,
+    "PostDivePitchSpeed": 120,
+    "PostDivePitchUpMax": 50,
+    "SettlePitchDamp": -30,
+    "DivePitchSpeed": 80,
+    "SettlePitchSpeed": 25,
+    "AirbornMaxPitch": 33,
+    "UpAngleMin": 0,
+    "UpPitchDamp": -30,
+    "UpPitchGain": -4,
+    "UpPitchMax": 40,
+    "UpPitchSpeed": 50
+  },
+  "YOffsetData": {
+    "YOffsetDownSwingGain": -2.0999999046325684,
+    "YOffsetGain": -1.5,
+    "YOffsetPeak": -0.75,
+    "YOffsetStart": 0.5,
+    "YOffsetTrough": 1.5,
+    "YOffsetUpSwingGain": -0.800000011920929,
+    "YOffsetDownSwingDamp": -18,
+    "YOffsetSpeed": 4,
+    "YOffsetAnglePeak": 160,
+    "YOffsetDownSwingSpeed": 4,
+    "YOffsetUpSwingDamp": -16,
+    "YOffsetDamp": -16,
+    "YOffsetUpSwingSpeed": 1
+  },
+  "BaseContextData": {
+    "OffsetLevel": {
+      "Z": -2.25,
+      "Y": 0
+    },
+    "OffsetDown": {
+      "Z": -2.5
+    },
+    "OffsetUp": {
+      "Z": -2.5
+    },
+    "PivotHeight": 1.350000023841858,
+    "FieldOfView": 80
+  },
+  "RollData": {
+    "ActiveRollGain": -1.100000023841858,
+    "SettleRollGain": -0.800000011920929,
+    "ActiveRollSpeed": 23,
+    "RollMax": 33,
+    "SettleRollDamp": -40,
+    "ActiveRollDamp": -30,
+    "SettleRollSpeed": 18,
+    "SwingAngleMax": 80,
+    "SwingAngleMin": 45,
+    "TurnSpeedAccel": 90,
+    "TurnSpeedMax": 60,
+    "TurnSpeedMin": 30
+  },
+  "SwingJumpData": {
+    "YHoldPercent": 0.8500000238418579,
+    "BlendSpeed": 10,
+    "VertSpeedMax": 45,
+    "VertSpeedMin": 20,
+    "BlendGain": -6,
+    "YOffsetMax": -1
+  },
+  "FOVData": {
+    "FOVBase": 75,
+    "FOVBlendUpSpeed": 13,
+    "FOVBoostMax": 40,
+    "FOVBoostMin": 15,
+    "FOVBoostSpeedMax": 33,
+    "FOVBoostSpeedMin": 10
+  },
+  "ZOffsetData": {
+    "ZOffsetBonusMax": 1.399999976158142,
+    "ZOffsetBlendOutSpeed": 5,
+    "ZOffsetBlendOutGain": -3,
+    "ZOffsetSpeedMax": 34
+  },
+  "SwingTweakData": {
+    "OffsetOnSpeed": 0.30000001192092896,
+    "OffsetZMax": -2.4000000953674316,
+    "OffsetZMaxDiveScale": -0.20000000298023224
+  },
+  "XOffsetData": {
+    "XOffsetGain": -0.30000001192092896,
+    "XOffsetSpeed": 0.75,
+    "XOffsetDamp": -33
+  },
+  "StandardPivotHeight": 1.2999999523162842,
+  "StandardFollowDistance": -2.75
+}

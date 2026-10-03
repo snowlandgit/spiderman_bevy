@@ -1,0 +1,719 @@
+{
+ "InputBoost": {
+  "GravityScaleMax": 0.30000001192092896,
+  "GravityFactorSpeed": 5.0,
+  "AccelerationTime": 0.4000000059604645,
+  "ActiveAcceleration": 8.0,
+  "MaxSpeedAcceleration": 14.0,
+  "MaxSpeedAccelMinSpeed": 24.0,
+  "MaxSpeedAccelMaxSpeed": 32.0
+ },
+ "TransitionData": {
+  "ForwardActionLookbackTime": 0.25
+ },
+ "RopeManagerData": {},
+ "DefaultSwingCameraConfigSet": {},
+ "AccessibilitySwingCameraConfigSet": {},
+ "ReleaseAngleLowStart": -10.0,
+ "ReleaseAngleLowFinal": 7.0,
+ "ReleaseAngleHighStart": 45.0,
+ "ReleaseAngleHighFinal": 70.0,
+ "JumpFromFallHorzDamp": 0.6600000262260437,
+ "JumpFromFallHorzMin": 8.0,
+ "JumpBankZones": [
+  {
+   "LineAngleStart": 75.0,
+   "LineAngleEnd": 85.0,
+   "MaxJumpDelay": 0.15000000596046448
+  }
+ ],
+ "JumpRedirectZones": [
+  {
+   "LineAngleStart": 100.0,
+   "LineAngleEnd": 110.0,
+   "ExitAngleStart": 100.0,
+   "ExitAngleEnd": 110.0,
+   "ExitBias": 0.6000000238418579
+  },
+  {
+   "LineAngleStart": 120.0,
+   "LineAngleEnd": 135.0,
+   "ExitAngleStart": 120.0,
+   "ExitAngleEnd": 135.0,
+   "ExitBias": 1.5
+  },
+  {
+   "LineAngleStart": 137.0,
+   "LineAngleEnd": 145.0,
+   "ExitAngleStart": 137.0,
+   "ExitAngleEnd": 145.0,
+   "ExitBias": 0.800000011920929
+  }
+ ],
+ "SpeedInputMin": 0.25,
+ "SpeedInputMid": 0.699999988079071,
+ "SpeedInputMax": 0.8999999761581421,
+ "SpeedInputMidValue": 0.5,
+ "ZeroInputPivotScaleStart": 0.5,
+ "ZeroInputPivotScaleTrough": 0.6000000238418579,
+ "ZeroInputPivotScaleFinal": 0.699999988079071,
+ "SwingRopeConfig": {
+  "RopePointStartBias": 0.699999988079071,
+  "InnerRadius": 0.004000000189989805,
+  "VerticalRopeSineWave": {
+   "Amplitude": 0.17000000178813934,
+   "Wavelength": 2.0,
+   "CycleOffset": 0.0,
+   "OffsetAnimMaxTime": 2.0,
+   "OffsetAnimMax": 3.0,
+   "OffsetAnimMin": 0.5
+  },
+  "HorizontalRopeSineWave": {
+   "Amplitude": 0.17000000178813934,
+   "Wavelength": 2.0,
+   "CycleOffset": 0.0,
+   "OffsetAnimMaxTime": 2.0,
+   "OffsetAnimMax": 3.0,
+   "OffsetAnimMin": 0.5
+  },
+  "MacroShapeData": {
+   "WavelengthScaleMax": 4.0,
+   "WavelengthScaleRangeMin": 2.0,
+   "WavelengthScaleRangeMax": 40.0,
+   "AmplitudeRopeLength": 10.0,
+   "LowBound": -1.0,
+   "HighBound": 0.949999988079071,
+   "RampStart": -0.9399999976158142,
+   "RampEnd": -0.8500000238418579
+  },
+  "ExtensionData": {
+   "RopeExtendSpeedMin": 40.0,
+   "RopeExtendSpeedMax": 100.0,
+   "RopeExtendMinTime": 0.10000000149011612,
+   "RopeExtendMaxTime": 0.4000000059604645,
+   "RopeExtendSpeedBias": 0.20000000298023224,
+   "CoilExpandStartValue": 0.20000000298023224,
+   "CoilExpandFullTime": 0.10000000149011612,
+   "CoilTautStartTime": 0.2329999953508377,
+   "CoilTautFullTime": 0.3330000042915344,
+   "CoilTautWaveScale": 2.0
+  },
+  "PostTautWobble": {
+   "TimeMin": 0.05000000074505806,
+   "TimeMax": 0.44999998807907104,
+   "AnimFrequency": 8.0,
+   "Amplitude": 0.05000000074505806,
+   "WaveCount": 1.5
+  },
+  "ReleaseData": {
+   "DropTime": 2.0,
+   "EndDropSpeed": 1.5,
+   "SagDropSpeed": 2.5,
+   "TautTime": 0.05000000074505806,
+   "ExpandTime": 0.5,
+   "FollowTime": 0.15000000596046448,
+   "WaveLength": 30.0,
+   "WaveAmplitude": 0.25,
+   "WaveAnimFrequency": 1.0,
+   "KillOnRelease": false
+  },
+  "KnotData": {
+   "MinInterval": 0.05999999865889549,
+   "MaxInterval": 0.11999999731779099,
+   "FadeDistance": 35.0,
+   "MinScaleXY": 1.25,
+   "MaxScaleXY": 1.5,
+   "MinScaleZ": 1.0,
+   "MaxScaleZ": 1.5
+  },
+  "MinEndConeRadius": 0.15000000596046448,
+  "MaxEndConeRadius": 0.20000000298023224,
+  "ConvexityMult": 1.5,
+  "IncludeCone": true,
+  "SimpleCone": false,
+  "SimpleConeHead": false,
+  "MinConeLength": 0.4000000059604645,
+  "MaxConeLength": 0.5
+ },
+ "ZipRopeConfig": {
+  "RopePointStartBias": 0.0,
+  "InnerRadius": 0.004000000189989805,
+  "VerticalRopeSineWave": {
+   "Amplitude": 0.5,
+   "Wavelength": 4.0,
+   "CycleOffset": 0.0,
+   "OffsetAnimMaxTime": 3.0,
+   "OffsetAnimMax": 4.0,
+   "OffsetAnimMin": 1.0
+  },
+  "HorizontalRopeSineWave": {
+   "Amplitude": 0.5,
+   "Wavelength": 4.0,
+   "CycleOffset": 0.019999999552965164,
+   "OffsetAnimMaxTime": 3.0,
+   "OffsetAnimMax": 4.0,
+   "OffsetAnimMin": 1.0
+  },
+  "MacroShapeData": {
+   "WavelengthScaleMax": 5.0,
+   "WavelengthScaleRangeMin": 2.0,
+   "WavelengthScaleRangeMax": 70.0,
+   "AmplitudeRopeLength": 10.0,
+   "LowBound": -0.949999988079071,
+   "HighBound": 0.8500000238418579,
+   "RampStart": -0.8500000238418579,
+   "RampEnd": -0.8399999737739563
+  },
+  "ExtensionData": {
+   "RopeExtendSpeedMin": 50.0,
+   "RopeExtendSpeedMax": 200.0,
+   "RopeExtendMinTime": 0.0,
+   "RopeExtendMaxTime": 0.3499999940395355,
+   "RopeExtendSpeedBias": 0.0,
+   "CoilExpandStartValue": 0.5,
+   "CoilExpandFullTime": 0.032999999821186066,
+   "CoilTautStartTime": 0.10000000149011612,
+   "CoilTautFullTime": 0.30000001192092896,
+   "CoilTautWaveScale": 1.350000023841858
+  },
+  "PostTautWobble": {
+   "TimeMin": 0.0,
+   "TimeMax": 0.0,
+   "AnimFrequency": 8.0,
+   "Amplitude": 0.05000000074505806,
+   "WaveCount": 1.5
+  },
+  "ReleaseData": {
+   "DropTime": 2.25,
+   "EndDropSpeed": 1.0,
+   "SagDropSpeed": 1.0,
+   "TautTime": 0.0,
+   "ExpandTime": 0.5,
+   "FollowTime": 0.0,
+   "WaveLength": 60.0,
+   "WaveAmplitude": 0.25,
+   "WaveAnimFrequency": 1.0,
+   "KillOnRelease": false
+  },
+  "KnotData": {
+   "MinInterval": 0.05999999865889549,
+   "MaxInterval": 0.11999999731779099,
+   "FadeDistance": 35.0,
+   "MinScaleXY": 1.399999976158142,
+   "MaxScaleXY": 1.850000023841858,
+   "MinScaleZ": 1.0,
+   "MaxScaleZ": 1.75
+  },
+  "MinEndConeRadius": 0.15000000596046448,
+  "MaxEndConeRadius": 0.20000000298023224,
+  "ConvexityMult": 1.100000023841858,
+  "IncludeCone": true,
+  "SimpleCone": false,
+  "SimpleConeHead": false,
+  "MinConeLength": 0.4000000059604645,
+  "MaxConeLength": 0.5
+ },
+ "ZipJumpRopeConfig": {
+  "RopePointStartBias": 0.0,
+  "InnerRadius": 0.004000000189989805,
+  "VerticalRopeSineWave": {
+   "Amplitude": 0.20000000298023224,
+   "Wavelength": 2.0,
+   "CycleOffset": 0.0,
+   "OffsetAnimMaxTime": 0.0,
+   "OffsetAnimMax": 0.10000000149011612,
+   "OffsetAnimMin": 1.0
+  },
+  "HorizontalRopeSineWave": {
+   "Amplitude": 0.20000000298023224,
+   "Wavelength": 2.0,
+   "CycleOffset": 0.0,
+   "OffsetAnimMaxTime": 0.0,
+   "OffsetAnimMax": 0.10000000149011612,
+   "OffsetAnimMin": 1.0
+  },
+  "MacroShapeData": {
+   "WavelengthScaleMax": 1.0,
+   "WavelengthScaleRangeMin": 20.0,
+   "WavelengthScaleRangeMax": 40.0,
+   "AmplitudeRopeLength": 8.0,
+   "LowBound": -0.9900000095367432,
+   "HighBound": 0.949999988079071,
+   "RampStart": -0.949999988079071,
+   "RampEnd": -0.5
+  },
+  "ExtensionData": {
+   "RopeExtendSpeedMin": 40.0,
+   "RopeExtendSpeedMax": 100.0,
+   "RopeExtendMinTime": 0.0,
+   "RopeExtendMaxTime": 0.15000000596046448,
+   "RopeExtendSpeedBias": 0.0,
+   "CoilExpandStartValue": 0.20000000298023224,
+   "CoilExpandFullTime": 0.05000000074505806,
+   "CoilTautStartTime": 0.10000000149011612,
+   "CoilTautFullTime": 0.20000000298023224,
+   "CoilTautWaveScale": 1.350000023841858
+  },
+  "PostTautWobble": {
+   "TimeMin": 0.0,
+   "TimeMax": 0.0,
+   "AnimFrequency": 8.0,
+   "Amplitude": 0.05000000074505806,
+   "WaveCount": 1.5
+  },
+  "ReleaseData": {
+   "DropTime": 1.0,
+   "EndDropSpeed": 2.0,
+   "SagDropSpeed": 2.0,
+   "TautTime": 0.0,
+   "ExpandTime": 0.25,
+   "FollowTime": 0.0,
+   "WaveLength": 20.0,
+   "WaveAmplitude": 0.25,
+   "WaveAnimFrequency": 3.0,
+   "KillOnRelease": false
+  },
+  "KnotData": {
+   "MinInterval": 0.07500000298023224,
+   "MaxInterval": 0.14000000059604645,
+   "FadeDistance": 35.0,
+   "MinScaleXY": 1.399999976158142,
+   "MaxScaleXY": 1.850000023841858,
+   "MinScaleZ": 1.0,
+   "MaxScaleZ": 1.75
+  },
+  "MinEndConeRadius": 0.15000000596046448,
+  "MaxEndConeRadius": 0.20000000298023224,
+  "ConvexityMult": 1.100000023841858,
+  "IncludeCone": true,
+  "SimpleCone": false,
+  "SimpleConeHead": false,
+  "MinConeLength": 0.4000000059604645,
+  "MaxConeLength": 0.5
+ },
+ "YankRopeConfig": {
+  "RopePointStartBias": 0.0,
+  "InnerRadius": 0.004000000189989805,
+  "VerticalRopeSineWave": {
+   "Amplitude": 0.25,
+   "Wavelength": 1.0,
+   "CycleOffset": 0.0,
+   "OffsetAnimMaxTime": 0.0,
+   "OffsetAnimMax": 0.10000000149011612,
+   "OffsetAnimMin": 1.5
+  },
+  "HorizontalRopeSineWave": {
+   "Amplitude": 0.15000000596046448,
+   "Wavelength": 1.659999966621399,
+   "CycleOffset": 0.15000000596046448,
+   "OffsetAnimMaxTime": 0.0,
+   "OffsetAnimMax": 0.10000000149011612,
+   "OffsetAnimMin": 2.25
+  },
+  "MacroShapeData": {
+   "WavelengthScaleMax": 2.0,
+   "WavelengthScaleRangeMin": 2.0,
+   "WavelengthScaleRangeMax": 40.0,
+   "AmplitudeRopeLength": 10.0,
+   "LowBound": -0.9900000095367432,
+   "HighBound": 0.949999988079071,
+   "RampStart": -0.949999988079071,
+   "RampEnd": -0.8500000238418579
+  },
+  "ExtensionData": {
+   "RopeExtendSpeedMin": 30.0,
+   "RopeExtendSpeedMax": 120.0,
+   "RopeExtendMinTime": 0.0,
+   "RopeExtendMaxTime": 0.3499999940395355,
+   "RopeExtendSpeedBias": 0.0,
+   "CoilExpandStartValue": 0.20000000298023224,
+   "CoilExpandFullTime": 0.05000000074505806,
+   "CoilTautStartTime": 0.05000000074505806,
+   "CoilTautFullTime": 0.15000000596046448,
+   "CoilTautWaveScale": 1.350000023841858
+  },
+  "PostTautWobble": {
+   "TimeMin": 0.0,
+   "TimeMax": 0.0,
+   "AnimFrequency": 8.0,
+   "Amplitude": 0.05000000074505806,
+   "WaveCount": 1.5
+  },
+  "ReleaseData": {
+   "DropTime": 1.5,
+   "EndDropSpeed": 1.0,
+   "SagDropSpeed": 1.5,
+   "TautTime": 0.10000000149011612,
+   "ExpandTime": 0.3499999940395355,
+   "FollowTime": 0.0,
+   "WaveLength": 15.0,
+   "WaveAmplitude": 0.25,
+   "WaveAnimFrequency": 3.0,
+   "KillOnRelease": false
+  },
+  "KnotData": {
+   "MinInterval": 0.07000000029802322,
+   "MaxInterval": 0.11999999731779099,
+   "FadeDistance": 35.0,
+   "MinScaleXY": 1.399999976158142,
+   "MaxScaleXY": 1.850000023841858,
+   "MinScaleZ": 1.0,
+   "MaxScaleZ": 1.75
+  },
+  "MinEndConeRadius": 0.15000000596046448,
+  "MaxEndConeRadius": 0.20000000298023224,
+  "ConvexityMult": 1.100000023841858,
+  "IncludeCone": true,
+  "SimpleCone": true,
+  "SimpleConeHead": false,
+  "MinConeLength": 0.4000000059604645,
+  "MaxConeLength": 0.5
+ },
+ "WallRunCornerRopeConfig": {
+  "RopePointStartBias": 0.0,
+  "InnerRadius": 0.004000000189989805,
+  "VerticalRopeSineWave": {
+   "Amplitude": 0.07000000029802322,
+   "Wavelength": 1.5,
+   "CycleOffset": 0.0,
+   "OffsetAnimMaxTime": 0.0,
+   "OffsetAnimMax": 0.10000000149011612,
+   "OffsetAnimMin": 5.0
+  },
+  "HorizontalRopeSineWave": {
+   "Amplitude": 0.07000000029802322,
+   "Wavelength": 3.0,
+   "CycleOffset": 0.0,
+   "OffsetAnimMaxTime": 0.0,
+   "OffsetAnimMax": 0.10000000149011612,
+   "OffsetAnimMin": 5.0
+  },
+  "MacroShapeData": {
+   "WavelengthScaleMax": 1.0,
+   "WavelengthScaleRangeMin": 20.0,
+   "WavelengthScaleRangeMax": 40.0,
+   "AmplitudeRopeLength": 0.0,
+   "LowBound": -1.0,
+   "HighBound": 1.0,
+   "RampStart": -0.8999999761581421,
+   "RampEnd": -0.5
+  },
+  "ExtensionData": {
+   "RopeExtendSpeedMin": 40.0,
+   "RopeExtendSpeedMax": 100.0,
+   "RopeExtendMinTime": 0.0,
+   "RopeExtendMaxTime": 0.5,
+   "RopeExtendSpeedBias": 0.0,
+   "CoilExpandStartValue": 0.20000000298023224,
+   "CoilExpandFullTime": 0.0,
+   "CoilTautStartTime": 0.05000000074505806,
+   "CoilTautFullTime": 0.15000000596046448,
+   "CoilTautWaveScale": 1.350000023841858
+  },
+  "PostTautWobble": {
+   "TimeMin": 0.0,
+   "TimeMax": 0.0,
+   "AnimFrequency": 8.0,
+   "Amplitude": 0.05000000074505806,
+   "WaveCount": 1.5
+  },
+  "ReleaseData": {
+   "DropTime": 1.0,
+   "EndDropSpeed": 0.5,
+   "SagDropSpeed": 0.25,
+   "TautTime": 0.0,
+   "ExpandTime": 0.25,
+   "FollowTime": 0.20000000298023224,
+   "WaveLength": 20.0,
+   "WaveAmplitude": 0.25,
+   "WaveAnimFrequency": 3.0,
+   "KillOnRelease": false
+  },
+  "KnotData": {
+   "MinInterval": 0.03999999910593033,
+   "MaxInterval": 0.07999999821186066,
+   "FadeDistance": 35.0,
+   "MinScaleXY": 0.800000011920929,
+   "MaxScaleXY": 1.2000000476837158,
+   "MinScaleZ": 0.800000011920929,
+   "MaxScaleZ": 1.3300000429153442
+  },
+  "MinEndConeRadius": 0.15000000596046448,
+  "MaxEndConeRadius": 0.20000000298023224,
+  "ConvexityMult": 1.100000023841858,
+  "IncludeCone": true,
+  "SimpleCone": false,
+  "SimpleConeHead": false,
+  "MinConeLength": 0.4000000059604645,
+  "MaxConeLength": 0.5
+ },
+ "CeilingHangConfig": {
+  "RopePointStartBias": 0.0,
+  "InnerRadius": 0.004000000189989805,
+  "VerticalRopeSineWave": {
+   "Amplitude": 0.019999999552965164,
+   "Wavelength": 2.0,
+   "CycleOffset": 0.0,
+   "OffsetAnimMaxTime": 0.0,
+   "OffsetAnimMax": 0.0,
+   "OffsetAnimMin": 0.0
+  },
+  "HorizontalRopeSineWave": {
+   "Amplitude": 0.019999999552965164,
+   "Wavelength": 2.0,
+   "CycleOffset": 0.0,
+   "OffsetAnimMaxTime": 0.0,
+   "OffsetAnimMax": 0.0,
+   "OffsetAnimMin": 0.0
+  },
+  "MacroShapeData": {
+   "WavelengthScaleMax": 1.0,
+   "WavelengthScaleRangeMin": 20.0,
+   "WavelengthScaleRangeMax": 40.0,
+   "AmplitudeRopeLength": 0.0,
+   "LowBound": -1.0,
+   "HighBound": 1.0,
+   "RampStart": -1.0,
+   "RampEnd": 1.0
+  },
+  "ExtensionData": {
+   "RopeExtendSpeedMin": 300.0,
+   "RopeExtendSpeedMax": 100.0,
+   "RopeExtendMinTime": 0.0,
+   "RopeExtendMaxTime": 0.009999999776482582,
+   "RopeExtendSpeedBias": 0.0,
+   "CoilExpandStartValue": 1.0,
+   "CoilExpandFullTime": 0.0,
+   "CoilTautStartTime": 0.0,
+   "CoilTautFullTime": 0.009999999776482582,
+   "CoilTautWaveScale": 1.350000023841858
+  },
+  "PostTautWobble": {
+   "TimeMin": 0.0,
+   "TimeMax": 0.0,
+   "AnimFrequency": 8.0,
+   "Amplitude": 0.05000000074505806,
+   "WaveCount": 1.5
+  },
+  "ReleaseData": {
+   "DropTime": 2.0,
+   "EndDropSpeed": 0.25,
+   "SagDropSpeed": 0.0,
+   "TautTime": 0.0,
+   "ExpandTime": 0.25,
+   "FollowTime": 0.0,
+   "WaveLength": 20.0,
+   "WaveAmplitude": 0.25,
+   "WaveAnimFrequency": 3.0,
+   "KillOnRelease": true
+  },
+  "KnotData": {
+   "MinInterval": 0.029999999329447746,
+   "MaxInterval": 0.05000000074505806,
+   "FadeDistance": 35.0,
+   "MinScaleXY": 0.699999988079071,
+   "MaxScaleXY": 1.2000000476837158,
+   "MinScaleZ": 0.4000000059604645,
+   "MaxScaleZ": 0.800000011920929
+  },
+  "MinEndConeRadius": 0.07999999821186066,
+  "MaxEndConeRadius": 0.20000000298023224,
+  "ConvexityMult": 1.5,
+  "IncludeCone": true,
+  "SimpleCone": false,
+  "SimpleConeHead": false,
+  "MinConeLength": 0.20000000298023224,
+  "MaxConeLength": 0.6600000262260437
+ },
+ "MomentumConfig": {
+  "MaxMomentum": 5.0,
+  "DecayDataAir": [
+   {
+    "MomentumValue": 1.0,
+    "DecayRate": 0.25,
+    "DecayDelay": 1.0
+   },
+   {
+    "MomentumValue": 3.5,
+    "DecayRate": 0.6600000262260437,
+    "DecayDelay": 0.75
+   },
+   {
+    "MomentumValue": 5.0,
+    "DecayRate": 1.0,
+    "DecayDelay": 0.5
+   }
+  ],
+  "DecayDataGround": [
+   {
+    "MomentumValue": 1.0,
+    "DecayRate": 1.0,
+    "DecayDelay": 2.0
+   }
+  ],
+  "DecayDataSprint": [
+   {
+    "MomentumValue": 1.0,
+    "DecayRate": 0.5,
+    "DecayDelay": 2.0
+   }
+  ],
+  "DecayDataStop": [
+   {
+    "MomentumValue": 1.0,
+    "DecayRate": 2.0,
+    "DecayDelay": 2.0
+   }
+  ],
+  "MomentumStages": [
+   {
+    "MomentumValue": 0.0,
+    "TerminalVelocityHorzFloor": 0.0,
+    "SkillOffsetForHorzFloor": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "GravityScale": 1.0,
+    "LineLengthTweak": 0.0,
+    "LineAngleTweak": 0.0,
+    "TruePivotFactorStart": 0.949999988079071,
+    "TruePivotFactorTrough": 0.75,
+    "TruePivotFactorFinal": 0.75,
+    "TurnSpeedScale": 1.0
+   },
+   {
+    "MomentumValue": 1.0,
+    "TerminalVelocityHorzFloor": 24.0,
+    "SkillOffsetForHorzFloor": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "GravityScale": 1.0,
+    "LineLengthTweak": 0.0,
+    "LineAngleTweak": 0.0,
+    "TruePivotFactorStart": 0.8999999761581421,
+    "TruePivotFactorTrough": 0.6600000262260437,
+    "TruePivotFactorFinal": 0.6600000262260437,
+    "TurnSpeedScale": 1.0
+   },
+   {
+    "MomentumValue": 4.0,
+    "TerminalVelocityHorzFloor": 28.0,
+    "SkillOffsetForHorzFloor": [
+     1.7999999523162842,
+     3.5999999046325684,
+     5.5
+    ],
+    "GravityScale": 0.5,
+    "LineLengthTweak": 4.0,
+    "LineAngleTweak": 3.0,
+    "TruePivotFactorStart": 0.8999999761581421,
+    "TruePivotFactorTrough": 0.6000000238418579,
+    "TruePivotFactorFinal": 0.6000000238418579,
+    "TurnSpeedScale": 1.0
+   }
+  ],
+  "WebZipData": {
+   "FullBoostData": {
+    "Boost": 1.0,
+    "BoostCap": 5.0,
+    "RetriggerDelay": 2.0
+   },
+   "AlwaysFullSpeed": 4.0,
+   "ZeroAngleStart": 70.0,
+   "BackAngleStart": 120.0,
+   "BackMomentumCap": 1.0
+  },
+  "ZipData": {
+   "Boost": 1.0,
+   "BoostCap": 5.0,
+   "RetriggerDelay": 2.0
+  },
+  "TunnelData": {
+   "Boost": 2.0,
+   "BoostCap": 4.0,
+   "RetriggerDelay": 2.0
+  },
+  "SprintJumpData": {
+   "Boost": 1.5,
+   "BoostCap": 1.5,
+   "RetriggerDelay": 2.0
+  },
+  "SwingData": {
+   "RateList": [
+    {
+     "Angle": 20.0,
+     "Rate": 0.125
+    },
+    {
+     "Angle": 90.0,
+     "Rate": 0.20000000298023224
+    },
+    {
+     "Angle": 120.0,
+     "Rate": 0.0
+    }
+   ],
+   "StartScale": 0.0,
+   "MinTime": 0.15000000596046448,
+   "MaxTime": 0.33000001311302185,
+   "BoostCap": 4.0
+  },
+  "SwingReleaseData": {
+   "RateScaleList": [
+    {
+     "Angle": 100.0,
+     "Scale": 0.0
+    },
+    {
+     "Angle": 90.0,
+     "Scale": 1.0
+    },
+    {
+     "Angle": 120.0,
+     "Scale": 1.0
+    },
+    {
+     "Angle": 160.0,
+     "Scale": 0.0
+    }
+   ],
+   "ReleaseData": {
+    "Boost": 0.25,
+    "BoostCap": 3.0,
+    "RetriggerDelay": 1.0
+   },
+   "JumpData": {
+    "Boost": 1.0,
+    "BoostCap": 5.0,
+    "RetriggerDelay": 1.0
+   }
+  },
+  "BackSwingData": {
+   "MomentumCap": 0.5
+  },
+  "BackDodgeData": {
+   "MomentumCap": 1.0
+  },
+  "FallData": {
+   "FallSpeedMin": 20.0,
+   "FallSpeedMax": 50.0,
+   "FallTimeMin": 1.0,
+   "FallTimeMax": 4.0,
+   "FallTimeBias": 1.0,
+   "FallGainMin": 0.33000001311302185,
+   "FallGainMax": 1.0,
+   "FallMomentumCapMin": 3.0,
+   "FallMomentumCapMax": 5.0,
+   "DiveTimeMin": 0.5,
+   "DiveTimeMax": 2.0,
+   "DiveTimeBias": 1.25,
+   "DiveGainMin": 0.5,
+   "DiveGainMax": 1.25,
+   "DiveMomentumCapMin": 5.0,
+   "DiveMomentumCapMax": 5.0
+  }
+ }
+}

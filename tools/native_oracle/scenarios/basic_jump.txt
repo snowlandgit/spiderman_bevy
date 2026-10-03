@@ -1,0 +1,11 @@
+# A typical recorded entry: falling into the swing at 28 m/s, the anchor 17 m up and 34 m ahead; forward held, jump release
+dt 0.0166667
+frames 240
+pos 0 64 0
+vel 0 -11 25
+yaw 0
+swing 0 1 81 34 5 81 34
+stick 0 0 1
+r2 0 1
+jump 1.3
+cam follow 3 -12

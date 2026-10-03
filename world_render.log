@@ -1,0 +1,11 @@
+2026-10-03T04:21:51.045644Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b15
+2026-10-03T04:21:51.045753Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b8
+2026-10-03T04:21:51.045758Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b16
+2026-10-03T04:21:51.045760Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b9
+2026-10-03T04:21:51.045763Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b13
+2026-10-03T04:21:51.045767Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b11
+2026-10-03T04:21:51.045771Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b10
+2026-10-03T04:21:51.045774Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b14
+2026-10-03T04:21:51.045777Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b12
+2026-10-03T04:21:51.046187Z  WARN gilrs::gamepad: No mapping found for UUID 00000000-0000-0000-0000-000000000000
+	Default mapping will be used.

@@ -1,0 +1,11 @@
+LookGroups:
+0 2
+
+Materials used:
+1	environment\props\manmade\global\pp_skyscraper_ac_unit\Materials\pp_skyscraper_ac_unit.material
+0	environment\props\manmade\global\pp_skyscraper_ac_unit\Materials\pp_skyscraper_ac_unit_02.material
+
+Slots:
+===============================================================
+0	environment\props\manmade\global\pp_skyscraper_ac_unit\Materials\pp_skyscraper_ac_unit_02.material
+1	environment\props\manmade\global\pp_skyscraper_ac_unit\Materials\pp_skyscraper_ac_unit.material

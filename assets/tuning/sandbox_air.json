@@ -1,0 +1,10 @@
+{
+  "fall_gravity": 52.0,
+  "dive_gravity": 64.0,
+  "turn_rate_slow": 110.0,
+  "turn_rate_fast": 90.0,
+  "turn_speed_slow": 16.0,
+  "turn_speed_fast": 40.0,
+  "acceleration": 18.0,
+  "speed_target": 40.0
+}

@@ -1,0 +1,11 @@
+# Steering left through the swing, jump release, keep steering through the fall
+dt 0.0166667
+frames 300
+pos 0 64 0
+vel 0 -15 28
+yaw 0
+swing 0 2 80 32 6 80 32
+stick 0 -0.9 0.4
+r2 0 1
+jump 1.25
+cam follow 3 -12

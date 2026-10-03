@@ -1,0 +1,17 @@
+00:00.313  blend            | Read blend: "H:\SteamLibrary\steamapps\common\Marvel's Spider-Man Remastered\spiderman_bevy\tools\character.blend"
+NATIVE_POSE web_swing_fwd_rh_spiderman 6
+NATIVE_POSE web_swing_intro_fromairaggro_fwd_rh_spiderman 5
+NATIVE_POSE web_zip_fwd_2hand_spiderman 5
+NATIVE_POSE web_zip_fwd_fastfall_2h_spiderman 5
+NATIVE_POSE web_zip_fwd_skydive_2h_spiderman 5
+NATIVE_POSE web_zip_attach_short_fwd_spiderman 4
+NATIVE_POSE stand_jump_spiderman 4
+NATIVE_POSE stand_chargejump_up_spiderman 5
+NATIVE_POSE stand_chargejump_fwd_spiderman 5
+NATIVE_POSE stand_sprint_high_jump_fwd_spiderman 5
+NATIVE_POSE web_swing_release_mid1_spiderman 4
+NATIVE_POSE web_swing_jump_high_spiderman 4
+NATIVE_POSE wall_run_up_intro_spiderman 4
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+
+Blender quit

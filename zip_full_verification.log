@@ -1,0 +1,141 @@
+   Compiling spiderman_bevy v0.1.0 (H:\SteamLibrary\steamapps\common\Marvel's Spider-Man Remastered\spiderman_bevy)
+    Finished `dev` profile [optimized + debuginfo] target(s) in 10.25s
+Ready: Play.bat
+   Compiling spiderman_bevy v0.1.0 (H:\SteamLibrary\steamapps\common\Marvel's Spider-Man Remastered\spiderman_bevy)
+    Finished `test` profile [optimized + debuginfo] target(s) in 7.11s
+     Running unittests src\main.rs (target\debug\deps\spiderman_bevy-ab03819819e09504.exe)
+
+running 27 tests
+test animation::tests::intros_are_not_looped_or_cut_at_the_old_short_gate ... ok
+test animation::tests::release_clip_finishes_after_the_physics_apex ... ok
+test native_swing::tests::native_gravity_blend_reference_cases ... ok
+test animation::tests::swing_uses_the_native_traversal_clip_and_matching_hand ... ok
+test physics::tests::gain_caps_do_not_discard_existing_momentum ... ok
+test native_swing::tests::native_pivot_and_terminal_reference_cases ... ok
+test zip::tests::native_zip_caps_preserve_existing_fast_momentum ... ok
+test physics::tests::high_speed_collisions_do_not_enter_towers ... ok
+test physics::tests::release_is_ballistic_and_jump_boost_is_additive ... ok
+test physics::tests::dive_releases_a_held_line ... ok
+test native_swing::tests::native_gravity_reference_cases ... ok
+test physics::tests::rope_constraint_holds_and_release_preserves_momentum ... ok
+test physics::tests::wall_run_stays_in_contact_and_wall_jump_detaches ... ok
+test physics::tests::arc_is_consistent_at_different_fixed_steps ... ok
+test zip::tests::forward_zip_does_not_steer_into_the_attachment ... ok
+test physics::tests::attachment_has_no_velocity_impulse ... ok
+test zip::tests::zip_webs_attach_to_visible_tower_faces ... ok
+test zip::tests::point_zip_stops_on_the_selected_roof ... ok
+test physics::tests::arena_has_seven_towers_and_surface_anchors ... ok
+test zip::tests::grounded_zip_finishes_the_shot_before_launching ... ok
+test zip::tests::zip_from_dive_can_finish_with_dive_button_held ... ok
+test physics::tests::holding_swing_selects_successive_lines ... ok
+test physics::tests::swing_crosses_the_trough_before_automatic_release ... ok
+test zip::tests::zip_interrupts_swing_and_respects_repeat_lockout ... ok
+test zip::tests::zip_without_surfaces_does_not_create_floating_webs ... ok
+test physics::tests::forward_input_keeps_the_arc_in_the_street ... ok
+test physics::tests::long_traversal_is_finite_and_contacts_floor ... ok
+
+test result: ok. 27 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+held: swings 4 -> 3, lateral 19.31 -> 4.55 m, peak speed 56.69 -> 38.27 m/s
+normal_release: swings 1 -> 1, lateral 10.89 -> 0.05 m, peak speed 44.24 -> 29.24 m/s
+jump_release: swings 1 -> 1, lateral 17.62 -> 0.05 m, peak speed 50.29 -> 33.99 m/s
+dive_entry: swings 5 -> 4, lateral 17.60 -> 6.39 m, peak speed 57.08 -> 51.81 m/s
+2026-10-03T05:03:04.384039Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b15
+2026-10-03T05:03:04.384145Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b8
+2026-10-03T05:03:04.384150Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b16
+2026-10-03T05:03:04.384153Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b9
+2026-10-03T05:03:04.384156Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b13
+2026-10-03T05:03:04.384158Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b11
+2026-10-03T05:03:04.384161Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b10
+2026-10-03T05:03:04.384163Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b14
+2026-10-03T05:03:04.384165Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b12
+2026-10-03T05:03:04.385028Z  WARN gilrs::gamepad: No mapping found for UUID 00000000-0000-0000-0000-000000000000
+	Default mapping will be used.
+2026-10-03T05:03:30.282204Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b15
+2026-10-03T05:03:30.282288Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b8
+2026-10-03T05:03:30.282296Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b16
+2026-10-03T05:03:30.282300Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b9
+2026-10-03T05:03:30.282304Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b13
+2026-10-03T05:03:30.282307Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b11
+2026-10-03T05:03:30.282310Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b10
+2026-10-03T05:03:30.282313Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b14
+2026-10-03T05:03:30.282315Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b12
+2026-10-03T05:03:30.282806Z  WARN gilrs::gamepad: No mapping found for UUID 00000000-0000-0000-0000-000000000000
+	Default mapping will be used.
+{
+  "asset_validation_passed": true,
+  "meshes": 18,
+  "joints": 212,
+  "animations": 65,
+  "native_bind_max_identity_error": 3.708425734666183e-05,
+  "source_files_checked": 427,
+  "captures": {
+    "swing": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 29800
+    },
+    "release": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 23425
+    },
+    "traversal": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 27864
+    },
+    "zip_fire": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 34500
+    },
+    "zip_flight": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 36661
+    },
+    "roof_zip": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 11878
+    }
+  },
+  "one_to_one_fidelity_verified": false,
+  "known_gap": "Native traversal, animation blending, IK and layered materials are not fully ported."
+}
+POSE_MATCH web_swing_fwd_rh_spiderman 1.4333049169423795e-05 1.0049623485628032e-05
+POSE_MATCH web_swing_intro_fromairaggro_fwd_rh_spiderman 1.4842586952168446e-05 6.6965048935561195e-06
+POSE_MATCH web_zip_fwd_2hand_spiderman 1.0920856105101073e-05 8.066723405990366e-06
+POSE_MATCH web_zip_fwd_fastfall_2h_spiderman 1.0949083229849776e-05 8.548025036362064e-06
+POSE_MATCH web_zip_fwd_skydive_2h_spiderman 1.278672724702723e-05 9.316934970172271e-06
+POSE_MATCH web_zip_attach_short_fwd_spiderman 9.119810899349545e-06 4.991096608569755e-06
+POSE_MATCH stand_jump_spiderman 6.997656912810513e-06 5.22173781122946e-06
+POSE_MATCH web_swing_release_mid1_spiderman 1.016834173850345e-05 6.77469363829523e-06
+POSE_MATCH web_swing_jump_high_spiderman 1.2740965339874677e-05 8.063447103807293e-06
+POSE_MATCH wall_run_up_intro_spiderman 4.454318733082552e-06 2.5662544133399084e-06
+ANIMATION_POSES_VERIFIED
+{
+  "passed": true,
+  "buildings": 7,
+  "cars": 56,
+  "car_scale": 1,
+  "units": "meters",
+  "assets_checked": 12,
+  "referenced_textures_checked": 72,
+  "facade_floor_height": 4,
+  "building_layout_from_original_game": false
+}
+Recorded verified build and character hashes.

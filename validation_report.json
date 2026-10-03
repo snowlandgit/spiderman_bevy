@@ -1,0 +1,82 @@
+{
+  "asset_validation_passed": true,
+  "meshes": 18,
+  "joints": 212,
+  "animations": 68,
+  "native_bind_max_identity_error": 3.708425734666183e-05,
+  "source_files_checked": 431,
+  "captures": {
+    "swing": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 32145
+    },
+    "swing_main": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 32867
+    },
+    "release": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 31753
+    },
+    "traversal": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 30170
+    },
+    "zip_fire": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 32644
+    },
+    "zip_flight": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 31505
+    },
+    "roof_zip": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 34581
+    },
+    "jump_charge": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 36114
+    },
+    "high_jump": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 34828
+    },
+    "long_jump": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 34063
+    }
+  },
+  "one_to_one_fidelity_verified": false,
+  "known_gap": "Native traversal, animation blending, IK and layered materials are not fully ported."
+}

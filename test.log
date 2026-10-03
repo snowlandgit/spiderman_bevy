@@ -1,0 +1,15 @@
+   Compiling spiderman_bevy v0.1.0 (H:\SteamLibrary\steamapps\common\Marvel's Spider-Man Remastered\spiderman_bevy)
+    Finished `test` profile [optimized + debuginfo] target(s) in 21.21s
+     Running unittests src\main.rs (spiderman_bevy\target\debug\deps\spiderman_bevy-ab03819819e09504.exe)
+
+running 7 tests
+test physics::tests::arena_has_seven_towers_and_surface_anchors ... ok
+test physics::tests::high_speed_collisions_do_not_enter_towers ... ok
+test physics::tests::wall_run_stays_in_contact_and_wall_jump_detaches ... ok
+test physics::tests::dive_releases_a_held_line ... ok
+test physics::tests::rope_constraint_holds_and_release_preserves_momentum ... ok
+test physics::tests::holding_swing_selects_successive_lines ... ok
+test physics::tests::long_traversal_is_finite_and_contacts_floor ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

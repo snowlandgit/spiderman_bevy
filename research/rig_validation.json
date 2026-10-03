@@ -1,0 +1,21 @@
+{
+  "blender_bind_max_matrix_error": 2.0444393157958984e-05,
+  "verified_bones": 212,
+  "poses": [
+    {
+      "clip": "stand_idle_spiderman",
+      "frame": 35,
+      "image": "rig_fixed_idle.png"
+    },
+    {
+      "clip": "web_swing_rh_a_spiderman",
+      "frame": 150,
+      "image": "rig_fixed_swing.png"
+    },
+    {
+      "clip": "web_swing_jump_high_spiderman",
+      "frame": 45,
+      "image": "rig_fixed_release.png"
+    }
+  ]
+}

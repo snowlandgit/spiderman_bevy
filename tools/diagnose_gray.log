@@ -1,0 +1,8 @@
+00:00.265  blend            | Read blend: "H:\SteamLibrary\steamapps\common\Marvel's Spider-Man Remastered\spiderman_bevy\tools\character.blend"
+H:\SteamLibrary\steamapps\common\Marvel's Spider-Man Remastered\spiderman_bevy\tools\diagnose_gray.py:10: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('Diagnostic');mat.use_nodes=True
+00:02.406  render           | Saved: 'H:\SteamLibrary\steamapps\common\Marvel's Spider-Man Remastered\spiderman_bevy\tools\rig_rest_gray.png'
+00:03.750  render           | Saved: 'H:\SteamLibrary\steamapps\common\Marvel's Spider-Man Remastered\spiderman_bevy\tools\rig_idle_gray.png'
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+
+Blender quit

@@ -1,0 +1,53 @@
+
+running 7 tests
+test physics::tests::arena_has_seven_towers_and_surface_anchors ... ok
+test physics::tests::high_speed_collisions_do_not_enter_towers ... ok
+test physics::tests::rope_constraint_holds_and_release_preserves_momentum ... ok
+test physics::tests::dive_releases_a_held_line ... ok
+test physics::tests::wall_run_stays_in_contact_and_wall_jump_detaches ... ok
+test physics::tests::holding_swing_selects_successive_lines ... ok
+test physics::tests::long_traversal_is_finite_and_contacts_floor ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+2026-10-03T00:13:28.241630Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b15
+2026-10-03T00:13:28.241672Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b8
+2026-10-03T00:13:28.241677Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b16
+2026-10-03T00:13:28.241679Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b9
+2026-10-03T00:13:28.241681Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b13
+2026-10-03T00:13:28.241683Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b11
+2026-10-03T00:13:28.241686Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b10
+2026-10-03T00:13:28.241688Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b14
+2026-10-03T00:13:28.241690Z  WARN gilrs::mapping: SDL-mapping 03000000-3412-0000-adbe-000000000000 vJoy Device: Unknown button b12
+{
+  "asset_validation_passed": true,
+  "meshes": 18,
+  "joints": 212,
+  "animations": 26,
+  "source_files_checked": 133,
+  "captures": {
+    "swing": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 5932
+    },
+    "release": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 5152
+    },
+    "traversal": {
+      "resolution": [
+        1440,
+        900
+      ],
+      "unique_scene_colors": 3884
+    }
+  },
+  "one_to_one_fidelity_verified": false,
+  "known_gap": "Native traversal and corrective rig deformation are not fully ported."
+}

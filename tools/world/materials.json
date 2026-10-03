@@ -1,0 +1,415 @@
+{
+  "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_eng_01.material": [
+    "textures/default_pink_shader/default_pink_shader_g.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/default_pink_shader/default_pink_shader_c.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_eng_01_g.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_eng_01_n.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_eng_01_c.texture"
+  ],
+  "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_ext_01.material": [
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_ext_01_g.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_ext_01_n.texture",
+    "textures/cameron/taxi_color_picker_1d.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_ext_01_c.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_ext_01_h.texture"
+  ],
+  "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_glass_01.material": [
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_glass_01_g.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_glass_01_g.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_glass_01_16bit_n.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_glass_01_c.texture"
+  ],
+  "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_int_01.material": [
+    "textures/default_pink_shader/default_pink_shader_g.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/default_pink_shader/default_pink_shader_c.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_int_01_g.texture",
+    "characters/shared/textures/detail/detail_knit_05_n.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_int_01_n.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_int_01_c.texture"
+  ],
+  "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_lights_01.material": [
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_lights_01_g.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_lights_01_n.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_lights_01_c.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_lights_01_m.texture"
+  ],
+  "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_uc_01.material": [
+    "textures/default_pink_shader/default_pink_shader_g.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/default_pink_shader/default_pink_shader_c.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_uc_01_g.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_uc_01_n.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_uc_01_c.texture"
+  ],
+  "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_wheel_01.material": [
+    "textures/default_pink_shader/default_pink_shader_g.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/default_pink_shader/default_pink_shader_c.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_wheel_01_g.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_wheel_01_n.texture",
+    "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_wheel_01_c.texture"
+  ],
+  "environment/props/manmade/global/pp_skyscraper_ac_unit/materials/pp_skyscraper_ac_unit.material": [
+    "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_01_g.texture",
+    "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_01_n.texture",
+    "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_01_c.texture",
+    "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_01_m.texture"
+  ],
+  "environment/props/manmade/global/pp_skyscraper_ac_unit/materials/pp_skyscraper_ac_unit_02.material": [
+    "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_02_g.texture",
+    "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_02_n.texture",
+    "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_02_c.texture",
+    "environment/props/manmade/global/pp_skyscraper_ac_unit/textures/pp_skyscraper_ac_unit_02_m.texture"
+  ],
+  "material/environment/global/procedural/gbl_proc_stain_decal_random_01/jn_gbl_proc_stain_trim_decal_random_01.material": [
+    "textures/decals/jn_drip_stains/jn_drip_stain_trim_array.texture"
+  ],
+  "material/environment/global/prop/gbl_prop_license_plate_random_01/jn_gbl_prop_license_plate_random_01.material": [],
+  "material/environment/template/architecture/gbl_arch_brass_trim_01/mo_gbl_arch_brushed_metal_trim_01.material": [
+    "textures/molsen/mo_brass_trim_01/mo_brass_trim_01_g.texture",
+    "textures/molsen/mo_brass_trim_01/mo_brass_trim_01_n.texture",
+    "textures/molsen/mo_brass_trim_01/mo_brass_trim_01_c.texture"
+  ],
+  "material/environment/template/architecture/gbl_arch_brass_trim_01/mo_gbl_arch_brushed_metal_trim_01_shiny.material": [
+    "textures/molsen/mo_brass_trim_01/mo_brass_trim_01_g.texture",
+    "textures/molsen/mo_brass_trim_01/mo_brass_trim_01_n.texture",
+    "textures/molsen/mo_brass_trim_01/mo_brass_trim_01_n.texture",
+    "textures/molsen/mo_brass_trim_01/mo_brass_trim_01_c.texture"
+  ],
+  "material/environment/template/architecture/gbl_arch_brass_trim_01/mo_gbl_arch_hvac_grate_01.material": [
+    "textures/default_pink_shader/default_pink_shader_g.texture",
+    "textures/rbenno/bricks/jn_rb_brick_warehouse_paint_mask.texture",
+    "textures/molsen/mo_procedural_dirt_mask_01/mo_procedural_dirt_mask_01_h.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/effects/gradients/jn_brick_wall_paint_1d.texture",
+    "textures/molsen/mo_color_mixer_mask/mo_color_mixer_mask_01_h.texture",
+    "textures/default_pink_shader/default_pink_shader_c.texture",
+    "textures/masks/grunge_noise_mask_02.texture",
+    "textures/masks/jn_brick_wall_mask.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/molsen/mo_dirt_mask_01/mo_dirt_mask_01_h.texture",
+    "textures/masks/1d_color_picker/city_color_picker_1d.texture",
+    "textures/props/mo_hvac_grate_01/mo_hvac_grate_01_g.texture",
+    "textures/props/mo_hvac_grate_01/mo_hvac_grate_01_n.texture",
+    "textures/props/mo_hvac_grate_01/mo_hvac_grate_01_c.texture"
+  ],
+  "material/environment/template/architecture/gbl_arch_brass_trim_01/sza_gbl_arch_brushed_metal_tile_dark.material": [
+    "textures/metal/jn_beekman_metal/jn_beekman_metal_g.texture",
+    "textures/metal/jn_beekman_metal/jn_beekman_metal_n.texture",
+    "textures/molsen/mo_brass_trim_01/mo_brass_trim_01_n.texture",
+    "textures/metal/jn_beekman_metal/jn_beekman_metal_n.texture",
+    "textures/metal/jn_beekman_metal/jn_beekman_metal_c.texture"
+  ],
+  "material/environment/template/architecture/gbl_arch_concrete_01/jn_gbl_arch_concrete_01.material": [
+    "textures/default_pink_shader/default_pink_shader_g.texture",
+    "textures/rbenno/bricks/jn_rb_brick_warehouse_paint_mask.texture",
+    "textures/molsen/mo_procedural_dirt_mask_01/mo_procedural_dirt_mask_01_h.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/effects/gradients/jn_brick_wall_paint_1d.texture",
+    "textures/molsen/mo_color_mixer_mask/mo_color_mixer_mask_01_h.texture",
+    "textures/default_pink_shader/default_pink_shader_c.texture",
+    "textures/masks/grunge_noise_mask_02.texture",
+    "textures/masks/jn_brick_wall_mask.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/molsen/mo_dirt_mask_01/mo_dirt_mask_01_h.texture",
+    "textures/masks/1d_color_picker/city_color_picker_1d.texture",
+    "textures/concrete/jn_concrete_01/jn_concrete_01_g.texture",
+    "textures/molsen/mo_procedural_dirt_mask_01/mo_procedural_dirt_mask_01_h.texture",
+    "textures/mmcauliffe/concrete/concrete_05/mm_concrete_05_n.texture",
+    "textures/molsen/mo_color_mixer_mask/mo_color_mixer_mask_01_h.texture",
+    "textures/mmcauliffe/concrete/concrete_05/mm_concrete_05_c.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/molsen/mo_dirt_mask_01/mo_dirt_mask_01_h.texture",
+    "textures/masks/1d_color_picker/city_color_picker_1d.texture"
+  ],
+  "material/environment/template/architecture/gbl_arch_concrete_trim_02/jn_gbl_arch_metal_trim_01_black.material": [
+    "textures/default_pink_shader/default_pink_shader_g.texture",
+    "textures/rbenno/bricks/jn_rb_brick_warehouse_paint_mask.texture",
+    "textures/molsen/mo_procedural_dirt_mask_01/mo_procedural_dirt_mask_01_h.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/effects/gradients/jn_brick_wall_paint_1d.texture",
+    "textures/molsen/mo_color_mixer_mask/mo_color_mixer_mask_01_h.texture",
+    "textures/default_pink_shader/default_pink_shader_c.texture",
+    "textures/masks/grunge_noise_mask_02.texture",
+    "textures/masks/jn_brick_wall_mask.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/molsen/mo_dirt_mask_01/mo_dirt_mask_01_h.texture",
+    "textures/masks/1d_color_picker/city_color_picker_1d.texture",
+    "i20_substances/sza_metal_trim_01/sza_metal_trim_01_g.texture",
+    "textures/metal/jn_shiny_metal_trim_01/jn_shiny_metal_trim_01_n.texture",
+    "i20_substances/sza_metal_trim_01/sza_metal_trim_01_c.texture",
+    "textures/cperrella/detail/cp_detail_normal_metal_01_n.texture"
+  ],
+  "material/environment/template/architecture/gbl_arch_concrete_trim_02/sza_gbl_arch_concrete_trim_02_dirty.material": [
+    "textures/concrete/jn_concrete_trim_02/jn_concrete_trim_02_g.texture",
+    "textures/concrete/jn_concrete_trim_02/jn_concrete_trim_02_n.texture",
+    "textures/concrete/jn_concrete_trim_02/jn_concrete_trim_02_c.texture"
+  ],
+  "material/environment/template/architecture/gbl_arch_concrete_trim_02/sza_gbl_arch_metal_trim_01.material": [
+    "textures/mmcauliffe/metal/steel_01_trim/mm_steel_01_trim_g.texture",
+    "textures/mmcauliffe/metal/steel_01_trim/mm_steel_01_trim_n.texture",
+    "test/bmullen/black.texture"
+  ],
+  "material/environment/template/architecture/gbl_arch_concrete_trim_02/sza_gbl_arch_metal_trim_01_red.material": [
+    "i20_substances/sza_metal_trim_01/sza_metal_trim_01_g.texture",
+    "i20_substances/sza_metal_trim_01/sza_metal_trim_01_n.texture",
+    "i20_substances/sza_metal_trim_01/sza_metal_trim_01_n.texture",
+    "i20_substances/sza_metal_trim_01/sza_metal_trim_01_c.texture"
+  ],
+  "material/environment/template/architecture/gbl_arch_metal_trim_worn_01/jn_gbl_arch_metal_trim_worn_01.material": [
+    "textures/metal/jn_metal_trim_worn_01/jn_metal_trim_worn_01_g.texture",
+    "textures/molsen/mo_procedural_dirt_mask_01/mo_procedural_dirt_mask_01_h.texture",
+    "textures/metal/jn_metal_trim_worn_01/jn_metal_trim_worn_01_n.texture",
+    "textures/molsen/mo_color_mixer_mask/mo_color_mixer_mask_01_h.texture",
+    "test/bmullen/black.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/molsen/mo_dirt_mask_01/mo_dirt_mask_01_h.texture",
+    "textures/masks/1d_color_picker/city_color_picker_1d.texture"
+  ],
+  "material/environment/template/architecture/gbl_arch_stone_wall_01/sza_gbl_arch_granite_wall_01.material": [
+    "textures/default_pink_shader/default_pink_shader_g.texture",
+    "textures/rbenno/bricks/jn_rb_brick_warehouse_paint_mask.texture",
+    "textures/molsen/mo_procedural_dirt_mask_01/mo_procedural_dirt_mask_01_h.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/effects/gradients/jn_brick_wall_paint_1d.texture",
+    "textures/molsen/mo_color_mixer_mask/mo_color_mixer_mask_01_h.texture",
+    "textures/default_pink_shader/default_pink_shader_c.texture",
+    "textures/masks/grunge_noise_mask_02.texture",
+    "textures/masks/jn_brick_wall_mask.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/molsen/mo_dirt_mask_01/mo_dirt_mask_01_h.texture",
+    "textures/masks/1d_color_picker/city_color_picker_1d.texture",
+    "i20_substances/sza_granite_wall_01/sza_granite_wall_01_g.texture",
+    "i20_substances/sza_granite_wall_01/sza_granite_wall_01_n.texture",
+    "textures/masks/mo_black/mo_black_h.texture",
+    "i20_substances/sza_granite_wall_01/sza_granite_wall_01_c.texture"
+  ],
+  "material/environment/template/architecture/gbl_arch_window_mtg_v2_4x4_01/gbl_arch_window_mtg_v4_4x4_01.material": [
+    "textures/molsen/mo_gbl_window_glass_01/za_gbl_window_glass_01_g.texture",
+    "levels/i20_interior_cube_capture/envprobes/interior_cube_office_array_02.texture"
+  ],
+  "material/environment/template/architecture/gbl_arch_window_mtg_v2_4x4_01/gbl_arch_window_mtg_v4_4x4_02.material": [
+    "textures/molsen/mo_gbl_window_glass_01/za_gbl_window_glass_01_g.texture",
+    "levels/i20_interior_cube_capture/envprobes/interior_cube_office_array_02.texture"
+  ],
+  "material/environment/template/architecture/gbl_arch_window_mtg_v2_4x4_01/gbl_arch_window_mts_v2_4x4_01.material": [
+    "textures/molsen/mo_gbl_window_glass_01/za_gbl_window_glass_01_g.texture",
+    "textures/window_blinds/window_blinds_01/window_blinds_01_h.texture",
+    "textures/environment/shared/distortion_normals/window_normal_distortion_01_n.texture",
+    "textures/cperrella/misc/cp_kelvin_01.texture",
+    "levels/i20_interior_cube_capture/envprobes_sunset/rv_interior_cube_array_residential_01.texture",
+    "textures/window_blinds/window_blinds_01/window_blinds_01.texture"
+  ],
+  "material/vehicle/veh_jn_taxi_random_advert/veh_jn_taxi_random_advert.material": [
+    "textures/ghollis/taxi_ad_g.texture",
+    "textures//default_pink_shader//default_pink_shader_n.texture",
+    "textures/ghollis/taxi_ad_array.texture"
+  ],
+  "material/vehicle/veh_nypdpolicecar_cine_glass/veh_sedan_01_glass.material": [
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_glass_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_glass_n.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_glass_c.texture"
+  ],
+  "material/vehicle/veh_nypdpolicecar_cine_lights/veh_sedan_01_lights.material": [
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_lights_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_lights_n.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_lights_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_lights_ultility.texture"
+  ],
+  "material/vehicle/veh_sedan_01_chassis/veh_sedan_01_chassis.material": [
+    "textures/default_pink_shader/default_pink_shader_g.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/default_pink_shader/default_pink_shader_c.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_chassis_01_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_chassis_01_n.texture",
+    "textures/molsen/car_color_picker_1d_white.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_chassis_01_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/damagemasks/os_sedan_01_chassis_dmg_h.texture"
+  ],
+  "material/vehicle/veh_sedan_01_engine_1/veh_sedan_01_engine_1.material": [
+    "textures/cperrella/vehicle/cp_blend_rust_01_n.texture",
+    "textures/cperrella/vehicle/cp_blend_rust_01_n.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_g.texture",
+    "textures/cperrella/vehicle/cp_blend_rust_01_n.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/cameron/taxi_color_picker_1d.texture",
+    "textures/cperrella/vehicle/cp_blend_rust_01_c.texture",
+    "textures/cperrella/vehicle/cp_blend_rust_01_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_c.texture",
+    "textures/cperrella/vehicle/cp_blend_rust_01_c.texture",
+    "textures/cperrella/vehicle/cp_veh_utility_01_h.texture",
+    "textures/default_pink_shader/default_pink_shader_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_h.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_engine_01_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_engine_01_n.texture",
+    "textures/molsen/car_color_picker_1d_white.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_engine_01_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/damagemasks/os_sedan_01_engine_1_dmg_h.texture"
+  ],
+  "material/vehicle/veh_sedan_01_engine_1/veh_sedan_01_engine_2.material": [
+    "textures/cperrella/vehicle/cp_blend_rust_01_n.texture",
+    "textures/cperrella/vehicle/cp_blend_rust_01_n.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_g.texture",
+    "textures/cperrella/vehicle/cp_blend_rust_01_n.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/cameron/taxi_color_picker_1d.texture",
+    "textures/cperrella/vehicle/cp_blend_rust_01_c.texture",
+    "textures/cperrella/vehicle/cp_blend_rust_01_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_c.texture",
+    "textures/cperrella/vehicle/cp_blend_rust_01_c.texture",
+    "textures/cperrella/vehicle/cp_veh_utility_01_h.texture",
+    "textures/default_pink_shader/default_pink_shader_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_h.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_engine_02_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_engine_02_n.texture",
+    "textures/cameron/car_color_picker_1d.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_engine_02_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/damagemasks/os_sedan_01_engine_2_dmg_h.texture"
+  ],
+  "material/vehicle/veh_sedan_01_int_1/veh_sedan_01_int_1.material": [
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_interior_01_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_interior_01_n.texture",
+    "textures/cameron/car_color_picker_1d.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_interior_01_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/damagemasks/os_sedan_01_int_1_dmg_h.texture"
+  ],
+  "material/vehicle/veh_sedan_01_int_1/veh_sedan_01_int_2.material": [
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_interior_02_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_interior_02_n.texture",
+    "textures/molsen/car_color_picker_1d_white.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_interior_02_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/damagemasks/os_sedan_01_int_2_dmg_h.texture"
+  ],
+  "material/vehicle/veh_sedan_01_wheel/veh_sedan_01_wheel.material": [
+    "textures/cperrella/vehicle/cp_blend_rust_01_n.texture",
+    "textures/cperrella/vehicle/cp_blend_rust_01_n.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_g.texture",
+    "textures/cperrella/vehicle/cp_blend_rust_01_n.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "textures/cameron/taxi_color_picker_1d.texture",
+    "textures/cperrella/vehicle/cp_blend_rust_01_c.texture",
+    "textures/cperrella/vehicle/cp_blend_rust_01_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_c.texture",
+    "textures/cperrella/vehicle/cp_blend_rust_01_c.texture",
+    "textures/cperrella/vehicle/cp_veh_utility_01_h.texture",
+    "textures/default_pink_shader/default_pink_shader_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_h.texture",
+    "textures/gmartinez/os_sedan_01_wheel/gm_os_sedan_01_wheel_01_g.texture",
+    "textures/gmartinez/os_sedan_01_wheel/gm_os_sedan_01_wheel_01_n.texture",
+    "textures/molsen/car_color_picker_1d_white.texture",
+    "textures/gmartinez/os_sedan_01_wheel/gm_os_sedan_01_wheel_01_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/damagemasks/os_towncar_01_wheel_dmg_h.texture"
+  ],
+  "material/vehicle/veh_suv_01_chassis/veh_suv_01_chassis.material": [
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_chassis_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_chassis_n.texture",
+    "textures/molsen/car_color_picker_1d_white.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_chassis_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/interchangeable/veh_suv_01_chassis_h.texture"
+  ],
+  "material/vehicle/veh_suv_01_engine_2/veh_suv_01_engine_2.material": [
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_engine_02_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_engine_02_n.texture",
+    "textures/molsen/car_color_picker_1d_white.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_engine_02_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/interchangeable/veh_suv_01_engine_2_h.texture"
+  ],
+  "material/vehicle/veh_suv_01_ext_1/veh_suv_01_ext_1.material": [
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_ext_01_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_ext_01_16b_n.texture",
+    "textures/cameron/car_color_picker_1d.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_ext_01_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/interchangeable/veh_suv_01_ext_1_h.texture"
+  ],
+  "material/vehicle/veh_suv_01_ext_1_damage/veh_suv_01_ext_1_damage.material": [
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_ext_01_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_ext_01_n.texture",
+    "textures/cameron/car_color_picker_1d.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_ext_01_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/interchangeable/veh_suv_01_ext_1_h.texture"
+  ],
+  "material/vehicle/veh_suv_01_ext_1_damage/veh_suv_01_ext_2_damage.material": [
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_ext_02_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_ext_02_n.texture",
+    "textures/cameron/car_color_picker_1d.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_ext_02_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/interchangeable/veh_suv_01_ext_2_h.texture"
+  ],
+  "material/vehicle/veh_suv_01_ext_2/veh_suv_01_ext_2.material": [
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_ext_02_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_ext_02_16b_n.texture",
+    "textures/cameron/car_color_picker_1d.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_ext_02_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/interchangeable/veh_suv_01_ext_2_h.texture"
+  ],
+  "material/vehicle/veh_suv_01_glass/veh_suv_01_glass.material": [
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_glass_01_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_cine_01/os_suv_cine_glass_01_g.texture",
+    "textures/default_pink_shader/default_pink_shader_n.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_cine_01/os_suv_cine_glass_01_c.texture"
+  ],
+  "material/vehicle/veh_suv_01_glass_damage/veh_suv_01_glass_damage.material": [
+    "environment/outsourcing/glassegg/manmade/os_suv_cine_01/os_suv_cine_damage_glass_01_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_cine_01/os_suv_cine_damage_glass_01_n.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_cine_01/os_suv_cine_damage_glass_01_c.texture"
+  ],
+  "material/vehicle/veh_suv_01_int_1/veh_suv_01_int_1.material": [
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_interior_01_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_interior_01_n.texture",
+    "textures/molsen/car_color_picker_1d_white.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_interior_01_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/interchangeable/veh_suv_01_int_1_h.texture"
+  ],
+  "material/vehicle/veh_suv_01_int_2/veh_suv_01_int_2.material": [
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_interior_02_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_interior_02_n.texture",
+    "textures/molsen/car_color_picker_1d_white.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_interior_02_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/interchangeable/veh_suv_01_int_2_h.texture"
+  ],
+  "material/vehicle/veh_suv_01_lights/veh_suv_01_lights.material": [
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_light_01_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_light_01_n.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_light_01_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_light_01_mask.texture"
+  ],
+  "material/vehicle/veh_suv_01_wheel/veh_suv_01_wheel.material": [
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_wheel_01_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_wheel_01_n.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_wheel_01_c.texture"
+  ],
+  "material/vehicle/veh_suv_01_wheel/veh_suv_01_wheel_damage.material": [
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_wheel_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_wheel_n.texture",
+    "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01_damage_wheel_c.texture"
+  ],
+  "material/vehicle/veh_suv_cine_ext_1/veh_sedan_01_ext_1.material": [
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_16b_n.texture",
+    "textures/cameron/car_color_picker_1d.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_01_h.texture"
+  ],
+  "material/vehicle/veh_suv_cine_ext_1/veh_sedan_01_ext_2.material": [
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_02_g.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_02_16b_n.texture",
+    "textures/cameron/car_color_picker_1d.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_02_c.texture",
+    "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_exterior_02_h.texture"
+  ],
+  "materials/jn_glass_01/jn_glass_01_opaque.material": [
+    "textures/glass/cp_window_default/cp_window_default_g.texture",
+    "textures/jnoble/storefront_parallax/jn_parallax_generic_blurred.texture",
+    "textures/jnoble/storefront_parallax/jn_parallax_generic_blurred.texture",
+    "textures/jnoble/storefront_parallax/jn_parallax_generic_blurred.texture",
+    "textures/glass/glass_patterns/glass_pattern_bump_n.texture"
+  ],
+  "materials/jn_glass_01/sza_jn_glass_01_opaque_darker_02.material": []
+}

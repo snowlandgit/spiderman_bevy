@@ -1,0 +1,1153 @@
+{
+ "Comment": "",
+ "LedgeGrabEngage": {
+  "LedgeNormalTolJump": 2.5,
+  "LedgeNormalTolSprint": 1.5,
+  "LedgeNormalTolDismount": 1.0,
+  "LedgeBackTolerance": 4.0,
+  "LedgeLeftTolerance": 0.25,
+  "VertToleranceOverhang": 6.0,
+  "VertToleranceClimb": 6.0,
+  "VertToleranceWallRun": 12.0,
+  "InputAngleNear": 70.0,
+  "InputAngleFar": 50.0,
+  "InputRangeNear": 0.5,
+  "InputRangeFar": 2.0
+ },
+ "StandardFallGravity": 26.0,
+ "StandardFallTerminalVelocity": 42.0,
+ "StandardFallTerminalVelocityMax": 100.0,
+ "StandardFallTermVelAccel": 8.0,
+ "WallGraspConfig": {
+  "FallDelay": 1.0,
+  "JumpDelay": 0.20000000298023224,
+  "MeleeDelay": 0.20000000298023224,
+  "FromDodgeFallDelay": 0.5
+ },
+ "WallRunConfig": {
+  "CornerJumpParams": {
+   "HorzSpeed": 20.0,
+   "JumpHeight": 0.5,
+   "TimeToPeak": 0.15000000596046448
+  },
+  "SteeringData": {
+   "TurnGainSlow": -2.25,
+   "TurnDampSlow": -20.0,
+   "TurnSpeedSlow": 75.0,
+   "TurnGainFast": -3.5,
+   "TurnDampFast": -40.0,
+   "TurnSpeedFast": 100.0,
+   "MoveSpeedSlow": 10.0,
+   "MoveSpeedFast": 16.0,
+   "TurnMaxDown": 12.0,
+   "InTimeMin": 0.15000000596046448,
+   "InTimeMax": 0.3499999940395355,
+   "TurnSpeedFactorMin": 10.0,
+   "TurnSpeedFactorMax": 50.0,
+   "TurnSpeedSpeedScaleMax": 0.7200000286102295,
+   "TurnSpeedDecelScaleMax": 2.5
+  },
+  "SteeringDataIndoor": {
+   "TurnGainSlow": -1.75,
+   "TurnDampSlow": -15.0,
+   "TurnSpeedSlow": 80.0,
+   "TurnGainFast": -1.75,
+   "TurnDampFast": -15.0,
+   "TurnSpeedFast": 180.0,
+   "MoveSpeedSlow": 1.0,
+   "MoveSpeedFast": 5.0,
+   "TurnMaxDown": 30.0,
+   "InTimeMin": 0.0,
+   "InTimeMax": 0.0,
+   "TurnSpeedFactorMin": 10.0,
+   "TurnSpeedFactorMax": 50.0,
+   "TurnSpeedSpeedScaleMax": 0.800000011920929,
+   "TurnSpeedDecelScaleMax": 3.0
+  },
+  "SpeedStickMin": 0.20000000298023224,
+  "SpeedStickMax": 0.800000011920929,
+  "VerticalImpactSpeedRetention": 0.6600000262260437,
+  "VerticalOffsetSpeedRetention": 0.6600000262260437,
+  "HorizontalOffsetAngleMin": 30.0,
+  "HorizontalOffsetAngleMax": 70.0,
+  "HorizontalOffsetRetainMin": 0.25,
+  "HorizontalOffsetRetainMax": 0.6600000262260437,
+  "IdealWallOffset": 0.5,
+  "StepUpHeight": 0.550000011920929,
+  "JumpUpHeight": 2.25,
+  "JumpUpHeightHorz": 4.25,
+  "JumpUpHorzAngle": 20.0,
+  "StepDownHeight": 0.699999988079071,
+  "FallDownHeight": 4.400000095367432,
+  "FallLandHeight": 0.20000000298023224,
+  "WallFallInSpeedMin": 12.0,
+  "WallFallInSpeedMax": 30.0,
+  "WallFallStartSpeedMin": 0.6000000238418579,
+  "WallFallStartSpeedMax": 3.0,
+  "WallFallGravityMin": 40.0,
+  "WallFallGravityMax": 140.0,
+  "CamAdjustRelativeVertAngle": 0.0,
+  "CamAdjustRelativeHorzAngle": 70.0,
+  "ReleaseData": {
+   "BaseGravity": 16.0,
+   "InSpeedMin": 10.0,
+   "InSpeedMax": 22.0,
+   "TimeToPeakMin": 0.44999998807907104,
+   "TimeToPeakMax": 0.800000011920929,
+   "NormalSpeedPercent": 0.029999999329447746,
+   "NormalSpeedMax": 0.15000000596046448
+  },
+  "JumpOffData_00": {
+   "SpeedMin": 8.0,
+   "SpeedMax": 20.0,
+   "GenBoostMin": 3.0,
+   "GenBoostMax": 6.0,
+   "GenBoostCap": 30.0,
+   "YBoostMin": 9.0,
+   "YBoostMax": 14.0,
+   "TimeToPeakMin": 0.41999998688697815,
+   "TimeToPeakMax": 0.6499999761581421
+  },
+  "JumpOffData_45": {
+   "SpeedMin": 8.0,
+   "SpeedMax": 20.0,
+   "GenBoostMin": 3.0,
+   "GenBoostMax": 6.0,
+   "GenBoostCap": 30.0,
+   "YBoostMin": 6.0,
+   "YBoostMax": 12.0,
+   "TimeToPeakMin": 0.41999998688697815,
+   "TimeToPeakMax": 0.699999988079071
+  },
+  "JumpOffData_90": {
+   "SpeedMin": 10.0,
+   "SpeedMax": 30.0,
+   "GenBoostMin": 4.0,
+   "GenBoostMax": 8.0,
+   "GenBoostCap": 28.0,
+   "YBoostMin": 2.0,
+   "YBoostMax": 2.0,
+   "TimeToPeakMin": 0.5,
+   "TimeToPeakMax": 0.800000011920929
+  },
+  "JumpDirectionData": {
+   "LevelAngleMin": 20.0,
+   "LevelAngleMax": 45.0,
+   "LevelInputMax": 90.0,
+   "LevelInputAltMax": 135.0,
+   "VertInputBoost": 2.0,
+   "LevelPitch": 20.0,
+   "VertPitch": 80.0,
+   "OutSpeedRetain": 0.5
+  },
+  "CrestVaultData": {
+   "InSpeedMin": 15.0,
+   "InSpeedMax": 25.0,
+   "OutSpeedMin": 22.0,
+   "OutSpeedMax": 28.0,
+   "OutHeightMin": 3.0,
+   "OutHeightMax": 4.0,
+   "TimeToPeakMin": 0.699999988079071,
+   "TimeToPeakMax": 0.8500000238418579,
+   "ClearanceHeight": 0.5,
+   "FallGravity": 12.0,
+   "AccelerationTime": 0.20000000298023224
+  },
+  "StandardEngage": {
+   "InputDeltNormalAngleMax": 85.0,
+   "InputDeltAttachAngleMax": 65.0,
+   "VelocityDeltNormalAngleMin": 20.0,
+   "VelocityDeltNormalAngleMax": 90.0,
+   "VelocityDeltNormalBias": 0.699999988079071,
+   "SwingVelocityImpactLoss": 10.0,
+   "SwingVelocityImpactAngle": 60.0,
+   "SwingVelocityImpactRange": 2.0,
+   "SpeedMin": 8.0,
+   "SpeedMax": 14.0,
+   "DistanceData": {
+    "CameraPerpVelocityPerpMin": 0.800000011920929,
+    "CameraPerpVelocityPerpMax": 1.2000000476837158,
+    "CameraPerpVelocityFaceMin": 1.0,
+    "CameraPerpVelocityFaceMax": 1.5,
+    "CameraFaceVelocityPerpMin": 1.25,
+    "CameraFaceVelocityPerpMax": 1.5,
+    "CameraFaceVelocityFaceMin": 1.600000023841858,
+    "CameraFaceVelocityFaceMax": 2.0
+   },
+   "DirectionData": {
+    "CameraPerpVelocityPerpMin": 8.0,
+    "CameraPerpVelocityPerpMax": 25.0,
+    "CameraPerpVelocityFace": 40.0,
+    "CameraFaceVelocityPerpMin": 20.0,
+    "CameraFaceVelocityPerpMax": 45.0,
+    "CameraFaceVelocityFace": 55.0,
+    "HorzMomentumAngleSlow": 70.0,
+    "HorzMomentumAngleFast": 50.0,
+    "HorzMomentumSpeedSlow": 12.0,
+    "HorzMomentumSpeedFast": 22.0
+   }
+  },
+  "SwingEngage": {
+   "InputDeltNormalAngleMax": 85.0,
+   "InputDeltAttachAngleMax": 65.0,
+   "VelocityDeltNormalAngleMin": 20.0,
+   "VelocityDeltNormalAngleMax": 90.0,
+   "VelocityDeltNormalBias": 0.699999988079071,
+   "SwingVelocityImpactLoss": 10.0,
+   "SwingVelocityImpactAngle": 60.0,
+   "SwingVelocityImpactRange": 2.0,
+   "SpeedMin": 8.0,
+   "SpeedMax": 14.0,
+   "DistanceData": {
+    "CameraPerpVelocityPerpMin": 0.800000011920929,
+    "CameraPerpVelocityPerpMax": 1.2000000476837158,
+    "CameraPerpVelocityFaceMin": 1.25,
+    "CameraPerpVelocityFaceMax": 1.75,
+    "CameraFaceVelocityPerpMin": 1.25,
+    "CameraFaceVelocityPerpMax": 1.5,
+    "CameraFaceVelocityFaceMin": 1.600000023841858,
+    "CameraFaceVelocityFaceMax": 2.5
+   },
+   "DirectionData": {
+    "CameraPerpVelocityPerpMin": 8.0,
+    "CameraPerpVelocityPerpMax": 25.0,
+    "CameraPerpVelocityFace": 40.0,
+    "CameraFaceVelocityPerpMin": 20.0,
+    "CameraFaceVelocityPerpMax": 45.0,
+    "CameraFaceVelocityFace": 55.0,
+    "HorzMomentumAngleSlow": 60.0,
+    "HorzMomentumAngleFast": 40.0,
+    "HorzMomentumSpeedSlow": 8.0,
+    "HorzMomentumSpeedFast": 16.0
+   }
+  },
+  "GroundEngage": {
+   "WallRunRange": 1.0,
+   "WallRunAngle": 30.0,
+   "WallRunAngleTime": 0.20000000298023224,
+   "WallCrawlRange": 0.6600000262260437,
+   "WallCrawlAngle": 30.0,
+   "WallCrawlAngleTime": 0.20000000298023224,
+   "WallCrawlAirRange": 0.6600000262260437,
+   "WallCrawlAirAngle": 20.0,
+   "WallCrawlAirAngleTime": 0.25,
+   "WallCrawlInRangeTime": 0.10000000149011612,
+   "WallCrawlAirMaxSpeed": 3.0,
+   "WallCrawlAirMinSpeed": -12.0
+  }
+ },
+ "WallClimbConfig": {
+  "TurnSpeedGain": -1.5,
+  "TurnSpeedDamp": -15.0,
+  "TurnSpeedMax": 300.0
+ },
+ "WallClimbSearchData": {
+  "DistanceForward": 3.0,
+  "DistanceSide": 1.0,
+  "HeightMin": 0.10000000149011612,
+  "HeightMax": 12.0
+ },
+ "PoleSwingConfig": {
+  "PoleSwingDistanceForward": 8.0,
+  "PoleSwingDistanceSide": 0.5,
+  "PoleSwingHeightMax": 4.0,
+  "PoleSwingHeightMin": -2.0,
+  "HorzLaunch": {
+   "HorzSpeed": 22.0,
+   "JumpHeight": 4.0,
+   "TimeToPeak": 0.6000000238418579
+  },
+  "VertLaunch": {
+   "HorzSpeed": 4.0,
+   "JumpHeight": 25.0,
+   "TimeToPeak": 1.25
+  }
+ },
+ "BeamWalkConfig": {
+  "GroundEntryRange": 1.25,
+  "InputMotionAngle": 60.0,
+  "SideWalkoffDropDistance": 1.5,
+  "SideWalkoffInputAngle": 35.0,
+  "SideWalkoffTestLeft": 1.100000023841858,
+  "SideWalkoffTestRadius": 0.4000000059604645,
+  "SideWalkoffInputTime": 0.30000001192092896
+ },
+ "SlideConfig": {
+  "SlideMaxSlope": 64.0,
+  "SlideSpeed": 16.0,
+  "SlideAccel": 16.0,
+  "CamAdjustInputDelay": 1.0,
+  "CamAdjustSpeedMax": 1000.0,
+  "CamAdjustAccel": 1000.0,
+  "CamAdjustDecel": 1000.0,
+  "CamAdjustRelativeVertAngle": 60.0,
+  "CamAdjustRelativeHorzAngle": 0.0,
+  "CamAdjustAngleTolerance": 0.5,
+  "SlideJumpSpeeds": {
+   "WalkRunStickThreshold": 0.9800000190734863,
+   "WalkSpeedMin": 10.0,
+   "WalkSpeedMax": 10.0,
+   "RunSpeedMin": 14.0,
+   "RunSpeedMaxMin": 5.0,
+   "RunSpeedMaxMax": 5.0,
+   "SprintSpeedMinMin": 8.0,
+   "SprintSpeedMinMax": 8.0,
+   "SprintSpeedMaxMin": 8.0,
+   "SprintSpeedMaxMax": 8.0
+  }
+ },
+ "PointLaunchConfig": {
+  "YankRangeNear": 16.0,
+  "YankRangeFar": 30.0,
+  "YankBonusNear": 4.0,
+  "YankBonusCapNear": 28.0,
+  "YankSpeedMinNear": 22.0,
+  "YankBonusFar": 8.0,
+  "YankBonusCapFar": 34.0,
+  "YankSpeedMinFar": 30.0,
+  "YankSpeedVertScale": 1.5,
+  "YankDragMin": 2.0,
+  "YankDragMax": 16.0,
+  "YankDragInMin": 30.0,
+  "YankDragInMax": 45.0,
+  "ExitDataFull": {
+   "LaunchSpeed": 26.0,
+   "TimeToPeak": 0.6000000238418579,
+   "JumpHeight": 6.0,
+   "LaunchSpeedBonus": 6.0,
+   "TimeToPeakBonus": 0.10000000149011612,
+   "JumpHeightBonus": 3.0
+  },
+  "ExitDataZero": {
+   "LaunchSpeed": 24.0,
+   "TimeToPeak": 0.6499999761581421,
+   "JumpHeight": 6.0,
+   "LaunchSpeedBonus": 3.0,
+   "TimeToPeakBonus": 0.15000000596046448,
+   "JumpHeightBonus": 6.0
+  },
+  "ExitDataBack": {
+   "LaunchSpeed": 12.0,
+   "TimeToPeak": 0.6000000238418579,
+   "JumpHeight": 10.0,
+   "LaunchSpeedBonus": 2.0,
+   "TimeToPeakBonus": 0.30000001192092896,
+   "JumpHeightBonus": 16.0
+  },
+  "AutoVault": {
+   "LaunchSpeed": 12.0,
+   "TimeToPeak": 0.4000000059604645,
+   "JumpHeight": 1.0,
+   "LaunchSpeedBonus": 4.0,
+   "TimeToPeakBonus": 0.10000000149011612,
+   "JumpHeightBonus": 2.0
+  },
+  "PerchToPerchPointLaunch": {
+   "LaunchSpeed": 12.0,
+   "TimeToPeak": 0.4000000059604645,
+   "JumpHeight": 1.0,
+   "LaunchSpeedBonus": 4.0,
+   "TimeToPeakBonus": 0.10000000149011612,
+   "JumpHeightBonus": 2.0
+  },
+  "BoostWindowMin": 0.20000000298023224,
+  "BoostWindowMax": 0.5,
+  "BoostMinApply": 0.0,
+  "BoostMaxFXPerc": 0.75,
+  "MaxExitAngle": 35.0,
+  "GravityFall": 30.0
+ },
+ "DodgeLeapConfig": {
+  "PostLandInvulnerabeTime": 0.0,
+  "PostLandRollLockoutTime": 0.0,
+  "AnimStartTime": 0.10000000149011612,
+  "AnimRate": 1.2000000476837158,
+  "MinAnimRateScaleByDistance": 0.8999999761581421,
+  "MaxAnimRateScaleByDistance": 1.0
+ },
+ "ZipToGroundTargetConfig": {
+  "RelativeFieldOfView": 70.0,
+  "AimAngle": 30.0,
+  "Range": 50.0
+ },
+ "SlingDataGround": {
+  "StandardData": {
+   "CarryRiseMax": 4.0,
+   "FallDataBase": {
+    "InSpeedMin": 5.0,
+    "InSpeedMax": 30.0,
+    "MaxFallDeltaMin": 1.0,
+    "MaxFallDeltaMax": 4.0
+   },
+   "Duration": 0.3499999940395355,
+   "ScaleAnim": true
+  }
+ },
+ "SlingDataAir": {
+  "StandardData": {
+   "CarryRiseMax": 4.0,
+   "FallDataBase": {
+    "InSpeedMin": 8.0,
+    "InSpeedMax": 35.0,
+    "MaxFallDeltaMin": 0.25,
+    "MaxFallDeltaMax": 6.0
+   },
+   "Duration": 0.25,
+   "ScaleAnim": true
+  }
+ },
+ "SlingDataFast": {
+  "StandardData": {
+   "CarryRiseMax": 4.0,
+   "FallDataBase": {
+    "InSpeedMin": 8.0,
+    "InSpeedMax": 30.0,
+    "MaxFallDeltaMin": 0.25,
+    "MaxFallDeltaMax": 2.0
+   },
+   "Duration": 0.20000000298023224,
+   "ScaleAnim": true
+  }
+ },
+ "SlingDataSwingFail": {
+  "StandardData": {
+   "CarryRiseMax": 4.0,
+   "FallDataBase": {
+    "InSpeedMin": 16.0,
+    "InSpeedMax": 24.0,
+    "MaxFallDeltaMin": 8.0,
+    "MaxFallDeltaMax": 12.0
+   },
+   "Duration": 0.30000001192092896,
+   "ScaleAnim": true
+  }
+ },
+ "SlingFromPerch": {
+  "StandardData": {
+   "CarryRiseMax": 4.0,
+   "FallDataBase": {
+    "InSpeedMin": 5.0,
+    "InSpeedMax": 30.0,
+    "MaxFallDeltaMin": 1.0,
+    "MaxFallDeltaMax": 4.0
+   },
+   "Duration": 0.3499999940395355,
+   "ScaleAnim": true
+  }
+ },
+ "SwingFailZipData": {
+  "ZipAngle": 45.0,
+  "FailTime": 0.3499999940395355,
+  "MinGroundHeight": 40.0
+ },
+ "JumpConfigs": {
+  "SingleJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 2.0,
+    "TimeToPeak": 0.3499999940395355,
+    "TimeToFall": 0.4000000059604645,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 8.0,
+    "ButtonThrustTimeMax": 0.3799999952316284,
+    "VelocityAccelAccelMin": 10.0,
+    "VelocityAccelAccelMax": 22.0,
+    "VelocityAccelTimeMin": 0.25,
+    "VelocityAccelTimeMax": 0.5,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.5,
+    "FacingToInputTimeMax": 1.0,
+    "DragProfileName": "Default",
+    "NoInputTime": 0.0
+   }
+  },
+  "SprintJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 2.5,
+    "TimeToPeak": 0.5,
+    "TimeToFall": 0.5,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 6.0,
+    "VelocityAccelAccelMax": 16.0,
+    "VelocityAccelTimeMin": 0.5,
+    "VelocityAccelTimeMax": 1.25,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.5,
+    "FacingToInputTimeMax": 0.8500000238418579,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 0.25
+   }
+  },
+  "ParkourLaunchConfig": {
+   "StandardData": {
+    "JumpHeight": 2.25,
+    "TimeToPeak": 0.5,
+    "TimeToFall": 0.5,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 6.0,
+    "VelocityAccelAccelMax": 16.0,
+    "VelocityAccelTimeMin": 0.5,
+    "VelocityAccelTimeMax": 1.25,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.5,
+    "FacingToInputTimeMax": 0.8500000238418579,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 0.25
+   }
+  },
+  "RollLandLaunchConfig": {
+   "StandardData": {
+    "JumpHeight": 8.0,
+    "TimeToPeak": 0.75,
+    "TimeToFall": -1.0,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 3.0,
+    "VelocityAccelAccelMax": 22.0,
+    "VelocityAccelTimeMin": 0.44999998807907104,
+    "VelocityAccelTimeMax": 1.0,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.3799999952316284,
+    "FacingToInputTimeMax": 0.949999988079071,
+    "DragProfileName": "ZipJumpDrag",
+    "NoInputTime": 0.0
+   }
+  },
+  "OverLedgeJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 3.0999999046325684,
+    "TimeToPeak": 0.550000011920929,
+    "TimeToFall": 0.44999998807907104,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 5.0,
+    "VelocityAccelAccelMax": 30.0,
+    "VelocityAccelTimeMin": 0.0,
+    "VelocityAccelTimeMax": 0.10000000149011612,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.0,
+    "FacingToInputTimeMax": 0.05000000074505806,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 0.0
+   }
+  },
+  "SlideJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 6.0,
+    "TimeToPeak": 0.75,
+    "TimeToFall": -1.0,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 5.0,
+    "VelocityAccelAccelMax": 30.0,
+    "VelocityAccelTimeMin": 0.0,
+    "VelocityAccelTimeMax": 0.10000000149011612,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.0,
+    "FacingToInputTimeMax": 0.05000000074505806,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 0.30000001192092896
+   }
+  },
+  "AirKnockdownJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 1.5,
+    "TimeToPeak": 0.3499999940395355,
+    "TimeToFall": -1.0,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 5.0,
+    "VelocityAccelAccelMax": 30.0,
+    "VelocityAccelTimeMin": 0.0,
+    "VelocityAccelTimeMax": 0.10000000149011612,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.0,
+    "FacingToInputTimeMax": 0.05000000074505806,
+    "DragProfileName": "Default",
+    "NoInputTime": 0.0
+   }
+  },
+  "WebLinePullJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 1.5,
+    "TimeToPeak": 0.5,
+    "TimeToFall": 0.3499999940395355,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 5.0,
+    "VelocityAccelAccelMax": 30.0,
+    "VelocityAccelTimeMin": 0.0,
+    "VelocityAccelTimeMax": 0.10000000149011612,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.0,
+    "FacingToInputTimeMax": 0.05000000074505806,
+    "DragProfileName": "Default",
+    "NoInputTime": 0.0
+   }
+  },
+  "SwingJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 1.5,
+    "TimeToPeak": 0.25,
+    "TimeToFall": -1.0,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 12.0,
+    "VelocityAccelAccelMax": 24.0,
+    "VelocityAccelTimeMin": 0.15000000596046448,
+    "VelocityAccelTimeMax": 0.6600000262260437,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.05999999865889549,
+    "FacingToInputTimeMax": 0.5,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 0.0
+   }
+  },
+  "ZipJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 1.5,
+    "TimeToPeak": 0.25,
+    "TimeToFall": -1.0,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 3.0,
+    "VelocityAccelAccelMax": 22.0,
+    "VelocityAccelTimeMin": 0.44999998807907104,
+    "VelocityAccelTimeMax": 1.0,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.3799999952316284,
+    "FacingToInputTimeMax": 0.949999988079071,
+    "DragProfileName": "ZipJumpDrag",
+    "NoInputTime": 0.0
+   }
+  },
+  "SwingIntroJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 6.0,
+    "TimeToPeak": 0.6000000238418579,
+    "TimeToFall": -1.0,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 12.0,
+    "VelocityAccelAccelMax": 22.0,
+    "VelocityAccelTimeMin": 0.6000000238418579,
+    "VelocityAccelTimeMax": 0.8999999761581421,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.05000000074505806,
+    "FacingToInputTimeMax": 0.15000000596046448,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 0.6000000238418579
+   }
+  },
+  "WallRunJumpOffConfig": {
+   "StandardData": {
+    "JumpHeight": 0.75,
+    "TimeToPeak": 0.5,
+    "TimeToFall": -1.0,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 4.0,
+    "VelocityAccelAccelMax": 22.0,
+    "VelocityAccelTimeMin": 0.4000000059604645,
+    "VelocityAccelTimeMax": 0.75,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.6000000238418579,
+    "FacingToInputTimeMax": 1.149999976158142,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 0.33000001311302185
+   }
+  },
+  "WallRunCornerHookConfig": {
+   "StandardData": {
+    "JumpHeight": 0.75,
+    "TimeToPeak": 0.5,
+    "TimeToFall": -1.0,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 12.0,
+    "VelocityAccelAccelMax": 22.0,
+    "VelocityAccelTimeMin": 0.10000000149011612,
+    "VelocityAccelTimeMax": 0.6600000262260437,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.6000000238418579,
+    "FacingToInputTimeMax": 1.149999976158142,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 0.05000000074505806
+   }
+  },
+  "WallExitJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 1.2000000476837158,
+    "TimeToPeak": 0.3149999976158142,
+    "TimeToFall": -1.0,
+    "ButtonThrustAccel": 29.0,
+    "ButtonThrustAccelGrav": 17.0,
+    "ButtonThrustTimeMax": 0.30000001192092896,
+    "VelocityAccelAccelMin": 12.0,
+    "VelocityAccelAccelMax": 22.0,
+    "VelocityAccelTimeMin": 0.05000000074505806,
+    "VelocityAccelTimeMax": 0.15000000596046448,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.05000000074505806,
+    "FacingToInputTimeMax": 0.15000000596046448,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 0.10000000149011612
+   }
+  },
+  "WallGraspJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 2.0,
+    "TimeToPeak": 0.44999998807907104,
+    "TimeToFall": 0.44999998807907104,
+    "ButtonThrustAccel": 10.0,
+    "ButtonThrustAccelGrav": 2.0,
+    "ButtonThrustTimeMax": 0.20000000298023224,
+    "VelocityAccelAccelMin": 10.0,
+    "VelocityAccelAccelMax": 22.0,
+    "VelocityAccelTimeMin": 0.15000000596046448,
+    "VelocityAccelTimeMax": 0.5,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.05000000074505806,
+    "FacingToInputTimeMax": 0.15000000596046448,
+    "DragProfileName": "Default",
+    "NoInputTime": 0.10000000149011612
+   }
+  },
+  "VehicleEjectJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 3.5,
+    "TimeToPeak": 0.5,
+    "TimeToFall": 0.4000000059604645,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 10.0,
+    "VelocityAccelAccelMax": 22.0,
+    "VelocityAccelTimeMin": 0.20000000298023224,
+    "VelocityAccelTimeMax": 0.699999988079071,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.10000000149011612,
+    "FacingToInputTimeMax": 0.30000001192092896,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 0.0
+   }
+  },
+  "VehicleKnockOffJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 0.75,
+    "TimeToPeak": 0.5,
+    "TimeToFall": -1.0,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 5.0,
+    "VelocityAccelAccelMax": 30.0,
+    "VelocityAccelTimeMin": 0.0,
+    "VelocityAccelTimeMax": 0.10000000149011612,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.0,
+    "FacingToInputTimeMax": 0.05000000074505806,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 10.0
+   }
+  },
+  "LedgeJumpDownConfig": {
+   "StandardData": {
+    "JumpHeight": 0.75,
+    "TimeToPeak": 0.25,
+    "TimeToFall": 0.3499999940395355,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 12.0,
+    "VelocityAccelAccelMax": 20.0,
+    "VelocityAccelTimeMin": 0.10000000149011612,
+    "VelocityAccelTimeMax": 0.5,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.5,
+    "FacingToInputTimeMax": 1.5,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 0.10000000149011612
+   }
+  },
+  "LedgeStepDownConfig": {
+   "StandardData": {
+    "JumpHeight": 0.15000000596046448,
+    "TimeToPeak": 0.15000000596046448,
+    "TimeToFall": 0.30000001192092896,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 12.0,
+    "VelocityAccelAccelMax": 20.0,
+    "VelocityAccelTimeMin": 0.10000000149011612,
+    "VelocityAccelTimeMax": 0.5,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.5,
+    "FacingToInputTimeMax": 1.5,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 0.25
+   }
+  },
+  "LedgeHandPlantDownConfig": {
+   "StandardData": {
+    "JumpHeight": 0.15000000596046448,
+    "TimeToPeak": 0.15000000596046448,
+    "TimeToFall": 0.33000001311302185,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 12.0,
+    "VelocityAccelAccelMax": 20.0,
+    "VelocityAccelTimeMin": 0.10000000149011612,
+    "VelocityAccelTimeMax": 0.5,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 2.0,
+    "FacingToInputTimeMax": 3.0,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 0.10000000149011612
+   }
+  },
+  "WallRunVaultTopJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 8.0,
+    "TimeToPeak": 0.6000000238418579,
+    "TimeToFall": -1.0,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 3.0,
+    "VelocityAccelAccelMax": 22.0,
+    "VelocityAccelTimeMin": 0.5,
+    "VelocityAccelTimeMax": 1.0,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.6600000262260437,
+    "FacingToInputTimeMax": 1.0,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 0.0
+   }
+  },
+  "ZipPointLaunchJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 0.75,
+    "TimeToPeak": 0.5,
+    "TimeToFall": -1.0,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 3.0,
+    "VelocityAccelAccelMax": 22.0,
+    "VelocityAccelTimeMin": 0.44999998807907104,
+    "VelocityAccelTimeMax": 1.0,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.3799999952316284,
+    "FacingToInputTimeMax": 0.949999988079071,
+    "DragProfileName": "ZipJumpDrag",
+    "NoInputTime": 0.0
+   }
+  },
+  "PerchJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 2.0,
+    "TimeToPeak": 0.3499999940395355,
+    "TimeToFall": 0.30000001192092896,
+    "ButtonThrustAccel": 14.0,
+    "ButtonThrustAccelGrav": 8.0,
+    "ButtonThrustTimeMax": 0.3799999952316284,
+    "VelocityAccelAccelMin": 10.0,
+    "VelocityAccelAccelMax": 22.0,
+    "VelocityAccelTimeMin": 0.25,
+    "VelocityAccelTimeMax": 0.5,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.5,
+    "FacingToInputTimeMax": 1.0,
+    "DragProfileName": "TraversalJumpDrag",
+    "NoInputTime": 0.0
+   }
+  },
+  "HandspringJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 1.0,
+    "TimeToPeak": 0.30000001192092896,
+    "TimeToFall": 0.30000001192092896,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 5.0,
+    "VelocityAccelAccelMax": 16.0,
+    "VelocityAccelTimeMin": 0.5,
+    "VelocityAccelTimeMax": 1.25,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.5,
+    "FacingToInputTimeMax": 0.8500000238418579,
+    "DragProfileName": "",
+    "NoInputTime": 0.25
+   }
+  },
+  "AirFireConfig": {
+   "StandardData": {
+    "JumpHeight": 0.0,
+    "TimeToPeak": 0.3499999940395355,
+    "TimeToFall": -1.0,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 0.0,
+    "ButtonThrustTimeMax": 0.0,
+    "VelocityAccelAccelMin": 5.0,
+    "VelocityAccelAccelMax": 10.0,
+    "VelocityAccelTimeMin": 0.0,
+    "VelocityAccelTimeMax": 1.0,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.0,
+    "FacingToInputTimeMax": 0.05000000074505806,
+    "DragProfileName": "AirFireDrag",
+    "NoInputTime": 0.0
+   }
+  },
+  "WaterJumpConfig": {
+   "StandardData": {
+    "JumpHeight": 4.0,
+    "TimeToPeak": 0.5,
+    "TimeToFall": 0.6000000238418579,
+    "ButtonThrustAccel": 0.0,
+    "ButtonThrustAccelGrav": 8.0,
+    "ButtonThrustTimeMax": 0.3799999952316284,
+    "VelocityAccelAccelMin": 10.0,
+    "VelocityAccelAccelMax": 22.0,
+    "VelocityAccelTimeMin": 0.25,
+    "VelocityAccelTimeMax": 0.5,
+    "BrakingAcceleration": 8.0,
+    "FacingToInputTimeMin": 0.5,
+    "FacingToInputTimeMax": 1.0,
+    "DragProfileName": "",
+    "NoInputTime": 0.0
+   }
+  },
+  "GroundJumpSpeed": {
+   "StandardData": {
+    "WalkSpeedMax": 2.5,
+    "RunSpeedMaxMin": 4.5,
+    "RunSpeedMaxMax": 8.0,
+    "WalkRunThreshold": 0.699999988079071,
+    "RunSpeedAltMin": 2.0,
+    "MaxAccelSpeed": 6.0,
+    "MaxAccelDelay": 0.10000000149011612,
+    "MaxAccelAccel": 20.0,
+    "MinLaunchSpeed": 0.0,
+    "MaxLaunchSpeed": -1.0
+   }
+  },
+  "SprintJumpSpeed": {
+   "StandardData": {
+    "WalkSpeedMax": 3.0,
+    "RunSpeedMaxMin": 5.0,
+    "RunSpeedMaxMax": 10.0,
+    "WalkRunThreshold": 0.699999988079071,
+    "RunSpeedAltMin": 5.0,
+    "MaxAccelSpeed": 5.0,
+    "MaxAccelDelay": 0.5,
+    "MaxAccelAccel": -1.0,
+    "MinLaunchSpeed": 20.0,
+    "MaxLaunchSpeed": 30.0
+   }
+  },
+  "ParkourLaunchJumpSpeed": {
+   "StandardData": {
+    "WalkSpeedMax": 3.0,
+    "RunSpeedMaxMin": 5.0,
+    "RunSpeedMaxMax": 10.0,
+    "WalkRunThreshold": 0.699999988079071,
+    "RunSpeedAltMin": 5.0,
+    "MaxAccelSpeed": 5.0,
+    "MaxAccelDelay": 0.5,
+    "MaxAccelAccel": -1.0,
+    "MinLaunchSpeed": 14.0,
+    "MaxLaunchSpeed": 30.0
+   }
+  },
+  "SwingJumpSpeed": {
+   "StandardData": {
+    "WalkSpeedMax": 3.0,
+    "RunSpeedMaxMin": 14.0,
+    "RunSpeedMaxMax": 16.0,
+    "WalkRunThreshold": 0.699999988079071,
+    "RunSpeedAltMin": 2.0,
+    "MaxAccelSpeed": 6.0,
+    "MaxAccelDelay": 0.0,
+    "MaxAccelAccel": -1.0,
+    "MinLaunchSpeed": 0.0,
+    "MaxLaunchSpeed": -1.0
+   }
+  },
+  "WallGraspJumpSpeed": {
+   "StandardData": {
+    "WalkSpeedMax": 2.5,
+    "RunSpeedMaxMin": 4.0,
+    "RunSpeedMaxMax": 6.0,
+    "WalkRunThreshold": 0.699999988079071,
+    "RunSpeedAltMin": 2.0,
+    "MaxAccelSpeed": 4.0,
+    "MaxAccelDelay": 0.10000000149011612,
+    "MaxAccelAccel": 20.0,
+    "MinLaunchSpeed": 0.0,
+    "MaxLaunchSpeed": -1.0
+   }
+  },
+  "DiveJumpSpeed": {
+   "StandardData": {
+    "WalkSpeedMax": 3.0,
+    "RunSpeedMaxMin": 10.0,
+    "RunSpeedMaxMax": 15.0,
+    "WalkRunThreshold": 0.800000011920929,
+    "RunSpeedAltMin": 10.0,
+    "MaxAccelSpeed": 15.0,
+    "MaxAccelDelay": 0.0,
+    "MaxAccelAccel": -1.0,
+    "MinLaunchSpeed": 0.0,
+    "MaxLaunchSpeed": -1.0
+   }
+  },
+  "PerchJumpSpeed": {
+   "StandardData": {
+    "WalkSpeedMax": 2.5,
+    "RunSpeedMaxMin": 7.0,
+    "RunSpeedMaxMax": 7.0,
+    "WalkRunThreshold": 0.699999988079071,
+    "RunSpeedAltMin": 2.0,
+    "MaxAccelSpeed": 6.0,
+    "MaxAccelDelay": 0.10000000149011612,
+    "MaxAccelAccel": 20.0,
+    "MinLaunchSpeed": 0.0,
+    "MaxLaunchSpeed": -1.0
+   }
+  },
+  "AirFireSpeed": {
+   "StandardData": {
+    "WalkSpeedMax": 0.5,
+    "RunSpeedMaxMin": 1.0,
+    "RunSpeedMaxMax": 1.0,
+    "WalkRunThreshold": 0.699999988079071,
+    "RunSpeedAltMin": 1.0,
+    "MaxAccelSpeed": 6.0,
+    "MaxAccelDelay": 0.25,
+    "MaxAccelAccel": 20.0,
+    "MinLaunchSpeed": 0.0,
+    "MaxLaunchSpeed": -1.0
+   }
+  },
+  "RollLandLaunchSpeed": {
+   "StandardData": {
+    "WalkSpeedMax": 3.0,
+    "RunSpeedMaxMin": 14.0,
+    "RunSpeedMaxMax": 16.0,
+    "WalkRunThreshold": 0.699999988079071,
+    "RunSpeedAltMin": 2.0,
+    "MaxAccelSpeed": 6.0,
+    "MaxAccelDelay": 0.0,
+    "MaxAccelAccel": -1.0,
+    "MinLaunchSpeed": 20.0,
+    "MaxLaunchSpeed": 32.0
+   }
+  },
+  "DefaultDragProfile": {
+   "ProfileName": "Default",
+   "ForwardSpeedMin": 10.0,
+   "ForwardSpeedMax": 30.0,
+   "ForwardDragMin": 1.0,
+   "ForwardDragMax": 3.0,
+   "TurnDrag": 15.0,
+   "NoInputDrag": 7.0,
+   "ScaleStartTime": 0.0,
+   "ScaleMaxTime": 0.0,
+   "ScaleMaxFactor": 1.0,
+   "TurnBlendInStart": -1.0,
+   "TurnBlendInFinal": 0.0,
+   "ForwardTolerance": 0.8999999761581421
+  },
+  "DragProfileList": [
+   {
+    "ProfileName": "TraversalJumpDrag",
+    "ForwardSpeedMin": 28.0,
+    "ForwardSpeedMax": 36.0,
+    "ForwardDragMin": 2.0,
+    "ForwardDragMax": 10.0,
+    "TurnDrag": 12.0,
+    "NoInputDrag": 5.0,
+    "ScaleStartTime": 0.0,
+    "ScaleMaxTime": 0.25,
+    "ScaleMaxFactor": 0.6600000262260437,
+    "TurnBlendInStart": -1.0,
+    "TurnBlendInFinal": 0.0,
+    "ForwardTolerance": 0.8999999761581421
+   },
+   {
+    "ProfileName": "ZipJumpDrag",
+    "ForwardSpeedMin": 28.0,
+    "ForwardSpeedMax": 38.0,
+    "ForwardDragMin": 2.0,
+    "ForwardDragMax": 8.0,
+    "TurnDrag": 14.0,
+    "NoInputDrag": 5.0,
+    "ScaleStartTime": 0.0,
+    "ScaleMaxTime": 0.3499999940395355,
+    "ScaleMaxFactor": 0.5,
+    "TurnBlendInStart": 0.25,
+    "TurnBlendInFinal": 0.550000011920929,
+    "ForwardTolerance": 0.8999999761581421
+   },
+   {
+    "ProfileName": "AirFireDrag",
+    "ForwardSpeedMin": 20.0,
+    "ForwardSpeedMax": 38.0,
+    "ForwardDragMin": 16.0,
+    "ForwardDragMax": 22.0,
+    "TurnDrag": 22.0,
+    "NoInputDrag": 16.0,
+    "ScaleStartTime": 0.0,
+    "ScaleMaxTime": 0.0,
+    "ScaleMaxFactor": 1.0,
+    "TurnBlendInStart": -1.0,
+    "TurnBlendInFinal": 0.0,
+    "ForwardTolerance": 0.8999999761581421
+   }
+  ]
+ },
+ "FallDamage": {
+  "MinFallDamageHeight": 0.0,
+  "MaxFallDamageHeight": 0.0,
+  "MinFallDamage": 0.0,
+  "MaxFallDamage": 0.0
+ },
+ "SprintJumpMomentum": {
+  "BuildSpeed": 1.5,
+  "DecaySpeed": 7.0,
+  "TurnSpeedMin": 110.0,
+  "TurnSpeedMax": 180.0,
+  "JumpAngleMax": 20.0,
+  "JumpValueMax": 0.8500000238418579
+ },
+ "DiveImpact": {
+  "DiveImpactTime": 2.0
+ },
+ "SpeedFXData": {
+  "StageOneSpeed": 18.0,
+  "StageTwoSpeed": 30.0,
+  "MotionBlurBonusMaxSwing": 0.5,
+  "MotionBlurBonusMaxNonSwing": 0.10000000149011612,
+  "MotionBlurRampSpeedMin": 20.0,
+  "MotionBlurRampSpeedMax": 40.0,
+  "MotionBlurExposureScaleMax": 0.8999999761581421
+ }
+}

@@ -1,0 +1,13 @@
+{
+  "sedan": "environment/outsourcing/glassegg/manmade/os_sedan_01/os_sedan_01_static.model",
+  "taxi": "environment/outsourcing/dhruva/manmade/os_hybridtaxi_01/os_hybridtaxi_01.model",
+  "suv": "environment/outsourcing/glassegg/manmade/os_suv_01/os_suv_01.model",
+  "sza_mtg_window_v1_4x4": "environment/building_kits/midtown_glass_building/sza_mtg_window_v1_4x4/sza_mtg_window_v1_4x4.model",
+  "sza_mtg_window_v4_4x4": "environment/building_kits/midtown_glass_building/sza_mtg_window_v4_4x4/sza_mtg_window_v4_4x4.model",
+  "sza_mts_window_v1_4x4": "environment/building_kits/midtown_stone_building/sza_mts_window_v1_4x4/sza_mts_window_v1_4x4.model",
+  "sza_mtg_door_v1_1stfl_8x8": "environment/building_kits/midtown_glass_building/sza_mtg_door_v1_1stfl_8x8/sza_mtg_door_v1_1stfl_8x8.model",
+  "sza_mts_door_1stfl_8x8": "environment/building_kits/midtown_stone_building/sza_mts_door_1stfl_8x8/sza_mts_door_1stfl_8x8.model",
+  "sza_mtg_window_cap_v1_4x4": "environment/building_kits/midtown_glass_building/sza_mtg_window_cap_v1_4x4/sza_mtg_window_cap_v1_4x4.model",
+  "sza_mts_window_cap_v1_4x4": "environment/building_kits/midtown_stone_building/sza_mts_window_cap_v1_4x4/sza_mts_window_cap_v1_4x4.model",
+  "pp_skyscraper_ac_unit": "environment/props/manmade/global/pp_skyscraper_ac_unit/pp_skyscraper_ac_unit.model"
+}

@@ -1,0 +1,39 @@
+    Checking spiderman_bevy v0.1.0 (H:\SteamLibrary\steamapps\common\Marvel's Spider-Man Remastered\spiderman_bevy)
+warning: constant `DT` is never used
+ --> src\physics.rs:6:11
+  |
+6 | pub const DT: f32 = 1.0 / 120.0;
+  |           ^^
+  |
+  = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: method `contains` is never used
+  --> src\physics.rs:15:12
+   |
+12 | impl Tower {
+   | ---------- method in this implementation
+...
+15 |     pub fn contains(self, p: Vec3, margin: f32) -> bool {
+   |            ^^^^^^^^
+
+warning: fields `ideal_length` and `min_length` are never read
+  --> src\physics.rs:41:33
+   |
+38 | pub struct Tuning {
+   |            ------ fields in this struct
+...
+41 |     pub search_radius: f32, pub ideal_length: f32, pub min_length: f32, pub max_length: f32,
+   |                                 ^^^^^^^^^^^^           ^^^^^^^^^^
+   |
+   = note: `Tuning` has a derived impl for the trait `Clone`, but this is intentionally ignored during dead code analysis
+
+warning: field `hand` is never read
+  --> src\physics.rs:74:72
+   |
+74 | pub struct Rope { pub anchor: Vec3, pub length: f32, pub age: f32, pub hand: f32 }
+   |            ---- field in this struct                                   ^^^^
+   |
+   = note: `Rope` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
+
+warning: `spiderman_bevy` (bin "spiderman_bevy") generated 4 warnings
+    Finished `dev` profile [optimized + debuginfo] target(s) in 1.06s

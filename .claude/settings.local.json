@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem .. -Recurse -Depth 2 -Force -ErrorAction SilentlyContinue | Where-Object { $_.Name -match 'ark' } | Select-Object FullName; Get-ChildItem ..\\\\.claude -Recurse -Force | Select-Object FullName, Length; Get-ChildItem ..\\\\Rust_Rewrite -Force | Select-Object Mode, LastWriteTime, Name)"
+    ]
+  }
+}
