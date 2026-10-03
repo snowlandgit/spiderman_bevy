@@ -108,6 +108,10 @@ pub fn pose(hero: &Hero, timing: &ClipTiming) -> Pose {
                 };
                 seek = Some(hero.mode_age);
                 clip.into()
+            } else if let Some(z) = hero.point_zip {
+                // the zip to a point is this clip's own way (its root motion), so its time is the zip's
+                seek = Some(z.clip_time());
+                "web_zip_attach_fwd_spiderman".into()
             } else {
                 let intro = "web_zip_attach_short_fwd_spiderman";
                 if hero.mode_age < timing.duration(intro) {
@@ -187,6 +191,17 @@ pub fn pose(hero: &Hero, timing: &ClipTiming) -> Pose {
             } else {
                 looping = true;
                 "wall_run_up_spiderman".into()
+            }
+        }
+        Mode::Perch => {
+            // (the game's perch clips aren't in the character file: the landing, then standing)
+            let landing = "fall_toland_spiderman";
+            if hero.mode_age < timing.duration(landing) {
+                seek = Some(hero.mode_age);
+                landing.into()
+            } else {
+                looping = true;
+                "stand_idle_spiderman".into()
             }
         }
         Mode::Ground => {
@@ -319,7 +334,7 @@ impl Mixer {
             self.blend_duration = match mode {
                 Mode::Swing | Mode::Dive | Mode::Wall => tuning.swing_blend_seconds,
                 Mode::Zip => tuning.zip_blend_seconds,
-                Mode::Ground => tuning.ground_blend_seconds,
+                Mode::Ground | Mode::Perch => tuning.ground_blend_seconds,
                 Mode::Air if pose.clip.starts_with("fall_") => tuning.fall_blend_seconds,
                 Mode::Air => tuning.release_blend_seconds,
             };

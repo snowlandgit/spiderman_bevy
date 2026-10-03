@@ -168,7 +168,7 @@ pub fn env_of(fr: &Frame, dt: f32) -> Env {
         hero,
         cam: Rows::from_matrix(&fr.cam),
         mover_vel: fr.vel_before,
-        input: FrameInput { stick: fr.stick, swing_button: fr.swing_button, jump_pressed: fr.flags & 1 != 0, look: 0. },
+        input: FrameInput { stick: fr.stick, swing_button: fr.swing_button, jump_pressed: fr.flags & 1 != 0, jump_held: false, look: 0. },
     }
 }
 
@@ -426,12 +426,13 @@ pub fn air_of(b: &[u8], fall: bool) -> AirLocal {
     a.dive = bit(0x2da);
     a.b2db = bit(0x2db);
     a.b2dc = bit(0x2dc);
-    a.dive_amount = f(b, 0x2e0);
+    a.thrust_clock = f(b, 0x2e0);
     a.boost_speed = f(b, 0x2e4);
     a.boost_time = f(b, 0x2e8);
     a.boost_rate = f(b, 0x2ec);
     a.input_time = f(b, 0x2f0);
     a.input_out = f(b, 0x2f4);
+    a.thrust_held = bit(0x2f8);
     a.turn_side = bit(0x2f9);
     a.facing_blend = f(b, 0x2fc);
     if fall {
@@ -522,6 +523,8 @@ pub fn air_fields(p: &AirLocal, g: &AirLocal) -> Fields {
         ("early", bl(p.early), bl(g.early)),
         ("started", bl(p.started), bl(g.started)),
         ("thrust_done", bl(p.thrust_done), bl(g.thrust_done)),
+        ("thrust_clock", vec![p.thrust_clock], vec![g.thrust_clock]),
+        ("thrust_time", vec![p.thrust_time], vec![g.thrust_time]),
         ("dive", bl(p.dive), bl(g.dive)),
         ("boost_speed", vec![p.boost_speed], vec![g.boost_speed]),
         ("boost_time", vec![p.boost_time], vec![g.boost_time]),

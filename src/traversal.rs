@@ -1,11 +1,12 @@
-//! The game's own swing, swing jump and fall driving the sandbox hero. `crates/sm_traversal` ports them from the
-//! installed Spider-Man.exe and is checked against the game's code running offline (tools/native_oracle). This module
-//! supplies what the game's world would: the swing point (the game's hunter needs New York's swing hint volumes, so
-//! points come from a fan of rays over the towers, as ArkWeb finds them, scored by where the game's own anchors sat in
-//! recorded swinging), the inputs, and collisions. Ground movement, wall runs, zips, charged jumps and the dive stay
-//! the sandbox's.
-use crate::physics::{Tower, ray_box};
+//! The game's own swing, swing jump, fall and launches driving the sandbox hero. `crates/sm_traversal` ports them
+//! from the installed Spider-Man.exe and is checked against the game's code running offline (tools/native_oracle).
+//! This module supplies what the game's world would: the swing point (the game's hunter needs New York's swing hint
+//! volumes, so points come from a fan of rays over the world, buildings and imported objects alike, as ArkWeb finds
+//! them, scored by where the game's own anchors sat in recorded swinging), the inputs, and collisions. Ground
+//! movement, wall runs, the forward zip, charged jumps and the dive stay the sandbox's.
+use crate::world::World;
 use bevy::prelude::*;
+use sm_traversal::air::AirEntry;
 use sm_traversal::config::Configs;
 use sm_traversal::math::{Rows, V3};
 use sm_traversal::sim::{self, StepInput, Traversal};
@@ -20,7 +21,7 @@ pub fn vec3(v: V3) -> Vec3 {
 }
 
 /// The native configs (assets/tuning/native, exported from the user's game), shared
-fn configs() -> Arc<Configs> {
+pub fn configs() -> Arc<Configs> {
     static CFG: OnceLock<Arc<Configs>> = OnceLock::new();
     CFG.get_or_init(|| Arc::new(Configs::embedded())).clone()
 }
@@ -51,23 +52,9 @@ fn score(attach: Vec3, hero: Vec3, heading: Vec3) -> Option<f32> {
     Some(-((d.y - 18.) / 10.).powi(2) - ((flat - 32.) / 15.).powi(2) - (a / 45.).powi(2))
 }
 
-/// The outward normal of the box face `p` lies on
-fn face_normal(t: Tower, p: Vec3) -> Vec3 {
-    let (lo, hi) = (t.min(), t.max());
-    let faces = [
-        ((p.x - lo.x).abs(), Vec3::NEG_X),
-        ((hi.x - p.x).abs(), Vec3::X),
-        ((p.y - lo.y).abs(), Vec3::NEG_Y),
-        ((hi.y - p.y).abs(), Vec3::Y),
-        ((p.z - lo.z).abs(), Vec3::NEG_Z),
-        ((hi.z - p.z).abs(), Vec3::Z),
-    ];
-    faces.iter().min_by(|a, b| a.0.total_cmp(&b.0)).unwrap().1
-}
-
 /// The best swing point in a 7 x 7 fan of rays ahead of his heading (his travel, else the camera, turned toward the
 /// stick), 22 to 70 degrees up and 50 to either side, 70 m long (ArkWeb native.h AnchorRay / ScanStep)
-pub fn find_swing_point(pos: Vec3, velocity: Vec3, stick: Vec3, camera_forward: Vec3, towers: &[Tower]) -> Option<SwingPoint> {
+pub fn find_swing_point(pos: Vec3, velocity: Vec3, stick: Vec3, camera_forward: Vec3, world: &World) -> Option<SwingPoint> {
     const ELEVATION: [f32; 7] = [30., 22., 38., 46., 54., 62., 70.];
     const AZIMUTH: [f32; 7] = [0., -15., 15., -30., 30., -50., 50.];
     let mut heading = velocity.with_y(0.);
@@ -89,17 +76,13 @@ pub fn find_swing_point(pos: Vec3, velocity: Vec3, stick: Vec3, camera_forward: 
             let h = Quat::from_rotation_y(az.to_radians()) * heading;
             let e = el.to_radians();
             let dir = (h * e.cos() + Vec3::Y * e.sin()).normalize();
-            let hit = towers
-                .iter()
-                .filter_map(|t| ray_box(start, dir, *t, 70.).filter(|d| *d > 0.).map(|d| (d, *t)))
-                .min_by(|a, b| a.0.total_cmp(&b.0));
-            let Some((d, tower)) = hit else { continue };
-            let attach = start + dir * d;
+            let Some(hit) = world.raycast(start, dir, 70.).filter(|h| h.t > 0.) else { continue };
+            let attach = hit.point;
             let Some(s) = score(attach, pos, heading) else { continue };
             if best.is_some_and(|b| b.score >= s) {
                 continue;
             }
-            let n = face_normal(tower, attach);
+            let n = hit.normal;
             let mut anchor = attach;
             if n.y.abs() <= 0.85 {
                 let flat = (attach - pos).with_y(0.).length();
@@ -111,18 +94,6 @@ pub fn find_swing_point(pos: Vec3, velocity: Vec3, stick: Vec3, camera_forward: 
     best
 }
 
-/// The floor under him (a tower top or the street), for the height above ground the states read
-pub fn ground_below(pos: Vec3, towers: &[Tower]) -> f32 {
-    towers
-        .iter()
-        .filter(|t| {
-            let (lo, hi) = (t.min(), t.max());
-            pos.x >= lo.x && pos.x <= hi.x && pos.z >= lo.z && pos.z <= hi.z && hi.y <= pos.y
-        })
-        .map(|t| t.max().y)
-        .fold(0., f32::max)
-}
-
 /// The hero's traversal state machine and what the sandbox keeps beside it
 #[derive(Clone)]
 pub struct Native {
@@ -131,6 +102,8 @@ pub struct Native {
     pub attach: Vec3,
     /// a swing to start on the next step
     pending: Option<SwingPoint>,
+    /// a launch to enter on the next step (the point launch, the jump off a perch: the game's jump state)
+    launch: Option<AirEntry>,
     /// seconds since the jump button's press (the swing's release event is buffered 0.05 s)
     pub jump_age: f32,
 }
@@ -141,6 +114,7 @@ impl Default for Native {
             trav: Traversal::new(configs(), V3::ZERO, V3::ZERO, V3::new(0., 0., -1.)),
             attach: Vec3::ZERO,
             pending: None,
+            launch: None,
             jump_age: 99.,
         }
     }
@@ -154,7 +128,7 @@ pub struct NativeFrame {
 
 impl Native {
     pub fn active(&self) -> bool {
-        self.trav.mode != sim::Mode::Off || self.pending.is_some()
+        self.trav.mode != sim::Mode::Off || self.pending.is_some() || self.launch.is_some()
     }
     pub fn swinging(&self) -> bool {
         self.trav.mode == sim::Mode::Swing || self.pending.is_some()
@@ -193,7 +167,13 @@ impl Native {
         }
     }
     pub fn start_swing(&mut self, point: SwingPoint) {
+        self.launch = None;
         self.pending = Some(point);
+    }
+    /// The game's jump state with this data from the next step (sync his motion first)
+    pub fn launch(&mut self, e: AirEntry) {
+        self.pending = None;
+        self.launch = Some(e);
     }
     pub fn start_fall(&mut self, dt: f32) {
         self.pending = None;
@@ -202,6 +182,7 @@ impl Native {
     /// Leave the native states (landing, a wall, a zip, the sandbox's dive)
     pub fn stop(&mut self, dt: f32) {
         self.pending = None;
+        self.launch = None;
         if self.trav.mode == sim::Mode::Swing {
             self.trav.cancel_swing(dt);
         } else {
@@ -217,7 +198,7 @@ impl Native {
 
     /// One frame of the game's states: returns the move to make. Call `moved` with where he ended up.
     #[allow(clippy::too_many_arguments)]
-    pub fn step(&mut self, stick: Vec2, swing_held: bool, jump_pressed: bool, cam_forward: Vec3, cam_right: Vec3, height: f32, dt: f32) -> (Vec3, NativeFrame) {
+    pub fn step(&mut self, stick: Vec2, swing_held: bool, jump_pressed: bool, jump_held: bool, cam_forward: Vec3, cam_right: Vec3, height: f32, dt: f32) -> (Vec3, NativeFrame) {
         if jump_pressed {
             self.jump_age = 0.;
         } else {
@@ -229,13 +210,15 @@ impl Native {
         let up = (-side).cross(fwd).normalize_or(Vec3::Y);
         let cam = Rows { side: v3(side), up: v3(up), fwd: v3(fwd), pos: self.trav.pos };
         let mut si = StepInput {
-            input: FrameInput { stick: [stick.x, stick.y], swing_button: if swing_held { 1. } else { 0. }, jump_pressed: self.jump_age < 0.05, look: 0. },
+            input: FrameInput { stick: [stick.x, stick.y], swing_button: if swing_held { 1. } else { 0. }, jump_pressed: self.jump_age < 0.05, jump_held, look: 0. },
             cam,
             drift: true,
             height,
             ..Default::default()
         };
-        if let Some(p) = self.pending.take() {
+        if let Some(e) = self.launch.take() {
+            si.air = Some((e, false));
+        } else if let Some(p) = self.pending.take() {
             si.swing = Some(SwingEntry::new(v3(p.anchor), v3(p.attach)));
             self.attach = p.attach;
         }
@@ -253,11 +236,11 @@ impl Native {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::physics::FOOT;
+    use crate::physics::{FOOT, Tower};
     #[test]
     fn swing_point_sits_ahead_and_up_with_the_pivot_off_the_wall() {
         // a long facade to his right, along his travel
-        let towers = [Tower { center: Vec3::new(14., 45., -40.), half: Vec3::new(4., 45., 40.) }];
+        let towers = World::boxes(&[Tower { center: Vec3::new(14., 45., -40.), half: Vec3::new(4., 45., 40.) }]);
         let pos = Vec3::new(0., 30., 0.);
         let p = find_swing_point(pos, Vec3::NEG_Z * 25., Vec3::ZERO, Vec3::NEG_Z, &towers).expect("a point on the facade");
         let d = p.attach - pos;
@@ -269,17 +252,17 @@ mod tests {
     }
     #[test]
     fn nothing_behind_or_too_close() {
-        let towers = [Tower { center: Vec3::new(0., 45., 30.), half: Vec3::new(10., 45., 4.) }];
+        let towers = World::boxes(&[Tower { center: Vec3::new(0., 45., 30.), half: Vec3::new(10., 45., 4.) }]);
         assert!(find_swing_point(Vec3::new(0., 30., 0.), Vec3::NEG_Z * 25., Vec3::ZERO, Vec3::NEG_Z, &towers).is_none());
-        let near = [Tower { center: Vec3::new(0., 45., -8.), half: Vec3::new(10., 45., 2.) }];
+        let near = World::boxes(&[Tower { center: Vec3::new(0., 45., -8.), half: Vec3::new(10., 45., 2.) }]);
         assert!(find_swing_point(Vec3::new(0., 30., 0.), Vec3::NEG_Z * 25., Vec3::ZERO, Vec3::NEG_Z, &near).is_none());
     }
     #[test]
     fn a_swing_carries_him_forward_and_releases_into_the_air() {
-        let towers = [
+        let towers = World::boxes(&[
             Tower { center: Vec3::new(14., 45., -60.), half: Vec3::new(4., 45., 80.) },
             Tower { center: Vec3::new(-14., 45., -60.), half: Vec3::new(4., 45., 80.) },
-        ];
+        ]);
         let mut n = Native::default();
         let dt = 1. / 60.;
         let mut pos = Vec3::new(0., 40., 0.);
@@ -290,8 +273,8 @@ mod tests {
         let mut released = None;
         for f in 0..240 {
             let jump = f == 80;
-            let h = pos.y - FOOT - ground_below(pos, &towers);
-            let (d, fr) = n.step(Vec2::Y, true, jump, Vec3::NEG_Z, Vec3::X, h, dt);
+            let h = pos.y - FOOT - towers.ground_below(pos);
+            let (d, fr) = n.step(Vec2::Y, true, jump, false, Vec3::NEG_Z, Vec3::X, h, dt);
             pos += d;
             n.moved(pos, true, dt);
             if let Some(r) = fr.released {

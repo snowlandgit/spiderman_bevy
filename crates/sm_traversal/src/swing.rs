@@ -16,6 +16,8 @@ pub struct FrameInput {
     pub swing_button: f32,
     /// the jump button pressed within the buffer window (0.05 s): the swing's release event
     pub jump_pressed: bool,
+    /// the jump button held (the jumps' button thrust, exe+a87b90)
+    pub jump_held: bool,
     /// |right stick x| (the camera's look input)
     pub look: f32,
 }

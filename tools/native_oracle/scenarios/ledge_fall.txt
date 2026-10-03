@@ -1,0 +1,11 @@
+# Walking off a ledge: the fall with no jump before it (kind 0x0b, second kind none), which reads SingleJumpConfig and
+# GroundJumpSpeed (exe+a87910, exe+a879d0); the stick to the side after 0.2 s
+dt 0.0166667
+frames 120
+pos 0 30 0
+vel 0 0 4
+yaw 0
+r2 0 0
+enter 0 fall 11 53 0 1 4 0 26 26 0
+stick 0.2 1 0
+cam follow 3 -12

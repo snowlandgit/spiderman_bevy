@@ -1,7 +1,8 @@
-# Native traversal: the game's swing, swing jump and fall
+# Native traversal: the game's swing, swing jump, fall and point launch
 
-The sandbox's swing, its release and the time in the air after it are now Spider-Man.exe 4.0630's own code, ported to Rust
-in `crates/sm_traversal` and checked against the executable running offline. This replaces the authored controller in
+The sandbox's swing, its release, the time in the air after it and the point launch are now Spider-Man.exe 4.0630's own
+code, ported to Rust in `crates/sm_traversal` and checked against the executable running offline. (The zip to a point
+and the point launch: [ZIP_TO_POINT.md](ZIP_TO_POINT.md).) This replaces the authored controller in
 CONTROLLER_REVISION.md, SWING_WEIGHT_REVISION.md, HEIGHT_CARRY_REVISION.md and AIR_CONTROL_REVISION.md. That controller
 used gravity floors of 44/52/64 m/s², a 4 m entry-drop cap, a 28 m/s driven speed target, a horizontal cap and its own
 release rules. Those documents describe what was replaced.
@@ -15,6 +16,9 @@ release rules. Those documents describe what was replaced.
 | The swing's exit on the tracker: speed blend, release momentum (SwingReleaseData) | aba8a0, ac1430, 861de0, 861290 | `SwingLocal::exit` |
 | The swing jump and the fall: entry, speeds (SwingJumpSpeed), target speed, drag (TraversalJumpDrag), steering, vertical with the apex gravity switch, facing toward the input over FacingToInputTime, the fall's gravity growth (+3 m/s per second up to 30), its momentum from falling fast (FallData) | a86490, a70080, a8d5b0, a88ec0, a87a70, a8b140, a8b1d0, a8b520, a8c7f0, a8c3c0, a8beb0, a706a0, a71a40 | `air.rs` |
 | The swing jump's hand-over to the fall (TryFall) | a87f10, a885c0, 96e580 | `AirLocal::check` |
+| The jump state's motion and speed data by kind (the swing jump, the point launch 0x2a, the jump off a perch 0x1d, a fall with no jump before it) | a87910, a879d0 | `air::motion_data`, `air::speed_data` |
+| The point launch: its direction, the press's boost, the exit data, the checks ahead | b1d640, b19fb0, b1d250, b1be00 | `point_launch.rs` |
+| The jump off a perch (the ground jump's numbers), the button thrust | 974c90, 868850, a87b90 | `AirEntry::ground_jump`, `AirLocal` |
 | The mover's turn toward the facing a state asks for (per-state springs) | 1fc0800 → 1c46be0 | `turn.rs` (ArkWeb turn.h) |
 | The frame: tracker, transition, update, move, turn | (the state machine) | `sim.rs` |
 
@@ -36,8 +40,11 @@ stand-ins (ArkWeb's research harness) and runs the game's own swing, swing jump 
 - `oracle_replay <scenario> <record>`: the port runs closed loop from the scenario's starting conditions alone. Its path
   stays within 0.8 to 3.2 cm of the game's over 4 to 7 seconds, every state change happens on the same frame, and the
   facing is within 0.1 degree.
+- Five more scenarios enter the jump state or the fall directly (the scenario key `enter`): the point launch three ways,
+  the jump off a perch, the fall from a ledge. Each of their 780 air frames is identical, and closed loop the port
+  follows the game's path exactly (see [ZIP_TO_POINT.md](ZIP_TO_POINT.md)).
 - `cargo test -p sm_traversal` runs the same closed-loop comparison against the game's paths kept in
-  `crates/sm_traversal/tests/fixtures`, so the check runs without the game.
+  `crates/sm_traversal/tests/fixtures` (all eleven scenarios), so the check runs without the game.
 
 The tools need the installed game and ArkWeb's harness (H:\arkre). The records are kept out of the project.
 
@@ -46,7 +53,8 @@ The tools need the installed game and ArkWeb's harness (H:\arkre). The records a
 `src/traversal.rs` stands in for the game's world:
 
 - **The swing point.** The game's hunter scores swing hint volumes placed over New York's buildings, and the sandbox has
-  none. Points come from ArkWeb's fan instead: 7 × 7 rays, 22 to 70 degrees up and up to 50 to either side of his
+  none. Points come from ArkWeb's fan instead, cast against the world (`src/world.rs`: the buildings' boxes and any
+  imported object's meshes): 7 × 7 rays, 22 to 70 degrees up and up to 50 to either side of his
   heading (his travel, else the camera, turned toward the stick), 70 m long. They are scored by where the game's own
   anchors sat in recorded swinging: best 18 m up and 32 m away, straight ahead. Points under 8 m up, nearer than 12 m or
   more than 80 degrees off are refused. The pivot is pushed out from a wall along its normal by 0.75 × the horizontal
@@ -85,5 +93,6 @@ The tools need the installed game and ArkWeb's harness (H:\arkre). The records a
 - Animation-driven jumps.
 - Spline and focus targets.
 - The game's dive. Ctrl / LT keeps the sandbox's dive, which leaves the native states.
+- The game's ground jumps and landings (the jump off a perch is the one ground jump ported).
 - The camera and animation hints the swing's exit leaves on the tracker.
 - Ground decay of momentum: the tracker always uses the air list, as tools/native_oracle runs it.

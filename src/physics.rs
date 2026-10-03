@@ -1,9 +1,14 @@
-//! Traversal simulation. The swing, the swing jump and the fall are the game's own (crates/sm_traversal, driven
-//! through crate::traversal); ground movement, wall runs, zips, charged jumps, the dive and collisions are this
-//! sandbox's.
+//! Traversal simulation. The swing, the swing jump, the fall and the point launch are the game's own
+//! (crates/sm_traversal, driven through crate::traversal); the zip to a point follows the game's zip animation
+//! (crate::point_zip); ground movement, wall runs, the forward web zip, charged jumps, the dive and collisions are this
+//! sandbox's. Everything here works against crate::world: the buildings' boxes and any imported object's triangles.
 use crate::native_swing::{pitch, remap};
-use crate::traversal::{self, Native, SwingPoint};
+use crate::point_zip::{self, Perched, PointZip};
+use crate::traversal::{self, Native, SwingPoint, v3, vec3};
+use crate::world::{WALKABLE, World};
 use bevy::prelude::*;
+use sm_traversal::air::{AirEntry, KIND_PERCH_JUMP};
+use sm_traversal::point_launch::{self, Exit, PRESS_BUFFER};
 use serde::Deserialize;
 use serde_json::Value;
 
@@ -30,21 +35,14 @@ impl Tower {
             && p.cmple(self.max() + Vec3::splat(margin)).all()
     }
 }
+/// The world the hero moves through. It starts with the buildings' authored boxes; the imported objects' triangles
+/// join once their meshes have loaded (main.rs, build_world).
 #[derive(Resource)]
-pub struct Arena(pub Vec<Tower>);
+pub struct Arena(pub World);
 impl Default for Arena {
     fn default() -> Self {
         // Collision and anchor envelopes follow the visible game-kit buildings.
-        Self(
-            crate::environment::layout()
-                .buildings
-                .into_iter()
-                .map(|building| Tower {
-                    center: Vec3::from_array(building.center),
-                    half: Vec3::from_array(building.half),
-                })
-                .collect(),
-        )
+        Self(World::boxes(&crate::environment::layout_towers()))
     }
 }
 
@@ -92,6 +90,8 @@ pub enum Mode {
     Dive,
     Wall,
     Zip,
+    /// on a point after a zip to it
+    Perch,
 }
 impl Mode {
     pub fn label(self) -> &'static str {
@@ -102,6 +102,7 @@ impl Mode {
             Self::Dive => "DIVE",
             Self::Wall => "WALL RUN",
             Self::Zip => "WEB ZIP",
+            Self::Perch => "PERCH",
         }
     }
 }
@@ -134,8 +135,16 @@ pub struct Hero {
     pub jump_buffer: f32,
     pub coyote: f32,
     pub cooldown: f32,
-    pub zip_target: Option<Vec3>,
     pub zip_motion: Option<crate::zip::ZipMotion>,
+    /// a zip to a point under way, and the perch it ends on
+    pub point_zip: Option<PointZip>,
+    pub perch: Option<Perched>,
+    /// seconds since the jump button's press
+    pub jump_age: f32,
+    /// point launches so far, and the last one's boost effect (0 none, 1 a press, 2 the full boost)
+    pub launches: u32,
+    pub launch_fx: u32,
+    pub since_launch: f32,
     pub zip_count: u32,
     pub zip_stage: u32,
     pub zip_cooldown: f32,
@@ -178,8 +187,13 @@ impl Default for Hero {
             jump_buffer: 0.,
             coyote: 0.,
             cooldown: 0.,
-            zip_target: None,
             zip_motion: None,
+            point_zip: None,
+            perch: None,
+            jump_age: 99.,
+            launches: 0,
+            launch_fx: 0,
+            since_launch: 999.,
             zip_count: 0,
             zip_stage: 0,
             zip_cooldown: 0.,
@@ -216,7 +230,11 @@ pub struct Intent {
     pub dive: bool,
     pub zip: bool,
     pub point_zip: bool,
+    /// the camera's forward and position (what the zip to a point aims with)
     pub aim: Vec3,
+    pub aim_origin: Vec3,
+    /// step off a perch (B / C)
+    pub drop: bool,
     pub reset: bool,
 }
 
@@ -290,17 +308,19 @@ impl Hero {
         self.swing_count += 1;
         self.swing_phase = 0.;
         self.set_mode(Mode::Swing);
-        self.zip_target = None;
+        self.point_zip = None;
+        self.perch = None;
         self.zip_motion = None;
         self.swing_left = (point.attach - self.pos).dot(side) < 0.;
     }
     /// A frame of the game's swing, swing jump or fall: its move, then collisions, then the mover's record of it
-    fn native_step(&mut self, input: Intent, towers: &[Tower], dt: f32) {
-        let height = self.pos.y - FOOT - traversal::ground_below(self.pos, towers);
+    fn native_step(&mut self, input: Intent, world: &World, dt: f32) {
+        let height = self.pos.y - FOOT - world.ground_below(self.pos);
         let (displacement, frame) = self.native.step(
             input.movement,
             input.swing,
             input.jump,
+            input.jump_held,
             input.forward,
             input.right,
             height,
@@ -320,7 +340,7 @@ impl Hero {
         }
         self.pos += displacement;
         self.velocity = displacement / dt;
-        self.collide(towers, input, dt);
+        self.collide(world, input, dt);
         let airborne = self.mode != Mode::Ground;
         self.native.moved(self.pos, airborne, dt);
         self.velocity = (self.pos - self.previous) / dt;
@@ -351,7 +371,7 @@ impl Hero {
             self.set_mode(Mode::Air);
         }
     }
-    pub fn step(&mut self, input: Intent, towers: &[Tower], tuning: &Tuning, dt: f32) {
+    pub fn step(&mut self, input: Intent, world: &World, tuning: &Tuning, dt: f32) {
         if input.reset {
             *self = Self::default();
             return;
@@ -370,6 +390,8 @@ impl Hero {
         self.last_swing += dt;
         self.last_zip += dt;
         self.last_ground_jump += dt;
+        self.jump_age = if input.jump { 0. } else { self.jump_age + dt };
+        self.since_launch += dt;
         self.zip_cooldown = (self.zip_cooldown - dt).max(0.);
         self.cooldown = (self.cooldown - dt).max(0.);
         self.coyote = (self.coyote - dt).max(0.);
@@ -397,7 +419,8 @@ impl Hero {
                 }
             }
         }
-        if wish.length_squared() > 0.1 && !self.native.active() {
+        let placed = self.point_zip.is_some() || self.perch.is_some();
+        if wish.length_squared() > 0.1 && !self.native.active() && !placed {
             self.heading = self
                 .heading
                 .lerp(wish, 1. - (-8. * dt).exp())
@@ -421,11 +444,14 @@ impl Hero {
         } else if self.mode == Mode::Ground && self.jump_buffer > 0. {
             self.launch_ground_jump(0., wish, &tuning.jump);
         }
-        if input.dive && self.mode == Mode::Zip && !self.zip_motion.is_some_and(|zip| zip.from_dive)
-        {
+        if input.dive && self.zip_motion.is_some_and(|zip| !zip.from_dive) {
             self.zip_motion = None;
-            self.zip_target = None;
             self.set_mode(Mode::Dive);
+        }
+        // the drop button lets go of a zip to a point (he falls on)
+        if input.drop && self.point_zip.is_some() {
+            self.point_zip = None;
+            self.set_mode(Mode::Air);
         }
         if input.zip && self.zip_cooldown <= 0. && self.mode != Mode::Zip {
             let forward = if input.forward.with_y(0.).length_squared() > 0.1 {
@@ -433,7 +459,7 @@ impl Hero {
             } else {
                 self.heading
             };
-            let anchors = crate::zip::anchors_for(self.pos, forward, towers);
+            let anchors = crate::zip::anchors_for(self.pos, forward, world);
             if anchors.iter().any(Option::is_some) {
                 let ground = self.mode == Mode::Ground;
                 let stage = if self.last_zip <= 1.25 {
@@ -451,7 +477,8 @@ impl Hero {
                 );
                 self.rope = None;
                 self.native.stop(dt);
-                self.zip_target = None;
+                self.point_zip = None;
+                self.perch = None;
                 self.zip_motion = Some(motion);
                 self.zip_count += 1;
                 self.zip_stage = stage;
@@ -462,21 +489,23 @@ impl Hero {
                 self.mode_age = 0.;
             }
         }
-        if input.point_zip && self.zip_cooldown <= 0. && self.mode != Mode::Zip {
-            let aim = if input.aim.length_squared() > 0.1 {
-                input.aim
-            } else {
-                self.heading
-            };
-            if let Some(target) = crate::zip::perch_for(self.pos, aim, towers) {
+        // the zip to a point: from the ground, the air, a swing or a perch (on to the next point)
+        if input.point_zip && self.zip_cooldown <= 0. && self.point_zip.is_none() {
+            let aim = if input.aim.length_squared() > 0.1 { input.aim } else { self.heading };
+            let eye = if input.aim_origin == Vec3::ZERO { self.pos + Vec3::Y * 0.6 } else { input.aim_origin };
+            let here = self.perch.map(|p| p.zip.perch.feet);
+            let zip = point_zip::find(world, self.pos, eye, aim)
+                .filter(|p| here.is_none_or(|f| f.distance(p.feet) > 1.5))
+                .and_then(|p| PointZip::start(self.pos, p));
+            if let Some(z) = zip {
                 self.rope = None;
                 self.native.stop(dt);
                 self.zip_motion = None;
-                self.zip_target = Some(target);
-                self.heading = (target - self.pos).with_y(0.).normalize_or_zero();
+                self.perch = None;
+                self.point_zip = Some(z);
+                self.heading = z.fwd;
                 self.zip_count += 1;
-                self.zip_cooldown = 1.25;
-                self.cooldown = 1.25;
+                self.zip_cooldown = 0.25;
                 self.set_mode(Mode::Zip);
                 self.mode_age = 0.;
             }
@@ -485,7 +514,7 @@ impl Hero {
             && !input.dive
             && self.rope.is_none()
             && !self.native.swinging()
-            && !matches!(self.mode, Mode::Wall | Mode::Ground | Mode::Zip)
+            && !matches!(self.mode, Mode::Wall | Mode::Ground | Mode::Zip | Mode::Perch)
             && self.cooldown <= 0.
             && self.pos.y > 3.
             && (self.swing_request > 0.
@@ -493,7 +522,7 @@ impl Hero {
                 || (self.swing_count == 0 && self.last_ground_jump > 3.))
         {
             if let Some(point) =
-                traversal::find_swing_point(self.pos, self.velocity, wish, input.forward, towers)
+                traversal::find_swing_point(self.pos, self.velocity, wish, input.forward, world)
             {
                 self.native_attach(point);
             }
@@ -504,13 +533,22 @@ impl Hero {
             && !input.dive
             && self.velocity.y <= 0.
             && self.zip_motion.is_none()
-            && self.zip_target.is_none()
+            && self.point_zip.is_none()
+            && self.perch.is_none()
         {
             self.native.sync(self.pos, self.velocity, self.heading, true);
             self.native.start_fall(dt);
         }
+        // the zip to a point and the perch place him themselves; a launch from either hands him to the game's jump
+        if self.point_zip.is_some() {
+            self.point_zip_step(input, world, dt);
+        } else if self.perch.is_some() {
+            self.perch_step(input, world, dt);
+        }
+        let placed = self.point_zip.is_some() || self.perch.is_some();
         let mut native_moved = false;
-        if let Some(mut zip) = self.zip_motion {
+        if placed {
+        } else if let Some(mut zip) = self.zip_motion {
             if self.mode_age >= 0.18 && !zip.kicked {
                 let horizontal = self.velocity.with_y(0.);
                 let sideways = horizontal - zip.direction * horizontal.dot(zip.direction);
@@ -542,30 +580,8 @@ impl Hero {
                 self.boosted_release = false;
                 self.set_mode(Mode::Air);
             }
-        } else if let Some(target) = self.zip_target {
-            let delta = target - self.pos;
-            let distance = delta.length();
-            if distance <= 1. || distance <= self.velocity.length() * dt {
-                self.pos = target;
-                self.previous = target;
-                self.zip_target = None;
-                self.velocity = Vec3::ZERO;
-                self.last_zip = 0.;
-                self.last_swing = 999.;
-                self.set_mode(Mode::Ground);
-            } else if self.mode_age > 3. {
-                self.zip_target = None;
-                self.set_mode(Mode::Air);
-            } else if self.mode_age >= 0.25 {
-                let speed = (distance * 6.).min(42.).max(4.);
-                self.velocity = self
-                    .velocity
-                    .lerp(delta / distance * speed, 1. - (-18. * dt).exp());
-            } else {
-                self.velocity *= (-8. * dt).exp();
-            }
         } else if self.native.active() {
-            self.native_step(input, towers, dt);
+            self.native_step(input, world, dt);
             native_moved = true;
         } else if self.mode == Mode::Ground {
             let target = wish * 10.5;
@@ -605,15 +621,20 @@ impl Hero {
                 self.velocity += self.heading * 6. * dt;
             }
         }
-        if !native_moved {
+        if placed {
+            // the game's tracker runs every frame (momentum decays, the swing setups blend)
+            let height = self.pos.y - FOOT - world.ground_below(self.pos);
+            self.native.idle(self.velocity, true, height, dt);
+            self.native.sync(self.pos, self.velocity, self.heading, true);
+        } else if !native_moved {
             self.velocity = self.velocity.clamp_length_max(tuning.pure_max);
             if self.rope.is_none() {
                 self.pos += self.velocity * dt;
             }
-            self.collide(towers, input, dt);
+            self.collide(world, input, dt);
             // the game's tracker runs every frame (momentum decays, the swing setups blend)
             let airborne = self.mode != Mode::Ground;
-            let height = self.pos.y - FOOT - traversal::ground_below(self.pos, towers);
+            let height = self.pos.y - FOOT - world.ground_below(self.pos);
             self.native.idle(self.velocity, airborne, height, dt);
             self.native.sync(self.pos, self.velocity, self.heading, airborne);
         }
@@ -634,10 +655,151 @@ impl Hero {
             *self = Self::default();
         }
     }
-    fn collide(&mut self, towers: &[Tower], input: Intent, dt: f32) {
+
+    /// The stick in the world, level, and how far it is pushed (exe+b7e920 as the launch reads it)
+    fn stick_world(input: Intent) -> (Vec3, f32) {
+        let amount = input.movement.length().min(1.);
+        let dir = (input.forward * input.movement.y + input.right * input.movement.x)
+            .with_y(0.)
+            .normalize_or_zero();
+        (dir, if dir == Vec3::ZERO { 0. } else { amount })
+    }
+
+    /// A frame of the zip to a point: along the clip's way, warped onto the point. A jump press starts the launch's
+    /// clock; at the end he launches (with a press) or perches.
+    fn point_zip_step(&mut self, input: Intent, world: &World, dt: f32) {
+        let Some(mut z) = self.point_zip else { return };
+        // the press's clock (exe+b1d640): from a press (buffered 0.1 s) until the launch
+        z.press = match z.press {
+            Some(c) => Some(c + dt),
+            None if self.jump_age < PRESS_BUFFER => Some(0.),
+            None => None,
+        };
+        // the end of the zip: the stick sets the launch's way (exe+b1d640)
+        if z.remaining() <= point_zip::ARRIVAL_WINDOW {
+            let cfgs = traversal::configs();
+            let cfg = &cfgs.traversal.point_launch_config;
+            let (stick, amount) = Self::stick_world(input);
+            let (dir, amount) = point_launch::exit_direction(cfg, v3(z.fwd), v3(z.launch_dir), v3(stick), amount);
+            (z.launch_dir, z.amount) = (vec3(dir), amount);
+        }
+        let before = self.pos;
+        z.elapsed += dt;
+        let next = z.position();
+        let d = next - before;
+        let len = d.length();
+        // something in the way (short of the point): the zip ends where he is
+        let blocked = len > 1e-5
+            && next.distance(z.target) > 0.5
+            && world
+                .sphere_cast(before, d / len, point_zip::SWEEP_RADIUS, len)
+                .is_some_and(|h| h.t > 0. || h.normal.dot(d) < 0.);
+        if blocked {
+            self.point_zip = None;
+            if z.press.is_some() {
+                self.point_launch(z, input, world);
+            } else {
+                self.set_mode(Mode::Air);
+            }
+            return;
+        }
+        self.pos = next;
+        self.velocity = d / dt;
+        self.heading = z.fwd;
+        if !z.arrived() {
+            self.point_zip = Some(z);
+            return;
+        }
+        self.pos = z.target;
+        self.point_zip = None;
+        self.last_zip = 0.;
+        if z.press.is_some() {
+            self.point_launch(z, input, world);
+        } else {
+            self.perch = Some(Perched { zip: z, age: 0. });
+            self.velocity = Vec3::ZERO;
+            self.set_mode(Mode::Perch);
+        }
+    }
+
+    /// The point launch (the game's: sm_traversal::point_launch), into the game's jump state on the next native step
+    fn point_launch(&mut self, z: PointZip, input: Intent, world: &World) {
+        let cfgs = traversal::configs();
+        let cfg = &cfgs.traversal.point_launch_config;
+        let (stick, amount) = Self::stick_world(input);
+        let (dir, amount) = point_launch::exit_direction(cfg, v3(z.fwd), v3(z.launch_dir), v3(stick), amount);
+        let probes = point_zip::probes(world, self.pos - Vec3::Y * FOOT, vec3(dir));
+        let launch = point_launch::launch(cfg, Exit::Point, dir, amount, z.press, &probes);
+        // the launch's move starts here (the zip's last move is done)
+        self.previous = self.pos;
+        self.native.sync(self.pos, self.velocity, z.fwd, true);
+        self.native.launch(launch.entry());
+        self.point_zip = None;
+        self.perch = None;
+        self.rope = None;
+        self.launches += 1;
+        self.launch_fx = launch.fx;
+        self.since_launch = 0.;
+        // the release poses carry the launch
+        self.last_swing = 0.;
+        self.boosted_release = true;
+        self.release_angle = pitch(vec3(launch.velocity));
+        self.release_variant = (self.zip_count as usize) % 5;
+        self.jump_buffer = 0.;
+        self.cooldown = 0.2;
+        self.set_mode(Mode::Air);
+    }
+
+    /// A frame perched: held on the point facing along the zip. A jump press on arrival still launches; after it, A
+    /// jumps off (the game's jump off a perch), the drop button steps off the edge, the stick stands him up.
+    fn perch_step(&mut self, input: Intent, world: &World, dt: f32) {
+        let Some(mut p) = self.perch else { return };
+        p.age += dt;
+        let z = p.zip;
+        self.pos = z.target;
+        self.velocity = Vec3::ZERO;
+        self.heading = z.fwd;
+        if input.jump && p.age <= point_zip::ARRIVAL_WINDOW {
+            let mut z = z;
+            z.press = Some(0.);
+            self.point_launch(z, input, world);
+            return;
+        }
+        if input.jump {
+            let (stick, amount) = Self::stick_world(input);
+            let dir = if amount > 0.04 { stick } else { z.fwd };
+            let cfg = traversal::configs();
+            let fall_gravity = self.native.trav.tracker.fall_gravity;
+            let e = AirEntry::ground_jump(&cfg, KIND_PERCH_JUMP, v3(dir), 0., amount, fall_gravity);
+            self.previous = self.pos;
+            self.native.sync(self.pos, Vec3::ZERO, self.heading, true);
+            self.native.launch(e);
+            self.perch = None;
+            self.last_ground_jump = 0.;
+            self.ground_jump_kind = crate::jump::JumpKind::Normal;
+            self.jump_buffer = 0.;
+            self.set_mode(Mode::Air);
+            return;
+        }
+        if input.drop {
+            self.pos = z.target + z.perch.out * 0.9;
+            self.previous = self.pos;
+            self.perch = None;
+            self.set_mode(Mode::Air);
+            return;
+        }
+        if input.movement.length() > 0.5 {
+            self.perch = None;
+            self.set_mode(Mode::Ground);
+            return;
+        }
+        self.perch = Some(p);
+    }
+
+    fn collide(&mut self, world: &World, input: Intent, dt: f32) {
         let mut floor = FOOT;
         self.wall_normal = Vec3::ZERO;
-        for tower in towers {
+        for tower in &world.towers {
             let lo = tower.min();
             let hi = tower.max();
             if self.pos.x >= lo.x - RADIUS
@@ -691,6 +853,9 @@ impl Hero {
                 }
             }
         }
+        if world.has_mesh() {
+            self.collide_mesh(world, input, &mut floor);
+        }
         if self.pos.y <= floor && self.velocity.y <= 0. {
             if self.mode != Mode::Ground {
                 self.airborne_before_landing = self.airborne;
@@ -700,7 +865,6 @@ impl Hero {
             let charging_zip = self.zip_motion.is_some_and(|z| z.from_ground && !z.kicked);
             if !charging_zip {
                 self.rope = None;
-                self.zip_target = None;
                 self.zip_motion = None;
                 self.set_mode(Mode::Ground);
                 self.coyote = 0.12;
@@ -712,6 +876,72 @@ impl Hero {
         if self.mode == Mode::Wall && self.wall_normal == Vec3::ZERO {
             self.velocity.y -= 24. * dt;
             self.set_mode(Mode::Air);
+        }
+    }
+
+    /// Collisions with the imported objects' triangles: what he moved through this step, the floor under him, and the
+    /// walls his body overlaps (pushed out level; with the swing button held, a wall run as on the buildings)
+    fn collide_mesh(&mut self, world: &World, input: Intent, floor: &mut f32) {
+        let d = self.pos - self.previous;
+        let len = d.length();
+        if len > 0.2 {
+            if let Some(h) = world.mesh_cast(self.previous, d / len, 0.3, len).filter(|h| h.t > 0. && h.normal.dot(d) < 0.) {
+                self.pos = self.previous + d / len * (h.t - 0.01).max(0.);
+                let inward = self.velocity.dot(h.normal);
+                if inward < 0. {
+                    self.velocity -= h.normal * inward;
+                }
+            }
+        }
+        // the floor: what is under his feet, from a step up (0.45 m) above them, and a little below while he walks
+        if self.velocity.y <= 0. {
+            let top = self.previous.y.max(self.pos.y) - FOOT + 0.45;
+            let reach = top - (self.pos.y - FOOT) + if self.mode == Mode::Ground { 0.35 } else { 0.02 };
+            if let Some(h) = world.mesh_floor(Vec3::new(self.pos.x, top, self.pos.z), reach) {
+                *floor = floor.max(h.point.y + FOOT);
+            }
+        }
+        let margin = if self.mode == Mode::Wall && input.swing { 0.03 } else { 0. };
+        let feet = self.pos.y - FOOT;
+        for oy in [-0.45f32, 0., 0.45] {
+            let c = self.pos + Vec3::Y * oy;
+            let mut push = Vec3::ZERO;
+            let mut touch = Vec3::ZERO;
+            world.mesh_contacts(c, RADIUS + margin, |q, n| {
+                // what he stands on is the floor's
+                if n.y.abs() >= WALKABLE && q.y <= feet + 0.5 {
+                    return;
+                }
+                let dy = c.y - q.y;
+                let h = (c - q).with_y(0.);
+                let l = h.length();
+                if l < 1e-4 || dy.abs() >= RADIUS + margin {
+                    return;
+                }
+                let dir = h / l;
+                touch = dir;
+                if dy.abs() < RADIUS {
+                    let need = (RADIUS * RADIUS - dy * dy).sqrt() - l;
+                    if need > push.length() {
+                        push = dir * need;
+                    }
+                }
+            });
+            if push != Vec3::ZERO {
+                let n = push.normalize();
+                self.pos += push + n * 0.005;
+                let inward = self.velocity.dot(n);
+                if inward < 0. {
+                    self.velocity -= n * inward;
+                }
+                touch = n;
+            }
+            if touch != Vec3::ZERO && input.swing && self.pos.y > 2. && self.cooldown <= 0. {
+                self.rope = None;
+                self.wall_normal = touch;
+                self.set_mode(Mode::Wall);
+                self.velocity.y = self.velocity.y.max(14.);
+            }
         }
     }
 }
@@ -738,14 +968,16 @@ mod tests {
             ..default()
         }
     }
-    fn direction_fixture() -> Vec<Tower> {
-        [Vec3::NEG_Z, Vec3::Z, Vec3::X, Vec3::NEG_X]
-            .into_iter()
-            .map(|direction| Tower {
-                center: direction * 24. + Vec3::Y * 45.,
-                half: Vec3::new(4., 45., 4.),
-            })
-            .collect()
+    fn direction_fixture() -> World {
+        World::boxes(
+            &[Vec3::NEG_Z, Vec3::Z, Vec3::X, Vec3::NEG_X]
+                .into_iter()
+                .map(|direction| Tower {
+                    center: direction * 24. + Vec3::Y * 45.,
+                    half: Vec3::new(4., 45., 4.),
+                })
+                .collect::<Vec<_>>(),
+        )
     }
     #[test]
     fn moving_attachment_ignores_camera_and_opposite_steering() {
@@ -914,7 +1146,7 @@ mod tests {
         h.velocity = Vec3::NEG_Z * 80.;
         for _ in 0..90 {
             h.step(Intent::default(), &arena.0, &t, DT);
-            assert!(arena.0.iter().all(|b| !b.contains(h.pos, -0.005)));
+            assert!(arena.0.towers.iter().all(|b| !b.contains(h.pos, -0.005)));
         }
     }
     #[test]
@@ -1051,7 +1283,7 @@ mod tests {
                 (p.attach - pos).with_y(0.).normalize().dot(direction) > 0.9,
                 "direction={direction:?}, point={p:?}"
             );
-            assert!(towers.iter().any(|t| t.contains(p.attach, 0.01)));
+            assert!(towers.towers.iter().any(|t| t.contains(p.attach, 0.01)));
             assert!(p.attach.y - pos.y >= 8.);
         }
     }
@@ -1066,10 +1298,10 @@ mod tests {
     #[test]
     fn buildings_behind_travel_get_no_web() {
         let t = Tuning::default();
-        let towers = [Tower {
+        let towers = World::boxes(&[Tower {
             center: Vec3::new(-24., 45., 0.),
             half: Vec3::new(4., 45., 4.),
-        }];
+        }]);
         let mut h = Hero::default();
         h.pos = Vec3::new(0., 18., 0.);
         h.velocity = Vec3::X * 24.;
@@ -1091,11 +1323,11 @@ mod tests {
     #[test]
     fn arena_offers_a_swing_point_from_the_start() {
         let arena = Arena::default();
-        assert_eq!(arena.0.len(), 7);
+        assert_eq!(arena.0.towers.len(), 7);
         let h = Hero::default();
         let p = traversal::find_swing_point(h.pos, h.velocity, Vec3::ZERO, Vec3::NEG_Z, &arena.0)
             .expect("initial swing point");
-        assert!(arena.0.iter().any(|b| b.contains(p.attach, 0.01)));
+        assert!(arena.0.towers.iter().any(|b| b.contains(p.attach, 0.01)));
         assert!(p.attach.y > h.pos.y + 8.);
     }
     #[test]
@@ -1127,8 +1359,8 @@ mod tests {
                 ..default()
             };
             for _ in 0..120 {
-                h.step(input, &[], &t, DT);
-                neutral.step(Intent::default(), &[], &t, DT);
+                h.step(input, &World::default(), &t, DT);
+                neutral.step(Intent::default(), &World::default(), &t, DT);
             }
             assert!(h.native.active() && h.mode == Mode::Air);
             assert!(h.velocity.x > 2., "no steering at {speed} m/s: {:?}", h.velocity);
@@ -1149,7 +1381,7 @@ mod tests {
             ..default()
         };
         for _ in 0..120 {
-            h.step(input, &[], &t, DT);
+            h.step(input, &World::default(), &t, DT);
         }
         assert!(h.velocity.x > 1. && h.pos.x > 0.5, "{:?}", h.velocity);
         // the game's fall gravity: 26 m/s^2, growing by 3 m/s per second
@@ -1162,7 +1394,7 @@ mod tests {
         let mut h = Hero::default();
         for _ in 0..1600 {
             h.step(forward_swing(), &a.0, &t, DT);
-            assert!(a.0.iter().all(|b| !b.contains(h.pos, -0.01)), "inside a tower at {:?}", h.pos);
+            assert!(a.0.towers.iter().all(|b| !b.contains(h.pos, -0.01)), "inside a tower at {:?}", h.pos);
         }
         assert!(h.swing_count >= 3, "{} swings", h.swing_count);
         assert!(h.pos.z < -120., "{:?}", h.pos);

@@ -1,0 +1,24 @@
+LookGroups:
+0 10
+
+Materials used:
+3	environment\outsourcing\dhruva\manmade\os_hvackit_01\os_hvackit_01_a\os_hvackit_01_decal.material
+1	environment\outsourcing\dhruva\manmade\os_hvackit_01\os_hvackit_01_a\os_hvackit_01_hvac.material
+1	environment\outsourcing\dhruva\manmade\os_hvackit_01\os_hvackit_01_a\os_hvackit_01_hvac.material
+4	environment\outsourcing\dhruva\manmade\os_hvackit\Materials\os_hvackit_01_metal.material
+4	environment\outsourcing\dhruva\manmade\os_hvackit\Materials\os_hvackit_01_metal.material
+2	environment\outsourcing\dhruva\manmade\os_hvackit\materials\os_hvackit_02_bake_01.material
+6	environment\outsourcing\dhruva\manmade\os_hvackit\materials\os_hvackit_02_bake_02.material
+6	environment\outsourcing\dhruva\manmade\os_hvackit\materials\os_hvackit_02_bake_02.material
+5	environment\outsourcing\dhruva\manmade\os_hvackit\materials\os_hvackit_02_bake_03.material
+0	material\environment\template\architecture\gbl_arch_concrete_trim_02\rv_gbl_arch_painted_rusted_metal_trim_white.material
+
+Slots:
+===============================================================
+0	material\environment\template\architecture\gbl_arch_concrete_trim_02\rv_gbl_arch_painted_rusted_metal_trim_white.material
+1	environment\outsourcing\dhruva\manmade\os_hvackit_01\os_hvackit_01_a\os_hvackit_01_hvac.material
+2	environment\outsourcing\dhruva\manmade\os_hvackit\materials\os_hvackit_02_bake_01.material
+3	environment\outsourcing\dhruva\manmade\os_hvackit_01\os_hvackit_01_a\os_hvackit_01_decal.material
+4	environment\outsourcing\dhruva\manmade\os_hvackit\Materials\os_hvackit_01_metal.material
+5	environment\outsourcing\dhruva\manmade\os_hvackit\materials\os_hvackit_02_bake_03.material
+6	environment\outsourcing\dhruva\manmade\os_hvackit\materials\os_hvackit_02_bake_02.material

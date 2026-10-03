@@ -1,6 +1,7 @@
 """Original meter-scale game meshes to static glTF, with sandbox building assemblies.
 Facade modules retain native geometry, UVs and 4 m floor spacing. The layout and
 roof closure slabs are authored here; this is not an extracted Manhattan block.
+Rewriting assets/world/layout.json keeps its `objects` (tools/convert_props.py writes those).
 """
 import json,struct,math,collections,hashlib
 from pathlib import Path
@@ -30,7 +31,6 @@ def read_mesh(alias):
         if np.count_nonzero(dots<0)>np.count_nonzero(dots>0):faces=faces[:,[0,2,1]]
         parts.append((name[5:].replace('\\','/').lower(),v,n,np.array(uv,dtype=np.float32),faces))
     return parts
-source={alias:read_mesh(alias) for alias in models}
 
 class Glb:
     def __init__(self,paint=None):
@@ -96,36 +96,44 @@ def slab(width,depth,height):
     # Roof closure only; all visible tower facades come from original kit geometry.
     v=np.array([[-width/2,height,-depth/2],[-width/2,height,depth/2],[width/2,height,depth/2],[width/2,height,-depth/2]],dtype=np.float32)
     return [('sandbox_roof',v,np.tile([0,1,0],(4,1)).astype(np.float32),np.array([[0,0],[0,depth],[width,depth],[width,0]],dtype=np.float32),np.array([[0,1,2],[0,2,3]],dtype=np.int32))]
-report={'units':'meters','car_scale':1,'building_assembly':'Original Midtown kit meshes in a custom sandbox arrangement','assets':{},'buildings':[],'cars':[]}
-for alias,paint in [('sedan_blue',(.11,.24,.42)),('sedan_red',(.38,.045,.025)),('sedan_silver',(.6,.62,.64)),('taxi',(.95,.68,.045)),('suv',(.14,.16,.19))]:
-    mesh=source['sedan' if alias.startswith('sedan_') else alias];v=np.concatenate([p[1] for p in mesh]);origin=[(v[:,0].min()+v[:,0].max())/2,v[:,1].min(),(v[:,2].min()+v[:,2].max())/2]
-    mesh=transformed(mesh,translation=-np.array(origin));r=Glb(paint).write(alias,mesh);report['assets'][alias]=r
-    assert 4<r['size'][2]<6 and 1.5<r['size'][0]<3 and 1.2<r['size'][1]<2.5
-layout=[(-27,-20,20,24,56,2),(26,-43,20,24,72,1),(-26,-82,24,24,88,0),(28,-122,24,24,64,2),(-26,-163,24,24,76,1),(28,-198,24,24,92,0),(-23,-235,24,24,64,2)]
-styles=['sza_mtg_window_v1_4x4','sza_mtg_window_v4_4x4','sza_mts_window_v1_4x4']
-for i,(x,z,width,depth,height,style) in enumerate(layout):
-    parts=[];kit=styles[style];cap='sza_mts_window_cap_v1_4x4' if style==2 else 'sza_mtg_window_cap_v1_4x4';door='sza_mts_door_1stfl_8x8' if style==2 else 'sza_mtg_door_v1_1stfl_8x8'
-    for face in range(4):
-        angle=face*math.pi/2;face_width=width if face%2==0 else depth;distance=depth/2 if face%2==0 else width/2
-        for y in range(0,height,4):
-            for column in range(int(face_width)//4):
-                along=-face_width/2+2+column*4;chosen=cap if y==height-4 else (door if y==0 and column==int(face_width)//8 else kit)
-                pos=(along, y, distance-.2)
-                c=math.cos(angle);s=math.sin(angle);translation=(c*pos[0]+s*pos[2],y,-s*pos[0]+c*pos[2])
-                parts.extend(transformed(source[chosen],angle,translation))
-    parts.extend(slab(width-.4,depth-.4,height))
-    for ax,az in [(-width/4,-depth/4),(width/4,depth/4)]:
-        ac=source['pp_skyscraper_ac_unit'];v=np.concatenate([p[1] for p in ac]);offset=np.array([ax-(v[:,0].max()+v[:,0].min())/2,height-v[:,1].min(),az-(v[:,2].max()+v[:,2].min())/2]);parts.extend(transformed(ac,translation=offset))
-    alias=f'tower_{i+1}';r=Glb().write(alias,parts);report['assets'][alias]=r
-    # Match the collision envelope to visible facades; rooftop props are visual only.
-    half=[max(abs(r['min'][0]),abs(r['max'][0])),height/2,max(abs(r['min'][2]),abs(r['max'][2]))]
-    report['buildings'].append({'asset':r['asset'],'name':['Midtown glass','Midtown bronze glass','Midtown stone'][style],'position':[x,0,z],'center':[x,height/2,z],'half':half,'height':height,'facade_source':models[kit]})
-rng=np.random.default_rng(1701);choices=['sedan_blue','sedan_red','sedan_silver','taxi','suv']
-for side in [-1,1]:
-    for k,z in enumerate(np.arange(24,-280,-10)):
-        if rng.random()<.14:continue
-        alias=choices[int(rng.integers(0,len(choices)))];x=side*(8.0+float(rng.uniform(-.25,.25)));z=float(z+rng.uniform(-1,1))
-        yaw=(0 if side<0 else math.pi)+float(rng.uniform(-.035,.035))
-        report['cars'].append({'asset':report['assets'][alias]['asset'],'position':[x,.015,z],'yaw':yaw,'scale':1})
-(out/'layout.json').write_text(json.dumps({'buildings':report['buildings'],'cars':report['cars']},indent=2));(ROOT/'research/world_assets.json').write_text(json.dumps(report,indent=2))
-print('SCENE',len(report['buildings']),'buildings',len(report['cars']),'cars',flush=True)
+# The towers: (x, z, width, depth, height, facade style); tools/convert_props.py places rooftop props by these too
+LAYOUT=[(-27,-20,20,24,56,2),(26,-43,20,24,72,1),(-26,-82,24,24,88,0),(28,-122,24,24,64,2),(-26,-163,24,24,76,1),(28,-198,24,24,92,0),(-23,-235,24,24,64,2)]
+def main():
+    source={alias:read_mesh(alias) for alias in models}
+    report={'units':'meters','car_scale':1,'building_assembly':'Original Midtown kit meshes in a custom sandbox arrangement','assets':{},'buildings':[],'cars':[]}
+    for alias,paint in [('sedan_blue',(.11,.24,.42)),('sedan_red',(.38,.045,.025)),('sedan_silver',(.6,.62,.64)),('taxi',(.95,.68,.045)),('suv',(.14,.16,.19))]:
+        mesh=source['sedan' if alias.startswith('sedan_') else alias];v=np.concatenate([p[1] for p in mesh]);origin=[(v[:,0].min()+v[:,0].max())/2,v[:,1].min(),(v[:,2].min()+v[:,2].max())/2]
+        mesh=transformed(mesh,translation=-np.array(origin));r=Glb(paint).write(alias,mesh);report['assets'][alias]=r
+        assert 4<r['size'][2]<6 and 1.5<r['size'][0]<3 and 1.2<r['size'][1]<2.5
+    layout=LAYOUT
+    styles=['sza_mtg_window_v1_4x4','sza_mtg_window_v4_4x4','sza_mts_window_v1_4x4']
+    for i,(x,z,width,depth,height,style) in enumerate(layout):
+        parts=[];kit=styles[style];cap='sza_mts_window_cap_v1_4x4' if style==2 else 'sza_mtg_window_cap_v1_4x4';door='sza_mts_door_1stfl_8x8' if style==2 else 'sza_mtg_door_v1_1stfl_8x8'
+        for face in range(4):
+            angle=face*math.pi/2;face_width=width if face%2==0 else depth;distance=depth/2 if face%2==0 else width/2
+            for y in range(0,height,4):
+                for column in range(int(face_width)//4):
+                    along=-face_width/2+2+column*4;chosen=cap if y==height-4 else (door if y==0 and column==int(face_width)//8 else kit)
+                    pos=(along, y, distance-.2)
+                    c=math.cos(angle);s=math.sin(angle);translation=(c*pos[0]+s*pos[2],y,-s*pos[0]+c*pos[2])
+                    parts.extend(transformed(source[chosen],angle,translation))
+        parts.extend(slab(width-.4,depth-.4,height))
+        for ax,az in [(-width/4,-depth/4),(width/4,depth/4)]:
+            ac=source['pp_skyscraper_ac_unit'];v=np.concatenate([p[1] for p in ac]);offset=np.array([ax-(v[:,0].max()+v[:,0].min())/2,height-v[:,1].min(),az-(v[:,2].max()+v[:,2].min())/2]);parts.extend(transformed(ac,translation=offset))
+        alias=f'tower_{i+1}';r=Glb().write(alias,parts);report['assets'][alias]=r
+        # Match the collision envelope to visible facades; rooftop props are visual only.
+        half=[max(abs(r['min'][0]),abs(r['max'][0])),height/2,max(abs(r['min'][2]),abs(r['max'][2]))]
+        report['buildings'].append({'asset':r['asset'],'name':['Midtown glass','Midtown bronze glass','Midtown stone'][style],'position':[x,0,z],'center':[x,height/2,z],'half':half,'height':height,'facade_source':models[kit]})
+    rng=np.random.default_rng(1701);choices=['sedan_blue','sedan_red','sedan_silver','taxi','suv']
+    for side in [-1,1]:
+        for k,z in enumerate(np.arange(24,-280,-10)):
+            if rng.random()<.14:continue
+            alias=choices[int(rng.integers(0,len(choices)))];x=side*(8.0+float(rng.uniform(-.25,.25)));z=float(z+rng.uniform(-1,1))
+            yaw=(0 if side<0 else math.pi)+float(rng.uniform(-.035,.035))
+            report['cars'].append({'asset':report['assets'][alias]['asset'],'position':[x,.015,z],'yaw':yaw,'scale':1})
+    previous=json.loads((out/'layout.json').read_text()) if (out/'layout.json').exists() else {}
+    (out/'layout.json').write_text(json.dumps({'buildings':report['buildings'],'cars':report['cars'],'objects':previous.get('objects',[])},indent=2));(ROOT/'research/world_assets.json').write_text(json.dumps(report,indent=2))
+    print('SCENE',len(report['buildings']),'buildings',len(report['cars']),'cars',flush=True)
+
+if __name__=='__main__':
+    main()

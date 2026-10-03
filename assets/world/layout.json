@@ -709,5 +709,703 @@
       "yaw": 3.1704509106100516,
       "scale": 1
     }
+  ],
+  "objects": [
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        -11.5,
+        0,
+        20
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        -11.5,
+        0,
+        -10
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        -11.5,
+        0,
+        -40
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        -11.5,
+        0,
+        -70
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        -11.5,
+        0,
+        -100
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        -11.5,
+        0,
+        -130
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        -11.5,
+        0,
+        -160
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        -11.5,
+        0,
+        -190
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        -11.5,
+        0,
+        -220
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        -11.5,
+        0,
+        -250
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        11.5,
+        0,
+        20
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        11.5,
+        0,
+        -10
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        11.5,
+        0,
+        -40
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        11.5,
+        0,
+        -70
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        11.5,
+        0,
+        -100
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        11.5,
+        0,
+        -130
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        11.5,
+        0,
+        -160
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        11.5,
+        0,
+        -190
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        11.5,
+        0,
+        -220
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_lamp_post.glb",
+      "name": "lamp post",
+      "position": [
+        11.5,
+        0,
+        -250
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_newsstand.glb",
+      "name": "newsstand",
+      "position": [
+        12.8,
+        0,
+        -2
+      ],
+      "yaw": -1.5708,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_billboard_stand.glb",
+      "name": "billboard stand",
+      "position": [
+        -12.6,
+        0,
+        12
+      ],
+      "yaw": 1.5708,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_helipad.glb",
+      "name": "helipad",
+      "position": [
+        32,
+        0,
+        -4
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_scaffold_tower.glb",
+      "name": "scaffold tower, level 1",
+      "position": [
+        22,
+        0.0,
+        -17
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_scaffold_tower.glb",
+      "name": "scaffold tower, level 2",
+      "position": [
+        22,
+        4.0,
+        -17
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_scaffold_tower.glb",
+      "name": "scaffold tower, level 3",
+      "position": [
+        22,
+        8.0,
+        -17
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_scaffold_tower.glb",
+      "name": "scaffold tower, level 4",
+      "position": [
+        22,
+        12.0,
+        -17
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_scaffold_tower.glb",
+      "name": "scaffold step, level 1",
+      "position": [
+        22,
+        0.0,
+        -12.9
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_scaffold_tower.glb",
+      "name": "scaffold step, level 2",
+      "position": [
+        22,
+        4.0,
+        -12.9
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_intel_tower.glb",
+      "name": "intel tower",
+      "position": [
+        22,
+        16.0,
+        -17
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_hvac_industrial.glb",
+      "name": "hvac industrial",
+      "position": [
+        40,
+        0,
+        -20
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_rooftop_access.glb",
+      "name": "rooftop access",
+      "position": [
+        -22,
+        0,
+        2
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_water_tank.glb",
+      "name": "water tank",
+      "position": [
+        -30,
+        0,
+        10
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_perch_antenna.glb",
+      "name": "perch antenna",
+      "position": [
+        -36,
+        0,
+        -2
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_water_tank.glb",
+      "name": "tower 1 roof water tank",
+      "position": [
+        -32.0,
+        56,
+        -14.0
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_rooftop_access.glb",
+      "name": "tower 1 roof rooftop access",
+      "position": [
+        -22.0,
+        56,
+        -26.0
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_ac_unit.glb",
+      "name": "tower 1 roof air conditioner (the model's own)",
+      "position": [
+        -32.0,
+        56,
+        -26.0
+      ],
+      "yaw": 0.0,
+      "scale": 1,
+      "hidden": true
+    },
+    {
+      "asset": "world/prop_ac_unit.glb",
+      "name": "tower 1 roof air conditioner (the model's own)",
+      "position": [
+        -22.0,
+        56,
+        -14.0
+      ],
+      "yaw": 0.0,
+      "scale": 1,
+      "hidden": true
+    },
+    {
+      "asset": "world/prop_hvac_industrial.glb",
+      "name": "tower 2 roof hvac industrial",
+      "position": [
+        21.0,
+        72,
+        -37.0
+      ],
+      "yaw": 1.5708,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_water_tank.glb",
+      "name": "tower 2 roof water tank",
+      "position": [
+        31.0,
+        72,
+        -49.0
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_ac_unit.glb",
+      "name": "tower 2 roof air conditioner (the model's own)",
+      "position": [
+        21.0,
+        72,
+        -49.0
+      ],
+      "yaw": 0.0,
+      "scale": 1,
+      "hidden": true
+    },
+    {
+      "asset": "world/prop_ac_unit.glb",
+      "name": "tower 2 roof air conditioner (the model's own)",
+      "position": [
+        31.0,
+        72,
+        -37.0
+      ],
+      "yaw": 0.0,
+      "scale": 1,
+      "hidden": true
+    },
+    {
+      "asset": "world/prop_intel_tower.glb",
+      "name": "tower 3 roof intel tower",
+      "position": [
+        -32.0,
+        88,
+        -76.0
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_perch_antenna.glb",
+      "name": "tower 3 roof perch antenna",
+      "position": [
+        -20.0,
+        88,
+        -88.0
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_ac_unit.glb",
+      "name": "tower 3 roof air conditioner (the model's own)",
+      "position": [
+        -32.0,
+        88,
+        -88.0
+      ],
+      "yaw": 0.0,
+      "scale": 1,
+      "hidden": true
+    },
+    {
+      "asset": "world/prop_ac_unit.glb",
+      "name": "tower 3 roof air conditioner (the model's own)",
+      "position": [
+        -20.0,
+        88,
+        -76.0
+      ],
+      "yaw": 0.0,
+      "scale": 1,
+      "hidden": true
+    },
+    {
+      "asset": "world/prop_rooftop_access.glb",
+      "name": "tower 4 roof rooftop access",
+      "position": [
+        22.0,
+        64,
+        -116.0
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_water_tank.glb",
+      "name": "tower 4 roof water tank",
+      "position": [
+        34.0,
+        64,
+        -128.0
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_ac_unit.glb",
+      "name": "tower 4 roof air conditioner (the model's own)",
+      "position": [
+        22.0,
+        64,
+        -128.0
+      ],
+      "yaw": 0.0,
+      "scale": 1,
+      "hidden": true
+    },
+    {
+      "asset": "world/prop_ac_unit.glb",
+      "name": "tower 4 roof air conditioner (the model's own)",
+      "position": [
+        34.0,
+        64,
+        -116.0
+      ],
+      "yaw": 0.0,
+      "scale": 1,
+      "hidden": true
+    },
+    {
+      "asset": "world/prop_hvac_industrial.glb",
+      "name": "tower 5 roof hvac industrial",
+      "position": [
+        -32.0,
+        76,
+        -157.0
+      ],
+      "yaw": 1.5708,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_perch_antenna.glb",
+      "name": "tower 5 roof perch antenna",
+      "position": [
+        -20.0,
+        76,
+        -169.0
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_ac_unit.glb",
+      "name": "tower 5 roof air conditioner (the model's own)",
+      "position": [
+        -32.0,
+        76,
+        -169.0
+      ],
+      "yaw": 0.0,
+      "scale": 1,
+      "hidden": true
+    },
+    {
+      "asset": "world/prop_ac_unit.glb",
+      "name": "tower 5 roof air conditioner (the model's own)",
+      "position": [
+        -20.0,
+        76,
+        -157.0
+      ],
+      "yaw": 0.0,
+      "scale": 1,
+      "hidden": true
+    },
+    {
+      "asset": "world/prop_water_tank.glb",
+      "name": "tower 6 roof water tank",
+      "position": [
+        22.0,
+        92,
+        -192.0
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_intel_tower.glb",
+      "name": "tower 6 roof intel tower",
+      "position": [
+        34.0,
+        92,
+        -204.0
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_ac_unit.glb",
+      "name": "tower 6 roof air conditioner (the model's own)",
+      "position": [
+        22.0,
+        92,
+        -204.0
+      ],
+      "yaw": 0.0,
+      "scale": 1,
+      "hidden": true
+    },
+    {
+      "asset": "world/prop_ac_unit.glb",
+      "name": "tower 6 roof air conditioner (the model's own)",
+      "position": [
+        34.0,
+        92,
+        -192.0
+      ],
+      "yaw": 0.0,
+      "scale": 1,
+      "hidden": true
+    },
+    {
+      "asset": "world/prop_rooftop_access.glb",
+      "name": "tower 7 roof rooftop access",
+      "position": [
+        -29.0,
+        64,
+        -229.0
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_water_tank.glb",
+      "name": "tower 7 roof water tank",
+      "position": [
+        -17.0,
+        64,
+        -241.0
+      ],
+      "yaw": 0.0,
+      "scale": 1
+    },
+    {
+      "asset": "world/prop_ac_unit.glb",
+      "name": "tower 7 roof air conditioner (the model's own)",
+      "position": [
+        -29.0,
+        64,
+        -241.0
+      ],
+      "yaw": 0.0,
+      "scale": 1,
+      "hidden": true
+    },
+    {
+      "asset": "world/prop_ac_unit.glb",
+      "name": "tower 7 roof air conditioner (the model's own)",
+      "position": [
+        -17.0,
+        64,
+        -229.0
+      ],
+      "yaw": 0.0,
+      "scale": 1,
+      "hidden": true
+    }
   ]
 }

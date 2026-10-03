@@ -2,6 +2,7 @@
 //! alone), the way the oracle runs them through the game's code: the same inputs, the same stand-in camera and the
 //! same scripted swings. `oracle_replay` compares a run with the game's record; the crate's tests compare it with the
 //! game's paths kept in tests/fixtures.
+use crate::air::AirEntry;
 use crate::config::Configs;
 use crate::math::{atan2, cos, sin, wrap_pi, Rows, V3};
 use crate::sim::{Mode, StepInput, Traversal};
@@ -24,6 +25,8 @@ pub struct Scenario {
     pub yaw: f32,
     /// (time, anchor, attach)
     pub swings: Vec<(f32, V3, V3)>,
+    /// (time, into the fall, the entry): a launch or a fall entered directly
+    pub enters: Vec<(f32, bool, AirEntry)>,
     pub sticks: Vec<Key>,
     pub r2: Vec<Key>,
     pub jumps: Vec<f32>,
@@ -44,6 +47,7 @@ impl Scenario {
             vel: V3::new(0., 0., 20.),
             yaw: 0.,
             swings: vec![],
+            enters: vec![],
             sticks: vec![],
             r2: vec![],
             jumps: vec![],
@@ -68,6 +72,20 @@ impl Scenario {
                 "vel" => s.vel = V3::new(n(1), n(2), n(3)),
                 "yaw" => s.yaw = n(1),
                 "swing" => s.swings.push((n(1), V3::new(n(2), n(3), n(4)), V3::new(n(5), n(6), n(7)))),
+                "enter" => {
+                    let e = AirEntry {
+                        dir: V3::new(n(5), 0., n(6)).norm(),
+                        h_speed: n(7),
+                        vy: n(8),
+                        gravity: n(9),
+                        gravity_after: n(10),
+                        input: n(11),
+                        kind: n(3) as u8,
+                        kind2: n(4) as u8,
+                        ..Default::default()
+                    };
+                    s.enters.push((n(1), w[2] == "fall", e));
+                }
                 "stick" => s.sticks.push(Key { t: n(1), x: n(2), y: n(3) }),
                 "r2" => s.r2.push(Key { t: n(1), x: n(2), y: 0. }),
                 "jump" => s.jumps.push(n(1)),
@@ -117,6 +135,7 @@ pub fn run(sc: &Scenario, cfg: Arc<Configs>) -> Vec<Sample> {
     tr.tracker.update(&cfg, crate::tracker::MoverView { velocity: sc.vel, airborne: true, height_above_ground: 50. }, dt);
     let mut cam_yaw = if sc.cam_follow { atan2(sc.vel.x, sc.vel.z) } else { sc.cam_yaw * 0.01745329 };
     let mut next_swing = 0;
+    let mut next_enter = 0;
     let mut out = Vec::with_capacity(sc.frames);
     for f in 0..sc.frames {
         let t = f as f32 * dt;
@@ -131,13 +150,17 @@ pub fn run(sc: &Scenario, cfg: Arc<Configs>) -> Vec<Sample> {
             }
         }
         let mut si = StepInput {
-            input: FrameInput { stick, swing_button: r2, jump_pressed: jump, look: 0. },
+            input: FrameInput { stick, swing_button: r2, jump_pressed: jump, jump_held: false, look: 0. },
             cam: camera(cam_yaw, sc.cam_pitch, tr.pos),
             drift: sc.drift,
             height: 50.,
             ..Default::default()
         };
-        if next_swing < sc.swings.len() && t >= sc.swings[next_swing].0 - 1e-6 && tr.mode != Mode::Swing {
+        if next_enter < sc.enters.len() && t >= sc.enters[next_enter].0 - 1e-6 {
+            let (_, fall, e) = sc.enters[next_enter];
+            si.air = Some((e, fall));
+            next_enter += 1;
+        } else if next_swing < sc.swings.len() && t >= sc.swings[next_swing].0 - 1e-6 && tr.mode != Mode::Swing {
             let (_, anchor, attach) = sc.swings[next_swing];
             si.swing = Some(SwingEntry::new(anchor, attach));
             next_swing += 1;

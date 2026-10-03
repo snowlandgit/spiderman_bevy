@@ -1,0 +1,10 @@
+# A point launch with no press and no stick (exe+b19fb0, PointLaunchConfig.ExitDataZero: 24 m/s on, 6 m up in 0.65 s,
+# GravityFall 30 after the top): HeroStateJump kind 0x2a, arriving from a zip at 22 m/s
+dt 0.0166667
+frames 150
+pos 0 30 0
+vel 0 0 22
+yaw 0
+r2 0 0
+enter 0 jump 42 53 0 1 24 18.461538 28.402367 30 1
+cam follow 3 -12

@@ -194,6 +194,22 @@ fn air(rec: &Record, cfg: &Configs, dt: f32, only: &[i32]) {
                 println!("    {d}");
             }
         }
+        // a launch, or a fall, entered directly (the scenario's `enter`): the state from the game's own data
+        if fr.flags & 8 != 0 {
+            let fall = fr.mode == 2;
+            let blob = if fall { FALL } else { JUMP };
+            let game = air_entry_of(&fr.request_data);
+            let mut a = air_of(&pre[blob], fall);
+            let tr = tracker_of(&mid[TRACKER]);
+            let mut sh = AirShared { clock, ..Default::default() };
+            a.enter(&game, &tr, &env, &mut sh);
+            clock = sh.clock;
+            let diffs = differing(&air_fields(&a, &air_of(&mid[blob], fall)), 1e-4);
+            println!("{} entry (kind {:#x}) at frame {}: {} fields differ", if fall { "fall" } else { "jump" }, game.kind, fr.index, diffs.len());
+            for d in diffs {
+                println!("    {d}");
+            }
+        }
         // the swing jump's check, and the fall's entry
         if was == 1 && fr.mode != 0 {
             let a = air_of(&pre[JUMP], false);

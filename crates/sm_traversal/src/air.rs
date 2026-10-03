@@ -7,18 +7,25 @@
 //! give the state's offsets. Ported from Ghidra's decompilation with argument order and constants taken from the
 //! disassembly; tools/native_oracle runs the game's own code on the same inputs to compare.
 //!
+//! The launches enter the same class as HeroStateJump: the point launch (kind 0x2a) and the jump off a perch (0x1d),
+//! whose motion and speed data slots 18 and 19 pick by kind; the perch's jump has the button thrust (slot 22).
+//!
 //! Left out (they need what this port doesn't model): moving platforms, walls and ledges the mover touches, the
-//! animation-driven jumps (+0x204 >= 0), spline and focus targets, the button thrust (kinds the swing never hands
-//! over) and the speed boost of entries with +0x78 > 0 (the boost itself is kept, it is short).
+//! animation-driven jumps (+0x204 >= 0), spline and focus targets, and the speed boost of entries with +0x78 > 0 (the
+//! boost itself is kept, it is short).
 use crate::config::{Configs, DragProfile, JumpMotionData, JumpSpeedData};
 use crate::math::*;
 use crate::swing::{Env, SwingRelease};
 use crate::tracker::Tracker;
 
-/// Jump kinds (+0x2c0, +0x2c4) on the way from a swing
+/// Jump kinds (+0x2c0, +0x2c4)
 pub const KIND_FALL: u8 = 0x0b;
 pub const KIND_DIVE: u8 = 0x0c;
 pub const KIND_SWING_JUMP: u8 = 0x11;
+/// the jump off a perch (A while perched)
+pub const KIND_PERCH_JUMP: u8 = 0x1d;
+/// the point launch at the end of a zip to a point (exe+b19fb0, HeroStateJump)
+pub const KIND_POINT_LAUNCH: u8 = 0x2a;
 /// the second kind's default: none
 pub const KIND_NONE: u8 = 0x35;
 
@@ -90,6 +97,23 @@ impl AirEntry {
             gravity: r.gravity,
             gravity_after: tr.fall_gravity,
             kind: KIND_SWING_JUMP,
+            ..Default::default()
+        }
+    }
+
+    /// exe+b19fb0's request of HeroStateJump at the end of a zip to a point: the launch velocity `v` (horizontal part
+    /// and vertical speed), gravity `gravity` until the top, `gravity_fall` after it (PointLaunchConfig.GravityFall),
+    /// the input at full (+0x74 = 1), kind 0x2a. The direction and horizontal speed are `v`'s flat part's (exe+a7d8c0).
+    pub fn point_launch(v: V3, gravity: f32, gravity_fall: f32) -> Self {
+        let h = V3::new(v.x, 0., v.z);
+        Self {
+            dir: h.norm(),
+            vy: v.y,
+            h_speed: h.len(),
+            gravity,
+            gravity_after: gravity_fall,
+            input: 1.,
+            kind: KIND_POINT_LAUNCH,
             ..Default::default()
         }
     }
@@ -216,8 +240,9 @@ pub struct AirLocal {
     pub dive: bool,
     pub b2db: bool,
     pub b2dc: bool,
-    /// +0x2e0
-    pub dive_amount: f32,
+    /// +0x2e0: how long the button thrust has run; +0x2f8: the button held for it
+    pub thrust_clock: f32,
+    pub thrust_held: bool,
     /// +0x2e4, +0x2e8, +0x2ec: the entry's speed boost (target speed, time left, rate)
     pub boost_speed: f32,
     pub boost_time: f32,
@@ -300,7 +325,8 @@ impl AirLocal {
             dive: false,
             b2db: false,
             b2dc: true,
-            dive_amount: 0.,
+            thrust_clock: 0.,
+            thrust_held: true,
             boost_speed: 0.,
             boost_time: 0.,
             boost_rate: 0.,
@@ -324,14 +350,21 @@ impl AirLocal {
         (env.time - self.entry_time) as f32
     }
 
-    /// Slot 18 (exe+a87910): the motion data. Every kind the swing hands over reads the swing jump's (a fall reads
-    /// its second kind's).
-    fn motion<'a>(&self, cfg: &'a Configs) -> &'a JumpMotionData {
-        &cfg.traversal.jump_configs.swing_jump_config.standard_data
+    /// The kind slots 18 and 19 pick their data by: a fall (0x0b, 0x34) reads its second kind's, unless it has none
+    fn data_kind(&self) -> u8 {
+        if (self.kind == KIND_FALL || self.kind == 0x34) && self.kind2 != KIND_NONE {
+            self.kind2
+        } else {
+            self.kind
+        }
     }
-    /// Slot 19 (exe+a879d0): the speed data, likewise
+    /// Slot 18 (exe+a87910): the motion data by kind
+    fn motion<'a>(&self, cfg: &'a Configs) -> &'a JumpMotionData {
+        motion_data(cfg, self.data_kind())
+    }
+    /// Slot 19 (exe+a879d0): the speed data by kind
     fn speed_data<'a>(&self, cfg: &'a Configs) -> &'a JumpSpeedData {
-        &cfg.traversal.jump_configs.swing_jump_speed.standard_data
+        speed_data(cfg, self.data_kind())
     }
     /// exe+869300: the motion data's drag profile by name
     fn drag_profile<'a>(&self, cfg: &'a Configs) -> &'a DragProfile {
@@ -453,12 +486,28 @@ impl AirLocal {
         let e = exp(self.vel_decay * dt);
         self.vel = self.vel + (V3::ZERO - self.vel) * (1. - e);
         base -= self.prev_vel;
-        // slot 22 (exe+a87b90): the button thrust, for kinds the swing never hands over
+        // slot 22 (exe+a87b90): the button thrust. For the kinds that have one (the perch's jump among them), while
+        // the jump button is held (or the entry asked for it, +0x2d6) and he rises, for ButtonThrustTimeMax at most
         self.thrust_accel = 0.;
         self.thrust_gravity = 0.;
         self.thrust_time = 0.;
-        if !self.thrust_done && !self.early && self.vy < -0.0001 {
-            self.thrust_done = true;
+        if !self.thrust_done && !self.early {
+            if self.vy < -0.0001 {
+                self.thrust_done = true;
+            } else if self.kind <= 0x2e && (0x781e_2700_0009u64 >> self.kind) & 1 != 0 {
+                self.thrust_held = env.input.jump_held;
+                if !self.thrust_held && !self.b2d6 {
+                    self.thrust_done = true;
+                } else {
+                    let md = self.motion(cfg);
+                    let over = (self.thrust_clock - md.button_thrust_time_max).max(0.);
+                    self.thrust_accel = md.button_thrust_accel;
+                    self.thrust_gravity = md.button_thrust_accel_grav;
+                    self.thrust_clock += dt;
+                    self.thrust_done = md.button_thrust_time_max <= self.thrust_clock;
+                    self.thrust_time = (dt - over).max(0.);
+                }
+            }
         }
         self.vy_prev = self.vy;
         // slot 20 (exe+a87a70): the speeds
@@ -858,6 +907,59 @@ impl AirLocal {
             input,
             kind,
             kind2: self.kind,
+            ..Default::default()
+        }
+    }
+}
+
+/// exe+a87910's (and exe+868f00's) motion data for a kind: HeroTraversalConfig.JumpConfigs, as far as the kinds this
+/// port enters go (the rest read SingleJumpConfig, the default)
+pub fn motion_data(cfg: &Configs, kind: u8) -> &JumpMotionData {
+    let j = &cfg.traversal.jump_configs;
+    match kind {
+        KIND_SWING_JUMP => &j.swing_jump_config.standard_data,
+        KIND_POINT_LAUNCH => &j.zip_point_launch_jump_config.standard_data,
+        KIND_PERCH_JUMP => &j.perch_jump_config.standard_data,
+        _ => &j.single_jump_config.standard_data,
+    }
+}
+/// exe+a879d0's (and exe+869360's) speed data for a kind
+pub fn speed_data(cfg: &Configs, kind: u8) -> &JumpSpeedData {
+    let j = &cfg.traversal.jump_configs;
+    match kind {
+        KIND_SWING_JUMP | 0x12 | KIND_POINT_LAUNCH => &j.swing_jump_speed.standard_data,
+        KIND_DIVE => &j.dive_jump_speed.standard_data,
+        KIND_PERCH_JUMP => &j.perch_jump_speed.standard_data,
+        _ => &j.ground_jump_speed.standard_data,
+    }
+}
+
+impl AirEntry {
+    /// exe+974c90 (the transition manager's ground jump, as the perch's jump asks it) with exe+868850's numbers from
+    /// the kind's motion data: up at 2h/t (JumpHeight h, TimeToPeak t), gravity 2h/t^2 to the top and 2h/TimeToFall^2
+    /// after it (with no TimeToFall, the rise's or the tracker's fall gravity, the larger). On along `dir` (flat): with
+    /// the stick past 0.04, (0.8 stick + 0.2) times the speed data's RunSpeedMaxMax, else `carry` (his speed); within
+    /// the speed data's launch speeds. The input is the stick's amount.
+    pub fn ground_jump(cfg: &Configs, kind: u8, dir: V3, carry: f32, stick: f32, fall_gravity: f32) -> Self {
+        let md = motion_data(cfg, kind);
+        let sd = speed_data(cfg, kind);
+        let (h, t, tf) = (md.jump_height, md.time_to_peak, md.time_to_fall);
+        let vy = (h + h) * (1. / t);
+        let rise = (h + h) * (1. / t) * (1. / t);
+        let after = if tf > 0. { ((t * t) / (tf * tf)) * rise } else { rise.max(fall_gravity) };
+        let mut speed = if stick > 0.04 { (stick * 0.8 + 0.2) * sd.run_speed_max_max } else { carry };
+        speed = speed.max(sd.min_launch_speed);
+        if sd.max_launch_speed >= 0. {
+            speed = speed.min(sd.max_launch_speed);
+        }
+        Self {
+            dir: V3::new(dir.x, 0., dir.z).norm(),
+            vy,
+            h_speed: speed,
+            gravity: vy * (1. / t),
+            gravity_after: after,
+            input: stick,
+            kind,
             ..Default::default()
         }
     }

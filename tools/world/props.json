@@ -1,0 +1,12 @@
+{
+  "water_tank": "environment/global/prop/gbl_prop_water_tank_plant_01/ch_gbl_prop_water_tank_plant_01.model",
+  "rooftop_access": "environment/global/prop/gbl_prop_rooftop_access_01/gm_gbl_prop_rooftop_access_01.model",
+  "lamp_post": "environment/global/ambient/gbl_amb_lamp_post_central_park_01/cg_gbl_amb_lamp_post_central_park_01.model",
+  "newsstand": "environment/master_kits/np_newsstand/np_newsstand/np_newsstand.model",
+  "scaffold_tower": "environment/master_kits/construction_tower/rv_construction_tower_scaffold_4x4x4/rv_construction_tower_scaffold_4x4x4.model",
+  "hvac_industrial": "environment/outsourcing/dhruva/manmade/os_hvackit/os_hvackit_industrial_01/os_hvackit_industrial_01.model",
+  "helipad": "environment/outsourcing/dhruva/manmade/os_hvackit/os_helipad_platform/os_helipad_platform.model",
+  "perch_antenna": "environment/building_kits/oscorp_building/rv_oscorp_building_roof_perch_antenna_01/rv_oscorp_building_roof_perch_antenna_01.model",
+  "intel_tower": "environment/global/prop/gbl_prop_intel_tower_large_01/gm_gbl_prop_intel_tower_large_01.model",
+  "billboard_stand": "environment/master_kits/jp_billboards/jp_billboardstand_2sides_4m/jp_billboardstand_2sides_4m.model"
+}

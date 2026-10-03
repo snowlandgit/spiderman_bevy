@@ -101,7 +101,7 @@ mod tests {
                     forward: Vec3::NEG_Z,
                     ..default()
                 },
-                &[],
+                &crate::world::World::default(),
                 &tuning,
                 DT,
             );
@@ -113,7 +113,7 @@ mod tests {
                 forward: Vec3::NEG_Z,
                 ..default()
             },
-            &[],
+            &crate::world::World::default(),
             &tuning,
             DT,
         );
@@ -138,8 +138,8 @@ mod tests {
         let mut high_peak = 0.;
         let mut long_peak = 0.;
         for _ in 0..420 {
-            high.step(Intent::default(), &[], &tuning, DT);
-            long.step(Intent::default(), &[], &tuning, DT);
+            high.step(Intent::default(), &crate::world::World::default(), &tuning, DT);
+            long.step(Intent::default(), &crate::world::World::default(), &tuning, DT);
             high_peak = high.pos.y.max(high_peak);
             long_peak = long.pos.y.max(long_peak);
         }
@@ -155,7 +155,7 @@ mod tests {
                 jump: true,
                 ..default()
             },
-            &[],
+            &crate::world::World::default(),
             &tuning,
             DT,
         );
@@ -165,7 +165,7 @@ mod tests {
                     jump_held: true,
                     ..default()
                 },
-                &[],
+                &crate::world::World::default(),
                 &tuning,
                 DT,
             );
@@ -205,7 +205,7 @@ mod tests {
                 jump_held: true,
                 ..default()
             },
-            &[],
+            &crate::world::World::default(),
             &tuning,
             DT,
         );
@@ -214,7 +214,7 @@ mod tests {
                 cancel_jump_charge: true,
                 ..default()
             },
-            &[],
+            &crate::world::World::default(),
             &tuning,
             DT,
         );

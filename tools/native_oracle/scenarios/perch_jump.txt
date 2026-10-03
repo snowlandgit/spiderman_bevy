@@ -1,0 +1,11 @@
+# The jump off a perch with the stick at 0.8 forward (exe+974c90 / exe+868850 with PerchJumpConfig and PerchJumpSpeed:
+# 2 m up in 0.35 s, 2h/TimeToFall^2 after the top, (0.8 x 0.8 + 0.2) x 7 m/s on): HeroStateJump kind 0x1d
+dt 0.0166667
+frames 90
+pos 0 30 0
+vel 0 0 0
+yaw 0
+r2 0 0
+enter 0 jump 29 53 0 1 5.88 11.428571 32.653061 44.444444 0.8
+stick 0 0 0.8
+cam follow 3 -12

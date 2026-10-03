@@ -1,7 +1,7 @@
 //! The port against the game's own code. tools/native_oracle ran each scenario through Spider-Man.exe's swing, swing
-//! jump and fall (tests/fixtures keeps his path from those runs); here the port runs the same scenario closed loop from
-//! its starting conditions alone and must stay with the game: within a few centimetres, every state change on the
-//! same frame, the same facing.
+//! jump, fall and jump states (tests/fixtures keeps his path from those runs); here the port runs the same scenario
+//! closed loop from its starting conditions alone and must stay with the game: within a few centimetres, every state
+//! change on the same frame, the same facing.
 use sm_traversal::config::Configs;
 use sm_traversal::math::{angle_between, V3};
 use sm_traversal::replay::{run, Scenario};
@@ -52,3 +52,13 @@ scenario!(hold_auto, 0.03);
 scenario!(air_steer, 0.02);
 // a second swing from the fall, a second release
 scenario!(chain, 0.03);
+// a point launch with no press and no stick (ExitDataZero), into the fall
+scenario!(launch_zero, 0.01);
+// a boosted point launch with the stick forward (ExitDataFull and its bonuses), steered right, back, let go
+scenario!(launch_steer, 0.01);
+// a boosted point launch with the stick pulled back (ExitDataBack and its bonuses): high and slow
+scenario!(launch_back, 0.01);
+// the jump off a perch, the stick at 0.8 forward
+scenario!(perch_jump, 0.01);
+// the fall from a ledge (no jump before it), steered to the side
+scenario!(ledge_fall, 0.01);

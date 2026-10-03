@@ -1,0 +1,12 @@
+# A boosted point launch with the stick pulled back (ExitDataBack plus its bonuses: 14 m/s on, 26 m up in 0.9 s), the
+# stick let go after 0.3 s
+dt 0.0166667
+frames 240
+pos 0 30 0
+vel 0 0 22
+yaw 0
+r2 0 0
+enter 0 jump 42 53 0 1 14 57.777778 64.197531 30 1
+stick 0 0 -1
+stick 0.3 0 0
+cam follow 3 -12

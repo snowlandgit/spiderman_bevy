@@ -1,5 +1,5 @@
 {
-  "provenance": "Presentation adjustments for delayed swing entry and smooth transitions. Camera: measured from recordings of the real game (ArkWeb swingrec, 2026-10-03): 5.4-5.7 m behind and 2-3 m above him, horizontal FOV from 93 degrees slow to 111 at speed (between HeroSwingCameraConfig's FOVBoostSpeedMin/Max, 10 and 33 m/s, at its FOVBlendUpSpeed); the yaw closes in on his heading a second after the last look input (ArkWeb's swing camera follow). The game's own swing camera code is not ported.",
+  "provenance": "Presentation adjustments for delayed swing entry and smooth transitions. Camera: measured from recordings of the real game (ArkWeb swingrec, 2026-10-03): 5.4-5.7 m behind and 2-3 m above him, horizontal FOV from 93 degrees slow to 111 at speed (between HeroSwingCameraConfig's FOVBoostSpeedMin/Max, 10 and 33 m/s, at its FOVBlendUpSpeed); the yaw closes in on his heading a second after the last look input (ArkWeb's swing camera follow). The game's own swing camera code is not ported. Looking up (authored): the view can tilt up to 72 degrees; the boom comes in toward 2.5 m and keeps 0.35 m over the floor under it, and once it is down there the view alone tilts on up, so he can look up at the rooftops from the street.",
   "animation": {
     "swing_playback_rate": 2.4,
     "seek_response": 14.0,
@@ -31,6 +31,9 @@
     "fast_fov_degrees": 111.0,
     "fov_speed_min": 10.0,
     "fov_speed_max": 33.0,
-    "fov_rate_degrees": 13.0
+    "fov_rate_degrees": 13.0,
+    "look_up_max_degrees": 72.0,
+    "look_up_distance": 2.5,
+    "ground_clearance": 0.35
   }
 }

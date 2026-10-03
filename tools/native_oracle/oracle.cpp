@@ -15,6 +15,10 @@
 //   jump t                the jump button pressed at t (the swing's release event, buffered 0.05 s)
 //   cam fixed yaw pitch   or   cam follow rate pitch   (the camera's yaw closes in on his travel)
 //   drift 0|1             the swing processor's pivot drift (exe+ab8410), on by default
+//   enter t jump|fall kind kind2 dx dz hspeed vy gravity gravity_after input
+//                         at time t, the jump state (HeroStateJumpLocal) or the fall entered with this data (the
+//                         launches: the point launch is kind 0x2a = 42, the jump off a perch 0x1d = 29; the fall from a
+//                         ledge kind 11 with kind2 53 = none); the other fields from exe+a7d820's defaults
 #include "H:/arkre/harness/smenv.h"
 #include "H:/SteamLibrary/steamapps/common/Saints Row the Third/ArkWeb/src/ak_host/turn.h"
 
@@ -25,7 +29,8 @@ using namespace smenv;
 
 namespace
 {
-	constexpr uint64_t kSwing = 0x6df2690, kSwingJump = 0x6dfa880, kFall = 0x6ded020;
+	constexpr uint64_t kSwing = 0x6df2690, kSwingJump = 0x6dfa880, kFall = 0x6ded020, kJump = 0x6deda80;
+	constexpr uintptr_t kVtSwingJumpLocal = 0x38d4b58, kVtJumpLocal = 0x38c1628;
 	using Fn1 = uint64_t (*)(void*);
 	using FnF = void (*)(void*, float);
 	using Fn2 = void (*)(void*, const void*);
@@ -35,6 +40,13 @@ namespace
 	struct SwingCmd
 	{
 		float t, anchor[3], attach[3];
+	};
+	struct EnterCmd
+	{
+		float t;
+		bool  fall;
+		int   kind, kind2;
+		float dx, dz, hspeed, vy, gravity, gravityAfter, input;
 	};
 	struct Key
 	{
@@ -47,6 +59,7 @@ namespace
 		float                 momentum = 0.0f;
 		float                 pos[3] = { 0, 40, 0 }, vel[3] = { 0, 0, 20 }, yaw = 0.0f;
 		std::vector<SwingCmd> swings;
+		std::vector<EnterCmd> enters;
 		std::vector<Key>      sticks, r2;
 		std::vector<float>    jumps;
 		bool                  camFollow = true;
@@ -95,6 +108,12 @@ namespace
 				l >> m;
 				if (m == "fixed") s.camFollow = false, l >> s.camYaw >> s.camPitch;
 				else s.camFollow = true, l >> s.camRate >> s.camPitch;
+			} else if (k == "enter") {
+				EnterCmd    c{};
+				std::string st;
+				l >> c.t >> st >> c.kind >> c.kind2 >> c.dx >> c.dz >> c.hspeed >> c.vy >> c.gravity >> c.gravityAfter >> c.input;
+				c.fall = st == "fall";
+				s.enters.push_back(c);
 			} else if (k == "drift") {
 				int d;
 				l >> d;
@@ -219,7 +238,7 @@ int main(int argc, char** argv)
 	int    mode = 3;
 	size_t enteredAt = 0;
 	float  turnV = 0.0f;
-	size_t nextSwing = 0;
+	size_t nextSwing = 0, nextEnter = 0;
 	auto   AirState = [&]() { return mode == 2 ? fall : j; };
 	auto   StartSwing = [&](const SwingCmd& c) {
         alignas(16) uint8_t td[0x100] = {};
@@ -282,7 +301,37 @@ int main(int argc, char** argv)
 		smcall::Fn<FnF>(0x85f580)(g_tracker, sc.dt);
 		uint64_t req = 0;
 		alignas(16) uint8_t reqData[0x200] = {};
-		if (nextSwing < sc.swings.size() && t >= sc.swings[nextSwing].t - 1e-6f && mode != 0) {
+		if (nextEnter < sc.enters.size() && t >= sc.enters[nextEnter].t - 1e-6f) {
+			// a launch (or a fall) entered directly: the state he is in ends, the jump or fall state starts with the data
+			const EnterCmd& c = sc.enters[nextEnter++];
+			if (mode == 0) smcall::Fn<Exit>(0xaba8a0)(s, nullptr);
+			if (mode == 1) smcall::Fn<Exit>(0xa86270)(j, nullptr);
+			if (mode == 2) smcall::Fn<Exit>(0xa701a0)(fall, nullptr);
+			alignas(16) uint8_t td[0x100] = {};
+			smcall::Fn<Fn1>(0xa7d820)(td);
+			float dir[4] = { c.dx, 0.0f, c.dz, 0.0f }, up[4] = { 0.0f, 1.0f, 0.0f, 0.0f };
+			using DirFn = void (*)(void*, const float*, const float*);
+			using KindFn = void (*)(void*, uint32_t);
+			smcall::Fn<DirFn>(0xa7d8c0)(td, dir, up);
+			smcall::Fn<KindFn>(0xa7dc50)(td, static_cast<uint32_t>(c.kind));
+			At<uint8_t>(td, 0x82) = static_cast<uint8_t>(c.kind2);
+			At<float>(td, 0x58) = c.vy, At<float>(td, 0x5c) = c.hspeed, At<float>(td, 0x60) = c.gravity, At<float>(td, 0x64) = c.gravityAfter;
+			At<float>(td, 0x74) = c.input;
+			if (c.fall) {
+				At<double>(fall, 0xd8) = g_time;
+				smcall::Fn<Fn2>(0xa70080)(fall, td);
+				mode = 2, req = kFall;
+			} else {
+				// HeroStateJumpLocal: the swing jump's class with its own identity slots
+				At<void*>(j, 0) = reinterpret_cast<void*>(smcall::g_base + kVtJumpLocal);
+				At<double>(j, 0xd8) = g_time;
+				smcall::Fn<Fn2>(0xa86490)(j, td);
+				mode = 1, req = kJump;
+			}
+			memcpy(reqData, td, sizeof(td));
+			enteredAt = f;
+			flags |= 8;
+		} else if (nextSwing < sc.swings.size() && t >= sc.swings[nextSwing].t - 1e-6f && mode != 0) {
 			if (mode == 1) smcall::Fn<Exit>(0xa86270)(j, nullptr);
 			if (mode == 2) smcall::Fn<Exit>(0xa701a0)(fall, nullptr);
 			StartSwing(sc.swings[nextSwing++]);
@@ -297,6 +346,7 @@ int main(int argc, char** argv)
 				flags |= 4;
 				if (g_reqDesc == kSwingJump) {
 					smcall::Fn<Exit>(0xaba8a0)(s, nullptr);
+					At<void*>(j, 0) = reinterpret_cast<void*>(smcall::g_base + kVtSwingJumpLocal);
 					At<double>(j, 0xd8) = g_time;
 					smcall::Fn<Fn2>(0xa86490)(j, g_reqData);
 					mode = 1;
@@ -371,7 +421,8 @@ int main(int argc, char** argv)
 		// the mover's turn toward the facing the state asked for (turn.h; constants per state as set on entry)
 		if (g_facingSet && mode != 3) {
 			static const float kSwingK[3] = { -1.42f, -44.0f, 4.18879f }, kJumpK[3] = { -1.2f, -33.0f, 7.85398f }, kFallK[3] = { -1.18f, -18.0f, 10.472f };
-			const float* k = mode == 0 ? kSwingK : mode == 1 ? kJumpK : kFallK;
+			// the jump's by its kind (exe+a7d260): the swing jump's for 0x11, the default for the launches
+			const float* k = mode == 0 ? kSwingK : (mode == 1 && Get<int>(j, 0x2c0) == 0x11) ? kJumpK : kFallK;
 			float        want[3], up[3] = { 0, 1, 0 };
 			if (arkweb::turn::WantFacing(g_facing, want)) {
 				float fw[3] = { g_heroMat[8], g_heroMat[9], g_heroMat[10] };

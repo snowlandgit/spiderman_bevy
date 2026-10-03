@@ -1,6 +1,8 @@
 //! Forward web-zip motion and physical web attachment search.
-//! Values come from the game's outdoor/ground web-zip setup; integration is independent.
-use crate::physics::{FOOT, Hero, Tower, ray_box};
+//! Values come from the game's outdoor/ground web-zip setup; integration is independent. (The zip to a point is
+//! crate::point_zip's.)
+use crate::physics::Hero;
+use crate::world::World;
 use bevy::prelude::*;
 use serde_json::Value;
 
@@ -97,12 +99,29 @@ impl ZipTuning {
         }
     }
 }
-pub fn anchors_for(position: Vec3, forward: Vec3, towers: &[Tower]) -> [Option<Vec3>; 2] {
+pub fn anchors_for(position: Vec3, forward: Vec3, world: &World) -> [Option<Vec3>; 2] {
     let forward = forward.with_y(0.).normalize_or_zero();
     let right = forward.cross(Vec3::Y);
     let mut anchors = [None, None];
     let mut scores = [f32::INFINITY; 2];
-    for tower in towers {
+    let mut consider = |anchor: Vec3, anchors: &mut [Option<Vec3>; 2]| {
+        let delta = anchor - position;
+        let distance = delta.length();
+        if !(3.0..55.0).contains(&distance) || delta.dot(forward) < 1. || delta.y < 0. {
+            return;
+        }
+        let side = if delta.dot(right) < 0. { 0 } else { 1 };
+        let direction = delta / distance;
+        if world.raycast(position + direction * 0.1, direction, distance - 0.25).is_some() {
+            return;
+        }
+        let score = (delta.dot(forward) - 20.).abs() + distance * 0.2 + (delta.y - 7.).abs();
+        if score < scores[side] {
+            scores[side] = score;
+            anchors[side] = Some(anchor);
+        }
+    };
+    for tower in &world.towers {
         let lo = tower.min();
         let hi = tower.max();
         let desired = position + forward * 20. + Vec3::Y * 7.;
@@ -113,67 +132,26 @@ pub fn anchors_for(position: Vec3, forward: Vec3, towers: &[Tower]) -> [Option<V
         for (axis, bound) in [(0, lo.x), (0, hi.x), (2, lo.z), (2, hi.z)] {
             let mut anchor = p;
             anchor[axis] = bound;
-            let delta = anchor - position;
-            let distance = delta.length();
-            if !(3.0..55.0).contains(&distance) || delta.dot(forward) < 1. || delta.y < 0. {
-                continue;
-            }
-            let side = if delta.dot(right) < 0. { 0 } else { 1 };
-            let direction = delta / distance;
-            if towers.iter().any(|b| {
-                ray_box(position + direction * 0.1, direction, *b, distance - 0.25).is_some()
-            }) {
-                continue;
-            }
-            let score = (delta.dot(forward) - 20.).abs() + distance * 0.2 + (delta.y - 7.).abs();
-            if score < scores[side] {
-                scores[side] = score;
-                anchors[side] = Some(anchor);
+            consider(anchor, &mut anchors);
+        }
+    }
+    // imported objects: what a few rays to either side ahead meet on their meshes
+    if world.has_mesh() {
+        for k in [-1f32, 1.] {
+            for (f, sd, u) in [(20., 8., 7.), (20., 14., 7.), (14., 10., 9.), (26., 6., 7.)] {
+                let dir = (forward * f + right * sd * k + Vec3::Y * u).normalize();
+                if let Some(h) = world.mesh_cast(position, dir, 0., 55.) {
+                    consider(h.point + h.normal * 0.02, &mut anchors);
+                }
             }
         }
     }
     anchors
 }
-pub fn perch_for(position: Vec3, aim: Vec3, towers: &[Tower]) -> Option<Vec3> {
-    let aim = aim.normalize_or_zero();
-    let mut best = None;
-    let mut score = f32::NEG_INFINITY;
-    for tower in towers {
-        let lo = tower.min();
-        let hi = tower.max();
-        for x in [lo.x + 0.65, hi.x - 0.65] {
-            for z in [lo.z + 0.65, hi.z - 0.65] {
-                let target = Vec3::new(x, hi.y + FOOT, z);
-                let delta = target - position;
-                let distance = delta.length();
-                if !(3.0..50.0).contains(&distance) {
-                    continue;
-                }
-                let direction = delta / distance;
-                let alignment = aim.dot(direction);
-                if alignment < 45f32.to_radians().cos() {
-                    continue;
-                }
-                // A reachable roof edge must have an unobstructed capsule-center approach.
-                if towers.iter().any(|b| {
-                    ray_box(position + direction * 0.1, direction, *b, distance - 0.8).is_some()
-                }) {
-                    continue;
-                }
-                let rank = alignment * 4. - distance / 100.;
-                if rank > score {
-                    score = rank;
-                    best = Some(target);
-                }
-            }
-        }
-    }
-    best
-}
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::physics::{Arena, DT, Intent, Mode, Tuning};
+    use crate::physics::{Arena, DT, FOOT, Intent, Mode, Tower, Tuning};
     #[test]
     fn zip_webs_attach_to_visible_tower_faces() {
         let h = Hero::default();
@@ -181,7 +159,7 @@ mod tests {
         let anchors = anchors_for(h.pos, Vec3::NEG_Z, &a.0);
         assert!(anchors.iter().any(Option::is_some));
         for p in anchors.into_iter().flatten() {
-            assert!(a.0.iter().any(|b| b.contains(p, 0.001)));
+            assert!(a.0.towers.iter().any(|b| b.contains(p, 0.001)));
         }
     }
     #[test]
@@ -287,7 +265,7 @@ mod tests {
                 forward: Vec3::NEG_Z,
                 ..default()
             },
-            &[],
+            &World::default(),
             &t,
             DT,
         );
@@ -322,15 +300,17 @@ mod tests {
                 && h.velocity.z < -10.
         );
     }
-    fn swing_zip_fixture(upward_speed: f32) -> (Hero, Vec<Tower>, Tuning) {
+    fn swing_zip_fixture(upward_speed: f32) -> (Hero, World, Tuning) {
         let t = Tuning::default();
-        let towers = [-20., 20.]
-            .into_iter()
-            .map(|x| Tower {
-                center: Vec3::new(x, 100., -40.),
-                half: Vec3::new(4., 100., 70.),
-            })
-            .collect::<Vec<_>>();
+        let towers = World::boxes(
+            &[-20., 20.]
+                .into_iter()
+                .map(|x| Tower {
+                    center: Vec3::new(x, 100., -40.),
+                    half: Vec3::new(4., 100., 70.),
+                })
+                .collect::<Vec<_>>(),
+        );
         let mut h = Hero::default();
         h.pos = Vec3::new(0., 100., 0.);
         h.velocity = Vec3::new(0., upward_speed, -24.);
@@ -423,32 +403,36 @@ mod tests {
         panic!("zip never kicked from the swing");
     }
     #[test]
-    fn point_zip_stops_on_the_selected_roof() {
-        let tower = Tower {
+    fn point_zip_perches_on_the_aimed_rim() {
+        let world = World::boxes(&[Tower {
             center: Vec3::new(0., 15., -20.),
             half: Vec3::new(8., 15., 8.),
-        };
+        }]);
         let t = Tuning::default();
         let mut h = Hero::default();
         h.pos = Vec3::new(0., 28., 0.);
         h.velocity = Vec3::ZERO;
-        let aim = Vec3::new(0., 3., -13.).normalize();
-        let target = perch_for(h.pos, aim, &[tower]).expect("roof target");
+        let eye = h.pos + Vec3::new(0., 1.5, 4.);
+        let aim = (Vec3::new(2., 30., -12.) - eye).normalize();
+        let target = crate::point_zip::find(&world, h.pos, eye, aim).expect("the rim");
+        assert!((target.hold - Vec3::new(target.hold.x, 30., -12.)).length() < 1e-3, "{target:?}");
         h.step(
             Intent {
                 point_zip: true,
                 aim,
+                aim_origin: eye,
                 ..default()
             },
-            &[tower],
+            &world,
             &t,
             DT,
         );
+        assert_eq!(h.mode, Mode::Zip);
         for _ in 0..240 {
-            h.step(Intent::default(), &[tower], &t, DT);
+            h.step(Intent::default(), &world, &t, DT);
         }
-        assert_eq!(h.mode, Mode::Ground);
-        assert!(h.pos.distance(target) < 0.1);
+        assert_eq!(h.mode, Mode::Perch);
+        assert!(h.pos.distance(target.feet + Vec3::Y * FOOT) < 1e-3);
         assert!(h.velocity.length() < 0.01);
     }
 }

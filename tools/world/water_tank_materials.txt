@@ -1,0 +1,11 @@
+LookGroups:
+0 2
+
+Materials used:
+0	material\environment\template\architecture\gbl_arch_concrete_trim_02\gbl_arch_metal_trim_01_hearst_02.material
+1	material\environment\template\architecture\gbl_arch_concrete_trim_02\gbl_arch_metal_trim_esu_signage_01.material
+
+Slots:
+===============================================================
+0	material\environment\template\architecture\gbl_arch_concrete_trim_02\gbl_arch_metal_trim_01_hearst_02.material
+1	material\environment\template\architecture\gbl_arch_concrete_trim_02\gbl_arch_metal_trim_esu_signage_01.material

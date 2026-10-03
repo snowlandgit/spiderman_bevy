@@ -1,0 +1,9 @@
+LookGroups:
+0 1
+
+Materials used:
+0	material\environment\template\architecture\gbl_arch_Concrete_Trim_02\sza_gbl_arch_painted_rusted_metal_trim_01.material
+
+Slots:
+===============================================================
+0	material\environment\template\architecture\gbl_arch_Concrete_Trim_02\sza_gbl_arch_painted_rusted_metal_trim_01.material

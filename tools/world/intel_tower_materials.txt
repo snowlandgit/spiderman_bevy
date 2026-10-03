@@ -1,0 +1,18 @@
+LookGroups:
+0 6
+
+Materials used:
+0	materials\cp_materials\plastic\cp_rough_plastic_black_glossy_trim_01.material
+0	materials\cp_materials\plastic\cp_rough_plastic_black_glossy_trim_01.material
+1	material\environment\template\architecture\gbl_arch_metal_trim_worn_01\jn_gbl_arch_metal_trim_worn_01.material
+2	materials\cp_materials\metal\cp_base_steel_trim_01.material
+3	materials\uv_pulsing_light\intel_tower_off_glow.material
+4	material\environment\template\architecture\gbl_arch_concrete_trim_01\rv_gbl_arch_tower_concrete_floor_trim_01.material
+
+Slots:
+===============================================================
+0	materials\cp_materials\plastic\cp_rough_plastic_black_glossy_trim_01.material
+1	material\environment\template\architecture\gbl_arch_metal_trim_worn_01\jn_gbl_arch_metal_trim_worn_01.material
+2	materials\cp_materials\metal\cp_base_steel_trim_01.material
+3	materials\uv_pulsing_light\intel_tower_off_glow.material
+4	material\environment\template\architecture\gbl_arch_concrete_trim_01\rv_gbl_arch_tower_concrete_floor_trim_01.material

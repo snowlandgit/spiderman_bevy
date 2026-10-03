@@ -1,0 +1,23 @@
+LookGroups:
+0 9
+
+Materials used:
+2	materials\cp_materials\glass\cp_glass_04_shinnier.material
+1	materials\cp_materials\metal\gh_cp_base_steal_trim_shiny_01.material
+1	materials\cp_materials\metal\gh_cp_base_steal_trim_shiny_01.material
+6	material\environment\template\architecture\gbl_arch_shiny_metal_trim_01\jn_gbl_arch_shiny_metal_trim_01_worn_02.material
+5	material\environment\global\prop\gbl_prop_Newsstand_01\np_gbl_prop_Newsstand_01.material
+5	material\environment\global\prop\gbl_prop_Newsstand_01\np_gbl_prop_Newsstand_01.material
+4	material\environment\global\prop\gbl_prop_scaffolding_lightbulb_01\np_gbl_prop_scaffolding_lightbulb_01.material
+3	materials\cp_materials\glass\cp_glass_04.material
+0	environment\outsourcing\glassegg\manmade\os_restauranttable_01\gh_glass_02_dirty_opaque.material
+
+Slots:
+===============================================================
+0	environment\outsourcing\glassegg\manmade\os_restauranttable_01\gh_glass_02_dirty_opaque.material
+1	materials\cp_materials\metal\gh_cp_base_steal_trim_shiny_01.material
+2	materials\cp_materials\glass\cp_glass_04_shinnier.material
+3	materials\cp_materials\glass\cp_glass_04.material
+4	material\environment\global\prop\gbl_prop_scaffolding_lightbulb_01\np_gbl_prop_scaffolding_lightbulb_01.material
+5	material\environment\global\prop\gbl_prop_Newsstand_01\np_gbl_prop_Newsstand_01.material
+6	material\environment\template\architecture\gbl_arch_shiny_metal_trim_01\jn_gbl_arch_shiny_metal_trim_01_worn_02.material

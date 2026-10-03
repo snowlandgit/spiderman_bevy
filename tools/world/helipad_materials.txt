@@ -1,0 +1,16 @@
+LookGroups:
+0 5
+
+Materials used:
+0	material\environment\template\architecture\gbl_arch_metal_trim_worn_01\jn_gbl_arch_metal_trim_worn_dirty.material
+3	environment\outsourcing\dhruva\manmade\os_hvackit\materials\os_hvackit_01_elements_01.material
+3	environment\outsourcing\dhruva\manmade\os_hvackit\materials\os_hvackit_01_elements_01.material
+1	environment\outsourcing\dhruva\manmade\os_hvackit_01\os_hvackit_01_a\os_hvackit_01_hvac.material
+2	environment\outsourcing\dhruva\manmade\os_hvackit\Materials\os_hvackit_01_metal.material
+
+Slots:
+===============================================================
+0	material\environment\template\architecture\gbl_arch_metal_trim_worn_01\jn_gbl_arch_metal_trim_worn_dirty.material
+1	environment\outsourcing\dhruva\manmade\os_hvackit_01\os_hvackit_01_a\os_hvackit_01_hvac.material
+2	environment\outsourcing\dhruva\manmade\os_hvackit\Materials\os_hvackit_01_metal.material
+3	environment\outsourcing\dhruva\manmade\os_hvackit\materials\os_hvackit_01_elements_01.material

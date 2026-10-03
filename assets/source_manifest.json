@@ -6110,5 +6110,1529 @@
         179482
       ]
     ]
+  },
+  {
+    "path": "environment/global/prop/gbl_prop_water_tank_plant_01/ch_gbl_prop_water_tank_plant_01.model",
+    "hash": "9F730FB57D5F4F63",
+    "bytes": 43156,
+    "sha256": "460fc4c07855c6248b9cead12d19d251c910dadd5804447129528ac14b212938",
+    "spans": [
+      [
+        0,
+        104751
+      ]
+    ]
+  },
+  {
+    "path": "environment/global/prop/gbl_prop_rooftop_access_01/gm_gbl_prop_rooftop_access_01.model",
+    "hash": "8498EF32EF1DBC85",
+    "bytes": 19604,
+    "sha256": "b984a50eacc1467a680d54dbfe6b915b8da5f1ce4dbfa42f5300540f39773fe4",
+    "spans": [
+      [
+        0,
+        15364
+      ]
+    ]
+  },
+  {
+    "path": "environment/global/ambient/gbl_amb_lamp_post_central_park_01/cg_gbl_amb_lamp_post_central_park_01.model",
+    "hash": "A55219C21AD45277",
+    "bytes": 277364,
+    "sha256": "4fc7b9693a0a525553744ae6a852e79b6ef7bda70a050faffb65e80a0792bb56",
+    "spans": [
+      [
+        0,
+        124074
+      ]
+    ]
+  },
+  {
+    "path": "environment/master_kits/np_newsstand/np_newsstand/np_newsstand.model",
+    "hash": "89A30F1594B9DA27",
+    "bytes": 122116,
+    "sha256": "c5c82658205838a4c64210254565dee7964c9b5a9b431b3583c196f592f9d467",
+    "spans": [
+      [
+        0,
+        32372
+      ]
+    ]
+  },
+  {
+    "path": "environment/master_kits/construction_tower/rv_construction_tower_scaffold_4x4x4/rv_construction_tower_scaffold_4x4x4.model",
+    "hash": "89637C7EBD9EAA09",
+    "bytes": 86964,
+    "sha256": "7ea10fe7a63336c735f0c23edd4d831c5d6dbcbac6d3575913f553df0931588b",
+    "spans": [
+      [
+        0,
+        31529
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/os_hvackit_industrial_01/os_hvackit_industrial_01.model",
+    "hash": "88FC7C0EBFB5F492",
+    "bytes": 162276,
+    "sha256": "29738ee081571c51cc560bbaddf8c505cb9e4aa30a88519945f8edd9e6beac9c",
+    "spans": [
+      [
+        0,
+        30217
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/os_helipad_platform/os_helipad_platform.model",
+    "hash": "BBE6D1A8DEE0A385",
+    "bytes": 28612,
+    "sha256": "178f3b0cd22bad1d8b269fb5e2f100391fe2b31cb1f0133119b916b6a9f88faf",
+    "spans": [
+      [
+        0,
+        199303
+      ]
+    ]
+  },
+  {
+    "path": "environment/building_kits/oscorp_building/rv_oscorp_building_roof_perch_antenna_01/rv_oscorp_building_roof_perch_antenna_01.model",
+    "hash": "B42E05662ACCAEDB",
+    "bytes": 120124,
+    "sha256": "0b9d1a385c3b716e79dee5049302158ce1f26362986f82cbeb5ef6e65a5c8bc1",
+    "spans": [
+      [
+        0,
+        173555
+      ]
+    ]
+  },
+  {
+    "path": "environment/global/prop/gbl_prop_intel_tower_large_01/gm_gbl_prop_intel_tower_large_01.model",
+    "hash": "99DE7B3939C23636",
+    "bytes": 676756,
+    "sha256": "ec902ec5880c8374fbb6c23c230412840febcd9c5c8d2e114b0cb811fd756f36",
+    "spans": [
+      [
+        0,
+        86179
+      ]
+    ]
+  },
+  {
+    "path": "environment/master_kits/jp_billboards/jp_billboardstand_2sides_4m/jp_billboardstand_2sides_4m.model",
+    "hash": "B26FA165047F53A1",
+    "bytes": 24404,
+    "sha256": "7b20afc334841808922d5526f204586c4b510ca62c453b0a74c8703025105254",
+    "spans": [
+      [
+        0,
+        167870
+      ]
+    ]
+  },
+  {
+    "path": "environment/global/ambient/gbl_amb_lamp_post_central_park_01/materials/concrete_base_round.material",
+    "hash": "B55EFBC478939261",
+    "bytes": 708,
+    "sha256": "623338391ec4a8de6aae06294188be67a2a8a4273da67b4e567e8ef5c1c62729",
+    "spans": [
+      [
+        0,
+        177591
+      ]
+    ]
+  },
+  {
+    "path": "environment/global/ambient/gbl_amb_lamp_post_central_park_01/textures/concrete_base_round_g.texture",
+    "hash": "BC1532ADE5F2134F",
+    "bytes": 174880,
+    "sha256": "41a7a00ec7d0a8b9c89bb30cc2f393dec85dcf249fa38c1651aa36b7bcc3622e",
+    "spans": [
+      [
+        0,
+        199890
+      ],
+      [
+        1,
+        233449
+      ]
+    ]
+  },
+  {
+    "path": "environment/global/ambient/gbl_amb_lamp_post_central_park_01/textures/concrete_base_round_n.texture",
+    "hash": "A4BB6AD16B7C1DCE",
+    "bytes": 349632,
+    "sha256": "2cb9ae004ab06ff48de5f5b325d7ce4b2097c9838b2f07ac8559a146321a2f6a",
+    "spans": [
+      [
+        0,
+        122070
+      ],
+      [
+        1,
+        225441
+      ]
+    ]
+  },
+  {
+    "path": "environment/global/ambient/gbl_amb_lamp_post_central_park_01/textures/concrete_base_round_c.texture",
+    "hash": "BCCF8C384A359410",
+    "bytes": 174880,
+    "sha256": "fc14de8235ea99d399eabd4dd8c3b7835e54249a686ad7aee8b07b98fba3e5aa",
+    "spans": [
+      [
+        0,
+        202292
+      ],
+      [
+        1,
+        233700
+      ]
+    ]
+  },
+  {
+    "path": "environment/global/ambient/gbl_amb_lamp_post_central_park_01/textures/concrete_base_round_m.texture",
+    "hash": "8F960529187F1D8E",
+    "bytes": 174880,
+    "sha256": "58088261ceda3490b51dba2f4c8053f2e2a37a05e28c6151dce09ec7f2238f46",
+    "spans": [
+      [
+        0,
+        52079
+      ],
+      [
+        1,
+        218212
+      ]
+    ]
+  },
+  {
+    "path": "environment/global/ambient/gbl_amb_lamp_post_central_park_01/materials/gbl_amb_lamp_post_central_park_01.material",
+    "hash": "91127497B61439BC",
+    "bytes": 788,
+    "sha256": "c2a69bfa9f4be42f9d0e8457399b69c44ebd8daf5a17c9ef8c726738dd42125b",
+    "spans": [
+      [
+        0,
+        57067
+      ]
+    ]
+  },
+  {
+    "path": "environment/global/ambient/gbl_amb_lamp_post_central_park_01/textures/gbl_amb_lamp_post_central_park_01_g.texture",
+    "hash": "9518386F0E96ECD1",
+    "bytes": 174880,
+    "sha256": "0ca3f63e2f1d0a23911492d4ff4cf4c2a8b42b40f150c2f914a76f6bd9723e54",
+    "spans": [
+      [
+        0,
+        70426
+      ],
+      [
+        1,
+        220144
+      ]
+    ]
+  },
+  {
+    "path": "environment/global/ambient/gbl_amb_lamp_post_central_park_01/textures/gbl_amb_lamp_post_central_park_01_n.texture",
+    "hash": "8DB660138018E250",
+    "bytes": 349632,
+    "sha256": "48f94b4db9c30234fbb9cfded5111ab364adabc3fe5975e653deed3d08806822",
+    "spans": [
+      [
+        0,
+        45865
+      ],
+      [
+        1,
+        217578
+      ]
+    ]
+  },
+  {
+    "path": "environment/global/ambient/gbl_amb_lamp_post_central_park_01/textures/gbl_amb_lamp_post_central_park_01_c.texture",
+    "hash": "95C286FAA1516B8E",
+    "bytes": 174880,
+    "sha256": "02c22302cab1be932c09c064659530d8cd7377642c10e12456b10b3fa820578e",
+    "spans": [
+      [
+        0,
+        72606
+      ],
+      [
+        1,
+        220370
+      ]
+    ]
+  },
+  {
+    "path": "environment/global/ambient/gbl_amb_lamp_post_central_park_01/textures/gbl_amb_lamp_post_central_park_01_m.texture",
+    "hash": "A69B0FEBF31BE210",
+    "bytes": 174880,
+    "sha256": "c61d98feb8198941dad13b5d0ea6eac779ae67f6f372a92878e4c46df4bdd8b6",
+    "spans": [
+      [
+        0,
+        128277
+      ],
+      [
+        1,
+        226097
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/materials/os_hvackit_01_elements_01.material",
+    "hash": "91B670A95A733573",
+    "bytes": 676,
+    "sha256": "72fd07ecd2a9f9d00d913c102e3321ccdeafc7c6ccb753e75e7d8e089bba293b",
+    "spans": [
+      [
+        0,
+        59197
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_01_elements_01_g.texture",
+    "hash": "A9F03D2F81313E3C",
+    "bytes": 174880,
+    "sha256": "0841443596790e6705d58e88ef7bd222d0839ae6dbb6818de98889e6d017aa4f",
+    "spans": [
+      [
+        0,
+        139496
+      ],
+      [
+        1,
+        227277
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_01_elements_01_n.texture",
+    "hash": "B15E65530FBF30BD",
+    "bytes": 349632,
+    "sha256": "233749896e1eb704f5ef6133f8c434215bedc956fc3edc2dca4708bc878af71e",
+    "spans": [
+      [
+        0,
+        164288
+      ],
+      [
+        1,
+        229800
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_01_elements_01_c.texture",
+    "hash": "A92A83BA2EF6B963",
+    "bytes": 174880,
+    "sha256": "ead7970c93627f0b3aace88e56b78d35ec2d21ada2078f2b2aa578fc5d4bb38a",
+    "spans": [
+      [
+        0,
+        136921
+      ],
+      [
+        1,
+        226988
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_01_elements_01_m.texture",
+    "hash": "9A730AAB7CBC30FD",
+    "bytes": 174880,
+    "sha256": "d1ccac764d9615601f68fc0a5d771f3a7875009f94709d4a154ed46e71cfab67",
+    "spans": [
+      [
+        0,
+        88102
+      ],
+      [
+        1,
+        221910
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/materials/os_hvackit_01_metal.material",
+    "hash": "B578BA7119F7EB82",
+    "bytes": 548,
+    "sha256": "9396fde515cbae3b3e44996a5c8a3253ba21c9179a1465bfe70a938ec813f0d5",
+    "spans": [
+      [
+        0,
+        177943
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_02_metal_g.texture",
+    "hash": "87BA929C3044D486",
+    "bytes": 174880,
+    "sha256": "adbcd2d1ef1a55527a3572574d6e683e5a2fea58f47955bc99a7cbb25e233f22",
+    "spans": [
+      [
+        0,
+        25992
+      ],
+      [
+        1,
+        215531
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_02_metal_n.texture",
+    "hash": "9F14CAE0BECADA07",
+    "bytes": 349632,
+    "sha256": "87df2baf93498d29e9d6e75ec0ce290d199e1706a60c9f74f678d6dc32c8550b",
+    "spans": [
+      [
+        0,
+        103572
+      ],
+      [
+        1,
+        223524
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_02_metal_c.texture",
+    "hash": "87602C099F8353D9",
+    "bytes": 174880,
+    "sha256": "5a271a4db05029764d70c1528c0936aa7d2f9902215301f11d4c978bc0e8ad07",
+    "spans": [
+      [
+        0,
+        24822
+      ],
+      [
+        1,
+        215393
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/materials/os_hvackit_02_bake_01.material",
+    "hash": "BBE5F0E287151DCD",
+    "bytes": 660,
+    "sha256": "d9bdacc7193de8990d0acd28dfc79d3600013b550968392f59c4d0035854b64a",
+    "spans": [
+      [
+        0,
+        199291
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_02_bake_01_g.texture",
+    "hash": "9042F49C483F8506",
+    "bytes": 174880,
+    "sha256": "31e98e6dd929c21cd7f976bf7ae87e3df2bd712162833f79461c096ab5b7dae3",
+    "spans": [
+      [
+        0,
+        54348
+      ],
+      [
+        1,
+        218434
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_02_bake_01_n.texture",
+    "hash": "88ECACE0C6B18B87",
+    "bytes": 349632,
+    "sha256": "15b1f5c0ed2aec8e9617c9b232a17de532b2ab0c3a2a2c77a5f5060d85166ad5",
+    "spans": [
+      [
+        0,
+        30018
+      ],
+      [
+        1,
+        215905
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_02_bake_01_c.texture",
+    "hash": "90984A09E7F80259",
+    "bytes": 174880,
+    "sha256": "64ab35a5c3e9bd2564d7ef23aebde4e28f5b1508fabb4afac3138b6599777d68",
+    "spans": [
+      [
+        0,
+        55464
+      ],
+      [
+        1,
+        218553
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_02_bake_01_m.texture",
+    "hash": "A3C1C318B5B28BC7",
+    "bytes": 174880,
+    "sha256": "c4ce2e719d0c14fad41088da13d96a88b62a77f6ac54b1923e7c76dbcf75574d",
+    "spans": [
+      [
+        0,
+        118917
+      ],
+      [
+        1,
+        225095
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/materials/os_hvackit_02_bake_02.material",
+    "hash": "86EFD018957636DB",
+    "bytes": 660,
+    "sha256": "d1d70cf029741cf56ff7375bfdd0068ba408a65611dbc156b084d7a543691679",
+    "spans": [
+      [
+        0,
+        23358
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_02_bake_02_g.texture",
+    "hash": "96FDF05789465958",
+    "bytes": 174880,
+    "sha256": "5d2df866381b4e329187c68c18acc4bef4729f62b308a375b9a30857ddcf9b25",
+    "spans": [
+      [
+        0,
+        76787
+      ],
+      [
+        1,
+        220788
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_02_bake_02_n.texture",
+    "hash": "8E53A82B07C857D9",
+    "bytes": 349632,
+    "sha256": "537e1b7a38a76df689d7cdeda6c6766b33afa0a535169275759d788748aa50d5",
+    "spans": [
+      [
+        0,
+        47861
+      ],
+      [
+        1,
+        217791
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_02_bake_02_c.texture",
+    "hash": "96274EC22681DE07",
+    "bytes": 349632,
+    "sha256": "290fc0df5ecb5276690d039609cf9f8b63a2b240b137c0a3ae052a2f7ea30dd6",
+    "spans": [
+      [
+        0,
+        73856
+      ],
+      [
+        1,
+        220485
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_02_bake_02_m.texture",
+    "hash": "A57EC7D374CB5799",
+    "bytes": 174880,
+    "sha256": "8b6b3ea59de3504329b2f4466a460ec257b7722e2b8b86fa30c9746eb853b283",
+    "spans": [
+      [
+        0,
+        124644
+      ],
+      [
+        1,
+        225723
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/materials/os_hvackit_02_bake_03.material",
+    "hash": "9216304E9B572FD6",
+    "bytes": 660,
+    "sha256": "4abb5eabeddb29c92d7f30d3421e8ad45614ee1f39797e37e348e8968387d985",
+    "spans": [
+      [
+        0,
+        60367
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_02_bake_03_n.texture",
+    "hash": "8C39546DB8E0E3EC",
+    "bytes": 349632,
+    "sha256": "bc45e785f97d685785b9e80f2cecb88e79a2ebdfd20055230677ff74557138bf",
+    "spans": [
+      [
+        0,
+        40933
+      ],
+      [
+        1,
+        217074
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_02_bake_03_c.texture",
+    "hash": "944DB28499A96A32",
+    "bytes": 349632,
+    "sha256": "4781922d7090288d8cb7141c30e9de28731dc7779e8f025945902b09c250a5df",
+    "spans": [
+      [
+        0,
+        67781
+      ],
+      [
+        1,
+        219894
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit/textures/os_hvackit_02_bake_03_m.texture",
+    "hash": "A7143B95CBE3E3AC",
+    "bytes": 174880,
+    "sha256": "b9b6346b803d91d423fbe3513ec6cb750debeeb03c56add9862e5011a4fea6cd",
+    "spans": [
+      [
+        0,
+        129931
+      ],
+      [
+        1,
+        226252
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit_01/os_hvackit_01_a/os_hvackit_01_decal.material",
+    "hash": "8D57536574F16F6F",
+    "bytes": 596,
+    "sha256": "1d414ca56a4a1a56422f876d51aa5a9f72c1199297a1bbe703d3a80b14637414",
+    "spans": [
+      [
+        0,
+        44646
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit_01/os_hvackit_01_a/os_hvackit_01_decal_g.texture",
+    "hash": "BA5A65249D555D40",
+    "bytes": 43808,
+    "sha256": "40d60b50309239d9dc2661c7373431144dc57fcc0fd1b2b9c3eacee94f1f2d0c",
+    "spans": [
+      [
+        0,
+        194200
+      ],
+      [
+        1,
+        232832
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit_01/os_hvackit_01_a/os_hvackit_01_decal_n.texture",
+    "hash": "A2F43D5813DB53C1",
+    "bytes": 87488,
+    "sha256": "c6c3ff71bc7f3fe947834e84249f5a2772233151bc9278d5e13245b8a1a299eb",
+    "spans": [
+      [
+        0,
+        116205
+      ],
+      [
+        1,
+        224803
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit_01/os_hvackit_01_a/os_hvackit_01_decal_c.texture",
+    "hash": "BA80DBB13292DA1F",
+    "bytes": 43808,
+    "sha256": "083c70a886c3e081172f24aea76f6376fd7ab145d8ccce2f525f3309a25251c8",
+    "spans": [
+      [
+        0,
+        194704
+      ],
+      [
+        1,
+        232891
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/dhruva/manmade/os_hvackit_01/os_hvackit_01_a/os_hvackit_01_hvac.material",
+    "hash": "B1675FC898885485",
+    "bytes": 456276,
+    "sha256": "b405aebe1c0a9d82ec76b7aeab78111fdcab10004df4c45935a8f9f96b77fc4b",
+    "spans": [
+      [
+        0,
+        164404
+      ]
+    ]
+  },
+  {
+    "path": "environment/props/manmade/global/np_bull_dozer/np_bull_dozer_metal_trim_01_g.texture",
+    "hash": "BDF5DE7310A5A398",
+    "bytes": 174880,
+    "sha256": "914250bd7cead6ce1c53871d82bbb9b05461ed9e863389191cedbd497ca8d9af",
+    "spans": [
+      [
+        0,
+        206139
+      ],
+      [
+        1,
+        234109
+      ]
+    ]
+  },
+  {
+    "path": "environment/props/manmade/global/np_bull_dozer/np_bull_dozer_metal_trim_01_n.texture",
+    "hash": "A55B860F9E2BAD19",
+    "bytes": 349632,
+    "sha256": "3030f0e136eaacfc70c6e478e2337b648b28bea05e7f71d53ecca1ecac8c6ef7",
+    "spans": [
+      [
+        0,
+        124209
+      ],
+      [
+        1,
+        225671
+      ]
+    ]
+  },
+  {
+    "path": "environment/props/manmade/global/np_bull_dozer/rb_dirty_metal_trim_01_c.texture",
+    "hash": "8D8EFB4997A1E240",
+    "bytes": 174880,
+    "sha256": "83110c9a2760e8dbc2e7b2c30e30d16011d7606e04344e1742934a5aaa505d0d",
+    "spans": [
+      [
+        0,
+        45392
+      ],
+      [
+        1,
+        217535
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_restauranttable_01/gh_glass_02_dirty_opaque.material",
+    "hash": "98A49EAA6FA99987",
+    "bytes": 454980,
+    "sha256": "05aa73b2d8dff3af586fd7b3c7e827a6dcaac8150603f2ee94fef4f35fccecc3",
+    "spans": [
+      [
+        0,
+        82138
+      ]
+    ]
+  },
+  {
+    "path": "textures/windows_glass/mo_window_glass_02/mo_window_glass_02_c.texture",
+    "hash": "829F863AFC81FBCB",
+    "bytes": 43808,
+    "sha256": "644c65980c75f870c766685baf848a1b5ac270fb96f5cf169767491568d20007",
+    "spans": [
+      [
+        0,
+        8750
+      ],
+      [
+        1,
+        213721
+      ]
+    ]
+  },
+  {
+    "path": "environment/outsourcing/glassegg/manmade/os_restauranttable_01/gh_glass_03_dirty.material",
+    "hash": "A96F48AFE22A8FD5",
+    "bytes": 454996,
+    "sha256": "bd1f10355f1d926c1ef574b7686ca83b076ea49f20f4a6f1dd5904008946ae93",
+    "spans": [
+      [
+        0,
+        137855
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/global/prop/gbl_prop_newsstand_01/np_gbl_prop_newsstand_01.material",
+    "hash": "9FD35B0E1EC2B20C",
+    "bytes": 484,
+    "sha256": "90b8d4edb2c03ec852b66caa1f481cf4ecd488047c72e30e962294bc81057377",
+    "spans": [
+      [
+        0,
+        105947
+      ]
+    ]
+  },
+  {
+    "path": "environment/master_kits/np_newsstand/np_newsstand_01_g.texture",
+    "hash": "A49F3DE0D8514663",
+    "bytes": 87488,
+    "sha256": "f42619a5a9f93956e7cb8c7fb845f0fd2a6251cc2c297ef8981983a0f8afa78c",
+    "spans": [
+      [
+        0,
+        121719
+      ],
+      [
+        1,
+        225409
+      ]
+    ]
+  },
+  {
+    "path": "environment/master_kits/np_newsstand/np_newsstand_01_n.texture",
+    "hash": "BC31659C56DF48E2",
+    "bytes": 174848,
+    "sha256": "07eb1b3fb00d9a4ddc34402438f35e64788d680bd4ca724b17af0604c8c604dd",
+    "spans": [
+      [
+        0,
+        200261
+      ],
+      [
+        1,
+        233494
+      ]
+    ]
+  },
+  {
+    "path": "environment/master_kits/np_newsstand/np_newsstand_01_c.texture",
+    "hash": "A44583757796C13C",
+    "bytes": 87488,
+    "sha256": "9d215d8061de90a5583ace9ff2c44790891b571aed4bb4d56c7095374f25ab49",
+    "spans": [
+      [
+        0,
+        120596
+      ],
+      [
+        1,
+        225285
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/global/prop/gbl_prop_scaffolding_debris_netting_01/jn_np_gbl_prop_scaffolding_debris_netting_grey.material",
+    "hash": "A18DDA394E471AC3",
+    "bytes": 836,
+    "sha256": "97f1122d49fd7a6f838eb18e66fd1df0b4ba4de94094d093bdc5a12927e68e53",
+    "spans": [
+      [
+        0,
+        111541
+      ]
+    ]
+  },
+  {
+    "path": "environment/master_kits/np_scaffolding_set/np_scaffolding_debris_netting_01_g.texture",
+    "hash": "BBB147468061E441",
+    "bytes": 43808,
+    "sha256": "6b4261be15e31401b5de236aa5c3cc9e89063b9d6250aab1718cd5d4ed614635",
+    "spans": [
+      [
+        0,
+        198619
+      ],
+      [
+        1,
+        233316
+      ]
+    ]
+  },
+  {
+    "path": "environment/master_kits/np_scaffolding_set/np_scaffolding_debris_netting_01_n.texture",
+    "hash": "A31F1F3A0EEFEAC0",
+    "bytes": 21952,
+    "sha256": "88862f668a25775a5bd4812920edde6b29a5d724dcf23b5a0d5bebc78b258338",
+    "spans": [
+      [
+        0,
+        116763
+      ],
+      [
+        1,
+        224856
+      ]
+    ]
+  },
+  {
+    "path": "environment/master_kits/np_scaffolding_set/np_scaffolding_debris_netting_01_c.texture",
+    "hash": "BB6BF9D32FA6631E",
+    "bytes": 21952,
+    "sha256": "a404934d358460a6ebccd55735285a5653540b295bbef66edd4f2b7d1b5d97ad",
+    "spans": [
+      [
+        0,
+        197678
+      ],
+      [
+        1,
+        233201
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/global/prop/gbl_prop_scaffolding_lightbulb_01/np_gbl_prop_scaffolding_lightbulb_01.material",
+    "hash": "98DDD51F6EADAF9B",
+    "bytes": 692,
+    "sha256": "cb183c98c19e5dddb90182fd90848072f41a6a3dd71d67e8342e6fa5f819218f",
+    "spans": [
+      [
+        0,
+        82876
+      ]
+    ]
+  },
+  {
+    "path": "environment/master_kits/np_scaffolding_set/np_scaffolding_lightbulb_01_c.texture",
+    "hash": "89BF160D43807103",
+    "bytes": 43808,
+    "sha256": "43ce50de05a04d755cc0443415cbbae288832cc94bc9e5411c7ea373a21aff65",
+    "spans": [
+      [
+        0,
+        32733
+      ]
+    ]
+  },
+  {
+    "path": "environment/master_kits/np_scaffolding_set/np_scaffolding_lightbulb_01_h.texture",
+    "hash": "A32704DE6F0C7FFD",
+    "bytes": 21952,
+    "sha256": "d6584177346ed615fbb97333bc1cd5191ceea88375640c76d137c16bc16950d1",
+    "spans": [
+      [
+        0,
+        116859
+      ],
+      [
+        1,
+        224868
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/nebula/architecture/neb_arch_emissive_lights_01/gh_gbl_arch_parallax_glow_01_red.material",
+    "hash": "AE2886830DC97486",
+    "bytes": 868,
+    "sha256": "40df48d5f4c31dd529670f8602de1ffa29e86ab1718a01bd72b1f56938388c76",
+    "spans": [
+      [
+        0,
+        153574
+      ]
+    ]
+  },
+  {
+    "path": "textures/environment/nebula_g34/architecture/mo_neb_glow_mask_01/mo_neb_glow_mask_01_g.texture",
+    "hash": "AFB89C7B3BBD292E",
+    "bytes": 43808,
+    "sha256": "0cc824e01f83a6f56760ca2eaad0245b8a9bbf1d39c1c6e279c9fe216894a49a",
+    "spans": [
+      [
+        0,
+        158803
+      ],
+      [
+        1,
+        229227
+      ]
+    ]
+  },
+  {
+    "path": "textures/environment/nebula_g34/architecture/mo_neb_glow_mask_01/mo_neb_glow_mask_01_n.texture",
+    "hash": "B716C407B53327AF",
+    "bytes": 87488,
+    "sha256": "bb8ab3b561918b40c12359aece112603ee7c8dac406cf855bff2aae3538ef99b",
+    "spans": [
+      [
+        0,
+        183301
+      ],
+      [
+        1,
+        231762
+      ]
+    ]
+  },
+  {
+    "path": "textures/props/rv_gbl_prop_parallax_glow_01/rv_gbl_prop_parallax_glow_01_h.texture",
+    "hash": "9895BF02EC9E42A1",
+    "bytes": 43808,
+    "sha256": "3a7de55f044ce1baf6b155afa9e6d49254e92394d1f2aff1e6e4f52381ce7f6b",
+    "spans": [
+      [
+        0,
+        81936
+      ],
+      [
+        1,
+        221295
+      ]
+    ]
+  },
+  {
+    "path": "textures/environment/nebula_g34/architecture/mo_neb_glow_mask_01/mo_neb_glow_mask_01_parallax_glow_h.texture",
+    "hash": "84C010FBA8C4F260",
+    "bytes": 43808,
+    "sha256": "bce0c8072da5a960ad36b0b255da321ff89c606f529f9fd8468b06eda276e71a",
+    "spans": [
+      [
+        0,
+        15902
+      ],
+      [
+        1,
+        214513
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_concrete_trim_01/jn_gbl_arch_concrete_trim_01_white.material",
+    "hash": "A96842C083DF27CB",
+    "bytes": 772,
+    "sha256": "42e54e554ca4d2facc3260b16308d348c3011d1b525e1740dff70c2364bf06d1",
+    "spans": [
+      [
+        0,
+        137755
+      ]
+    ]
+  },
+  {
+    "path": "textures/concrete/jn_concrete_trim_01/jn_concrete_trim_01_g.texture",
+    "hash": "8E892CB7467AB216",
+    "bytes": 349632,
+    "sha256": "76c2a5677c104201474143323722ea32b72a3cefea7d802fe43e8260f1c3c50f",
+    "spans": [
+      [
+        0,
+        48548
+      ],
+      [
+        1,
+        217882
+      ]
+    ]
+  },
+  {
+    "path": "textures/concrete/jn_concrete_trim_01/jn_concrete_trim_01_n.texture",
+    "hash": "962774CBC8F4BC97",
+    "bytes": 349632,
+    "sha256": "3af8cf762aabd085c2e672a2a543465fa8f94660fa945b4370f6843f60f930b1",
+    "spans": [
+      [
+        0,
+        73860
+      ],
+      [
+        1,
+        220486
+      ]
+    ]
+  },
+  {
+    "path": "textures/molsen/mo_rain_fx/mo_rain_fx_wet_pattern_h.texture",
+    "hash": "BB88D91A4B60D84B",
+    "bytes": 43808,
+    "sha256": "1dc0e34b1aa187602688c775143308d7858acbe12e70c1df55b892ca3c6c9eb2",
+    "spans": [
+      [
+        0,
+        198076
+      ],
+      [
+        1,
+        233246
+      ]
+    ]
+  },
+  {
+    "path": "textures/concrete/jn_concrete_trim_01/jn_concrete_trim_01_c.texture",
+    "hash": "8E539222E9BD3549",
+    "bytes": 174880,
+    "sha256": "5f7c61e1029044206098f6287874c6cb6707f52d2fa3986d252d4b6f53385048",
+    "spans": [
+      [
+        0,
+        47859
+      ],
+      [
+        1,
+        217790
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_concrete_trim_01/rv_gbl_arch_tower_concrete_floor_trim_01.material",
+    "hash": "AACFC95531FDC45C",
+    "bytes": 884,
+    "sha256": "bbb6cef45839fb546864f02b5631dd54f74a1eece9d039cf9d69fd3a16b655f0",
+    "spans": [
+      [
+        0,
+        142381
+      ]
+    ]
+  },
+  {
+    "path": "textures/masks/rooftop_grunge_noise_mask_array.texture",
+    "hash": "AC0DDF4967CA7A48",
+    "bytes": 349632,
+    "sha256": "007f96231c74a00808217e7a612b99a72169772cae3bbce2c548227ba0133fb2",
+    "spans": [
+      [
+        0,
+        146560
+      ],
+      [
+        1,
+        228001
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_concrete_trim_02/gbl_arch_metal_trim_01_hearst_02.material",
+    "hash": "9F030CD739701AC6",
+    "bytes": 788,
+    "sha256": "3723518a9a4437ecbe5908ef4e79377f0915708ef97584f0636b0caab4dc2e18",
+    "spans": [
+      [
+        0,
+        103317
+      ]
+    ]
+  },
+  {
+    "path": "textures/metal/jn_shiny_metal_trim_01/jn_shiny_metal_trim_01_c.texture",
+    "hash": "A6EBFDC14FC4E213",
+    "bytes": 11040,
+    "sha256": "cdf0c97dc1f5379083b1721cfe3fa47f1a4701f31a336e4d1dc1ac60642e7775",
+    "spans": [
+      [
+        0,
+        129375
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_concrete_trim_02/gbl_arch_metal_trim_esu_signage_01.material",
+    "hash": "B7EFE09946BADB45",
+    "bytes": 868,
+    "sha256": "31b852c93bde45caa8c3b66b6bbce90d350faeb8deb18939b9d4a3366325620b",
+    "spans": [
+      [
+        0,
+        186114
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_concrete_trim_02/rv_gbl_arch_painted_rusted_metal_trim_white.material",
+    "hash": "9ECF6E021B263AE8",
+    "bytes": 724,
+    "sha256": "05d08dbcaab2e54955923ef869549d610442bcfe4de7163a0bdcf623c20b16bb",
+    "spans": [
+      [
+        0,
+        102655
+      ]
+    ]
+  },
+  {
+    "path": "i20_substances/sza_painted_rusted_metal/sza_painted_rusted_metal_g.texture",
+    "hash": "ABEFDA24EB8A8821",
+    "bytes": 43808,
+    "sha256": "fbed4ccf422638f05010db5be2e6bbebe11e258ac16a6949c46e633355471a42",
+    "spans": [
+      [
+        0,
+        146187
+      ],
+      [
+        1,
+        227957
+      ]
+    ]
+  },
+  {
+    "path": "i20_substances/sza_painted_rusted_metal/sza_painted_rusted_metal_n.texture",
+    "hash": "B3418258650486A0",
+    "bytes": 87488,
+    "sha256": "a93bf95fc42668f87a2db0fcb033e09b27f0da95980e02f2e468b4f4b7a605af",
+    "spans": [
+      [
+        0,
+        170522
+      ],
+      [
+        1,
+        230447
+      ]
+    ]
+  },
+  {
+    "path": "i20_substances/sza_painted_rusted_metal/sza_painted_rusted_metal_c.texture",
+    "hash": "AB3564B1444D0F7E",
+    "bytes": 43808,
+    "sha256": "7dafa089b92004ca0efb6d1df09eaa7c7d1f3cd81febb6d93619539a84fead9a",
+    "spans": [
+      [
+        0,
+        143706
+      ],
+      [
+        1,
+        227721
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_concrete_trim_02/sza_gbl_arch_painted_rusted_metal_trim_01.material",
+    "hash": "AFCEF1E27BD985B7",
+    "bytes": 772,
+    "sha256": "9c6df5c332df4af168d6e96d04b3f649461c53eeaa13eb6b6dc88612deb689bf",
+    "spans": [
+      [
+        0,
+        159093
+      ]
+    ]
+  },
+  {
+    "path": "i20_substances/sza_painted_rusted_metal/za_painted_rusted_metal_g.texture",
+    "hash": "AEC8F19C66D3FF76",
+    "bytes": 87488,
+    "sha256": "e37d25f89b65ba93c532e87cc2be95bb2cf72f22cad4f9e700cbf3dd0b28a91f",
+    "spans": [
+      [
+        0,
+        155627
+      ],
+      [
+        1,
+        228923
+      ]
+    ]
+  },
+  {
+    "path": "i20_substances/sza_painted_rusted_metal/za_painted_rusted_metal_n.texture",
+    "hash": "B666A9E0E85DF1F7",
+    "bytes": 87488,
+    "sha256": "d891095717d4326d186eb377624d7c8a71fd404e1a90fa0d8bb511d961c03f99",
+    "spans": [
+      [
+        0,
+        181021
+      ],
+      [
+        1,
+        231535
+      ]
+    ]
+  },
+  {
+    "path": "textures/metal/mo_hvac_metal_trim_01/za_hvac_metal_trim_01_c.texture",
+    "hash": "BF727CB23A99C37E",
+    "bytes": 174880,
+    "sha256": "34ae501356bab91ce65d3f69713b547da019aa9b29bd4e3a18efc0469648296a",
+    "spans": [
+      [
+        0,
+        211007
+      ],
+      [
+        1,
+        234610
+      ]
+    ]
+  },
+  {
+    "path": "textures/metal/jn_metal_trim_worn_01/jn_metal_trim_worn_01_c.texture",
+    "hash": "8E82233C6E8613CA",
+    "bytes": 43808,
+    "sha256": "ddcc87d54bb514dfab4392245efa97d5ec1c805f865bc0a48d4eca62c74a0747",
+    "spans": [
+      [
+        0,
+        48450
+      ],
+      [
+        1,
+        217869
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_metal_trim_worn_01/jn_gbl_arch_metal_trim_worn_dirty.material",
+    "hash": "8E0AC95BB97AF94D",
+    "bytes": 980,
+    "sha256": "ec56049702d71f82ba1ba16de9781af4cf59b3f3ec3356ea9dd78e272f572af8",
+    "spans": [
+      [
+        0,
+        46919
+      ]
+    ]
+  },
+  {
+    "path": "material/environment/template/architecture/gbl_arch_shiny_metal_trim_01/jn_gbl_arch_shiny_metal_trim_01_worn_02.material",
+    "hash": "B26510EA4F5F9DE2",
+    "bytes": 820,
+    "sha256": "c5d637a7e7dfdefd750f1f1ef2a702269b42a5cf84fa2569b2454e83b04948cd",
+    "spans": [
+      [
+        0,
+        167747
+      ]
+    ]
+  },
+  {
+    "path": "textures/metal/jn_shiny_metal_trim_01/jn_shiny_metal_trim_01_g.texture",
+    "hash": "A6314354E003654C",
+    "bytes": 349632,
+    "sha256": "be86caed62c431de14ae75c5d9d40fdda3f705c31c5e09d5f93fe8195e857d02",
+    "spans": [
+      [
+        0,
+        126940
+      ],
+      [
+        1,
+        225967
+      ]
+    ]
+  },
+  {
+    "path": "materials/cp_materials/glass/cp_glass_04.material",
+    "hash": "9A5E9183C3B762C9",
+    "bytes": 468,
+    "sha256": "5f9b53c6dc3c9b4b22c66847c0605a42220495c38eedf3a22f04fe57eb6ad0cf",
+    "spans": [
+      [
+        0,
+        87810
+      ]
+    ]
+  },
+  {
+    "path": "materials/cp_materials/glass/cp_glass_04_shinnier.material",
+    "hash": "9D9E1BC838F8F556",
+    "bytes": 468,
+    "sha256": "890c742dd355c62f153282a9cbf92683b3e8aa50f05f9e15a5df00478d9a4b52",
+    "spans": [
+      [
+        0,
+        98750
+      ]
+    ]
+  },
+  {
+    "path": "materials/cp_materials/metal/cp_base_steel_trim_01.material",
+    "hash": "8315C83DB964810D",
+    "bytes": 548,
+    "sha256": "57153ebf7a2265e2b88c94cdc4407cfc4c18eccdf88cae223697c46a492e4541",
+    "spans": [
+      [
+        0,
+        10260
+      ]
+    ]
+  },
+  {
+    "path": "materials/cp_materials/metal/gh_cp_base_steal_trim_shiny_01.material",
+    "hash": "8DE979B348D6FF45",
+    "bytes": 500,
+    "sha256": "6ab1c563f9ad9fab9aeefb93202920685cdc12ef5894cccd714fb79ab9cbe23c",
+    "spans": [
+      [
+        0,
+        46519
+      ]
+    ]
+  },
+  {
+    "path": "textures/cperrella/metal/cp_base_steel_trim_01_g.texture",
+    "hash": "923B7D375200F813",
+    "bytes": 174880,
+    "sha256": "08db808407faf43999e6f59eaf4e5cf26c4cc65ced072f395946ab4dd7414126",
+    "spans": [
+      [
+        0,
+        60874
+      ],
+      [
+        1,
+        219108
+      ]
+    ]
+  },
+  {
+    "path": "textures/cperrella/metal/cp_base_steel_trim_01_n.texture",
+    "hash": "8A95254BDC8EF692",
+    "bytes": 349632,
+    "sha256": "967a939e8816b345905d926e011149af7f172344d6354a4f55994a1dd30aaccf",
+    "spans": [
+      [
+        0,
+        35489
+      ],
+      [
+        1,
+        216485
+      ]
+    ]
+  },
+  {
+    "path": "textures/artdepartment/lighting/gobos/black_bg_128.texture",
+    "hash": "A16594BFAD9107CF",
+    "bytes": 2176,
+    "sha256": "912cfb0df499bb6beeebdd2547912aec34eeb237329555a698589d6671511f8e",
+    "spans": [
+      [
+        0,
+        111048
+      ]
+    ]
+  },
+  {
+    "path": "materials/cp_materials/plastic/cp_plastic_trim_01_black.material",
+    "hash": "B5182D9A4D6E930C",
+    "bytes": 457412,
+    "sha256": "edd6b492323e3cf4f1eec52aef876c9a8e1db3321a39b30b56da27e77960d533",
+    "spans": [
+      [
+        0,
+        176686
+      ]
+    ]
+  },
+  {
+    "path": "textures/cperrella/plastic/cp_plastic_trim_01_g.texture",
+    "hash": "8DEC484800AA9B69",
+    "bytes": 174880,
+    "sha256": "2145ecb1f664efb45c0cce5a6d4a8dafdb54ff822304f982d7cf31a5c86d5a9d",
+    "spans": [
+      [
+        0,
+        46555
+      ],
+      [
+        1,
+        217656
+      ]
+    ]
+  },
+  {
+    "path": "textures/cperrella/plastic/cp_plastic_trim_01_n.texture",
+    "hash": "954210348E2495E8",
+    "bytes": 349632,
+    "sha256": "ca920f0b0d4bf805b6967ab2e9f5a76a75eaa1518dba423602fe31e7f78cab7c",
+    "spans": [
+      [
+        0,
+        70982
+      ],
+      [
+        1,
+        220189
+      ]
+    ]
+  },
+  {
+    "path": "textures/cperrella/plastic/cp_plastic_trim_01_c.texture",
+    "hash": "8D36F6DDAF6D1C36",
+    "bytes": 174880,
+    "sha256": "531c80972fbf8a15a3ce38f21b4a7e36c49e8531ee7b1dc52d8c796d81d7e98e",
+    "spans": [
+      [
+        0,
+        44241
+      ],
+      [
+        1,
+        217434
+      ]
+    ]
+  },
+  {
+    "path": "materials/cp_materials/plastic/cp_rough_plastic_black_glossy_trim_01.material",
+    "hash": "9539F315BC0524FF",
+    "bytes": 844900,
+    "sha256": "fb7f87a347eb2e70065129b0b2ecefe86faa9412b15f2698d6237be0e045a844",
+    "spans": [
+      [
+        0,
+        70878
+      ]
+    ]
+  },
+  {
+    "path": "textures/cperrella/plastic/cp_detail_normal_plastic_01_n.texture",
+    "hash": "A49B4A6FEE73E31E",
+    "bytes": 21952,
+    "sha256": "99c220dbb6ca4aa7baaffc594378ccad10642895e4ea98fd8a2d5a37fae57bab",
+    "spans": [
+      [
+        0,
+        121662
+      ],
+      [
+        1,
+        225402
+      ]
+    ]
+  },
+  {
+    "path": "materials/uv_pulsing_light/intel_tower_off_glow.material",
+    "hash": "9806FFCF12C7B044",
+    "bytes": 356,
+    "sha256": "78b46f6521f30c4bbd4b3affd4e2b27e79bcb9d39f8f714c41fd0f9477ce3902",
+    "spans": [
+      [
+        0,
+        80139
+      ]
+    ]
   }
 ]

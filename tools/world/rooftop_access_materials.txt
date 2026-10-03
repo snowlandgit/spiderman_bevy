@@ -1,0 +1,15 @@
+LookGroups:
+0 4
+
+Materials used:
+3	materials\cp_materials\metal\cp_base_steel_trim_01.material
+2	environment\outsourcing\glassegg\manmade\os_restauranttable_01\gh_glass_03_dirty.material
+0	material\environment\template\architecture\gbl_arch_concrete_trim_01\jn_gbl_arch_concrete_trim_01_white.material
+1	material\environment\global\procedural\gbl_proc_stain_decal_random_01\jn_gbl_proc_stain_trim_decal_random_01.material
+
+Slots:
+===============================================================
+0	material\environment\template\architecture\gbl_arch_concrete_trim_01\jn_gbl_arch_concrete_trim_01_white.material
+1	material\environment\global\procedural\gbl_proc_stain_decal_random_01\jn_gbl_proc_stain_trim_decal_random_01.material
+2	environment\outsourcing\glassegg\manmade\os_restauranttable_01\gh_glass_03_dirty.material
+3	materials\cp_materials\metal\cp_base_steel_trim_01.material

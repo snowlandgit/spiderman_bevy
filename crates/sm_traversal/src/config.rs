@@ -369,12 +369,46 @@ pub struct JumpSpeed {
 #[derive(Clone, Debug, Default, Deserialize)]
 #[serde(rename_all = "PascalCase", default)]
 pub struct JumpConfigs {
+    pub single_jump_config: JumpConfig,
     pub swing_jump_config: JumpConfig,
+    pub zip_point_launch_jump_config: JumpConfig,
+    pub perch_jump_config: JumpConfig,
     pub swing_jump_speed: JumpSpeed,
     pub dive_jump_speed: JumpSpeed,
     pub ground_jump_speed: JumpSpeed,
+    pub perch_jump_speed: JumpSpeed,
     pub default_drag_profile: DragProfile,
     pub drag_profile_list: Vec<DragProfile>,
+}
+
+/// HeroPointLaunchConfig's exit data (PointLaunchExitData): the launch off a point, and what a well-timed press adds
+#[derive(Clone, Copy, Debug, Default, Deserialize)]
+#[serde(rename_all = "PascalCase", default)]
+pub struct PointLaunchExitData {
+    pub launch_speed: f32,
+    pub time_to_peak: f32,
+    pub jump_height: f32,
+    pub launch_speed_bonus: f32,
+    pub time_to_peak_bonus: f32,
+    pub jump_height_bonus: f32,
+}
+
+/// HeroTraversalConfig.PointLaunchConfig (+0x508, HeroPointLaunchConfig)
+#[derive(Clone, Copy, Debug, Default, Deserialize)]
+#[serde(rename_all = "PascalCase", default)]
+pub struct PointLaunchConfig {
+    pub exit_data_full: PointLaunchExitData,
+    pub exit_data_zero: PointLaunchExitData,
+    pub exit_data_back: PointLaunchExitData,
+    pub auto_vault: PointLaunchExitData,
+    pub perch_to_perch_point_launch: PointLaunchExitData,
+    pub boost_window_min: f32,
+    pub boost_window_max: f32,
+    pub boost_min_apply: f32,
+    #[serde(rename = "BoostMaxFXPerc")]
+    pub boost_max_fx_perc: f32,
+    pub max_exit_angle: f32,
+    pub gravity_fall: f32,
 }
 
 #[derive(Clone, Debug, Default, Deserialize)]
@@ -384,6 +418,7 @@ pub struct HeroTraversalConfig {
     pub standard_fall_terminal_velocity: f32,
     pub standard_fall_terminal_velocity_max: f32,
     pub standard_fall_term_vel_accel: f32,
+    pub point_launch_config: PointLaunchConfig,
     pub jump_configs: JumpConfigs,
 }
 

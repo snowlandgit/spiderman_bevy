@@ -1,0 +1,19 @@
+LookGroups:
+0 6
+
+Materials used:
+1	materials\cp_materials\plastic\cp_rough_plastic_black_glossy_trim_01.material
+4	materials\cp_materials\plastic\cp_rough_plastic_black_glossy_trim_01.material
+2	materials\cp_materials\metal\cp_base_steel_trim_01.material
+0	materials\cp_materials\plastic\cp_plastic_trim_01_black.material
+5	material\environment\nebula\architecture\neb_arch_emissive_lights_01\gh_gbl_arch_parallax_glow_01_red.material
+3	materials\uv_pulsing_light\intel_tower_off_glow.material
+
+Slots:
+===============================================================
+0	materials\cp_materials\plastic\cp_plastic_trim_01_black.material
+1	materials\cp_materials\plastic\cp_rough_plastic_black_glossy_trim_01.material
+2	materials\cp_materials\metal\cp_base_steel_trim_01.material
+3	materials\uv_pulsing_light\intel_tower_off_glow.material
+4	materials\cp_materials\plastic\cp_rough_plastic_black_glossy_trim_01.material
+5	material\environment\nebula\architecture\neb_arch_emissive_lights_01\gh_gbl_arch_parallax_glow_01_red.material

@@ -1,4 +1,4 @@
-//! Stable orbit camera: shared aim/position focus, bounded pitch, fixed FOV.
+//! Stable orbit camera: shared aim/position focus, bounded pitch, speed FOV; it looks up past him from the ground.
 use crate::physics::{Hero, Mode};
 use bevy::prelude::*;
 use serde::Deserialize;
@@ -23,6 +23,10 @@ pub struct CameraTuning {
     pub fov_speed_max: f32,
     pub fov_rate_degrees: f32,
     pub distance_restore_rate: f32,
+    /// how far up the view can tilt; the boom's length it comes in to when looking up; its clearance over the floor
+    pub look_up_max_degrees: f32,
+    pub look_up_distance: f32,
+    pub ground_clearance: f32,
 }
 impl Default for CameraTuning {
     fn default() -> Self {
@@ -81,6 +85,27 @@ impl Follow {
         }
     }
 }
+/// The camera's place and view round `target` (just over his head) along `forward` (level). `look`: the pitch the
+/// player asked for (radians; positive from above, negative looking up), `distance`: the boom as collisions allow it,
+/// `floor`: the height of what is under the camera. Looking up, the boom swings down under him and comes in toward
+/// look_up_distance, but never lower than ground_clearance over the floor; once it is down there the view alone tilts
+/// on up, so standing on the street he can still look up at the rooftops. Elsewhere it is the plain orbit, looking at
+/// the target.
+pub fn pose(target: Vec3, forward: Vec3, look: f32, distance: f32, floor: f32, tuning: &CameraTuning) -> (Vec3, Vec3) {
+    let min_y = floor + tuning.ground_clearance;
+    let lowest = |d: f32| ((min_y - target.y) / d.max(0.01)).clamp(-1., 1.).asin();
+    let full = lowest(distance);
+    let mut d = distance;
+    if look < full {
+        let k = ((full - look) / (full + tuning.look_up_max_degrees.to_radians())).clamp(0., 1.);
+        d = distance + (tuning.look_up_distance.min(distance) - distance) * k;
+    }
+    let orbit = look.max(lowest(d));
+    let mut eye = target + (-forward * orbit.cos() + Vec3::Y * orbit.sin()) * d;
+    eye.y = eye.y.max(min_y);
+    (eye, forward * look.cos() - Vec3::Y * look.sin())
+}
+
 /// The horizontal FOV for his speed, approached at the configured rate
 pub fn speed_fov(current: f32, speed: f32, dt: f32, tuning: &CameraTuning) -> f32 {
     let t = crate::native_swing::remap(speed, tuning.fov_speed_min, tuning.fov_speed_max);
@@ -133,6 +158,34 @@ mod tests {
         h.pos = Vec3::new(80., 2., 30.);
         follow.update(&h, dt, &t);
         assert!(follow.focus.distance(h.pos) < 0.001);
+    }
+    #[test]
+    fn looking_up_from_the_ground_tilts_the_view_without_going_under_it() {
+        let t = CameraTuning::default();
+        let target = Vec3::new(0., 1.3, 0.);
+        let mut last_d = f32::INFINITY;
+        for look_degrees in [0f32, -10., -20., -40., -60., -72.] {
+            let look = look_degrees.to_radians();
+            let (eye, view) = pose(target, Vec3::NEG_Z, look, 5.5, 0., &t);
+            assert!(eye.y >= t.ground_clearance - 1e-4, "{look_degrees}: under the street at {eye:?}");
+            // the view is the asked pitch: up to 72 degrees above the horizon
+            assert!((view.y - (-look).sin()).abs() < 1e-5 && (view.length() - 1.).abs() < 1e-5);
+            let d = eye.distance(target);
+            assert!(d <= last_d + 1e-4 && d >= t.look_up_distance - 1e-3, "{look_degrees}: {d}");
+            assert!(eye.z > 0., "behind him");
+            last_d = d;
+        }
+    }
+    #[test]
+    fn in_the_air_the_camera_orbits_and_looks_at_him() {
+        let t = CameraTuning::default();
+        let target = Vec3::new(0., 50., 0.);
+        for look_degrees in [30f32, 0., -40., -72.] {
+            let look = look_degrees.to_radians();
+            let (eye, view) = pose(target, Vec3::NEG_Z, look, 5.5, 0., &t);
+            assert!((eye.distance(target) - 5.5).abs() < 1e-4);
+            assert!(((target - eye).normalize() - view).length() < 1e-4, "{look_degrees}");
+        }
     }
     #[test]
     fn automatic_turning_and_collision_recovery_are_rate_limited() {

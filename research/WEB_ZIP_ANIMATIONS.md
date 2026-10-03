@@ -1,18 +1,18 @@
 # Web zips and original animation poses
 
-E / X performs a forward two-handed web zip. Q performs a rooftop point zip
-when a reachable white target is visible in the camera direction. Controller
-X performs a forward zip; LT + RT performs a rooftop zip. Forward zips may
-interrupt swinging, have repeat lockouts, preserve existing fast momentum,
-and use distinct grounded, airborne and dive entry behavior. Web endpoints
-are visible, unobstructed original building surfaces. Rooftop zips stop at a
-roof corner rather than launching past it.
+E / X performs a forward two-handed web zip. Controller X performs a forward
+zip. Forward zips may interrupt swinging, have repeat lockouts, preserve
+existing fast momentum, and use distinct grounded, airborne and dive entry
+behavior. Web endpoints are visible, unobstructed surfaces.
+
+Q (LT + RT) zips to the point the light-blue diamond marks, along the root
+motion of the original web_zip_attach_fwd_spiderman clip, and Space (A) as he
+arrives point-launches him with the game's own launch; see ZIP_TO_POINT.md.
 
 The forward zip controller reads the recovered outdoor and ground zip setup
 JSON files in assets/tuning. These supply boost limits, outgoing speed floors,
 height and time-to-peak values, successive-zip caps and cooldowns. Motion is
-independently integrated; the original native zip implementation has not been
-ported in full. Point-zip approach and braking are authored for this sandbox.
+independently integrated; the original native forward zip has not been ported.
 
 The character library now contains 49 original clips and 19 mirrored variants.
 The forward swing uses web_swing_fwd_rh_spiderman, referenced by the original

@@ -1,0 +1,248 @@
+{
+  "units": "meters",
+  "props": {
+    "prop_water_tank": {
+      "asset": "world/prop_water_tank.glb",
+      "min": [
+        -1.068847417831421,
+        0.0,
+        -1.0068360567092896
+      ],
+      "max": [
+        1.068847417831421,
+        6.012694835662842,
+        1.0068360567092896
+      ],
+      "size": [
+        2.137694835662842,
+        6.012694835662842,
+        2.013672113418579
+      ],
+      "vertices": 1739,
+      "triangles": 2080,
+      "sha256": "0bd839c34a3376dcdb4dbde22e2bdf70ab8f8ffcf648a50b70b0d88929684329",
+      "source": "environment/global/prop/gbl_prop_water_tank_plant_01/ch_gbl_prop_water_tank_plant_01.model"
+    },
+    "prop_rooftop_access": {
+      "asset": "world/prop_rooftop_access.glb",
+      "min": [
+        -1.321532964706421,
+        0.0,
+        -1.314697504043579
+      ],
+      "max": [
+        1.321532964706421,
+        3.912842035293579,
+        1.314697504043579
+      ],
+      "size": [
+        2.643065929412842,
+        3.912842035293579,
+        2.629395008087158
+      ],
+      "vertices": 842,
+      "triangles": 450,
+      "sha256": "e5c807f40add6ce9fb6f26aa0a4776f99f353dd06c136c628c3d2eb1641d231c",
+      "source": "environment/global/prop/gbl_prop_rooftop_access_01/gm_gbl_prop_rooftop_access_01.model"
+    },
+    "prop_lamp_post": {
+      "asset": "world/prop_lamp_post.glb",
+      "min": [
+        -0.3536375164985657,
+        0.0,
+        -0.3505859971046448
+      ],
+      "max": [
+        0.3536375164985657,
+        3.70849609375,
+        0.3505859971046448
+      ],
+      "size": [
+        0.7072750329971313,
+        3.70849609375,
+        0.7011719942092896
+      ],
+      "vertices": 5812,
+      "triangles": 6664,
+      "sha256": "1c7b7d5692877a178b106d4163f60907a861f48553d2faa28b9143920859692f",
+      "source": "environment/global/ambient/gbl_amb_lamp_post_central_park_01/cg_gbl_amb_lamp_post_central_park_01.model"
+    },
+    "prop_newsstand": {
+      "asset": "world/prop_newsstand.glb",
+      "min": [
+        -2.298095941543579,
+        0.0,
+        -1.7663575410842896
+      ],
+      "max": [
+        2.298095941543579,
+        3.354491949081421,
+        1.7663575410842896
+      ],
+      "size": [
+        4.596191883087158,
+        3.354491949081421,
+        3.532715082168579
+      ],
+      "vertices": 5942,
+      "triangles": 3727,
+      "sha256": "a4f5683e2387168cb04f802f47ffe1a650ce2411c3cafd27c917fd72e9197b4f",
+      "source": "environment/master_kits/np_newsstand/np_newsstand/np_newsstand.model"
+    },
+    "prop_scaffold_tower": {
+      "asset": "world/prop_scaffold_tower.glb",
+      "min": [
+        -2.028075933456421,
+        0.0,
+        -2.038330078125
+      ],
+      "max": [
+        2.028075933456421,
+        4.0,
+        2.038330078125
+      ],
+      "size": [
+        4.056151866912842,
+        4.0,
+        4.07666015625
+      ],
+      "vertices": 4109,
+      "triangles": 3017,
+      "sha256": "9b767a68bd054ee55eb3dc1383a86da4459f50afebb3f62f4839101218c88571",
+      "source": "environment/master_kits/construction_tower/rv_construction_tower_scaffold_4x4x4/rv_construction_tower_scaffold_4x4x4.model"
+    },
+    "prop_hvac_industrial": {
+      "asset": "world/prop_hvac_industrial.glb",
+      "min": [
+        -2.501220941543579,
+        0.0,
+        -4.519287109375
+      ],
+      "max": [
+        2.501220941543579,
+        5.933837890625,
+        4.519287109375
+      ],
+      "size": [
+        5.002441883087158,
+        5.933837890625,
+        9.03857421875
+      ],
+      "vertices": 4462,
+      "triangles": 3764,
+      "sha256": "a0004d0d971c5ae284b3961680b587ef3ce7a20cd209a82f0160c7cdef659a38",
+      "source": "environment/outsourcing/dhruva/manmade/os_hvackit/os_hvackit_industrial_01/os_hvackit_industrial_01.model"
+    },
+    "prop_helipad": {
+      "asset": "world/prop_helipad.glb",
+      "min": [
+        -4.028076171875,
+        0.0,
+        -4.0301513671875
+      ],
+      "max": [
+        4.028076171875,
+        3.201904773712158,
+        4.0301513671875
+      ],
+      "size": [
+        8.05615234375,
+        3.201904773712158,
+        8.060302734375
+      ],
+      "vertices": 1118,
+      "triangles": 644,
+      "sha256": "be819b93376a2d42a15aca201f4d60e9db73a771827f5266d9c2ea5736ef9be4",
+      "source": "environment/outsourcing/dhruva/manmade/os_hvackit/os_helipad_platform/os_helipad_platform.model"
+    },
+    "prop_perch_antenna": {
+      "asset": "world/prop_perch_antenna.glb",
+      "min": [
+        -0.1323239952325821,
+        0.0,
+        -1.329345941543579
+      ],
+      "max": [
+        0.1323239952325821,
+        8.346923828125,
+        1.329345941543579
+      ],
+      "size": [
+        0.2646479904651642,
+        8.346923828125,
+        2.658691883087158
+      ],
+      "vertices": 4646,
+      "triangles": 3888,
+      "sha256": "e19a2e4b44e22b06f1609da96b7000cde6c51fb4222d409f9c7679f2371e1b3a",
+      "source": "environment/building_kits/oscorp_building/rv_oscorp_building_roof_perch_antenna_01/rv_oscorp_building_roof_perch_antenna_01.model"
+    },
+    "prop_intel_tower": {
+      "asset": "world/prop_intel_tower.glb",
+      "min": [
+        -0.4931645095348358,
+        0.0,
+        -0.4896239936351776
+      ],
+      "max": [
+        0.4931645095348358,
+        7.249268054962158,
+        0.4896239936351776
+      ],
+      "size": [
+        0.9863290190696716,
+        7.249268054962158,
+        0.9792479872703552
+      ],
+      "vertices": 15217,
+      "triangles": 10468,
+      "sha256": "10c7ea6ac3414ac4476c9805e04d9533e9ad23ed952d82a3958182b303fce527",
+      "source": "environment/global/prop/gbl_prop_intel_tower_large_01/gm_gbl_prop_intel_tower_large_01.model"
+    },
+    "prop_billboard_stand": {
+      "asset": "world/prop_billboard_stand.glb",
+      "min": [
+        -2.031615972518921,
+        0.0,
+        -1.426758050918579
+      ],
+      "max": [
+        2.031615972518921,
+        4.490966796875,
+        1.426758050918579
+      ],
+      "size": [
+        4.063231945037842,
+        4.490966796875,
+        2.853516101837158
+      ],
+      "vertices": 1088,
+      "triangles": 748,
+      "sha256": "85ed666b6214aa9be9e9673404138c5f67ba2115ef2ab2f775d39f355b0ca77c",
+      "source": "environment/master_kits/jp_billboards/jp_billboardstand_2sides_4m/jp_billboardstand_2sides_4m.model"
+    },
+    "prop_ac_unit": {
+      "asset": "world/prop_ac_unit.glb",
+      "min": [
+        -2.756591796875,
+        0.0,
+        -2.273681640625
+      ],
+      "max": [
+        2.756591796875,
+        4.3544921875,
+        2.273681640625
+      ],
+      "size": [
+        5.51318359375,
+        4.3544921875,
+        4.54736328125
+      ],
+      "vertices": 4912,
+      "triangles": 5041,
+      "sha256": "897a40011c8e65e4dc3fb1bfafe0dca2fcc02e87e3e95f378b94b46c8c64c6dd",
+      "source": "environment/props/manmade/global/pp_skyscraper_ac_unit/pp_skyscraper_ac_unit.model"
+    }
+  },
+  "objects": 62
+}

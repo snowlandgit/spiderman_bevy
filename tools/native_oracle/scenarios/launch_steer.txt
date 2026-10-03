@@ -1,0 +1,14 @@
+# A boosted point launch with the stick forward (ExitDataFull plus its bonuses: 32 m/s on, 9 m up in 0.7 s), 20 degrees
+# off the zip, then steered: right, back against the travel, let go
+dt 0.0166667
+frames 180
+pos 0 30 0
+vel 0 0 22
+yaw 0
+r2 0 0
+enter 0 jump 42 53 0.342020 0.939693 32 25.714286 36.734694 30 1
+stick 0 0 1
+stick 0.5 1 0
+stick 1.2 0 -1
+stick 1.8 0 0
+cam follow 3 -12

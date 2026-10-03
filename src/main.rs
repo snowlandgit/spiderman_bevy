@@ -11,8 +11,10 @@ use loading::{SceneReady, SceneReadyPlugin};
 mod comparison;
 mod native_swing;
 mod physics;
+mod point_zip;
 mod presentation;
 mod traversal;
+mod world;
 use bevy::{
     app::AppExit,
     gltf::Gltf,
@@ -27,7 +29,7 @@ use bevy::{
     world_serialization::WorldInstanceReady,
 };
 use physics::*;
-use std::{collections::HashMap, path::PathBuf};
+use std::{collections::HashMap, path::PathBuf, sync::Arc};
 
 const MODEL: &str = "character/spiderman.glb";
 #[derive(Component)]
@@ -113,6 +115,12 @@ impl CameraRig {
     fn forward(&self) -> Vec3 {
         Vec3::new(-self.yaw.sin(), 0., -self.yaw.cos())
     }
+}
+/// The collision world's build from the imported meshes (once they have loaded)
+#[derive(Resource, Default)]
+struct WorldBuild {
+    frames: u32,
+    done: bool,
 }
 #[derive(Resource, Default)]
 struct DisplayState {
@@ -205,6 +213,7 @@ fn main() -> AppExit {
         })
         .insert_resource(Time::<Fixed>::from_hz(60.))
         .init_resource::<Arena>()
+        .init_resource::<WorldBuild>()
         .init_resource::<Tuning>()
         .init_resource::<Hero>()
         .init_resource::<presentation::Snapshots>()
@@ -256,6 +265,7 @@ fn main() -> AppExit {
         .add_systems(
             Update,
             (
+                build_world,
                 load_character,
                 presentation::update_render,
                 animate,
@@ -389,7 +399,7 @@ fn setup(
             ..default()
         },
     ));
-    commands.spawn((HelpText,Text::new("WASD  Move / steer     SHIFT or LMB  Hold to swing     SPACE  Tap jump / hold then release high or long jump\nCTRL  Dive     E/X  Air zip     Q  Roof zip     R  Reset     RMB  Look     ESC  Free cursor\nF1  Hide controls     F3  Debug     F12  Screenshot     Controller: RT swing / A jump / X zip / LT+RT roof zip"),
+    commands.spawn((HelpText,Text::new("WASD  Move / steer     SHIFT or LMB  Hold to swing     SPACE  Tap jump / hold then release high or long jump\nCTRL  Dive     E/X  Air zip     Q  Zip to the marked point (SPACE as you arrive: point launch)     C  Drop off a perch     R  Reset\nRMB  Look     ESC  Free cursor     F1  Hide controls     F3  Debug     F12  Screenshot\nController: RT swing / A jump / X zip / LT+RT zip to point, A as you arrive to launch / B drop"),
         TextFont {font_size:FontSize::Px(16.),..default()},TextColor(Color::srgb(0.91,0.93,0.95)),
         Node {position_type:PositionType::Absolute,left:px(26),bottom:px(24),..default()}));
     commands.spawn((
@@ -408,6 +418,64 @@ fn setup(
     ));
 }
 
+/// Builds the collision world once the environment has loaded: the authored boxes, then every [`MeshCollider`]
+/// scene's meshes where they stand (one model per mesh, shared by all its placements)
+///
+/// [`MeshCollider`]: environment::MeshCollider
+fn build_world(
+    mut arena: ResMut<Arena>,
+    mut build: ResMut<WorldBuild>,
+    environment: Res<environment::EnvironmentAssets>,
+    server: Res<AssetServer>,
+    roots: Query<Entity, With<environment::MeshCollider>>,
+    children: Query<&Children>,
+    parts: Query<(&Mesh3d, &GlobalTransform)>,
+    meshes: Res<Assets<Mesh>>,
+) {
+    if build.done || !environment.ready(&server) {
+        return;
+    }
+    // a couple of frames after the scenes are in, their transforms have propagated
+    build.frames += 1;
+    if build.frames < 3 {
+        return;
+    }
+    let mut models: HashMap<AssetId<Mesh>, Arc<world::Model>> = HashMap::new();
+    let mut objects = Vec::new();
+    for root in &roots {
+        for e in children.iter_descendants(root) {
+            let Ok((mesh3d, global)) = parts.get(e) else {
+                continue;
+            };
+            let Some(mesh) = meshes.get(&mesh3d.0) else {
+                continue;
+            };
+            let model = models
+                .entry(mesh3d.0.id())
+                .or_insert_with(|| {
+                    let mut tris = Vec::new();
+                    world::mesh_triangles(mesh, &GlobalTransform::IDENTITY, &mut tris);
+                    Arc::new(world::Model::new(&tris))
+                })
+                .clone();
+            if model.triangle_count() > 0 {
+                objects.push(world::Object { model, transform: global.compute_transform() });
+            }
+        }
+    }
+    let towers = arena.0.towers.clone();
+    arena.0 = world::World::new(towers, &objects);
+    build.done = true;
+    info!(
+        "collision world: {} boxes, {} placed meshes ({} distinct), {} triangles, {} perch ledges",
+        arena.0.towers.len(),
+        arena.0.object_count(),
+        models.len(),
+        arena.0.triangle_count(),
+        arena.0.ledges.len()
+    );
+}
+
 fn read_input(
     keys: Res<ButtonInput<KeyCode>>,
     time: Res<Time>,
@@ -422,7 +490,10 @@ fn read_input(
     mut display: ResMut<DisplayState>,
     smoke: Res<Smoke>,
     mut commands: Commands,
+    mut aiming: Local<bool>,
+    camera_tuning: Res<CameraTuning>,
 ) {
+    let look_up = camera_tuning.look_up_max_degrees.to_radians();
     if smoke.enabled {
         return;
     }
@@ -435,6 +506,7 @@ fn read_input(
         intent.dive = false;
         intent.zip = false;
         intent.point_zip = false;
+        intent.drop = false;
         rig.locked = false;
         cursor.grab_mode = CursorGrabMode::None;
         cursor.visible = true;
@@ -455,7 +527,7 @@ fn read_input(
             rig.look_age = 0.;
         }
         rig.yaw -= motion.delta.x * 0.0025;
-        rig.pitch = (rig.pitch + motion.delta.y * 0.002).clamp(-0.5, 1.1);
+        rig.pitch = (rig.pitch + motion.delta.y * 0.002).clamp(-look_up, 1.1);
     }
     let mut movement = Vec2::new(
         (keys.pressed(KeyCode::KeyD) as u8 as f32) - (keys.pressed(KeyCode::KeyA) as u8 as f32),
@@ -469,6 +541,7 @@ fn read_input(
     let mut jump_held = keys.pressed(KeyCode::Space);
     let mut zip = keys.just_pressed(KeyCode::KeyE) || keys.just_pressed(KeyCode::KeyX);
     let mut point_zip = keys.just_pressed(KeyCode::KeyQ);
+    let mut drop = keys.just_pressed(KeyCode::KeyC);
     for pad in &pads {
         let stick = Vec2::new(
             pad.get(GamepadAxis::LeftStickX).unwrap_or(0.),
@@ -477,12 +550,21 @@ fn read_input(
         if stick.length() > 0.13 {
             movement = stick;
         }
-        swing |= pad.pressed(GamepadButton::RightTrigger2);
-        dive |= pad.pressed(GamepadButton::LeftTrigger2);
-        if pad.pressed(GamepadButton::LeftTrigger2) && pad.pressed(GamepadButton::RightTrigger2) {
+        let lt = pad.pressed(GamepadButton::LeftTrigger2);
+        let rt = pad.pressed(GamepadButton::RightTrigger2);
+        swing |= rt;
+        // LT held on from the zip-to-point chord is aiming at the next point, not the dive
+        if lt && rt {
+            *aiming = true;
+        } else if !lt {
+            *aiming = false;
+        }
+        dive |= lt && !*aiming;
+        if lt && rt {
             dive = false;
             swing = false;
         }
+        drop |= pad.just_pressed(GamepadButton::East);
         jump |= pad.just_pressed(GamepadButton::South);
         jump_held |= pad.pressed(GamepadButton::South);
         zip |= pad.just_pressed(GamepadButton::West);
@@ -496,7 +578,7 @@ fn read_input(
         rig.yaw -= pad.get(GamepadAxis::RightStickX).unwrap_or(0.) * 2.1 * time.delta_secs();
         rig.pitch = (rig.pitch
             - pad.get(GamepadAxis::RightStickY).unwrap_or(0.) * 1.5 * time.delta_secs())
-        .clamp(-0.5, 1.1);
+        .clamp(-look_up, 1.1);
     }
     let forward = rig.forward();
     intent.movement = movement.clamp_length_max(1.);
@@ -509,7 +591,9 @@ fn read_input(
     intent.jump |= jump;
     intent.zip |= zip;
     intent.point_zip |= point_zip;
+    intent.drop |= drop;
     intent.aim = *camera.forward();
+    intent.aim_origin = camera.translation;
     intent.reset |= keys.just_pressed(KeyCode::KeyR);
     if keys.just_pressed(KeyCode::F1) {
         display.help = !display.help;
@@ -536,8 +620,10 @@ fn simulate(
     ready: Res<SceneReady>,
     environment: Res<environment::EnvironmentAssets>,
     server: Res<AssetServer>,
+    world_build: Res<WorldBuild>,
 ) {
-    if !environment.ready(&server)
+    if !world_build.done
+        || !environment.ready(&server)
         || !smoke.loaded
         || ready.stable_frames < 30
         || real_time.elapsed_secs() < 2.
@@ -594,12 +680,14 @@ fn simulate(
                 hero.mode_age = 0.;
                 hero.rope = None;
                 hero.zip_motion = None;
-                hero.zip_target = None;
+                hero.point_zip = None;
+                hero.perch = None;
+                hero.native.stop(time.delta_secs());
                 hero.zip_cooldown = 0.;
                 input.point_zip = true;
                 input.aim = (Vec3::new(16.7, 72.95, -31.7) - hero.pos).normalize();
             }
-            if step > 600 && hero.mode == Mode::Ground && hero.pos.y > 60. {
+            if step > 600 && hero.mode == Mode::Perch && hero.pos.y > 60. {
                 smoke.perched = true;
             }
         }
@@ -655,6 +743,7 @@ fn simulate(
     input.jump = false;
     input.zip = false;
     input.point_zip = false;
+    input.drop = false;
     input.reset = false;
 }
 
@@ -879,10 +968,9 @@ fn draw_web(
         if hero.mode_age >= 0.12 && hero.mode_age <= 0.48 {
             anchors = zip.anchors;
         }
-    } else if let Some(point) = hero.zip_target {
+    } else if let Some(z) = hero.point_zip {
         if hero.mode_age >= 0.12 {
-            let surface = point - Vec3::Y * FOOT;
-            anchors = [Some(surface), Some(surface)];
+            anchors = [Some(z.perch.hold), Some(z.perch.hold)];
         }
     }
     // a swing web let go: it hangs from its hold and drops away
@@ -950,14 +1038,27 @@ fn draw_web(
             *visibility = Visibility::Hidden;
         }
     }
-    if hero.mode != Mode::Zip {
-        if let Some(target) = zip::perch_for(hero.pos, input.aim, &arena.0) {
-            gizmos.sphere(
-                Isometry3d::from_translation(target - Vec3::Y * FOOT),
-                0.4,
-                Color::srgba(0.92, 0.96, 1., 0.8),
-            );
+    // the point a zip would go to: a light diamond facing the camera round it, 2 % of its distance across (ArkWeb's)
+    let eye = if input.aim_origin == Vec3::ZERO { hero.pos + Vec3::Y * 0.6 } else { input.aim_origin };
+    if hero.point_zip.is_none() {
+        if let Some(p) = point_zip::find(&arena.0, hero.pos, eye, input.aim) {
+            let to_eye = (eye - p.hold).normalize_or(Vec3::Z);
+            let right = Vec3::Y.cross(to_eye).normalize_or(Vec3::X);
+            let up = to_eye.cross(right);
+            let r = (eye.distance(p.hold) * 0.02).max(0.12);
+            let corners = [p.hold + up * r, p.hold + right * r, p.hold - up * r, p.hold - right * r];
+            for k in 0..4 {
+                gizmos.line(corners[k], corners[(k + 1) % 4], Color::srgb(0.55, 0.85, 1.));
+            }
         }
+    }
+    if display.debug {
+        // the perch ledges nearby (on buildings and imported objects alike)
+        arena.0.ledges_near(hero.pos, 25., |l| {
+            if l.a.distance(hero.pos) < 25. {
+                gizmos.line(l.a, l.b, Color::srgba(1., 0.8, 0.2, 0.6));
+            }
+        });
     }
     if display.debug {
         let wish = input.forward * input.movement.y + input.right * input.movement.x;
@@ -1022,19 +1123,20 @@ fn update_camera(
         .max(rig.follow.focus.distance(hero.pos));
     let forward = rig.forward();
     let target = rig.follow.focus + Vec3::Y * config.pivot_height;
-    let orbit_pitch = (rig.pitch + rig.follow.auto_pitch).clamp(-1.2, 1.2);
-    let offset = -forward * orbit_pitch.cos() + Vec3::Y * orbit_pitch.sin();
+    let look = (rig.pitch + rig.follow.auto_pitch).clamp(-config.look_up_max_degrees.to_radians(), 1.2);
+    // the floor under the camera (the street, or a roof he stands on); then the boom as far as nothing is in its way
+    let at = camera.0.translation;
+    let floor = arena.0.ground_below(Vec3::new(at.x, target.y + 0.5, at.z));
+    let (reach, _) = camera::pose(target, forward, look, config.follow_distance, floor, &config);
+    let boom = reach - target;
     let mut allowed = config.follow_distance;
-    for tower in &arena.0 {
-        if let Some(hit) = ray_box(target, offset, *tower, allowed) {
-            allowed = allowed.min((hit - 0.35).max(0.7));
-        }
+    if let Some(hit) = arena.0.raycast(target, boom.normalize_or(Vec3::Y), boom.length()) {
+        allowed = allowed.min((hit.t - 0.35).max(0.7));
     }
     rig.follow.constrain_distance(allowed, dt, &config);
-    let mut desired = target + offset * rig.follow.distance;
-    desired.y = desired.y.max(0.8);
-    camera.0.translation = desired;
-    camera.0.look_at(target, Vec3::Y);
+    let (eye, view) = camera::pose(target, forward, look, rig.follow.distance, floor, &config);
+    camera.0.translation = eye;
+    camera.0.look_to(view, Vec3::Y);
     rig.fov = camera::speed_fov(rig.fov, hero.velocity.length(), dt, &config);
     if let Projection::Perspective(projection) = &mut *camera.1 {
         projection.fov =
@@ -1077,6 +1179,12 @@ fn update_hud(
                         "JUMP CHARGE {:0.0}%",
                         charge / tuning.jump.full_charge_seconds * 100.
                     )
+                } else if hero.since_launch < 1.2 {
+                    match hero.launch_fx {
+                        2 => "POINT LAUNCH  BOOST".into(),
+                        1 => "POINT LAUNCH  (EARLY)".into(),
+                        _ => "POINT LAUNCH".into(),
+                    }
                 } else {
                     hero.mode.label().into()
                 },

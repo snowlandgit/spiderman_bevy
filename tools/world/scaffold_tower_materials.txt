@@ -1,0 +1,13 @@
+LookGroups:
+0 4
+
+Materials used:
+1	materials\cp_materials\metal\cp_base_steel_trim_01.material
+1	materials\cp_materials\metal\cp_base_steel_trim_01.material
+1	materials\cp_materials\metal\cp_base_steel_trim_01.material
+0	material\environment\global\prop\gbl_prop_Scaffolding_Debris_Netting_01\jn_np_gbl_prop_scaffolding_debris_netting_grey.material
+
+Slots:
+===============================================================
+0	material\environment\global\prop\gbl_prop_Scaffolding_Debris_Netting_01\jn_np_gbl_prop_scaffolding_debris_netting_grey.material
+1	materials\cp_materials\metal\cp_base_steel_trim_01.material
