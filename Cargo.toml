@@ -8,12 +8,24 @@ members = ["crates/sm_traversal"]
 
 [dependencies]
 sm_traversal = { path = "crates/sm_traversal" }
-bevy = { version = "=0.19.1", default-features = false, features = ["3d", "ui", "default_font", "png", "jpeg", "multi_threaded", "gamepad"] }
+bevy = { version = "=0.19.1", default-features = false, features = ["3d", "ui", "default_font", "png", "jpeg", "gamepad"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
+
+# desktop: use all CPU cores
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+bevy = { version = "=0.19.1", default-features = false, features = ["multi_threaded"] }
+
+# browser: single thread, WebGL2 (works on Android Chrome)
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+bevy = { version = "=0.19.1", default-features = false, features = ["webgl2", "web"] }
 
 [profile.dev]
 opt-level = 1
 
 [profile.dev.package."*"]
 opt-level = 3
+
+[profile.release]
+opt-level = 3
+lto = "thin"
