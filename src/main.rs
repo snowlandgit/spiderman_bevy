@@ -13,6 +13,7 @@ mod native_swing;
 mod physics;
 mod point_zip;
 mod presentation;
+mod touch;
 mod traversal;
 mod world;
 use bevy::{
@@ -219,6 +220,7 @@ fn main() -> AppExit {
                 }),
         )
         .add_plugins(SceneReadyPlugin)
+        .add_plugins(touch::TouchPlugin)
         .insert_resource(ClearColor(Color::srgb(0.48, 0.59, 0.69)))
         .insert_resource(GlobalAmbientLight {
             color: Color::srgb(0.8, 0.86, 1.),
@@ -274,7 +276,12 @@ fn main() -> AppExit {
             min_web_shot_lead: None,
         })
         .add_systems(Startup, setup)
-        .add_systems(PreUpdate, read_input.after(bevy::input::InputSystems))
+        .add_systems(
+            PreUpdate,
+            (touch::read_touch, read_input)
+                .chain()
+                .after(bevy::input::InputSystems),
+        )
         .add_systems(FixedUpdate, simulate)
         .add_systems(
             Update,
@@ -506,6 +513,7 @@ fn read_input(
     mut commands: Commands,
     mut aiming: Local<bool>,
     camera_tuning: Res<CameraTuning>,
+    touch: Res<touch::TouchState>,
 ) {
     let look_up = camera_tuning.look_up_max_degrees.to_radians();
     if smoke.enabled {
@@ -594,6 +602,25 @@ fn read_input(
             - pad.get(GamepadAxis::RightStickY).unwrap_or(0.) * 1.5 * time.delta_secs())
         .clamp(-look_up, 1.1);
     }
+    // touch screen: joystick, buttons and camera drag
+    if touch.seen {
+        display.help = false;
+    }
+    if touch.movement != Vec2::ZERO {
+        movement = touch.movement;
+    }
+    swing |= touch.swing;
+    dive |= touch.dive;
+    jump |= touch.jump;
+    jump_held |= touch.jump_held;
+    zip |= touch.zip;
+    point_zip |= touch.point_zip;
+    drop |= touch.drop;
+    if touch.look != Vec2::ZERO {
+        rig.look_age = 0.;
+        rig.yaw -= touch.look.x * 0.005;
+        rig.pitch = (rig.pitch + touch.look.y * 0.004).clamp(-look_up, 1.1);
+    }
     let forward = rig.forward();
     intent.movement = movement.clamp_length_max(1.);
     intent.forward = forward;
@@ -608,7 +635,7 @@ fn read_input(
     intent.drop |= drop;
     intent.aim = *camera.forward();
     intent.aim_origin = camera.translation;
-    intent.reset |= keys.just_pressed(KeyCode::KeyR);
+    intent.reset |= keys.just_pressed(KeyCode::KeyR) || touch.reset;
     if keys.just_pressed(KeyCode::F1) {
         display.help = !display.help;
     }
