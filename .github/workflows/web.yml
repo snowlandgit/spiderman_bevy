@@ -1,0 +1,35 @@
+name: Web build
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: rustup show
+      - uses: Swatinem/rust-cache@v2
+      - name: Build wasm
+        run: cargo build --release --target wasm32-unknown-unknown
+      - name: Install wasm-bindgen-cli (version from Cargo.lock)
+        run: |
+          V=$(grep -A1 '^name = "wasm-bindgen"$' Cargo.lock | grep version | cut -d'"' -f2)
+          cargo install wasm-bindgen-cli --version "$V" --locked
+      - name: Package
+        run: |
+          mkdir -p dist/assets
+          wasm-bindgen --target web --no-typescript --out-dir dist --out-name game target/wasm32-unknown-unknown/release/spiderman_bevy.wasm
+          cp -r assets/character assets/world dist/assets/
+          cat > dist/index.html <<'HTML'
+          <!doctype html><html><head><meta charset="utf-8">
+          <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+          <title>Spider-Man Bevy</title>
+          <style>html,body{margin:0;height:100%;overflow:hidden;background:#000;touch-action:none}
+          #bevy{width:100vw;height:100vh;display:block}</style></head>
+          <body><canvas id="bevy"></canvas><script type="module">
+          import init from './game.js';
+          try { await init(); } catch (e) { console.log(e); }
+          </script></body></html>
+          HTML
+      - uses: actions/upload-artifact@v4
+        with:
+          name: web-dist
+          path: dist
