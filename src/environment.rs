@@ -84,6 +84,11 @@ impl EnvironmentAssets {
                 "state":format!("{:?}",server.get_load_states(h.id()))
             })).collect::<Vec<_>>()})
     }
+    /// (placed, expected, files loaded, files) for the loading screen
+    pub fn progress(&self, server: &AssetServer) -> (usize, usize, usize, usize) {
+        let loaded = self.handles.iter().filter(|h| server.is_loaded_with_dependencies(*h)).count();
+        (self.spawned.len(), self.expected, loaded, self.handles.len())
+    }
     pub fn ready(&self, server: &AssetServer) -> bool {
         self.spawned.len() == self.expected
             && self

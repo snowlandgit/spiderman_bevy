@@ -122,7 +122,11 @@ impl CameraRig {
 struct WorldBuild {
     frames: u32,
     done: bool,
+    models_done: usize,
+    models_total: usize,
 }
+/// frames without a pipeline compiling before play starts (the browser compiles in the background, don't wait on it)
+const READY_FRAMES: u32 = if cfg!(target_arch = "wasm32") { 0 } else { 30 };
 #[derive(Resource, Default)]
 struct DisplayState {
     debug: bool,
@@ -452,6 +456,7 @@ fn build_world(
     children: Query<&Children>,
     parts: Query<(&Mesh3d, &GlobalTransform)>,
     meshes: Res<Assets<Mesh>>,
+    mut models: Local<HashMap<AssetId<Mesh>, Arc<world::Model>>>,
 ) {
     if build.done || !environment.ready(&server) {
         return;
@@ -461,7 +466,10 @@ fn build_world(
     if build.frames < 3 {
         return;
     }
-    let mut models: HashMap<AssetId<Mesh>, Arc<world::Model>> = HashMap::new();
+    // one new model per frame, so the page keeps drawing (and shows progress) instead of freezing
+    let mut built_now = 0;
+    let mut pending = false;
+    let mut total = std::collections::HashSet::new();
     let mut objects = Vec::new();
     for root in &roots {
         for e in children.iter_descendants(root) {
@@ -471,18 +479,29 @@ fn build_world(
             let Some(mesh) = meshes.get(&mesh3d.0) else {
                 continue;
             };
-            let model = models
-                .entry(mesh3d.0.id())
-                .or_insert_with(|| {
-                    let mut tris = Vec::new();
-                    world::mesh_triangles(mesh, &GlobalTransform::IDENTITY, &mut tris);
-                    Arc::new(world::Model::new(&tris))
-                })
-                .clone();
+            total.insert(mesh3d.0.id());
+            let model = if let Some(m) = models.get(&mesh3d.0.id()) {
+                m.clone()
+            } else if built_now < 1 {
+                built_now += 1;
+                let mut tris = Vec::new();
+                world::mesh_triangles(mesh, &GlobalTransform::IDENTITY, &mut tris);
+                let m = Arc::new(world::Model::new(&tris));
+                models.insert(mesh3d.0.id(), m.clone());
+                m
+            } else {
+                pending = true;
+                continue;
+            };
             if model.triangle_count() > 0 {
                 objects.push(world::Object { model, transform: global.compute_transform() });
             }
         }
+    }
+    build.models_done = models.len();
+    build.models_total = total.len();
+    if pending {
+        return;
     }
     let towers = arena.0.towers.clone();
     arena.0 = world::World::new(towers, &objects);
@@ -666,7 +685,7 @@ fn simulate(
     if !world_build.done
         || !environment.ready(&server)
         || !smoke.loaded
-        || ready.stable_frames < 30
+        || ready.stable_frames < READY_FRAMES
         || real_time.elapsed_secs() < 2.
     {
         return;
@@ -1193,12 +1212,24 @@ fn update_hud(
     ready: Res<SceneReady>,
     environment: Res<environment::EnvironmentAssets>,
     server: Res<AssetServer>,
+    world_build: Res<WorldBuild>,
     mut status: Single<&mut Text, With<StatusText>>,
     mut help: Single<&mut Visibility, With<HelpText>>,
 ) {
     **status = Text::new(
-        if clips.is_none() || !environment.ready(&server) || ready.stable_frames < 30 {
-            "LOADING SUIT AND CITY ASSETS...".into()
+        if clips.is_none()
+            || !environment.ready(&server)
+            || ready.stable_frames < READY_FRAMES
+            || !world_build.done
+        {
+            let (spawned, expected, loaded, files) = environment.progress(&server);
+            format!(
+                "LOADING SUIT AND CITY ASSETS...\nsuit {}   city files {}/{}   placed {}/{}   collision models {}/{}   shaders settled {}",
+                if clips.is_some() { "ok" } else { "..." },
+                loaded, files, spawned, expected,
+                world_build.models_done, world_build.models_total,
+                ready.stable_frames
+            )
         } else if display.debug {
             format!(
                 "{}  |  {:0.0} km/h  |  {:0.1} m  |  {} swings\nvelocity  {:0.1} / {:0.1} / {:0.1}  |  rope {:0.1} m  |  error {:0.4} m",
