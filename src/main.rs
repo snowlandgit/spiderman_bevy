@@ -161,6 +161,12 @@ struct Smoke {
     min_web_shot_lead: Option<f32>,
 }
 
+#[cfg(target_arch = "wasm32")]
+fn asset_root() -> PathBuf {
+    // in the browser the assets are fetched over HTTP, relative to the page
+    PathBuf::from("assets")
+}
+#[cfg(not(target_arch = "wasm32"))]
 fn asset_root() -> PathBuf {
     let executable = std::env::current_exe().unwrap();
     let installed = executable.parent().unwrap().join("assets");
@@ -191,6 +197,8 @@ fn main() -> AppExit {
             DefaultPlugins
                 .set(AssetPlugin {
                     file_path: asset_root().to_string_lossy().into_owned(),
+                    // the web server has no .meta files; don't request them
+                    meta_check: bevy::asset::AssetMetaCheck::Never,
                     ..default()
                 })
                 .set(WindowPlugin {
@@ -198,6 +206,12 @@ fn main() -> AppExit {
                         title: "Spider-Man | Bevy Swing Sandbox".into(),
                         resolution: (1440, 900).into(),
                         present_mode: PresentMode::AutoVsync,
+                        #[cfg(target_arch = "wasm32")]
+                        canvas: Some("#bevy".into()),
+                        #[cfg(target_arch = "wasm32")]
+                        fit_canvas_to_parent: true,
+                        #[cfg(target_arch = "wasm32")]
+                        prevent_default_event_handling: true,
                         visible: !std::env::args().any(|arg| arg == "--headless"),
                         ..default()
                     }),
